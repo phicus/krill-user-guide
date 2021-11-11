@@ -1,5 +1,7 @@
 # KrillUI
 
+[[toc]]
+
 Cuando se loguea el usuario por primera vez en la interfaz web se muestra una ventana como la siguiente:
 
 ![logged](./img/krillui/logged.png)

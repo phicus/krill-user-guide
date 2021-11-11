@@ -1,6 +1,7 @@
 const { description } = require('../../package')
 
 module.exports = {
+  base: '/guide/',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
@@ -59,12 +60,11 @@ module.exports = {
       ],
     }
   },
- // markdown: {
- //   config: md => {
- //     md.set({ html: true, linkify: true, typography: true })
- //     md.use(require('markdown-it-imsize'))
- //   }
- // },
+  // markdown: {
+  //   config: md => {
+  //     md.set({ html: true, linkify: true, typography: true })
+  //   }
+  // },
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
@@ -72,6 +72,6 @@ module.exports = {
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
     'vuepress-plugin-table-of-contents',
-    ]
+  ]
 }
 
