@@ -1,4 +1,4 @@
-const { description } = require('../../package')
+//const { description } = require('../../package')
 const { config } = require('vuepress-theme-hope')
 
 module.exports = config ({
@@ -10,15 +10,14 @@ module.exports = config ({
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
-  description: description,
-
+  description: 'Bienvenido a la página de ayuda de Krill',
   /**
    * Extra tags to be injected to the page HTML `<head>`
    *
    * ref：https://v1.vuepress.vuejs.org/config/#head
    */
   head: [
-    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+    ['meta', { name: 'theme-color', content: '#158d7d' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
   ],
@@ -29,14 +28,17 @@ module.exports = config ({
    */
   themeConfig: {
     repo: '',
+    contributor: false,
     editLinks: false,
     docsDir: '',
     editLinkText: '',
+    fullscreen: false,
+    themeColor: false,
     lastUpdated: false,
     nav: [
       {
         text: 'Krill2',
-        link: '/krill2/',
+        link: '/krill2/login.md',
       },
       //{
       //  text: 'Rubik',
