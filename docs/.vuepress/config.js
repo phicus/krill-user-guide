@@ -42,7 +42,7 @@ module.exports =  {
           children: getChildren('./docs/krill2/')
         },
         {
-          text: 'Change-log', 
+          text: 'Changelog', 
           children: getChildren('./docs/change-log/'),
         },
 
