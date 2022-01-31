@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/phicus/krill-user-guide.git",
-  "author": "Torete <andres@phicus.es>",
   "license": "MIT",
   "devDependencies": {
     "vuepress": "^2.0.0-beta.35"

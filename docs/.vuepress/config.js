@@ -31,6 +31,7 @@ module.exports =  {
   theme: '@vuepress/theme-default',
   themeConfig: {
     logo: '/logo.png',
+    contributors: false,
     navbar: [
         // Home page
         {
