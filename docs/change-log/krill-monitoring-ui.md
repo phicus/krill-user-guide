@@ -1,5 +1,23 @@
 # Krill Monitoring UI
 
+## 2022-01-31
+Version 1.0.178
+
+### Some code optimizations
+
+<ul><li>Added a column with time since last change to the Matrix view.</li><li>Fixed host service picker in mobile view.</li></ul>
+
+---
+
+## 2022-01-31
+Version 1.0.175
+
+### Some code optimizations
+
+<ul><li>Added a loading indicator in the Host-groups view.</li><li>Fixed register info links in host view.</li></ul>
+
+---
+
 ## 2022-01-18
 Version 1.0.169
 
@@ -59,7 +77,7 @@ Version 1.0.163
 
 ### New feature and fixes
 
-<ul><li>Added Host links in Host view upper right actions menu.</li><li>Fixed when any parents or invalid format for the parents is prensent</li></ul>
+<ul><li>Added Host links in Host view upper right actions menu.</li><li>Fixed when any parents or invalid format for the parents is prensent.</li></ul>
 
 ---
 
@@ -68,7 +86,7 @@ Version 1.0.162
 
 ### New improvements
 
-<ul><li>Added PPPoE IPs to Host Monitor tab view.</li><li>Added expiration date in <code>/all</code> host view</li></ul>
+<ul><li>Added PPPoE IPs to Host Monitor tab view.</li><li>Added expiration date in <code>/all</code> host view.</li></ul>
 
 ---
 
@@ -221,7 +239,7 @@ Version 1.0.145
 
 ### Some refactorings
 
-<ul><li>Refactoring expand chart behaviour in Host and Services Graphs tab view.</li><li>Minimum height set for service list in Host Service view</li></ul>
+<ul><li>Refactoring expand chart behaviour in Host and Services Graphs tab view.</li><li>Minimum height set for service list in Host Service view.</li></ul>
 
 ---
 
@@ -257,7 +275,7 @@ Version 1.0.141
 
 ### Refactoring of code, some new features and improvements
 
-<ul><li>Refactoring code of widgets.</li><li>Added shorcuts menu in monitoring home view</li><li>Added some translations to widgets</li></ul>
+<ul><li>Refactoring code of widgets.</li><li>Added shorcuts menu in monitoring home view.</li><li>Added some translations to widgets.</li></ul>
 
 ---
 
@@ -266,7 +284,7 @@ Version 1.0.140
 
 ### Some improvements
 
-<ul><li>Improved all view in mobile mode</li></ul>
+<ul><li>Improved all view in mobile mode.</li></ul>
 
 ---
 
@@ -275,7 +293,7 @@ Version 1.0.139
 
 ### Some improvements and refactoring of code
 
-<ul><li>Improved data tables in mobile mode</li><li>Some code lines remove</li></ul>
+<ul><li>Improved data tables in mobile mode.</li><li>Some code lines remove.</li></ul>
 
 ---
 
@@ -284,7 +302,7 @@ Version 1.0.138
 
 ### Refactoring of code
 
-<ul><li>Toolbar code refactoring</li></ul>
+<ul><li>Toolbar code refactoring.</li></ul>
 
 ---
 
@@ -293,7 +311,7 @@ Version 1.0.137
 
 ### Refactoring of code and some fixes
 
-<ul><li>Enabled the close button when a Pon's status dialog is loading data.</li><li>Pon Status buttons in host service tab appears and disappear in every refresh</li></ul>
+<ul><li>Enabled the close button when a Pon's status dialog is loading data.</li><li>Pon Status buttons in host service tab appears and disappear in every refresh.</li></ul>
 
 ---
 
@@ -311,7 +329,7 @@ Version 1.0.135
 
 ### Some improvements and fixes
 
-<ul><li>In Host Group view, all host summary was removed to increase speed load.</li><li>Now are all elements in Matrix view</li><li>Added translations to last notifications widget</li><li>Fixed always adding option to schedule downtime for hosts and services even if they are healthy.</li><li>Fixed a Pon closing status dialog when clicking on its CPE</li></ul>
+<ul><li>In Host Group view, all host summary was removed to increase speed load.</li><li>Now are all elements in Matrix view.</li><li>Added translations to last notifications widget.</li><li>Fixed always adding option to schedule downtime for hosts and services even if they are healthy.</li><li>Fixed a Pon closing status dialog when clicking on its CPE.</li></ul>
 
 ---
 
@@ -473,7 +491,7 @@ Version 1.0.117
 
 ### Some improvements and fixes
 
-<ul><li>Added max attempts information to Host Service Info tab view.</li><li>Graph filter fix for service graphs tab</li><li>Fixed state labels in host service tab history view and add show notifications checkbox</li></ul>
+<ul><li>Added max attempts information to Host Service Info tab view.</li><li>Graph filter fix for service graphs tab.</li><li>Fixed state labels in host service tab history view and add show notifications checkbox.</li></ul>
 
 ---
 
@@ -491,7 +509,7 @@ Version 1.0.113
 
 ### Some improvements
 
-<ul><li>Added Radius IPs to host monitor view.</li><li>Added bp:>2 to Smart Tree view default search</li></ul>
+<ul><li>Added Radius IPs to host monitor view.</li><li>Added bp:>2 to Smart Tree view default search.</li></ul>
 
 ---
 
@@ -577,7 +595,7 @@ Version 1.0.100
 ---
 
 ## 2021-10-22
-Version 1.0.099
+Version 1.0.99
 
 ### Some fixes
 
@@ -586,7 +604,7 @@ Version 1.0.099
 ---
 
 ## 2021-10-14
-Version 1.0.098
+Version 1.0.98
 
 ### Some improvements
 
@@ -595,7 +613,7 @@ Version 1.0.098
 ---
 
 ## 2021-10-13
-Version 1.0.096
+Version 1.0.96
 
 ### Some improvements
 
@@ -604,7 +622,7 @@ Version 1.0.096
 ---
 
 ## 2021-10-11
-Version 1.0.094
+Version 1.0.94
 
 ### Some improvements
 
@@ -613,7 +631,7 @@ Version 1.0.094
 ---
 
 ## 2021-10-11
-Version 1.0.093
+Version 1.0.93
 
 ### Some improvements
 
@@ -622,7 +640,7 @@ Version 1.0.093
 ---
 
 ## 2021-10-11
-Version 1.0.092
+Version 1.0.92
 
 ### Some fixes
 
@@ -631,7 +649,7 @@ Version 1.0.092
 ---
 
 ## 2021-10-08
-Version 1.0.091
+Version 1.0.91
 
 ### Some fixes
 
@@ -640,7 +658,7 @@ Version 1.0.091
 ---
 
 ## 2021-10-08
-Version 1.0.087
+Version 1.0.87
 
 ### Some improvements
 
@@ -649,7 +667,7 @@ Version 1.0.087
 ---
 
 ## 2021-10-07
-Version 1.0.086
+Version 1.0.86
 
 ### Some improvements
 
@@ -658,7 +676,7 @@ Version 1.0.086
 ---
 
 ## 2021-10-07
-Version 1.0.083
+Version 1.0.83
 
 ### Some improvements
 
@@ -667,7 +685,7 @@ Version 1.0.083
 ---
 
 ## 2021-10-07
-Version 1.0.082
+Version 1.0.82
 
 ### Some improvements
 
@@ -676,16 +694,16 @@ Version 1.0.082
 ---
 
 ## 2021-10-06
-Version 1.0.080
+Version 1.0.80
 
 ### Some fixes
 
-<ul><li>Fixed issue on Host Service Tab Info view. When try to access current service when it was not loaded yet.</li><li>Optimized responsive mode of Summary Widget.</li><li>Added default-preset value to Date Time Range in all views</li></ul>
+<ul><li>Fixed issue on Host Service Tab Info view. When try to access current service when it was not loaded yet.</li><li>Optimized responsive mode of Summary Widget.</li><li>Added default-preset value to Date Time Range in all views.</li></ul>
 
 ---
 
 ## 2021-10-04
-Version 1.0.079
+Version 1.0.79
 
 ### Some improvements
 
@@ -694,7 +712,7 @@ Version 1.0.079
 ---
 
 ## 2021-10-04
-Version 1.0.078
+Version 1.0.78
 
 ### Some improvements
 

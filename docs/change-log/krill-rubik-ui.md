@@ -5,7 +5,7 @@ Version 1.0.56
 
 ### Some improvements
 
-<ul><li>Responsive mode to Toolbars in some views.</li><li>Improved mode responsive in data tables.</li><li>Added slider to Home view</li></ul>
+<ul><li>Responsive mode to Toolbars in some views.</li><li>Improved mode responsive in data tables.</li><li>Added slider to Home view.</li></ul>
 
 ---
 
@@ -14,5 +14,5 @@ Version 1.0.52
 
 ### Some improvements
 
-<ul><li>Added administrative ID in Ticket Edit view</li></ul>
+<ul><li>Added administrative ID in Ticket Edit view.</li></ul>
 

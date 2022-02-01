@@ -1,5 +1,14 @@
 # Krill Oratio UI
 
+## 2022-01-31
+Version 1.0.31
+
+### New dashboard widget
+
+<ul><li>Se ha corregido el selector de servicios del host en la vista movil.</li></ul>
+
+---
+
 ## 2021-12-22
 Version 1.0.26
 

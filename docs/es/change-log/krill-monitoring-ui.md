@@ -1,5 +1,23 @@
 # Krill Monitoring UI
 
+## 2022-01-31
+Version 1.0.178
+
+### Optimizaciones de código
+
+<ul><li>Añadida una columna con el tiempo desde el último cambio a la vista Matrix.</li><li>Se ha corregido el selector de servicios del host en la vista movil.</li></ul>
+
+---
+
+## 2022-01-31
+Version 1.0.175
+
+### Optimizaciones de código
+
+<ul><li>Se ha añadido un indicador de carga en la vista de Host-groups.</li><li>Solucionado el enlace de la información de registro en la vista del host.</li></ul>
+
+---
+
 ## 2022-01-18
 Version 1.0.169
 
@@ -23,7 +41,7 @@ Version 1.0.167
 
 ### Optimizaciones de código
 
-<ul><li>El cuadro de diálogo en la vista host monitor, ahora se cierra cuando finaliza la acción</li></ul>
+<ul><li>El cuadro de diálogo en la vista host monitor, ahora se cierra cuando finaliza la acción.</li></ul>
 
 ---
 
@@ -59,7 +77,7 @@ Version 1.0.163
 
 ### Nueva característica y correciones
 
-<ul><li>Se agregaron enlaces de Host en el menú de acciones de la parte superior derecha de la vista de Host.</li><li>Se corrigió cuando cualquier padre o formato no válido para los padres está presente</li></ul>
+<ul><li>Se agregaron enlaces de Host en el menú de acciones de la parte superior derecha de la vista de Host.</li><li>Se corrigió cuando cualquier padre o formato no válido para los padres está presente.</li></ul>
 
 ---
 
@@ -68,7 +86,7 @@ Version 1.0.162
 
 ### Nueva característica
 
-<ul><li>Se agregaron direcciones IP PPPoE a la vista de la pestaña Host Monitor.</li><li>Fecha de expiración agregada en la vista de <code>/all</code> los hosts</li></ul>
+<ul><li>Se agregaron direcciones IP PPPoE a la vista de la pestaña Host Monitor.</li><li>Fecha de expiración agregada en la vista de <code>/all</code> los hosts.</li></ul>
 
 ---
 
@@ -131,7 +149,7 @@ Version 1.0.155
 
 ### Agunas optimizaciones de código
 
-<ul><li>Se modificó el ícono para el host de tipo Nas.</li><li>Al hacer doble clic en el host, ahora se abre la URL correcta en una nueva ventana</li></ul>
+<ul><li>Se modificó el ícono para el host de tipo Nas.</li><li>Al hacer doble clic en el host, ahora se abre la URL correcta en una nueva ventana.</li></ul>
 
 ---
 
@@ -221,7 +239,7 @@ Version 1.0.145
 
 ### Agunas refactorizaciones
 
-<ul><li>Refactorización del comportamiento del gráfico de expansión en la vista de la pestaña Gráficos de host y servicios.</li><li>Altura mínima establecida para la lista de servicios en la vista de servicios de host</li></ul>
+<ul><li>Refactorización del comportamiento del gráfico de expansión en la vista de la pestaña Gráficos de host y servicios.</li><li>Altura mínima establecida para la lista de servicios en la vista de servicios de host.</li></ul>
 
 ---
 
@@ -257,7 +275,7 @@ Version 1.0.141
 
 ### Refactorización de código, algunas características nuevas y mejoras
 
-<ul><li>Refactorización del código de los widgets.</li><li>Añadido menu de atajos en la vista de inicio de monitoring</li><li>Añadidas algunas traducciones a los widgets</li></ul>
+<ul><li>Refactorización del código de los widgets.</li><li>Añadido menu de atajos en la vista de inicio de monitoring</li><li>Añadidas algunas traducciones a los widgets.</li></ul>
 
 ---
 
@@ -275,7 +293,7 @@ Version 1.0.139
 
 ### Algunas mejoras y refactorización de código
 
-<ul><li>Mejorada la vista all en modo móvil.</li><li>Algunas lineas de código eliminadas</li></ul>
+<ul><li>Mejorada la vista all en modo móvil.</li><li>Algunas lineas de código eliminadas.</li></ul>
 
 ---
 
@@ -293,7 +311,7 @@ Version 1.0.137
 
 ### Refactorización de código
 
-<ul><li>Habilitado el botón de cerrar cuando el cuadro de diálogo del estado de un Pon carga datos.</li><li>Los botones Pon Status en la pestaña de servicio del host aparecen y desaparecen en cada actualización</li></ul>
+<ul><li>Habilitado el botón de cerrar cuando el cuadro de diálogo del estado de un Pon carga datos.</li><li>Los botones Pon Status en la pestaña de servicio del host aparecen y desaparecen en cada actualización.</li></ul>
 
 ---
 
@@ -311,7 +329,7 @@ Version 1.0.135
 
 ### Algunas mejoras y correciones
 
-<ul><li>En la vista de grupo de hosts, se eliminó todo el resumen de hosts para aumentar la velocidad de carga.</li><li>Ahora están todos los elementos en vista Matrix.</li><li>Añadidas traducciones al widget de últimas notificaciones</li><li>Corregido el que siempre se agregue la opción para programar el tiempo de inactividad de los hosts y los servicios aunque estén en buen estado.</li><li>Se corrigió el cuadro de diálogo de estado del cierre de un Pon al hacer clic en su CPE</li></ul>
+<ul><li>En la vista de grupo de hosts, se eliminó todo el resumen de hosts para aumentar la velocidad de carga.</li><li>Ahora están todos los elementos en vista Matrix.</li><li>Añadidas traducciones al widget de últimas notificaciones.</li><li>Corregido el que siempre se agregue la opción para programar el tiempo de inactividad de los hosts y los servicios aunque estén en buen estado.</li><li>Se corrigió el cuadro de diálogo de estado del cierre de un Pon al hacer clic en su CPE.</li></ul>
 
 ---
 
@@ -320,7 +338,7 @@ Version 1.0.134
 
 ### Algunas mejoras
 
-<ul><li>Carga de velocidad mejorada en la vista Trivial.</li></ul>
+<ul><li>Carga de velocidad mejorada en la vista Trivial.</ul>
 
 ---
 
@@ -329,7 +347,7 @@ Version 1.0.133
 
 ### Algunas mejoras
 
-<ul><li>Carga de velocidad mejorada en la vista Sonar.</li></ul>
+<ul><li>Carga de velocidad mejorada en la vista Sonar.</ul>
 
 ---
 
@@ -338,7 +356,7 @@ Version 1.0.132
 
 ### Algunas mejoras
 
-<ul><li>La información de CWMP en la vista de la pestañana Tecnología de host, ahora se carga al inicio.</li></ul>
+<ul><li>La información de CWMP en la vista de la pestañana Tecnología de host, ahora se carga al inicio.</ul>
 
 ---
 
@@ -347,7 +365,7 @@ Version 1.0.131
 
 ### Algunas mejoras
 
-<ul><li>Se modificó el botón de cambio de tamaño en la vista de sonar.</li></ul>
+<ul><li>Se modificó el botón de cambio de tamaño en la vista de sonar.</ul>
 
 ---
 
@@ -356,7 +374,7 @@ Version 1.0.130
 
 ### Refactorización de código
 
-<ul><li>Refactorización y mejora de código..</li></ul>
+<ul><li>Refactorización y mejora de código..</ul>
 
 ---
 
@@ -365,7 +383,7 @@ Version 1.0.129
 
 ### Nueva característica
 
-<ul><li>Se agregó la utilidad de expandir y contraer la lista de servicios en la vista servicios del host.</li></ul>
+<ul><li>Se agregó la utilidad de expandir y contraer la lista de servicios en la vista servicios del host.</ul>
 
 ---
 
@@ -374,7 +392,7 @@ Version 1.0.128
 
 ### Nueva mejora
 
-<ul><li>Desplazamiento automático al servicio seleccionado en la vista de servicio del host.</li></ul>
+<ul><li>Desplazamiento automático al servicio seleccionado en la vista de servicio del host.</ul>
 
 ---
 
@@ -383,7 +401,7 @@ Version 1.0.127
 
 ### Corrección
 
-<ul><li>Se corrigió el cambio automático y repentino del servicio actual y de pestaña en la vista de servicios del host.</li></ul>
+<ul><li>Se corrigió el cambio automático y repentino del servicio actual y de pestaña en la vista de servicios del host.</ul>
 
 ---
 
@@ -392,7 +410,7 @@ Version 1.0.126
 
 ### Corrección
 
-<ul><li>Se corrigió el prefijo de IP de Huawei y Ubiquiti cuando el modelo no estaba disponible en la vista de Host Monitor.</li></ul>
+<ul><li>Se corrigió el prefijo de IP de Huawei y Ubiquiti cuando el modelo no estaba disponible en la vista de Host Monitor.</ul>
 
 ---
 
@@ -401,7 +419,7 @@ Version 1.0.125
 
 ### Algunas mejoras
 
-<ul><li>Pie de página de las gráficas, mejorado en la vista de pestaña Host Graph.</li></ul>
+<ul><li>Pie de página de las gráficas, mejorado en la vista de pestaña Host Graph.</ul>
 
 ---
 
@@ -410,7 +428,7 @@ Version 1.0.124
 
 ### Algunas mejoras
 
-<ul><li>Ahora descontamos los problemas de reconocimiento y tiempo de inactividad de los malos estados totales y, si todos son manejados,la ubicación está bien.</li></ul>
+<ul><li>Ahora descontamos los problemas de reconocimiento y tiempo de inactividad de los malos estados totales y, si todos son manejados,la ubicación está bien.</ul>
 
 ---
 
@@ -419,7 +437,7 @@ Version 1.0.123
 
 ### Algunas mejoras
 
-<ul><li>Valores de rango de datos predeterminados establecidos para el día actual (de 0:00:00 a 23:59:59).</li></ul>
+<ul><li>Valores de rango de datos predeterminados establecidos para el día actual (de 0:00:00 a 23:59:59).</ul>
 
 ---
 
@@ -428,7 +446,7 @@ Version 1.0.122
 
 ### Refactorización de código
 
-<ul><li>Refactorización y mejora de código.</li></ul>
+<ul><li>Refactorización y mejora de código.</ul>
 
 ---
 
@@ -437,7 +455,7 @@ Version 1.0.121
 
 ### Algunas mejoras
 
-<ul><li>Añadidos algunos nuevos iconos para tipos de host en la vista de Host</li></ul>
+<ul><li>Añadidos algunos nuevos iconos para tipos de host en la vista de Host</ul>
 
 ---
 
@@ -446,7 +464,7 @@ Version 1.0.120
 
 ### Algunas mejoras
 
-<ul><li>En la vista Sonar, ahora solo muestra localizaciones con hosts</li></ul>
+<ul><li>En la vista Sonar, ahora solo muestra localizaciones con hosts</ul>
 
 ---
 
@@ -455,7 +473,7 @@ Version 1.0.119
 
 ### Algunas mejoras
 
-<ul><li>En la vista Host Monitor, ahora se muestra en la línea de tiempo problemas del servicio TR069</li></ul>
+<ul><li>En la vista Host Monitor, ahora se muestra en la línea de tiempo problemas del servicio TR069</ul>
 
 ---
 
@@ -464,7 +482,7 @@ Version 1.0.118
 
 ### Algunas mejoras
 
-<ul><li>Añadido Tooltip para los long-output en la linea de tiempo de host y servicio</li></ul>
+<ul><li>Añadido Tooltip para los long-output en la linea de tiempo de host y servicio</ul>
 
 ---
 
@@ -473,7 +491,7 @@ Version 1.0.117
 
 ### Algunas mejoras y arreglos
 
-<ul><li>Se agregó información de intentos máximos a la vista Información del servicio del host</li><li>Corrección del filtro de gráficas para la pestaña de gráficas de servicio.</li><li>Se corrigieron las etiquetas de estado en la vista del historial de la pestaña del servicio del host y se agregó la casilla de verificación Mostrar notificaciones.</li></ul>
+<ul><li>Se agregó información de intentos máximos a la vista Información del servicio del host.</li>Corrección del filtro de gráficas para la pestaña de gráficas de servicio.</li><li>Se corrigieron las etiquetas de estado en la vista del historial de la pestaña del servicio del host y se agregó la casilla de verificación Mostrar notificaciones.</li></ul>
 
 ---
 
@@ -577,7 +595,7 @@ Version 1.0.100
 ---
 
 ## 2021-10-22
-Version 1.0.099
+Version 1.0.99
 
 ### Algunos arreglos
 
@@ -586,7 +604,7 @@ Version 1.0.099
 ---
 
 ## 2021-10-14
-Version 1.0.098
+Version 1.0.98
 
 ### Algunas mejoras
 
@@ -595,7 +613,7 @@ Version 1.0.098
 ---
 
 ## 2021-10-13
-Version 1.0.096
+Version 1.0.96
 
 ### Algunas mejoras
 
@@ -604,7 +622,7 @@ Version 1.0.096
 ---
 
 ## 2021-10-11
-Version 1.0.094
+Version 1.0.94
 
 ### Algunas correciones
 
@@ -613,7 +631,7 @@ Version 1.0.094
 ---
 
 ## 2021-10-11
-Version 1.0.093
+Version 1.0.93
 
 ### Algunas mejoras
 
@@ -622,7 +640,7 @@ Version 1.0.093
 ---
 
 ## 2021-10-11
-Version 1.0.092
+Version 1.0.92
 
 ### Algunas correciones
 
@@ -631,7 +649,7 @@ Version 1.0.092
 ---
 
 ## 2021-10-08
-Version 1.0.091
+Version 1.0.91
 
 ### Algunas mejoras
 
@@ -640,7 +658,7 @@ Version 1.0.091
 ---
 
 ## 2021-10-08
-Version 1.0.087
+Version 1.0.87
 
 ### Algunas mejoras
 
@@ -649,7 +667,7 @@ Version 1.0.087
 ---
 
 ## 2021-10-07
-Version 1.0.086
+Version 1.0.86
 
 ### Algunas mejoras
 
@@ -658,7 +676,7 @@ Version 1.0.086
 ---
 
 ## 2021-10-07
-Version 1.0.083
+Version 1.0.83
 
 ### Algunas mejoras
 
@@ -667,7 +685,7 @@ Version 1.0.083
 ---
 
 ## 2021-10-07
-Version 1.0.082
+Version 1.0.82
 
 ### Algunas mejoras
 
@@ -676,16 +694,16 @@ Version 1.0.082
 ---
 
 ## 2021-10-06
-Version 1.0.080
+Version 1.0.80
 
 ### Algunas correciones
 
-<ul><li>Se solucionó el problema en la vista de información de la pestaña Servicio de host.Cuando intente acceder al servicio actual cuando aún no ha sido cargado.</li><li>Optimizado el modo responsivo del widget resumen</li><li>Se agregó un valor preestablecido predeterminado al rango de fecha y hora en todas las vistas</li></ul>
+<ul><li>Se solucionó el problema en la vista de información de la pestaña Servicio de host.Cuando intente acceder al servicio actual cuando aún no ha sido cargado.</li><li>Optimizado el modo responsivo del widget resumen</li><li>Se agregó un valor preestablecido predeterminado al rango de fecha y hora en todas las vistas.</li></ul>
 
 ---
 
 ## 2021-10-04
-Version 1.0.079
+Version 1.0.79
 
 ### Algunas mejoras
 
@@ -694,7 +712,7 @@ Version 1.0.079
 ---
 
 ## 2021-10-04
-Version 1.0.078
+Version 1.0.78
 
 ### Algunas mejoras
 

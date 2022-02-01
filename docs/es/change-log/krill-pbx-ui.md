@@ -32,7 +32,7 @@ Version 1.0.25
 
 ### Algunas correciones
 
-<ul><li>Corregidas algunas traducciones.</li><li>Corregido el filtro de fechas de CDRs</li></ul>
+<ul><li>Corregidas algunas traducciones.</li><li>Corregido el filtro de fechas de CDRs.</li></ul>
 
 ---
 
