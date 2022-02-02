@@ -1,0 +1,1 @@
+const e={key:"v-56fdef61",path:"/change-log/krill-wimax.html",title:"Krill Wimax",lang:"en-US",frontmatter:{},excerpt:"",headers:[{level:2,title:"2021-10-19",slug:"_2021-10-19",children:[{level:3,title:"Some improvements",slug:"some-improvements",children:[]}]}],git:{updatedTime:1643697633e3},filePathRelative:"change-log/krill-wimax.md"};export{e as data};

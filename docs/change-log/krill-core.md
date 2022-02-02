@@ -12,7 +12,7 @@ Version 0.17.10
 ## 2021-11-12
 Version 0.17.2
 
-### Some mejoras
+### Some improvements
 
 <ul><li>Improved checks output when a SAF/IntegraW remote side does not response to SNMP.</li><li>FiberHome boards monitoring.</li><li>Falling edge report.</li></ul>
 

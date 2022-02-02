@@ -25,12 +25,3 @@ Version 1.5.1
 
 <ul><li>Configure celery to autodiscover task in kws and share task in kiwi.</li></ul>
 
----
-
-## 2022-01-17
-Version 1.6.5
-
-### Some fixes
-
-<ul><li>Revised the behavior of the TR069 report sessions, because the report mode caused equipment not to be configured.</li></ul>
-

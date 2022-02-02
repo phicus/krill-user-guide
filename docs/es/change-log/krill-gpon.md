@@ -5,11 +5,11 @@ Version 0.24.4
 
 ### Algunas correciones y mejoras
 
-Ahora la provisión permite como filtro una OLT
+<ul><li>Ahora la provisión permite como filtro una OLT</li></ul>
 
-Nuevas notificaciones por pérdida óptica de uno o más clientes configurable mediante umbrales
+<ul><li>Nuevas notificaciones por pérdida óptica de uno o más clientes configurable mediante umbrales</li></ul>
 
-Se han corregido diversos errores menores:<br><ul><li>Validación de alarmas de PON por pérdida de ONUs.</li><li>Monitorización de RX para determinadas tarjetas.</li></ul>
+<ul><li>Se han corregido diversos errores menores:</li><br><ul><li>Validación de alarmas de PON por pérdida de ONUs.</li><li>Monitorización de RX para determinadas tarjetas.</li></ul></ul>
 
 ---
 

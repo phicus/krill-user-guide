@@ -1,4 +1,5 @@
-const getChildren = require('./childscript');
+const getChildrenNavbar = require('./child_navbar');
+//const getChildrenSidebar = require('./child_sidebar');
 const path = require("path");
 
 module.exports =  {
@@ -32,6 +33,7 @@ module.exports =  {
   themeConfig: {
     logo: '/logo.png',
     contributors: false,
+    smoothScroll: true,
     navbar: [
         // Home page
         {
@@ -40,13 +42,18 @@ module.exports =  {
         },
         {
           text: 'Krill2', 
-          children: getChildren('./docs/krill2/')
+          children: getChildrenNavbar('./docs/krill2/')
         },
         {
           text: 'Changelog', 
-          children: getChildren('./docs/change-log/'),
+          children: getChildrenNavbar('./docs/change-log/'),
         },
 
     ],
+    sidebarDepth: 1,
+    sidebar: {
+        '/change-log/': getChildrenNavbar('./docs/change-log/'),
+        '/es/change-log/': getChildrenNavbar('./docs/es/change-log/')
+    },
   },
 }

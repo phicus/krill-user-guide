@@ -5,11 +5,11 @@ Version 0.24.4
 
 ### Some fixes and improvements
 
-Now the provision allows an OLT as a filter
+<ul><li>Now the provision allows an OLT as a filter</li></ul>
 
-New notifications due to optical loss from one or more clients configurable through thresholds
+<ul><li>New notifications due to optical loss from one or more clients configurable through thresholds</li></ul>
 
-Fixed various minor bugs:br><ul><li>Validation of PON alarms due to loss of ONUs.</li><li>RX monitoring for certain cards.</li></ul>
+<ul><li>Fixed various minor bugs:</li><br><ul><li>Validation of PON alarms due to loss of ONUs.</li><li>RX monitoring for certain cards.</li></ul></ul>
 
 ---
 

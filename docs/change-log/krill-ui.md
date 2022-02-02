@@ -64,7 +64,7 @@ Version 1.5.2
 ---
 
 ## 2021-12-13
-Version 1.5.00
+Version 1.5.0
 
 ### Dashboard
 
@@ -86,25 +86,16 @@ Version 1.4.84
 
 ### Some improvements
 
-<ul><li>Mode responsive to box dialog of widgets.</li><li>Now clicking the phicus icon or KrillUI renders it to the dashboard.<li>Available Widgets in dashboard now check its multiple attribute and existence in current dashboard.</li></ul>
+<ul><li>Mode responsive to box dialog of widgets.</li><li>Now clicking the phicus icon or KrillUI renders it to the dashboard.</li><li>Available Widgets in dashboard now check its multiple attribute and existence in current dashboard.</li></ul>
 
 ---
 
 ## 2021-11-29
 Version 1.4.82
 
-### Some improvements
+### Some improvements and some fixes
 
-<ul><li>Added option for remove dashboard Multi dashboard and widgets capability to main krill-ui home view.</li></ul>
-
----
-
-## 2021-11-29
-Version 1.4.82
-
-### Some fixes
-
-<ul><li>Fixed to finder user's bookmarks creation, editing and deletion because were not showing until refresh.</li></ul>
+<ul><li>Added option for remove dashboard Multi dashboard and widgets capability to main krill-ui home view.</li><li>Fixed to finder user's bookmarks creation, editing and deletion because were not showing until refresh.</li></ul>
 
 ---
 

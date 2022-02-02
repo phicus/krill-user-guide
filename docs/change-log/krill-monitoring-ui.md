@@ -291,9 +291,9 @@ Version 1.0.140
 ## 2021-12-13
 Version 1.0.139
 
-### Some improvements and refactoring of code
+### Refactoring of code
 
-<ul><li>Improved data tables in mobile mode.</li><li>Some code lines remove.</li></ul>
+<ul><li>Some code lines remove.</li></ul>
 
 ---
 

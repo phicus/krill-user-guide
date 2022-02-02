@@ -1,1 +1,0 @@
-const e={key:"v-e06f3f72",path:"/es/krill2/login.html",title:"Login",lang:"Spanish",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1643139268e3,contributors:[{name:"Torete",email:"andres@phicus.es",commits:1}]},filePathRelative:"es/krill2/login.md"};export{e as data};

@@ -64,7 +64,7 @@ Version 1.5.2
 ---
 
 ## 2021-12-13
-Version 1.5.00
+Version 1.5.0
 
 ### Panel de control
 
@@ -93,18 +93,9 @@ Version 1.4.84
 ## 2021-11-29
 Version 1.4.82
 
-### Algunas mejoras
+### Algunas mejoras y correcciones
 
-<ul><li>Opción agregada para eliminar el tablero Capacidad de múltiples tableros y widgets para la vista de inicio principal de krill-ui.</li></ul>
-
----
-
-## 2021-11-29
-Version 1.4.82
-
-### Algunas correciones
-
-<ul><li>Se corrigió la creación, edición y eliminación de marcadores del usuario del buscador porque no se mostraban hasta la actualización.</li></ul>
+<ul><li>Opción agregada para eliminar el tablero Capacidad de múltiples tableros y widgets para la vista de inicio principal de krill-ui.</li><li>Se corrigió la creación, edición y eliminación de marcadores del usuario del buscador porque no se mostraban hasta la actualización.</li></ul>
 
 ---
 

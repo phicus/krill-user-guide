@@ -291,9 +291,9 @@ Version 1.0.140
 ## 2021-12-13
 Version 1.0.139
 
-### Algunas mejoras y refactorización de código
+### Refactorización de código
 
-<ul><li>Mejorada la vista all en modo móvil.</li><li>Algunas lineas de código eliminadas.</li></ul>
+<ul><li>Algunas lineas de código refactorizadas.</li></ul>
 
 ---
 
@@ -338,7 +338,7 @@ Version 1.0.134
 
 ### Algunas mejoras
 
-<ul><li>Carga de velocidad mejorada en la vista Trivial.</ul>
+<ul><li>Carga de velocidad mejorada en la vista Trivial.</li></ul>
 
 ---
 
@@ -347,7 +347,7 @@ Version 1.0.133
 
 ### Algunas mejoras
 
-<ul><li>Carga de velocidad mejorada en la vista Sonar.</ul>
+<ul><li>Carga de velocidad mejorada en la vista Sonar.</li></ul>
 
 ---
 
@@ -356,7 +356,7 @@ Version 1.0.132
 
 ### Algunas mejoras
 
-<ul><li>La información de CWMP en la vista de la pestañana Tecnología de host, ahora se carga al inicio.</ul>
+<ul><li>La información de CWMP en la vista de la pestañana Tecnología de host, ahora se carga al inicio.</li></ul>
 
 ---
 
@@ -365,7 +365,7 @@ Version 1.0.131
 
 ### Algunas mejoras
 
-<ul><li>Se modificó el botón de cambio de tamaño en la vista de sonar.</ul>
+<ul><li>Se modificó el botón de cambio de tamaño en la vista de sonar.</li></ul>
 
 ---
 
@@ -374,7 +374,7 @@ Version 1.0.130
 
 ### Refactorización de código
 
-<ul><li>Refactorización y mejora de código..</ul>
+<ul><li>Refactorización y mejora de código.</li></ul>
 
 ---
 
@@ -383,7 +383,7 @@ Version 1.0.129
 
 ### Nueva característica
 
-<ul><li>Se agregó la utilidad de expandir y contraer la lista de servicios en la vista servicios del host.</ul>
+<ul><li>Se agregó la utilidad de expandir y contraer la lista de servicios en la vista servicios del host.</li></ul>
 
 ---
 
@@ -392,7 +392,7 @@ Version 1.0.128
 
 ### Nueva mejora
 
-<ul><li>Desplazamiento automático al servicio seleccionado en la vista de servicio del host.</ul>
+<ul><li>Desplazamiento automático al servicio seleccionado en la vista de servicio del host.</li></ul>
 
 ---
 
@@ -401,7 +401,7 @@ Version 1.0.127
 
 ### Corrección
 
-<ul><li>Se corrigió el cambio automático y repentino del servicio actual y de pestaña en la vista de servicios del host.</ul>
+<ul><li>Se corrigió el cambio automático y repentino del servicio actual y de pestaña en la vista de servicios del host.</li></ul>
 
 ---
 
@@ -410,7 +410,7 @@ Version 1.0.126
 
 ### Corrección
 
-<ul><li>Se corrigió el prefijo de IP de Huawei y Ubiquiti cuando el modelo no estaba disponible en la vista de Host Monitor.</ul>
+<ul><li>Se corrigió el prefijo de IP de Huawei y Ubiquiti cuando el modelo no estaba disponible en la vista de Host Monitor.</li></ul>
 
 ---
 
@@ -419,7 +419,7 @@ Version 1.0.125
 
 ### Algunas mejoras
 
-<ul><li>Pie de página de las gráficas, mejorado en la vista de pestaña Host Graph.</ul>
+<ul><li>Pie de página de las gráficas, mejorado en la vista de pestaña Host Graph.</li></ul>
 
 ---
 
@@ -428,7 +428,7 @@ Version 1.0.124
 
 ### Algunas mejoras
 
-<ul><li>Ahora descontamos los problemas de reconocimiento y tiempo de inactividad de los malos estados totales y, si todos son manejados,la ubicación está bien.</ul>
+<ul><li>Ahora descontamos los problemas de reconocimiento y tiempo de inactividad de los malos estados totales y, si todos son manejados,la ubicación está bien.</li></ul>
 
 ---
 
@@ -437,7 +437,7 @@ Version 1.0.123
 
 ### Algunas mejoras
 
-<ul><li>Valores de rango de datos predeterminados establecidos para el día actual (de 0:00:00 a 23:59:59).</ul>
+<ul><li>Valores de rango de datos predeterminados establecidos para el día actual (de 0:00:00 a 23:59:59).</li></ul>
 
 ---
 
@@ -446,7 +446,7 @@ Version 1.0.122
 
 ### Refactorización de código
 
-<ul><li>Refactorización y mejora de código.</ul>
+<ul><li>Refactorización y mejora de código.</li></ul>
 
 ---
 
@@ -455,7 +455,7 @@ Version 1.0.121
 
 ### Algunas mejoras
 
-<ul><li>Añadidos algunos nuevos iconos para tipos de host en la vista de Host</ul>
+<ul><li>Añadidos algunos nuevos iconos para tipos de host en la vista de Host</li></ul>
 
 ---
 
@@ -464,7 +464,7 @@ Version 1.0.120
 
 ### Algunas mejoras
 
-<ul><li>En la vista Sonar, ahora solo muestra localizaciones con hosts</ul>
+<ul><li>En la vista Sonar, ahora solo muestra localizaciones con hosts</li></ul>
 
 ---
 
@@ -473,7 +473,7 @@ Version 1.0.119
 
 ### Algunas mejoras
 
-<ul><li>En la vista Host Monitor, ahora se muestra en la línea de tiempo problemas del servicio TR069</ul>
+<ul><li>En la vista Host Monitor, ahora se muestra en la línea de tiempo problemas del servicio TR069</li></ul>
 
 ---
 
@@ -482,7 +482,7 @@ Version 1.0.118
 
 ### Algunas mejoras
 
-<ul><li>Añadido Tooltip para los long-output en la linea de tiempo de host y servicio</ul>
+<ul><li>Añadido Tooltip para los long-output en la linea de tiempo de host y servicio</li></ul>
 
 ---
 
@@ -491,7 +491,7 @@ Version 1.0.117
 
 ### Algunas mejoras y arreglos
 
-<ul><li>Se agregó información de intentos máximos a la vista Información del servicio del host.</li>Corrección del filtro de gráficas para la pestaña de gráficas de servicio.</li><li>Se corrigieron las etiquetas de estado en la vista del historial de la pestaña del servicio del host y se agregó la casilla de verificación Mostrar notificaciones.</li></ul>
+<ul><li>Se agregó información de intentos máximos a la vista Información del servicio del host.</li><li>Corrección del filtro de gráficas para la pestaña de gráficas de servicio.</li><li>Se corrigieron las etiquetas de estado en la vista del historial de la pestaña del servicio del host y se agregó la casilla de verificación Mostrar notificaciones.</li></ul>
 
 ---
 

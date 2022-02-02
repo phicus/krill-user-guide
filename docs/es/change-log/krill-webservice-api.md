@@ -14,16 +14,7 @@ Version 20.7.19
 
 ### Algunas correcciones
 
-<ul><li>Los cambios en las PBX no lanzaban el playbook del asterik.</li></ul>
-
----
-
-## 2021-12-09
-Version 20.7.19
-
-### Algunas correciones
-
-<ul><li>No se permitía dejar vacío el campo address_profile, ahora si.</li></ul>
+<ul><li>Los cambios en las PBX no lanzaban el playbook del asterik.</li><li>No se permitía dejar vacío el campo address_profile, ahora si.</li></ul>
 
 ---
 

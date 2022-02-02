@@ -14,16 +14,7 @@ Version 20.7.19
 
 ### Some fixes
 
-<ul><li>PBX changes did not launch the asterisk playbook.</li></ul>
-
----
-
-## 2021-12-09
-Version 20.7.19
-
-### Some fixes
-
-<ul><li>It was not allowed to leave the address_profile field empty, now it is.</li></ul>
+<ul><li>PBX changes did not launch the asterisk playbook.</li><li>It was not allowed to leave the address_profile field empty, now it is.</li></ul>
 
 ---
 
