@@ -1,7 +1,7 @@
 # Krill
 
 ## 2022-01-18
-Version 1.0.1
+Version undefined
 
 ### Se han corregido diversos errores menores en varios checks y sistemas de monitorización
 
@@ -12,7 +12,7 @@ Se ha solucionado el acceso a los enlaces de los equipos vía proxy.
 ---
 
 ## 2022-01-11
-Version 1.0.1
+Version undefined
 
 ### Corrección de errores menores en varios checks
 
@@ -23,7 +23,7 @@ Añadido percentil 95 para las métricas de ancho de banda de los ITFS.
 ---
 
 ## 2022-01-04
-Version 1.0.1
+Version undefined
 
 ### Corrección de errores menores en varios checks
 

@@ -1,1 +1,0 @@
-const e={key:"v-1f02a23a",path:"/change-log/kiwi.html",title:"Kiwi",lang:"en-US",frontmatter:{},excerpt:"",headers:[{level:2,title:"2021-10-22",slug:"_2021-10-22",children:[{level:3,title:"Some improvements",slug:"some-improvements",children:[]}]}],git:{updatedTime:1643697633e3},filePathRelative:"change-log/kiwi.md"};export{e as data};

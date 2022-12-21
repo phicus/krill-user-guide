@@ -9,7 +9,7 @@ Version 0.24.4
 
 <ul><li>Nuevas notificaciones por pérdida óptica de uno o más clientes configurable mediante umbrales</li></ul>
 
-<ul><li>Se han corregido diversos errores menores:</li><br><ul><li>Validación de alarmas de PON por pérdida de ONUs.</li><li>Monitorización de RX para determinadas tarjetas.</li></ul></ul>
+<ul><li>Validación de alarmas de PON por pérdida de ONUs.</li><li>Monitorización de RX para determinadas tarjetas.</li></ul>
 
 ---
 

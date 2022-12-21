@@ -9,7 +9,7 @@ Version 0.24.4
 
 <ul><li>New notifications due to optical loss from one or more clients configurable through thresholds</li></ul>
 
-<ul><li>Fixed various minor bugs:</li><br><ul><li>Validation of PON alarms due to loss of ONUs.</li><li>RX monitoring for certain cards.</li></ul></ul>
+<ul><li>Validation of PON alarms due to loss of ONUs.</li><li>RX monitoring for certain cards.</li></ul>
 
 ---
 

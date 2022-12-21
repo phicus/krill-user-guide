@@ -1,7 +1,7 @@
 # Krill
 
 ## 2022-01-18
-Version 1.0.1
+Version undefined
 
 ### Fixed various minor bugs in various checks and monitoring systems
 
@@ -12,7 +12,7 @@ Access to hosts links via proxy has been fixed.
 ---
 
 ## 2022-01-11
-Version 1.0.1
+Version undefined
 
 ### Minor bug fixes on various checks
 
@@ -23,7 +23,7 @@ Added 95th percentile for ITFS bandwidth metrics.
 ---
 
 ## 2022-01-04
-Version 1.0.1
+Version undefined
 
 ### Minor bug fixes on various checks
 

@@ -455,7 +455,7 @@ Version 1.0.121
 
 ### Algunas mejoras
 
-<ul><li>Añadidos algunos nuevos iconos para tipos de host en la vista de Host</li></ul>
+<ul><li>Añadidos algunos nuevos iconos para tipos de host en la vista de Host.</li></ul>
 
 ---
 
