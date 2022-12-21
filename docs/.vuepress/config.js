@@ -53,7 +53,9 @@ module.exports =  {
     sidebarDepth: 1,
     sidebar: {
         '/change-log/': getChildrenNavbar('./docs/change-log/'),
-        '/es/change-log/': getChildrenNavbar('./docs/es/change-log/')
+        '/es/change-log/': getChildrenNavbar('./docs/es/change-log/'),
+        '/krill2/': getChildrenNavbar('./docs/krill2/'),
+        '/es/krill2/': getChildrenNavbar('./docs/es/krill2/')
     },
   },
 }
