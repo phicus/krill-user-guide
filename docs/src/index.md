@@ -3,27 +3,27 @@ home: true
 heroImage: /interface-krill2.jpg
 heroText: A user guide for Krill
 tagline: null
-actionText: Manual de Krill
+actionText: Krill's User Guide
 actionLink: /krill2/dashboard
 actionType: primary
 features:
-- title: "Provisión de servicios de red"
-  details: "Provisión de todos los servicios de red de los clientes (velocidad de acceso, línea telefónica, televisión, etc.), independientemente de su marca."
-- title: "Monitorización en tiempo real"
-  details: "Información en tiempo real de los problemas que se producen en la red: CPEs con malos parámetros de señal, equipos caídos o saturados, enlaces que no dan el caudal esperado, etc."
-- title: "Rápida detección de los problemas de la red"
-  details: "Rápida detección de los problemas de la red, en muchas ocasiones antes incluso de que el cliente final lo perciba. A menudo la advertencia previa permitirá que no se produzca una incidencia futura."
-- title: "Configuración automática"
-  details: "Configuración automática de los equipos de abonado: datos de red, telefonía, SSID y clave WiFi, credenciales de acceso, ALC, actualizaciones automáticas de firmware (tanto para ONUs de FTTH, como para routers de casa del abonado, gateways VoIP vía WiMAX, etc.)."
-- title: "Notificaciones personalizadas"
-  details: "Personalización de las notificaciones de los problemas y restablecimientos de la red. Krill permite: especificar la importancia y prioridad de los diversos avisos para notificar sólo cuando así se le indique."
-- title: "Compatibilidad API"
-  details: "Compatibilidad con CRMs de los proveedores de billing para gestión de clientes vía API, independientemente de la tecnología del abonado."
-- title: "Simplicidad de uso"
-  details: "Unifica herramientas bajo un mismo entorno. Gestiona y monitoriza todas las tecnologías de acceso y al estar integrado con el CRM del operador, permite controlar la red a través de la misma interfaz."
-- title: "Distintos perfiles de acceso"
-  details: "Esto permite que cada usuario del sistema cuente con la información necesaria para hacer su trabajo, haciendo que reciba la información de manera selectiva."
-- title: "Alarmas en el móvil"
-  details: "El diseño responsive del software permite tener acceso desde cualquier dispositivo, incluso desde el móvil, a todas sus prestaciones."
+- title: "Network's services provision"
+  details: "All network's services (access speed, phone line, tv, etc) provision for all the brands available in the market.  
+- title: "Real time monitoring"
+  details: "Real time information of problems in the network such as CPEs with signal parameters that are not suitable, devices not working or working near its capacity limit, links that are not giving the expected flow, etc.
+- title: "Quick detection of network's problems"
+  details: "Quick detection of network's problems, in many occassions even before the client realizes they exist. Sometimes the previous warning will prevent future incidents."
+- title: "Automatic configuration"
+  details: "Automatic configuration of the devices: network data, telephony, WiFi's SSID and password, access credentials, ALC, automatic firmware updates (for FTTH ONUs as well as routers in the client's house, WiMAX VoIP gateways, etc.)."  
+- title: "Personalized notifications"
+  details: "Personalized notifications of the network's problems and recovery. Krill allows to specify the importance and priority of the different alerts so the notifications are send only when indicated."
+- title: "API compatibility"
+  details: "Compatibility with the billing suppliers CRMs for customer management using API, no matter the technology used by the subscriber." 
+- title: "Easy to use"
+  details: "All of the tools used are unified in the same enviroment. All the access technologies are managed and monitored, and by being integrated with the CRM that the operator uses it allows to manage the network in the same interface."
+- title: "Different access profiles"
+  details: "This allows that every user has only the information needed to do the job by sending the information in a selective way."
+- title: "Mobile phone alarms"
+  details: "The software's responsive design allows access from any device, even a mobile phone, to all its features."
 footer: Copyright @ 2023 Phicus
 ---
