@@ -1,6 +1,6 @@
 ---
 title: ISP Customer
-description: Gestión de clientes y CPEs.
+description: Customers and CPEs management.
 lang: en-US
 prev: null
 next: /krill2/isp-customer/customers
@@ -14,21 +14,20 @@ tags:
 ---
 # ISP Customer
 
-Apartado web destinado al alta, modificación o baja de los clientes y equipos de clientes en la red. También llamado módulo administrativo y anteriormente Kiwi. Reúne en la misma vista las diversas tecnologías que Krill provisiona y monitoriza. 
+It is used to register, modify or delete customers and customers' devices in the network. It is also called administrative module and before that Kiwi. It has in the same page all the technologies that Krill provision and monitor together.
 
 ![ISP Customer Dashboard](@images/krill2/isp-customer/0001.png)
 
-Su menú contiene los siguientes elementos:
+Its menu contains the following elements:
 
-- [Customers](/krill2/isp-customer/customers): Apartado destinado a los datos administrativos de los clientes
-- [CPEs](/krill2/isp-customer/cpes): Apartado destinado a los datos de los equipos que se conectarán en las instalaciones finales
-- [POTs](/krill2/isp-customer/potses): Apartado destinado a los datos telefónicos asociados a los CPEs
-- [CPE Profiles](/krill2/isp-customer/cpe-profiles): Apartado destinado a las diferentes tarifas usables por las tecnologías en los CPEs: En el mismo apartado se manejan las velocidades de GPON, WiMAX, Docsis y G.HN
-- [Contexts](/krill2/isp-customer/contexts): Apartado destinado a los contextos de llamada que la PBX usará para permitir o no permitir llamar a los destinos escogidos
+- [Customers](/krill2/isp-customer/customers): It is used for the customers' administrative information. 
+- [CPEs](/krill2/isp-customer/cpes): It is used for the information of the devices that are going to be conected in the final facilities.
+- [POTs](/krill2/isp-customer/potses): It is used for the information of the telephones that are associated to the CPEs. 
+- [CPE Profiles](/krill2/isp-customer/cpe-profiles): It is used for the different fares that can be applied to the CPEs depending on the technology; the same bap is used for GPON, WiMAX, Docsis y G.HN speeds.
+- [Contexts](/krill2/isp-customer/contexts): It is used for the call context the PBX is going to use to decide wether to enable the call to a particular number or not.
 
-::: tip Relación CUSTOMERS – CPEs
+::: tip CUSTOMERS – CPEs bond
 
-Customer es a lo que llamamos **cliente**. CPE es a lo que llamamos **terminal del abonado** que permite  la  conexión  final  en  casa  del  cliente  (pueden  ser  las  antenas  en  WiMAX,  las  ONTs  en Fibra y los CMs en DOCSIS).
-
-Un  customer  puede  tener  varios  CPEs. Un CPE no puede pertenecer a varios customers a la vez.
+The CPE is what we call **subscriber's terminal** that allows the conectivity in the customer's house (they can be the WiMAX antennas, the GPON ONTs and the DOCSIS' CMs).
+A  customer can have more than one CPE but a CPE can't belong to more than one customer at a time.
 :::
