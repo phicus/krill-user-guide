@@ -1,6 +1,6 @@
 ---
 title: ISP Customer | Potses
-description: Listado y gestión de POTSes.
+description: POTSes' list and management.
 lang: en-US
 prev: /krill2/isp-customer/cpes
 next: /krill2/isp-customer/cpe-profiles
@@ -13,6 +13,6 @@ tags:
 ---
 # ISP Customer | Potses
 
-Desde esta vista se muestra el listado de POTSes agrupados por Realm (puede haber uno o más Realms), pudiendo ver de un vistazo la información más relevante de ellos así como acceder rápidamente a su edición dentro de la ficha del CPE al que pertenezcan.
+This view shows the POTses' list by Realm (a network can have one or more Realms), so you can see in one look the important information about them as well as access easily to their edition page in the file of the CPE to which they are associated.
 
 ![ISP CPEs POTSes](@images/krill2/isp-customer/0501.png)
