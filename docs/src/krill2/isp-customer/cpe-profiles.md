@@ -1,6 +1,6 @@
 ---
 title: ISP Customer | CPE Profiles
-description: Listado y gestión de CPE Profiles.
+description: CPE Profile' list and management.
 lang: en-US
 prev: /krill2/isp-customer/potses
 next: /krill2/isp-customer/contexts
@@ -14,19 +14,19 @@ tags:
 ---
 # ISP Customer | CPE Profiles
 
-Apartado para gestionar los perfiles de velocidad de la red agrupados por Realm (puede haber uno o más Realms). Hay que diferenciar los perfiles por tecnología.
+It is used to manage the network's speed profiles that are grouped together by Realm (the network can have one or more Realms). The profiles must be distinguished by technology.
 
 ![ISP CPE Profiles](@images/krill2/isp-customer/0301.png)
 
-Pulsando sobre Add CPE profile se desplegará el menú para los nuevos perfiles:
+Clicking on Add CPE profile a menu for the new profiles will be displayed:
 
 <p align="center"><img src="@images/krill2/isp-customer/0302.png" max-width=30% width=300;></p>
 
-Para dar de alta un perfil debemos rellenar los campos:
+To register a profile we must fill in the following blanks:
 
-- **Nombre**: Etiqueta descriptiva que le queremos dar al perfil
-- **Label**: Etiqueta de configuración para determinadas tecnologías 
-- **Tecnología**: Tecnología a la que se aplicará este perfil 
-- **Downstream profile**: Perfil de velocidad de bajada
-- **Upstream profile**: Perfil de velocidad de subida
-- **Acceso a Internet.**: 
+- **Name**: Descriptive label we want the profile to have. 
+- **Label**: Configuration label for some technologies.
+- **Technology**: Technology this profile will be applied to. 
+- **Downstream profile**: Downstream speed profile.
+- **Upstream profile**: Upstream speed profile.
+- **Internet access.**: 
