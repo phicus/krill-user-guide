@@ -1,6 +1,6 @@
 ---
 title: ISP Customer | CPEs
-description: Listado y gestión de CPEs.
+description: CPEs' list and management.
 lang: en-US
 prev: /krill2/isp-customer/customers
 next: /krill2/isp-customer/potses
@@ -13,126 +13,127 @@ tags:
 ---
 # ISP Customer | CPEs
 
-Desde la vista principal de CPEs se muestra el listado de éstos agrupados por Realm (puede haber uno o más Realms) y en él podemos hacer cambios masivos seleccionando varios a la vez.
+From the main view a list of CPEs grouped by Realm (the network can have one or more Realms) is shown, there we can do massive changes selecting more than one CPE at a time.
 
 ![ISP CPEs Dashboard](@images/krill2/isp-customer/0201.png)
 
-El CPE es el equipo que se pone en casa del cliente para darle servicio.
+The CPE is the device that is installed in the customer's house to provide the services.
 
 ::: tip
-En función de la tecnología, el CPE puede recibir diversos nombres:
+Depending on the technology the CPE can have different names: 
 
 - **GPON**: ONT
-- **WiMAX**: Antena/Router
-- **DOCSIS**: Cable Módem
+- **WiMAX**: Antenna/Router
+- **DOCSIS**: Cable Modem
 - **G.HN**: Router
 :::
 
-## Creación de CPES
+## CPEs' creation
 
-Para crear un CPE pulsaremos sobre el botón de la barra superior y rellenaremos los campos necesarios, en función de la tecnología:
+To create a CPE we are going to click the button on the bar at the top of the page and then fill in the blanks that are necessary depending on the technology:
+
 
 <p align="center"><img src="@images/krill2/isp-customer/0205.png" max-width=30% width=500;></p>
 
-Una vez finalicemos, pulsaremos sobre el botón `Añadir nuevo CPE` y se nos redirigirá a la pantalla de edición de CPEs.
+Once we have done that, we are going to click on the 'Add new CPE' button and it will redirect us to the CPEs' edition page.
 
-## Edición de CPES
+## CPES edition
 
-La edición de CPE muestra diversas pestañas en las que se agrupan los diferentes datos necesarios para su provisión y monitorización.
+The CPE edition page shows different tabs in which the different information needed for provision a monitor is grouped.
 
-### Pestaña Basic Data
+### Basic Data Tab
 
 ![ISP CPE Basic Data](@images/krill2/isp-customer/0202.png)
 
-En función de la tecnología, habrá unos campos que sean obligatorios y otros no. A continuación mostramos el detalle de éstos.
+Depending on the technology, some blanks will have to be completed and some others not. In the following lines we are going to show them in detail.
 
-#### Campos comunes a las diversas tecnologías
+#### Blanks that all technologies have.
 
 **Basic Data**
 
-- **Technology**: Tecnología del dispositivo
-- **CPE Model**: Modelo (Agrupado por Fabricante)
-- **Fecha de expiración**: Determina la fecha en la que Krill cortará el Acceso a internet al CPE automáticamente.
+- **Technology**: Device's technology
+- **CPE Model**: Model (group by manufacturer)
+- **Expiration date**: The date when Krill is going to automatically disable the CPE's internet access.
 
 **Settings**
 
-- **Active**: con él marcado tendremos al CPE dado de alta en el servicio.
-- **Access to internet**: con él marcado el equipo obtendrá IP de navegación.
-- **Must register VoIP lines in external Server**: al marcarlo le diremos que el teléfono ha de registrarse en un servidor diferente al de Krill .
-- **Is a probe**: Es una etiqueta para marcar un equipo como sonda.
-- **Enable notifications**: marcándolo haremos que Krill nos avise de cualquier evento de este cpe en el chat.
+- **Active**: when is checked we are going to have the CPE registered in the service.
+- **Access to internet**: when is checked the device will get an IP with access to the internet.
+- **Must register VoIP lines in external Server**: when is checked the phone will register in an external server, different to Krill's server.
+- **Is a probe**: Tag to mark the device as a probe.
+- **Enable notifications**: when is checked Krill will notify us in the chat of any event involving this CPE.
 
 **Profiles e IP**
 
-- **Address Profile**: Especifica el perfil que usará Krill para asignar una IP al dispositivo.
-    * Pública: Krill asignará IP del rango de IPs públicas.
-    * NAT: Krill asignará IP del rango de IPs NATeadas.
-    * Fixed: Krill reservará la IP fija destinada a ese CPE y no la repartirá en el DHCP.
-- **IP Fixed**: IP fija a reservar para ese CPE.
-- **IP Fixed LAN**: IP y tamaño de subred a configurar en la parte LAN del equipo.
-- **Metro VLAN**: ID de la VLAN a usar en caso de ser Metro ethernet V
+- **Address Profile**: Specifies the profile Krill is going to use to give an IP to the device.
+    * Public: Krill will give an IP from the public IP addresses.
+    * NAT: Krill will give an IP from the NAT IP addresses.
+    * Fixed: Krill will save the fixed IP for the CPE and will not give it through DHCP.
+- **IP Fixed**: Fiexed IP that is going to be saved for the CPE.
+- **IP Fixed LAN**: IP and size of the subnetwork that has to be configured in the device's LAN configuration.
+- **Metro VLAN**: ID of the VLAN that is going to be used if it is Metro ethernet.
 
-#### Tecnología GPON
+#### GPON technology
 
-Para dar de alta un nuevo terminal de fibra óptica en nuestra red debemos rellenar los datos dependiendo  del  fabricante  de  la  ONT,  porque  en  cada  caso  es  diferente.
+To register a new optical fiber terminal in our network the information we must fill in depends on the ONT's manufacturer, it is different in every case.
 
-- **Sn**: utilizaremos el GPON-SerialNumber en caso de los terminales Huawei, ZTE, FH para la sincronización del terminal con OLT.
-- **Dsn**: utilizaremos el SN con las siglas iniciales ZTE en caso de ZTE en esta casilla para relacionar la ONT con el tr069.
-- **Model**: podremos escoger de entre todos los modelos de ONU que usemos en la red mediante el desplegable.
-- **Speed Profile**: elegiremos la tarifa que previamente habremos definido tanto en la OLT como en Kiwi.
-- **Line Profile**: Mapa de VLANs a usar en la provisión de la ONT.
-- **TV**: Activa o desactiva la TV en el servicio del CPE.
-- **Topology**: Campo para rellenar con la sintaxis propia para identificar las fibras.
+- **Sn**: if it is Huawei, ZTEm FH we are going to use the GPON-SerialNumber for the sincronization with the OLT terminal.
+- **Dsn**: in the case of ZTE we are going to use the SN with the acronym ZTE in this blank to link the ONT with the TR069.
+- **Model**: we can choose from the list that is displayed and contains all the ONU's models that are used in the network.
+- **Speed Profile**: we choose the fare that we have previously defined in the OLT as well as in Kiwi.
+- **Line Profile**: VLANs' map that is going to be used in the ONT's provision.
+- **TV**: this activates or deactivates the TV in the CPE's service. 
+- **Topology**: Blank to fill in with the syntax used to identify the fibers.
 
 
-#### Tecnología WiMAX
+#### WiMAX technology
 
-Necesitaremos los siguientes datos de la antena:
+We are going to need the following information o fthe antenna:
 
-- **MAC**: de la antena que se vaya a poner en casa del cliente o donde se vaya a recibir la señal.
-- **Model**: en este listado aparecerán los modelos que cada operador utiliza en su red.
-- **Speed Profile**: la tarifa que queremos que tenga aplicada esa antena o PPPoE.
-- **PPPoE Username/Password**: en caso de funcionar por PPPoE la conexión y no por DHCP.
+- **MAC**: corresponding to the antenna that is going to ve installed in the customer's house or where the signal is going to be received.
+- **Model**: this list will show the models that every operator uses in their network.
+- **Speed Profile**: the fare we want that antenna or PPoE to have.
+- **PPPoE Username/Password**: in the case the connection works with PPoE instead of DHCP.
 
-#### Tecnología DOCSIS
+#### DOCSIS technology
 
-Para dar de alta un módem necesitaremos:
+To register a modem we are going to need:
 
-- **MAC**: la mac del equipo que se va a poner en casa del cliente.
-- **Model**: elegir el modelo para una correcta provisión de los establecidos en la lista.
-- **Speed Profile**: la tarifa a aplicar y/o la velocidad asignada para este módem.
+- **MAC**: the mac of the device that is going to be installed in the customer's house.
+- **Model**: is a list where the correct model for provision needs to be selected.
+- **Speed Profile**: the fare or speed that is going to be assigned to the modem.
 
-#### Tecnología G.HN
+#### G.HN technology
 
-Para dar de alta un CPE necesitaremos:
+To register a G.HN we are going to need:
 
-- **MAC**: la mac del equipo que se va a poner en casa del cliente para identificarlo y poder darle IP.
-- **Model**: elegir el modelo para una correcta provisión de los establecidos en la lista entre los modelos G.hn.
-- **Speed Profile**: la tarifa a aplicar y/o la velocidad asignada para esta conexión.
+- **MAC**: the mac of the device that is going to be installed in the customer's house so we can identify it and give it an IP. 
+- **Model**: is a list where the correct G.HN model for provision needs to be selected.
+- **Speed Profile**: the fare or speed that is going to be assigned for this connection.
 
-### Pestaña Administrative Info
+### Administrative Info Tab
 
 ![ISP CPE Administrative Info](@images/krill2/isp-customer/0203.png)
 
-En la pestaña Administrative info se agrupan los campos relacionados con la topología y localización del equipo. Aquí podemos encontrar:
+In the Administrative Info tab the blanks related with the topology and the device's localization are grouped. Here we can find:
 
-- **Topology**: Información sobre el CTO en el que está conectado el equipo, o cualquier otro dato de interés para la gestión de planta externa.
-- **External ID**: ID Externo del dispositivo.
-- **Dirección**: Datos sobre el país, ciudad, barrio, código postal y dirección física del equipo instalado.
-- **Latitude y Longitude**: Se puede rellenar con las coordenadas para elegir su posición en el world map.
+- **Topology**: Information about the CTO in which the device is connected, or any other impotant information for the management of the network. 
+- **External ID**: Device's external ID.
+- **Dirección**: Information about the device's country, city, neighborhood, postal code and address. 
+- **Latitude y Longitude**: It can be filled with the coordinates to choose its position in the world map.
 - **Notes**: un comentario para identificar o marcar el equipo.
 
-### Pestaña POTSes
+### POTSes Tab
 
 ![ISP CPE POTSes](@images/krill2/isp-customer/0204.png)
 
-En función de si el equipo tiene disponibles puertos de telefonía, desde esta pestaña podremos configurarlos a través de los diferentes campos:
+If the device has available telephony ports we can configure them through the different blanks:
 
-- **CLI**: Número de teléfono que queremos asociar al CPE.
-- **Label**: Nombre del teléfono o un identificador.
-- **Context**: Seleccionamos el contexto de llamada de los disponibles.
-- **Language**: Determina el idioma del contestador automático y de las opciones de centralita.
-- **Username y Password**: Sólo serán necesarios en caso de registrar con un servidor externo de telefonía. Opcionales si registran en la PBX de Krill.
-- **DTMF**: Permite elegir el DTMF del teléfono.
-- **PBX Ext**: Marcándolo elegimos la extensión como parte de PBXVirtual.
-- **Voicemail Password**: Establecemos la password del buzón de voz.
+- **CLI**: Phone number that we want to associate to the CPE.
+- **Label**: Name of the phone or something to identify it.
+- **Context**: Select the call context among the available ones. 
+- **Language**: It determinates the language of the answering machine and the options on the central.
+- **Username y Password**: Only needed in the case that the phone is registered on an external telephony server.  If it is registered on Krill's PBX this are optional.
+- **DTMF**: It allows us to choose the DMTF of the phone.
+- **PBX Ext**: When is checked we choose the extension as a part of the virtual PBX.
+- **Voicemail Password**: We established the password for the voice mail.
