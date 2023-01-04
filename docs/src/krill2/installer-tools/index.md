@@ -17,7 +17,7 @@ It allows to register a CPE by registering the customer first; it uses the geolo
 
 ![ISP Customer Dashboard](@images/krill2/installer-tools/0001.png)
 
-By filling the 3 gaps, the CPE's provision is processed. After that, the monitoring information will appear and the information can be modified in the CPE's file that appears here: [módulo Customers](/krill2/isp-customer/cpes.html#edicion-de-cpes).
+By filling the 3 gaps, the CPE's provision is processed. After that, the monitoring information will appear and the information can be modified in the CPE's file that appears here: [Customers module](/krill2/isp-customer/cpes.html#edicion-de-cpes).
 
 ::: tip
 We can put the serial number in three different ways:
