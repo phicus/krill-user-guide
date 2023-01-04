@@ -1,1 +1,0 @@
-const e={key:"v-5710d22f",path:"/change-log/krill-chati-ui.html",title:"Krill Chati UI",lang:"en-US",frontmatter:{},excerpt:"",headers:[{level:2,title:"2021-12-09",slug:"_2021-12-09",children:[{level:3,title:"Some improvements",slug:"some-improvements",children:[]}]}],git:{updatedTime:1643139268e3},filePathRelative:"change-log/krill-chati-ui.md"};export{e as data};

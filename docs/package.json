@@ -1,0 +1,29 @@
+{
+  "name": "krill-guide",
+  "version": "0.0.1",
+  "description": "A user guide for Krill",
+  "main": "index.js",
+  "authors": {
+    "name": "Pavel del Pozo",
+    "email": "pdelpozo@phicus.es"
+  },
+  "repository": "/krill-guide",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src",
+    "export": "vuepress export src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@snowdog/vuepress-plugin-pdf-export": "^1.1.0",
+    "vuepress": "^1.5.3",
+    "vuepress-theme-vt": "^0.6.4"
+  },
+  "dependencies": {
+    "@vuepress/plugin-back-to-top": "^1.9.7",
+    "@vuepress/plugin-medium-zoom": "^1.9.7",
+    "markdown-it": "^12.0.6",
+    "markdown-it-imsize": "^2.0.1",
+    "moment": "^2.29.4"
+  }
+}
