@@ -1,6 +1,6 @@
 ---
 title: Monitoring | Sonar
-description: Listado de localizaciones de la red.
+description: List of the network's locations.
 lang: en-US
 prev: /krill2/monitoring/host-groups
 next: /krill2/monitoring/unprovisioned-onus
@@ -14,19 +14,19 @@ tags:
 ---
 # Monitoring | Sonar
 
-Vista que agrupa las diferentes localizaciones de la red, sumariza los equipos de cada zona y contabiliza sus hosts y servicios. Está pensada para usarla en un NOC como vista principal.
+This view has the different network's locations, it shows the devices in each zone and the number of hosts and services. It is designed to be used in the NOC as the main view.
 
 ![MonitoringSonar](@images/krill2/monitoring/0401.png)
 
-Muestra el número de clientes afectados en la localización en número.
+It shows the number of customers with problems in the location. 
 
-De forma proactiva si dejamos la vista abierta en un navegador y una zona tiene problemas sonará una alarma y la caja de la localización cambiará de color a rojo. Nos ayuda a tener controlada la red por localizaciones/nodos.
+If we leave this view opened in the browser and a zone has problems an alarm will ring and the location box will change its color to red. It helps us control the network by locations/nodes.
 
-En la parte superior se encuentra un filtro de localizaciones, y un selector que nos permite reordenar el listado por número de clientes afectados, por estado o por nombre de localización.
+At the top it has a locations filter and a selector that allows us to reorder the list by number of customers with problems, condition or location name. 
 
-En el menú de los tres puntos, podemos encontrar diversas opciones de visualización:
+In the three dots menu we can find different visualization options:
 
-- Mostrar las cajas de localización grandes o pequeñas
-- Mostrar / Ocultar el número de problemas
-- Sonar cuando se encuentre una localización con problemas.
-- Auto refresco
+- Show the locations' boxes big or little.
+- Show/Hide the number of problems.
+- Ring when a location has problems.
+- Self refresh.
