@@ -1,6 +1,6 @@
 ---
 title: Radius
-description: Control de sesiones PPPoE y Pool de IPs.
+description: PPPoE sessions' control and IP Pools.
 lang: en-US
 prev: null
 next: /krill2/radius/sessions
@@ -15,11 +15,11 @@ tags:
 ---
 # Radius
 
-Apartado web que refleja todo lo relacionado con el módulo Radius de Krill.
+It shows everything related with Krill's Radius module.
 
 ![Radius Dashboard](@images/krill2/radius/0001.png)
 
-Su menú contiene los siguientes elementos:
+Its menu has the following elements:
 
-- [Sessions](/krill2/radius/sessions): Muestra las sesiones PPPoE activas, así como las duplicadas.
-- [IP Pools](/krill2/radius/ip-pools): Pool de IPs con estadísticas de disponibilidad.
+- [Sessions](/krill2/radius/sessions): It shows the active PPPoE sessions as well as the duplicated ones.
+- [IP Pools](/krill2/radius/ip-pools): IPs' Pool with the availability statistics.
