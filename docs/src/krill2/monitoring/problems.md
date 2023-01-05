@@ -1,6 +1,6 @@
 ---
 title: Monitoring | Problems
-description: Listado de problemas de Host y Servicios.
+description: Hosts and services problems' list.
 lang: en-US
 prev: /krill2/monitoring/alarms
 next: /krill2/monitoring/matrix
@@ -12,18 +12,18 @@ tags:
 ---
 # Monitoring | Problems
 
-Búsqueda predefinida que da como resultado los problemas de la red ordenados de mayor a menor nivel de importancia según la afectación.
+Predefined search that gives as a result the network's problems ordered by their importance from the more to the least important based on the affectation level.
 
 ![MonitoringProblems](@images/krill2/monitoring/0201.png)
 
 ::: tip
-Se considera problema todo aquello que no esté **UP** de cara a los hosts y no esté **OK** para los servicios.
+It is considered a problem everything that is not **UP** if it is a host or not **OK** if it is a service.
 :::
 
-La búsqueda inicial que aparecerá en el cuadro de búsqueda superior filtrará aquellos resultados que estén ya controlados (mediante un **ACK** o un **Downtime**), cuyo estado sea considerado **HARD** y cuyo **business impact** sea mayor o igual a 2:
+The main search thatis going to appear in the search bar on the top will filter the results that are already under control (with an **ACK** or a **Downtime**), the ones that are considered **HARD** and the ones whose **business impact** is greater than 2 or equal: 
 
 ```
 problem:true handled:false hard_state:true business_impact:>=2 type:all
 ```
 
-Al igual que en la vista Alarms, en la parte superior tenemos un selector que nos permite filtrar entre Hosts y Servicios. Así como un selector que nos permite cambiar el criterio de agrupación de resultados por: Buisiness Impact, estado y host.
+As it is seen in the Alarms view, at the top we have a selector that allows us to filer between Hosts and Services. And we also have a selector that allows us to change the result grouping rules by: Buisiness Impact, state y host.
