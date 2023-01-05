@@ -1,6 +1,6 @@
 ---
 title: Monitoring | Worldmap
-description: Mapa mundial con posición de los diversos equipos de la red.
+description: World map with the location of the different network's devices.
 lang: en-US
 prev: /krill2/monitoring/unprovisioned-onus
 next: /krill2/monitoring/smart-tree
@@ -12,14 +12,14 @@ tags:
 ---
 # Monitoring | Worldmap
 
-Vista que posiciona en el mapa los equipos de la red y los pinta de color verde o rojo según su estado.
+This view shows the location of the network's devices and paints them with green or red depending on their condition.
 
 ![MonitoringWorldmap](@images/krill2/monitoring/0601.png)
 
-La búsqueda inicial incluye sólo los equipos con Bussiness Impact > 2, lo que nos da como resultado los equipos core de la red.
+The main search includes only the devices with Bussiness Impact > 2, which gives us as a result the network's core devices.
 
 ::: tip
-Podríamos buscar los equipos registrados en un PON de un OLT y ver su estado, por ejemplo, la siguiente búsqueda nos mostraría los hosts registrados en el Frame/Slot/Port **0/5/2** de la OLT **oltCEEIM**:
+We can search the devices registered on an specific OLT's PON and it will show its condition, for example, the following search will return the hosts that are registered in the Frame/Slot/Port **0/5/2** of the OLT **oltCEEIM**:
 
 ```
 regtag:0/5/2 regtag:oltCEEIM type:host
