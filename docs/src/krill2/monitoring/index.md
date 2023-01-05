@@ -11,7 +11,7 @@ tags:
 ---
 # Monitoring
 
-Módulo de Krill en el que encontraremos la información relacionada con la monitorización de la red. Cuenta con la información de todos los hosts y todos sus servicios. 
+Krill's module in which we will find the information related to the network's monitorization. It has the information of all the hosts and its services.
 
 ![MonitoringDashboard](@images/krill2/monitoring/0001.png)
 
