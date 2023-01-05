@@ -1,6 +1,6 @@
 ---
 title: Monitoring | Host Groups
-description: Listado de equipos agrupados por el tipo de host con un sumario de estados de cada uno.
+description: Devices' list grouped by the kind of host with the states' summary for each one.
 lang: en-US
 prev: /krill2/monitoring/matrix
 next: /krill2/monitoring/sonar
@@ -14,23 +14,23 @@ tags:
 ---
 # Monitoring | Host Groups
 
-Vista que agrupa todos los tipos de Hosts que hay en Krill, los diferencia y en base a su estado los pinta de un color u otro.
+This view groups all the kind of hosts that are registered in Krill, they are differentiated by their state and its color depends on the state too. 
 
 ![MonitoringHostGroups](@images/krill2/monitoring/0301.png)
 
-Vista útil para de forma visual revisar el estado de los diferentes equipos de la red.
+It is useful to look at the different network's devices state quickly.
 
 ::: tip
-Los diferentes estados en función del color son:
-- **Verde**: quiere decir que están bien/alcanzable
-- **Rojo**: que tienen algún problema/caídos
-- **Naranja**: que algún servicio está alarmado
-- **Azul**: que el equipo no ha sido chequeado y está en un estado desconocido
-- **Púrpura**: que el servicio o host al que hace referencia está inalcanzable
+The different states according to their color are:
+- **Green**: it means they are ok/reachable. 
+- **Red**: they have some problem or are down.
+- **Orange**: some service is alarmed.
+- **Blue**: the device has not been checked and is in an unknown state.
+- **Purple**: the service or host is unreachable.
 
-Todos los colores pueden estar más tenues, indicando que esos equipos o servicios se encuentran controlados mediante un ACK o un Downtime.
+If the color is light it indicates that the device or service is under control with an ACK or Downtime.
 :::
 
-En ella se listan las OLTs de la red, los routers, o los servidores que Krill monitoriza, etc.
+Here the network's OLTs, routers, or servers that Krill monitors, among others are listed. 
 
-Cada Host Group te enlaza directamente a su búsqueda para facilitar su listado con sólo pinchar en ellos.
+Each Host Group has a direct link to its search that makes the access to its list easier by just clicking on them.
