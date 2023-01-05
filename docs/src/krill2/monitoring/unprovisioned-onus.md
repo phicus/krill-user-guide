@@ -1,6 +1,6 @@
 ---
 title: Monitoring | Unprovisioned Onus
-description: Listado de equipos pendientes de provisionar agrupados por OLT.
+description: Pending provision devices' list grouped by OLT.
 lang: en-US
 prev: /krill2/monitoring/sonar
 next: /krill2/monitoring/worldmap
@@ -11,8 +11,8 @@ tags:
 ---
 # Monitoring | Unprovisioned Onus
 
-Vista que permite visualizar las ONUs pendiente de provisión en las OLTs de la red. Agrupa las ONTs por OLT y proporciona el Frame/Slot/Port/, el SN y su modelo.
+This view displays the pending provision ONUs in the network's OLTs. It groups the ONTs together by OLT and shows the Frame/Slot/Port, the SN and the model.
 
 ![MonitoringUnprovisionedOnus](@images/krill2/monitoring/0501.png)
 
-Está disponible el SN para copiarlo con un sólo click.
+The SN is available to copy with just one click. 
