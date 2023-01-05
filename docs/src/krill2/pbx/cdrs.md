@@ -1,6 +1,6 @@
 ---
 title: PBX | CDRs
-description: Gestión de PBX.
+description: PBX management.
 lang: en-US
 prev: /krill2/pbx/pbxs
 next: /krill2/pbx/holidays
@@ -11,10 +11,10 @@ tags:
 ---
 # PBX | CDRs
 
-Sección destinada a visualizar las CDRs (call detail record) de las llamadas que entran y salen del servicio de telefonía integrado en Krill.
+It shows the incoming and outgoing calls' CDRs (call detail record) from the telephony service integrated in Krill. 
 
 ![PBX CDRS](@images/krill2/pbx/0201.png)
 
-El menú nos permite filtrar las llamadas por diferentes parámetros como: Número saliente, número entrante, resultado de la llamada (si se ha contestado, si no se ha contestado, si ha dado ocupado, si ha fallado...), así como por rango de fechas, y por CPEs.
+The menu allows us to filter the calls based on different parameters such as: outgoing number, incoming number, call output (if it has been answered or not, if it was busy, if it failed...), date range and by CPEs.
 
 <p align="center"><img src="@images/krill2/pbx/0202.png" max-width=30% width=500;></p>
