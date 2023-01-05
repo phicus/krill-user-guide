@@ -1,6 +1,6 @@
 ---
 title: Monitoring | Smart Tree
-description: Mapa topológico y de dependencia de localizaciones de la red.
+description: Network's topological and localization dependency map.
 lang: en-US
 prev: /krill2/monitoring/worldmap
 next: /krill2/monitoring/cwmp-table
@@ -12,29 +12,29 @@ tags:
 ---
 # Monitoring | Smart Tree
 
-Vista que contiene un mapa topológico de la red.
+View that contains the network's topological map. 
 
 ![MonitoringSmartTree](@images/krill2/monitoring/0701.png)
 
-Gracias a haber configurado las dependencias en Krill podemos pintar cada equipo con su parentesco tanto ascendente como descendente.
+After configuring Krill's dependencies we can inlcude each device with its parents so we can see how they are conected. 
 
-En la vista se unen unos con otros y se muestra diferente información de su estado en directo. 
+In this view they are linked with each other and different information about their condition is shown.
 
-También nos permite pulsar sobre un equipo para visualizar cuál es su camino o siguiente salto de red así como un resumen del mismo con el estado de sus servicios.
+We can also click on one device to see its path or the next hop in the network as well as a summary of its services condition. 
 
 ![MonitoringSmartTree](@images/krill2/monitoring/0705.png)
 
 
-Tenemos dos formas de visualizar: Elementos de red y red topológica. Podemos cambiar entre ellas pulsando en los iconos de la parte superior izquierda.
+We can see this in two different ways: network's elements and topological network. We can change between them by clicking the icons at the top on the left.
 
 ![MonitoringSmartTree](@images/krill2/monitoring/0704.png)
 
 ::: tip
-Es posible filtrar el resultado por tipo de equipo, pudiendo elegir sólo visualizar los routers, por ejemplo, o las OLTs, entre otros.
+It is also possible to filter the result by the device's type such as routers, or OLTs, etc. 
 
 <p align="center"><img src="@images/krill2/monitoring/0702.png" max-width=30% width=300;></p>
 
-Otra opción es filtrar por localización de los equipos:
+Another option is to filter by the device's localization.
 
 <p align="center"><img src="@images/krill2/monitoring/0703.png" max-width=30% width=250;></p>
 :::
