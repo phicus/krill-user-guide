@@ -1,6 +1,6 @@
 ---
 title: Monitoring | Host Events
-description: Listado de eventos de hosts.
+description: Hosts'events list.
 lang: en-US
 prev: /krill2/monitoring/cwmp-table
 next: /krill2/monitoring/history
@@ -13,12 +13,12 @@ tags:
 ---
 # Monitoring | Host Events
 
-Listado de los eventos de todos los Hosts que Krill monitoriza. Típicamente las concesiones IPs de los equipos o las sesiones TR069 de los equipos, los cambios en los archivos de Krill, etc.
+List of the events of all the hosts that Krill monitors. It usually includes the devices' IP concessions or TR069 sessions, the changes made in Krill's files, etc. 
 
 ![MonitoringHostEvents](@images/krill2/monitoring/0901.png)
 
-Al pulsar sobre el icono de la flecha izquierda de cada evento, se mostrará el detalle completo del evento con todos los datos recibidos.
+When the arrow icon at the left of each event is clicked, a complete report will be shown with all the information received. 
 
-Desplegando el menú de fechas se puede elegir el intervalo de tiempo en el que ver las sesiones.
+When the date menu is displayed the time frame in which we want to see the sessions can be selected.
 
 <p align="center"><img src="@images/krill2/monitoring/0902.png" max-width=30% width=500;></p>
