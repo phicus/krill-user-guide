@@ -1,6 +1,6 @@
 ---
 title: Monitoring
-description: Monitorización de equipos y servicios de la red.
+description: Monitorization of all the network's devices and services.
 lang: en-US
 prev: null
 next: /krill2/monitoring/alarms
@@ -15,7 +15,7 @@ Krill's module in which we will find the information related to the network's mo
 
 ![MonitoringDashboard](@images/krill2/monitoring/0001.png)
 
-Su menú contiene los siguientes elementos:
+It's menu have the following elements:
 - [Alarms](/krill2/monitoring/alarms)
 - [Problems](/krill2/monitoring/problems)
 - [Matrix](/krill2/monitoring/matrix)
