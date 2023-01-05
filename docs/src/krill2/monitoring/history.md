@@ -1,6 +1,6 @@
 ---
 title: Monitoring | History
-description: Histórico de cambios de estado y envío de notificaciones.
+description: State changes' historical register and notifications.
 lang: en-US
 prev: /krill2/monitoring/host-events
 next: /krill2/monitoring/host
@@ -12,20 +12,20 @@ tags:
 ---
 # Monitoring | History
 
-Listado de los diversos cambios de estado que tienen los hosts y servicios de la red así como el envío de notificaciones a los diversos medios configurados: Slack, email, móvil, etc.
+List of the different state changes the hosts and network's services have as well as the notifications that are send to the different chanels configured: Slack, email, mobile, etc. 
 
 ![MonitoringHostEvents](@images/krill2/monitoring/1001.png)
 
-En la parte superior tenemos un selector para mostrar el histórico de cambios de estado o de envío de notificaciones.
+At the top of the page we have a selector to show the state changes' historical register or the notifications that have been sent.
 
-Podemos filtrar el tipo de resultados a host o servicio desde la barra superior, así como filtrar por el nombre de cualquiera de ellos.
+We can filter the results if we want to see hosts or services as well as by the name of any of them.
 
 <p align="center"><img src="@images/krill2/monitoring/1002.png" max-width=30% width=500;></p>
 
-También podemos filtrar a través del botón derecho de la barra de herramientas por los siguientes atributos:
+We can also filter using the right button on the tools bar by the following attributes:
 
-- Estado
-- Último estado HARD
+- State
+- Last state HARD
 - Business Impact
 - Host Groups
 
