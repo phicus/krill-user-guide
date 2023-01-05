@@ -1,6 +1,6 @@
 ---
 title: Radius | Sessions
-description: Control de sesiones PPPoE y Pool de IPs.
+description: PPPoE sessions' control and IP Pools.
 lang: en-US
 prev: /krill2/radius/
 next: /krill2/radius/ip-pools
@@ -13,27 +13,27 @@ tags:
 ---
 # Radius | Sessions
 
-Vista detallada de todas las sesiones PPPoE de nuestra red. Las sesiones se muestran con los datos necesarios para identificarlas y filtrarlas.
+Detailed view of all the PPPoE sessions of our network. The sessions are shown with the information needed to identify and filter them.
 
-Se proporciona los siguientes campos:
+The following gaps are available:
 
-- ID del CPE
-- Username, con el que se ha marcado la sesión
-- MAC del equipo
-- NAS del que proviene
-- IP concedida a la sesión
-- Tiempo que lleva la sesión activa
+- CPE's ID
+- Username, used to identify the session 
+- Device's MAC
+- NAS from where it comes from
+- IP conceded to the session
+- Time passed since the session is active.
 
 ![Radius Sessions](@images/krill2/radius/0101.png)
 
 ::: tip
-Desde este listado se permite terminar la sesión con el bótón de Disconnect Session de forma individual, o seleccionando varias sesiones de forma simultánea.
+From this list the session can be ended with the Disconnect Session button, it can be ended individually or if a lot of sessions are selected they can be ended at the same time.
 :::
 
-Desde la barra superior, se pueden filtrar las sesiones automáticamente de diversas maneras pulsando sobre los menús centrales:
+From the bar on the top, the sessions can be filtered automatically in different ways by clicking on the central menus:
 
-- Sesiones activas
-- Sesiones duplicadas
-- IP duplicada
+- Active Sessions
+- Duplicated Sessions
+- Duplicated IP
 
-El cuadro de búsqueda nos permite buscar sesiones o filtrarlas con cualquier dato de las mismas.
+The search bar allows us to search or filter sessions with any information on them. 
