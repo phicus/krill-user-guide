@@ -1,6 +1,6 @@
 ---
 title: Radius | IP Pools
-description: Control de sesiones PPPoE y Pool de IPs.
+description: PPPoE sessions' control and IP Pools.
 lang: en-US
 prev: /krill2/radius/sessions
 next: null
@@ -13,12 +13,12 @@ tags:
 ---
 # Radius | IP Pools
 
-Vista con las estadísticas y los datos del total de IPs usadas por el servicio Radius. Incluye las IPs privadas, públicas y de NAT.
+This view has the statistics and the number of IPs that are being used by the Radius service. It includes the private, public and NAT IPs.
 
 ![Radius IP Pools](@images/krill2/radius/0201.png)
 
-Muestra información estadística y también por host, IP concedida e IPs libres. Es posible ordenar por los campos de Framed IP, NAS, Username, Expiry Time, DeviceID y Pool Name.
+It shows statistical information and also by host, granted IP and free IPs. It is possible to order the gaps of Framed IP, NAS, Username, Expiry Time, DeviceID y Pool Name.
 
-Muestra una alarma dependiendo del porcentaje de IPs libres por cada Pool.
+It shows an alarm based on the free IPs' percentage for each Pool.
 
 <p align="center"><img src="@images/krill2/radius/0202.png" max-width=30% width=410;></p>
