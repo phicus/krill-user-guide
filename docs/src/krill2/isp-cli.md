@@ -1,6 +1,6 @@
 ---
 title: ISP CLI
-description: Herramienta de gestión y monitorización de equipos vía CLI.
+description: Device's management and monitoring tool through CLI.
 lang: en-US
 prev: null
 next: null
@@ -14,32 +14,32 @@ tags:
 ---
 # ISP CLI
 
-El CLI (Command line interface) o interfaz de línea de comandos permite a los usuarios dar instrucciones a algún programa informático o al sistema operativo por medio de una línea de texto simple.
+The CLI (Command line interface) allows the users to give instructions to some computer program or to the operating system through a line of simple text.
 
-En concreto, el ISP-CLI, que será como llamaremos a nuestro CLI propio de krill, nos permitirá gestionar nuestros diferentes módulos contratados así como realizar consultas y acciones básicas en ellos. Por ejemplo, si tenemos el servicio gpon contratado en nuestro krill, a través de esta herramienta, podremos visualizar las métricas de un pon de una olt o incluso forzar la provisión o reinicio de un cpe concreto.
+Specificaly, the ISP-CLI, that will be the name we are going to give to the Krill's CLI, wil allow us to manage the different modules that we hire as well as asking questions and permform basic actions in them. For example, if we have the gpon service in our Krill, through this tool, we will be able to see the metrics of an OLT's pon or even force the provision or restart of a cpe. 
 
-## Acceso al CLI
+## CLI access
 
-En primer lugar, iniciaremos nuestro terminal y accedemos vía SSH al mismo. Para eso tendremos que introducir la siguiente línea si estamos en Ubuntu o Mac: `ssh ispadmin@XXX.XXX.XXX.XXX -p 4222`.
+First, we will iniciate our terminal and we will access the server through SSH. To do so we will have to enter the following line if we are using Ubuntu or Mac: `ssh ispadmin@XXX.XXX.XXX.XXX -p 4222`.
 
-Donde:
-- `ispadmin` es el usuario de acceso al servidor de krill
-- `XXX.XXX.XXX.XXX` hace referencia a la IP del servidor
-- `-p 4222` al puerto de acceso (comúnmente utizaremos el 4222). En vez de la ip, también podríamos utilizar las dns, xyz.phicus.es, donde xyz, por norma general, son las iniciales que identifican al cliente.
+Where:
+- `ispadmin` Krill server's access user.
+- `XXX.XXX.XXX.XXX` refers to the server's IP.
+- `-p 4222` the access port (we will usually use 4222). Instead of using the IP, we could also use the dns, xyz.phicus.es, where xyz are the letters used to identify the customer.
 
-Una vez realizado esto, deberíamos entrar al panel de gestión ISP-CLI, donde quedará  tal que así:
+Once this is done, we should get into the management panel ISP-CLI, that will look like this:
 
 ```bash
 ispadmin@lab3.phicus.es >
 ```
 
 :::tip
-Si el acceso es desde Windows se deberá utilizar alguna interfaz de acceso como podría ser la famosa consola [PuTTY](https://www.putty.org/)
+If the access is done using Windows, an access interface, like the console PuTTY (https://www.putty.org/), must be used.
 
 <p align="center"><img src="@images/krill2/isp-cli/0001.png" max-width=30% width=466;></p>
 :::
 
-Una vez dentro del servidor con el usuario “ispadmin”, se podrá usar la tecla `tabulador` para observar las diferentes opciones que se disponen, con las que ejecutar diferentes consultas o acciones en nuestro krill:
+Once we are in the server with the user “ispadmin”, the 'tab' key could be used to look at the different options available, with which different requests or actions could be executed in our Krill:
 
 ```bash
 ispadmin@lab3.phicus.es > 
@@ -48,11 +48,11 @@ dhcp         ghn          radius       tr069        wimax
 exit         gpon         ssh          traceroute
 ```
 
-## Herramientas de Core
+## Core Tools
 
 ### `core devices print`
 
-Permite sacar un listado de todos los equipos de core que nos responden via SNMP para ver el estado de sus interfaces, etiquetas, etc.
+It allows us to get a list of all the core devices that are responding through SNMP to see the condition of its interfaces, tags, etc.
 
 ```bash
 ispadmin@lab3.phicus.es > core devices print
@@ -132,7 +132,7 @@ loc:HQs mdl:CCR1036 dscr:RouterOS RB1200
 
 ### `core devices [HOST_NAME] print`
 
-Permite ver la información de las interfaces de un equipo en concreto
+It allows us to see the information of a certain device's interfaces.
 
 ```bash
 ispadmin@lab3.phicus.es > core device MK-ROUTER-LAB print
@@ -173,7 +173,7 @@ loc:HQs mdl:CCR1036 dscr:RouterOS RB1200
 
 ### `core ptps print`
 
-Permite listar la información de todos los pts, señal, frecuencia, etc.
+It allows us to list the information of all the ptps, signal, frequency, etc.
 
 ```bash
 ispadmin@lab3.phicus.es > core ptps print
@@ -184,7 +184,7 @@ ispadmin@lab3.phicus.es > core ptps print
 
 ### `core ptp [HOST_NAME] print`
 
-Permite ver las IPs, señales, frecuencias, modelo del ptp en cuestión.
+It allows us to see the IPs, signal, frequencies of a certain ptp model.
 
 ```bash
 ispadmin@lab3.phicus.es > core ptp Alcazares-MarDeCristal print
@@ -236,7 +236,7 @@ message          : dncapacity=0Mbps below min(1Mbps) dnmse=0.0 above max(-1) dnr
 
 ### `core location [location] print`
 
-Permite ver los diferentes equipos de core según localización.
+It allows us to see the different core devices in a certain location.
 
 ```bash
 ispadmin@lab3.phicus.es > core location OLOT print
@@ -289,11 +289,11 @@ loc:OLOT mdl:RB1100 dscr:RouterOS RB1100x4
  *  39  l2vlan         vlan-555--GESTIO                down  down    0     0.0     0.0       0.00     0.00     0.00     0.00
 ```
 
-## Herramientas de DHCP
+## DHCP Tools
 
 ### `dhcp leases print subnet [subnet]`
 
-Muestra todas las IP's libre `F` y concedidas `.` de un rango del DHCP.
+It shows all the free IPs 'F' and the ones that are conceded '.' from a DHCP range.
 
 ```bash
 ispadmin@lab3.phicus.es > dhcp leases print subnet tr069(10.42.0.0/20)
@@ -309,11 +309,11 @@ F      10.42.0.21 30:e9:8e:cb:0e:ed                -                -           
 .      10.42.0.22 f4:1d:6b:de:3d:da                -                -        EG8145V5 221221-133102 221228-133102
 ```
 
-## Herramienta FAIL2BAN
+## FAIL2BAN Tool
 
 ### `fail2ban asterisk show banned`
 
-Muestra las IPs baneadas en el servidor de asterisk.
+Shows all the IPs that are banned from the asterisk server.
 
 ```bash
 ispadmin@lab3.phicus.es > fail2ban asterisk show banned
@@ -321,17 +321,17 @@ ispadmin@lab3.phicus.es > fail2ban asterisk show banned
 
 ### `fail2ban asterisk unban [IP]`
 
-Permite desbanear IPs en el servidor de asterisk.
+Allows us to unban IPs from the asterisk server.
 
 ```bash
 ispadmin@lab3.phicus.es > fail2ban asterisk unban 10.10.20.2
 ```
 
-## Herramientas para GHN
+## GHN Tools
 
 ### `ghn cpes status gam [HOST_NAME]`
 
-Permite visualizar la señal y estado de todos los CPES de la tecnología GHN.
+It allows us to see the signal and condition of all the CPEs that use the GHN technology.
 
 ```bash
 ispadmin@lab3.phicus.es > ghn cpes status gam gamEdif24B
@@ -349,11 +349,11 @@ port cpeid               mac        state                    uptime         cabl
    1    10      02010ac1dede       online                    705291               51 703146 705369     0.0     0.0    0.00    0.00     0.0     0.0 0.00000 0.00000
 ```
 
-## Herramientas para GPON
+## GPON Tools
 
 ### `gpon olt [OLT_ID] provision`
 
-Permite lanzar un ciclo de provisión de la OLT seleccionada.
+It allows us to start a provision cycle for the selected OLT.
 
 ```bash
 ispadmin@lab3.phicus.es > gpon olt oltHuawei provision
@@ -373,7 +373,7 @@ ispadmin@lab3.phicus.es > gpon olt oltHuawei provision
 
 ### `gpon olt [OLT_ID] snapshot`
 
-Se utiliza cuando hay un cambio en la configuración estática de la OLT, y se necesita que KRILL sea conocedor de esos cambios, como por ejemplo: traffic table, traffic profile, etc.
+It is used when there's a change in the OLT static configuration, Krill must know those changes, for example: traffic table, traffic profile, etc.
 
 ```bash
 ispadmin@lab3.phicus.es > gpon olt oltHuawei snapshot
@@ -388,7 +388,7 @@ ispadmin@lab3.phicus.es > gpon olt oltHuawei snapshot
 
 ### `gpon olt [OLT_ID] snapshot-full`
 
-Se utiliza cuando se realiza un cambio a nivel de configuración de ONTs y es necesiario que KRILL reconozca dicha informacion. También es recomendable cuando se añaden ONTs a mano en la OLT y así poder tener actualizados todos los ID de esa OLT.
+It is used when a change in the ONT's configuration is made and Krill must know those changes. It is also a good practice to use it when we add ONTs manually in the OLT so we can have all the IDs from that OLT updated.
 
 ```bash
 ispadmin@lab3.phicus.es > gpon olt oltHuawei snapshot-full
@@ -418,7 +418,7 @@ ispadmin@lab3.phicus.es > gpon olt oltHuawei snapshot-full
 
 ### `gpon onu by-sn [SERIAL_NUMBER]`
 
-Ver estado de una ont por su número de serie.
+It allows us to see the condition of an ONT by its serial number.
 
 ```bash
 ispadmin@lab3.phicus.es > gpon onu by-sn 444632326a183197
@@ -469,56 +469,56 @@ last registration info:
 ```
 
 ::: tip
-Se puede realizar este mismo comando especificando otros criterios de selección:
+This command can be used specifying other selection parameters:
 - ID del CPE: `gpon onu id 0267`
 - CPE_NAME: `gpon onu cpe cpe0267`
 :::
 
 ### `gpon onu do factory-reset by-sn [SERIAL_NUMBER]`
 
-Permite realizar un factory-reset de la ont via cli, a través de su serial number.
+It allows us to do a factory-reset of the ont through the cli, using the serial number.
 
 ```bash
 ispadmin@lab3.phicus.es > gpon onu do factory-reset by-sn 444632326a183197
 ```
 
 ::: tip
-Se puede realizar este mismo comando especificando otros criterios de selección:
+The same command can be used specifying other selection parameters:
 - ID del CPE: `gpon onu do factory-reset id 0267`
 - CPE_NAME: `gpon onu do factory-reset cpe cpe0267`
 :::
 
 ### `gpon onu do reboot by-sn [SERIAL_NUMBER]`
 
-Permite realizar un reboot de la ont por su número de serie.
+It allows us to reboot the ont using it serial number.
 
 ```bash
 ispadmin@lab3.phicus.es > gpon onu do reboot by-sn 444632326a183197
 ```
 
 ::: tip
-Se puede realizar este mismo comando especificando otros criterios de selección:
+The same command can be used specifying other selection parameters:
 - ID del CPE: `gpon onu do reboot id 0267`
 - CPE_NAME: `gpon onu do reboot cpe cpe0267`
 :::
 
 ### `gpon onu do reboot by-sn [SERIAL_NUMBER]`
 
-Permite desprovisionar una ont por número de serie.
+It allows us to unprovision the ONT using its serial number.
 
 ```bash
 ispadmin@lab3.phicus.es > gpon onu do unprovision by-sn 444632326a183197
 ```
 
 ::: tip
-Se puede realizar este mismo comando especificando otros criterios de selección:
+The same command can be used specifying other selection parameters:
 - ID del CPE: `gpon onu do unprovision id 0267`
 - CPE_NAME: `gpon onu do unprovision cpe cpe0267`
 :::
 
 ### `gpon onus  bandwidth olt [OLT_ID]`
 
-Permite visualizar el ancho de banda de cada ont.
+It allows us to see the bandwith for each ONT.
 
 ```bash
 ispadmin@lab3.phicus.es > gpon onus bandwidth olt oltHuawei
@@ -533,7 +533,7 @@ f/ s/ p:id           desc         type                 sn             status   d
 
 ### `gpon onus  bandwidth olt [OLT_ID] pon [FRAME] [SLOT] [PORT]`
 
-Permite visualizar el ancho de banda de cada ONT de un pon específico.
+It allows us to see the bandwith for each ONT of an specific PON.
 
 ```bash
 ispadmin@lab3.phicus.es > gpon onus bandwidth olt oltHuawei pon 0 5 2
@@ -546,7 +546,7 @@ f/ s/ p:id           desc         type                 sn             status   d
 
 ### `gpon onus provisioned mismatchs olt [OLT_ID]`
 
-Muestra ONTs que fueron provisionadas, pero tiene un desajuste en la provisión.
+Shows ONTs that have been provisioned but have some parameter that is not correct in the provision.
 
 ```bash
 ispadmin@lab3.phicus.es > gpon onu provisioned mismatchs olt oltHuawei
@@ -559,7 +559,7 @@ OLT: oltHuawei (4 ONUs)
 
 ### `gpon onus provisioned olt [OLT_ID]`
 
-Muestra las onts provisionadas en una olt específica.
+Shows the provisioned ONTs in an specific OLT.
 
 ```bash
 ispadmin@lab3.phicus.es > gpon onus provisioned olt oltHuawei
@@ -572,7 +572,7 @@ OLT: oltHuawei (4 ONUs)
 
 ### `gpon onus report olt [OLT_ID]`
 
-Genera un informe de las ONTs conectadas a la OLT.
+It creates a report of all the ONTs connected to the OLT.
 
 ```bash
 ispadmin@lab3.phicus.es > gpon onus report olt oltHuawei
@@ -587,7 +587,7 @@ f/ s/ p:id           desc         type                 sn             status
 
 ### `gpon onus report olt [OLT_ID] pon [FRAME] [SLOT] [PORT]`
 
-Muestra un informe de las ONTs conectadas a un PON determinado.
+It shows a report of the ONTs connected to a certain PON.
 
 ```bash
 ispadmin@lab3.phicus.es > gpon onus report olt oltHuawei pon 0 5 2 
@@ -600,7 +600,7 @@ f/ s/ p:id           desc         type                 sn             status
 
 ### `gpon onus status olt [OLT_ID]`
 
-Muestra el estado de las ONTs conectadas a una OLT.
+It shows the condition of the ONTs connected to an OLT.
 
 ```bash
 ispadmin@lab3.phicus.es > gpon onus status olt oltHuawei
@@ -615,7 +615,7 @@ f/ s/ p:id           desc         type                 sn             status
 
 ### `gpon onus status olt [OLT_ID] pon [FRAME] [SLOT] [PORT]`
 
-Muestra el estado de las ONTs de un PON específico.
+It shows the condition of the ONTs connected to a certain PON.
 
 ```bash
 ispadmin@lab3.phicus.es > gpon onus status olt oltHuawei pon 0 5 2
@@ -628,7 +628,7 @@ f/ s/ p:id           desc         type                 sn             status
 
 ### `gpon onus txrx olt [OLT_ID]`
 
-Muestra la potencia Tx/Rx de las ONTs de una OLT determinada.
+It shows the ONTs' power Tx/Rx of a certain OLT.
 
 ```bash
 ispadmin@lab3.phicus.es > gpon onus txrx olt oltHuawei
@@ -643,7 +643,7 @@ f/ s/ p:id           desc         type                 sn             status    
 
 ### `gpon onus txrx olt [OLT_ID] pon [FRAME] [SLOT] [PORT]`
 
-Muestra la potencia Tx/Rx de las ONTs de una OLT en un PON determinado.
+It shows the ONTs' power Tx/Rx of an OLT in a certain PON.
 
 ```bash
 ispadmin@lab3.phicus.es > gpon onus txrx olt oltHuawei pon 0 5 2
@@ -656,7 +656,7 @@ f/ s/ p:id           desc         type                 sn             status    
 
 ### `gpon onu unconfigured` (A deprecar)
 
-Muestra las ONTs pendientes de configurar.
+It shows the pending configuration ONTs.
 
 ```bash
 ispadmin@lab3.phicus.es > gpon onu unconfigured
@@ -672,7 +672,7 @@ WARNING: Command are deprecated. Please use 'gpon provision pending' instead
 
 ### `gpon provision pending`
 
-Muestra las ONTs pendientes de provisión.
+It shows the pending provision ONTs.
 
 ```bash
 ispadmin@lab3.phicus.es > gpon provision pending
@@ -687,7 +687,7 @@ ispadmin@lab3.phicus.es > gpon provision pending
 
 ### `gpon provision pending olt [OLT_ID]`
 
-Muestra las ONTs pendientes de provisión en una OLT específica.
+It shows the pending provision ONTs in a certain OLT.
 
 ```bash
 ispadmin@lab3.phicus.es > gpon provision pending olt oltHuawei
@@ -700,17 +700,17 @@ ispadmin@lab3.phicus.es > gpon provision pending olt oltHuawei
 +-----------+-------+------------------+----------+----------------------------+
 ```
 
-## Herramientas para TR069
+## TR069 Tools
 
 ### `tr069 reconfig [CPE_ID]`
 
-Lanzar sesión Tr069 a una ONT.
+Start a TR069 session for an ONT.
 
 ```bash
 ispadmin@lab3.phicus.es > tr069 reconfig cpe0273
 ```
 
-## Herramientas para WiMAX
+## WiMAX Tools
 
 ### `wimax ap [AP_ID]`
 
@@ -759,7 +759,7 @@ BW downlink 700.8M uplink 297.1M total 997.9M (own    0.0+   0.0=   0.0)
 
 ### `wimax aps stats print`
 
-Muestra el estado de los APs de la red.
+Shows the condition of the network's APs. 
 
 ```bash
 ispadmin@lab3.phicus.es > wimax aps stats print
@@ -771,7 +771,7 @@ FAIL:
 
 ### `wimax update host [AP_ID]`
 
-Actualiza la versión de `firmware` de la Antena por el nombre del equipo.
+Updates the `firmware` version of the Antenna using the device name.
 
 ```bash
 ispadmin@lab3.phicus.es > wimax update host AP-LAB-01
@@ -779,7 +779,7 @@ ispadmin@lab3.phicus.es > wimax update host AP-LAB-01
 
 ### `wimax update ip [X.X.X.X]`
 
-Actualiza la versión de `firmware` de la Antena por la IP del equipo.
+Updates the `firmware` version of the Antenna using the device IP.
 
 ```bash
 ispadmin@lab3.phicus.es > wimax update ip x.x.x.x
@@ -787,17 +787,17 @@ ispadmin@lab3.phicus.es > wimax update ip x.x.x.x
 
 ### `wimax update range [X.X.X.X/25]`
 
-Actualiza la versión de “firmware” de la Antena de un rango de IPs en concreto.
+Updates the `firmware` version of the Antenna using a certain IP range.
 
 ```bash
 ispadmin@lab3.phicus.es > wimax update range x.x.x.x/25
 ```
 
-## Herramientas para Radius
+## Radius Tools
 
 ### `radius sessions print`
 
-Permite visualizar todas las sesiones pppoe activas.
+It allows us to see al the active pppoe sessions.
 
 ```bash
 ispadmin@lab3.phicus.es > radius sessions print
@@ -809,7 +809,7 @@ CPE      Username                         Station ID        IP Address
 ```
 
 ::: tip
-Si se quieren filtrar las sesiones pppoe, se pueden encadenar comandos usando:
+If we eant to filter the pppoe sessions, the commands can be linked using:
 ```bash
 ispadmin@lab3.phicus.es > radius sessions print | include dosmarestracer
 dosmarestracer                   b4-75-0e-98-ce-d0  31.222.116.198
@@ -818,17 +818,17 @@ dosmarestracer                   b4-75-0e-98-ce-d0  31.222.116.198
 
 ### `radius deauth [PPPOE_USERNAME]`
 
-Permite tirar una sesión PPPoE.
+It allows us to end a PPPoE session.
 
 ```bash
 ispadmin@lab3.phicus.es > radius deauth F741
 ```
 
-## Herramientas para TV
+## TV Tools
 
 ### `tv edfa [EDFA_ID] info`
 
-Muestra la información de los equipos de TV (Edfa).
+Shows the TV devices' (Edfa) information.
 
 ```bash
 ispadmin@lab3.phicus.es > tv edfa TEST-STEVE info
@@ -881,7 +881,7 @@ Laser Temp (Enabled)
 
 ### `tv edfa [EDFA_ID] reboot`
 
-Reinicia el equipo de TV (Edfa).
+Restarts the TV device (Edfa).
 
 ```bash
 ispadmin@lab3.phicus.es > tv edfa TEST-STEVE reboot
@@ -889,7 +889,7 @@ ispadmin@lab3.phicus.es > tv edfa TEST-STEVE reboot
 
 ### `tv edfa [EDFA_ID] set input [HI|HIHI|LO|LOLO]`
 
-Permite cambiar los valores de alarma de la potencia de entrada (en dBm).
+It allows us to change the alarm values for the incoming power (using dBm).
 
 ```bash
 ispadmin@lab3.phicus.es > tv edfa TEST-STEVE set input HI 9
@@ -897,7 +897,7 @@ ispadmin@lab3.phicus.es > tv edfa TEST-STEVE set input HI 9
 
 ### `tv edfa [EDFA_ID] set output [HI|HIHI|LO|LOLO]`
 
-Permite cambiar los valores de alarma de la salida principal (en dBm).
+It allows us to change the alarm values for the main output source (using dBm).
 
 ```bash
 ispadmin@lab3.phicus.es > tv edfa TEST-STEVE set output HIHI 60
@@ -905,7 +905,7 @@ ispadmin@lab3.phicus.es > tv edfa TEST-STEVE set output HIHI 60
 
 ### `tv edfa [EDFA_ID] set power [HI|HIHI|LO|LOLO]`
 
-Permite cambiar los valores de potencia de cualquier salida (en dBm).
+It allows us to change the alarm values for any output source (using dBm).
 
 ```bash
 ispadmin@lab3.phicus.es > tv edfa TEST-STEVE set power LOLO 0
@@ -913,7 +913,7 @@ ispadmin@lab3.phicus.es > tv edfa TEST-STEVE set power LOLO 0
 
 ### `tv edfa [EDFA_ID] set laser-temp [HI|HIHI|LO|LOLO]`
 
-Permite cambiar los valores de alarma de la temperatura del láser (en ºC).
+It allows us to change the alarm value for the laser temperature (using ºC).
 
 ```bash
 ispadmin@lab3.phicus.es > tv edfa TEST-STEVE set laser-temp LO 0
@@ -921,17 +921,17 @@ ispadmin@lab3.phicus.es > tv edfa TEST-STEVE set laser-temp LO 0
 
 ### `tv edfa [EDFA_ID] set unit-temp [HI|HIHI|LO|LOLO]`
 
-Permite cambiar los valores de alarma de la temperatura del equipo (en ºC).
+It allows us to change the alarm values for the device temperature (using ºC).
 
 ```bash
 ispadmin@lab3.phicus.es > tv edfa TEST-STEVE set unit-temp HI 40
 ```
 
-## Otros comandos
+## Other commands
 
 ### `ssh [HOST_NAME]`
 
-Permite una conexión ssh con el nombre del equipo.
+It allows a ssh connection with the device's name.
 
 ```bash
 ispadmin@lab3.phicus.es > ssh SW-EDGE-LAB
@@ -940,7 +940,7 @@ ispadmin@sw-edge-lab's password:
 
 ### `ssh [IP]`
 
-Permite una conexión ssh con la IP del equipo.
+It allows a ssh connection with the device's IP.
 
 ```bash
 ispadmin@lab3.phicus.es > ssh 172.16.142.10
@@ -949,7 +949,7 @@ ispadmin@172.16.142.10's password:
 
 ### `ping [IP]`
 
-Permite comprobar la conectividad con un equipo de la red.
+It allows us to check the connectivity with a network's device.
 
 ```bash
 ispadmin@lab3.phicus.es > ping 172.16.142.10
@@ -966,7 +966,7 @@ rtt min/avg/max/mdev = 26.576/26.673/26.750/0.070 ms
 
 ### `traceroute [IP]`
 
-Permite visualizar la ruta de los paquetes desde el host origen hasta el de destino.
+It allows us to see the path of the packets from the origin host to the destination host.
 
 ```bash
 ispadmin@lab3.phicus.es > traceroute 172.16.142.10
@@ -977,7 +977,7 @@ traceroute to 172.16.142.10 (172.16.142.10), 30 hops max, 60 byte packets
 
 ### `telnet [IP]`
 
-Permite una conexión a un equipo mediante el protocolo telnet.
+It allows the connection to a device using the telnet protocol.
 
 ```bash
 ispadmin@lab3.phicus.es > telnet 172.16.142.11
@@ -990,7 +990,7 @@ Escape character is '^]'.
 
 ### `exit`
 
-Para finalizar la sesión de la herramienta ISP-CLI del servidor de Krill.
+Used to end the ISP-CLI tool session of the Krill's server. 
 
 ```bash
 ispadmin@lab3.phicus.es > exit
