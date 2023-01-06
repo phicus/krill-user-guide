@@ -1,5 +1,5 @@
 ---
-title: Usuarios
+title: Users
 description: Krill's temporary module used to manage the users and their permissions, among other things.
 lang: en-US
 prev: login
@@ -10,7 +10,7 @@ tags:
 - users
 - permissions
 ---
-# Usuarios
+# Users
 
 Krill's *temporary* module used to manage the users and their permissions, among other things.
 
