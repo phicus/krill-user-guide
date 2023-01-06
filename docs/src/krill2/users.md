@@ -1,6 +1,6 @@
 ---
 title: Usuarios
-description: Módulo temporal de Krill para manejar los usuarios y sus permisos, entre otras cosas.
+description: Krill's temporary module used to manage the users and their permissions, among other things.
 lang: en-US
 prev: login
 next: dashboard
@@ -12,12 +12,12 @@ tags:
 ---
 # Usuarios
 
-Módulo *temporal* de Krill para manejar los usuarios y sus permisos, entre otras cosas.
+Krill's *temporary* module used to manage the users and their permissions, among other things.
 
-Funciona como Kiwi en la versión anterior de Krill, pero no se usa para la gestión de altas y bajas de CPEs o clientes, tan solo para los usuarios.
+It works like Kiwi in Krill's older verion, but it is not used to manage the registration or deregistration of the CPEs or customers, it's only used for users. 
 
 <p align="center"><img src="@images/krill2/main/0101.png" max-width=30% width=70%;></p>
 
 ::: tip
-Próximamente será sustituido por un módulo, integrado en Krill 2, que permitirá la gestión completa de usuarios, grupos de permisos, permisos, etc.
+It will be replaced soon with a module, that will be integrated in Krill 2, that will allow a complete management of the users, permission's groups, permissions, etc. 
 :::
