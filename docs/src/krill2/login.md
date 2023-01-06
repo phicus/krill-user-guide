@@ -1,6 +1,6 @@
 ---
-title: Acceso
-description: La vista inicial de Krill que sirve como página de acceso.
+title: Access
+description: Krill's main view that can be used as the access page.
 lang: en-US
 prev: null
 next: users
@@ -9,25 +9,24 @@ tags:
 - login
 - oauth
 ---
-# Acceso
+# Access
 
-La vista inicial de Krill que sirve como página de acceso.
+Krill's main view that can be used as the access page.
 
-La interfaz web de ***Krill2*** (KrillUI) hace uso del protocolo HTTPS y se accede mediante el siguiente enlace:
+The **Krill2's** web interface (KrillUI) uses the HTTPS protocol and it it accesed through the following link:
 - [https://XXX.phicus.es/login](https://XXX.phicus.es/login)
 
-Donde **XXX** representa las 3 siglas del operador asignadas por el equipo de Phicus.
+Where **XXX** represents the operator's 3 letters acronym given by the Phicus team.
 
-Para cada cliente será necesario un usuario y contraseña.
+For each customer a user and password will be needed:
 
-- ***Username***: el nombre de usuario.
-- ***Password***: la contraseña de usuario.
+- ***Username***: user's name.
+- ***Password***: user's password.
 
 <p align="center"><img src="@images/krill2/main/0001.png" max-width=30% width=70%;></p>
 
-Abajo a la derecha podemos observar la versión de Krill que estamos usando en el momento.
+On the bottom to the right we can see the version of Krill we are using at the momento.
 
 ::: tip
-En próximas versiones se podrá usar google como método de logueo.
-:::
+In the next versions google is going to be available to be used as a log in method.
 
