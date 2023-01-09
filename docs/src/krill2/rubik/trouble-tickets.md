@@ -1,6 +1,6 @@
 ---
 title: Rubik | Trouble Tickets
-description: Herramienta de gestión de redes mutualizadas con terceros.
+description: Tool for managing networks mutualized with other operators.
 lang: en-US
 prev: /krill2/rubik/services
 next: null
@@ -15,13 +15,13 @@ tags:
 ---
 # Rubik | Trouble Tickets
 
-El sistema de trouble tickets nos permite ponernos en contacto con los owners en relación a los servicios, teniendo la opción de asociar los tickets a servicios específicos o abrirlos generalizados.
+The trouble tickets system allows us to contact the owners about the services, giving also de option to associate the tickets to the specific services or open them in a general way. 
 
-En la vista principal del panel tenemos un resumen de los trouble tickets ordenados por la fecha de la última actualización. 
+In the main view of the panel we have a summary of the trouble ticket ordered by the date of the last update.
 
 ![Rubik Trouble tickets list](@images/krill2/rubik/0201.png)
 
-Se muestran los campos:
+The following fields are shown:
 
 - ID
 - Customer
@@ -34,26 +34,26 @@ Se muestran los campos:
 - Created at
 - Last Update
 
-Podemos filtrar y ordenar los tickets por cualquiera de los campos. Y exportarlos a un archivo.
+We can filter and order the tickets by any of the fields. We can also export them to a file.
 
-## Creación de un Trouble ticket
+## Creation of a Trouble Ticket
 
-Podemos generar un ticket nuevo pulsando en el botón rojo de New Trouble Ticket, aparecerá un Pop-up y tendremos que rellenar la información necesaria.
+We can generate a new ticket by clicking in the red button that says New Trouble Ticket, a Pop-up will show up and we will have to fill the requested information.
 
 ::: tip
-También podemos generar tickets desde la pantalla de alta de servicios o desde la edición de un servicio ya tramitado, quedando este ticket vinculado a él.
+We can also generate tickets from the page where we register new services or from the page where we edit a service that's been already registered, in this case the ticket will be linked to the service.
 :::
 
 ![Rubik Trouble tickets creation](@images/krill2/rubik/0202.png)
 
-Los campos necesarios para crear un ticket nuevo son: 
+The fiels needed to create a new ticket are:
 
-- **Owner**: Dependiendo desde dónde se cree el ticket este campo ya vendrá seleccionado y no se podrá modificar, os e deberá seleccionar a mano
-- **Priority**: Importancia del ticket
-- **Number of customer affected**: Número de clientes afectados por el mismo problema.
-- **Ticket Type**: En función del operador mayorista, este campo pude ser libre o venir detallado con un árbol de tipificaciones.
-- **Symptom**: En función del operador mayorista, este campo pude ser libre o venir detallado con un árbol de síntomas.
-- **Trouble Description**: Descripción del problema.
-- **Comments**: Comentarios adicionales que sean necesarios para la comprensión o entendimiento del problema.
+- **Owner**: Depending on where the ticket was created this field will already be selected and not available for modifications or will be empty and have to be selected manually. 
+- **Priority**: Ticket's importance
+- **Number of customer affected**: Number of customers that are being affected by the same problem. 
+- **Ticket Type**: Depending on the main operator this field can be empty or it can have a typifications' tree.
+- **Symptom**: Depending on the main operator, this field  can be empty or it can have a symptoms' tree.
+- **Trouble Description**: Problem's description.
+- **Comments**: Additional coments that can be useful to understand the problem.
 
-Se tiene la opción de añadir imágenes en Attachments pulsando sobre el botón `+` inferior, pudiendo adjuntar.tantos como sean necesarios.
+The option to add images is available in Attachments clicking on the `+` button that appears in the bottom, as many images as needed can be added. 
