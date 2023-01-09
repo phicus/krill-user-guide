@@ -1,6 +1,6 @@
 ---
 title: Rubik
-description: Herramienta de gestión de redes mutualizadas con terceros.
+description: Tool for managing networks mutualized with other operators.
 lang: en-US
 prev: null
 next: /krill2/rubik/services
@@ -13,22 +13,22 @@ tags:
 ---
 # Rubik
 
-Módulo en el que se gestiona todo lo relacionado con Bitstream en Krill.
+Module in which everything related with Bitstream is managed in Krill.
 
-Consta de dos submenús: 
-- [Services](/krill2/rubik/services): Servicios tramitados con los operadores mayoristas.
-- [Trouble Tickets](/krill2/rubik/trouble-tickets): Gestión de incidencias para aquellos mayoristas que lo permitan.
+It has two submenus: 
+- [Services](/krill2/rubik/services): Services that involve the main operator.
+- [Trouble Tickets](/krill2/rubik/trouble-tickets): Management of incidents for those main operators that allow it.
 
-En la pantalla principal hay un resumen de los últimos servicios y trouble tickets generados. Ambos apartados permiten ordenar y filtrar por los diferentes encabezados. También está disponible la herramienta para filtrar por owner y por state del servicio y ticket.
+In the main page there's a summary of the last generated services and trouble tickets. Both of them can be ordered and filtered by the different headers. There's also available a tool to filter by owner and service or ticket condition. 
 
-Los campos de servicio son: ID, Customer, Service Profile, Owner, State, Planned Installation, Created at y Last Update.
+The service fields are: ID, Customer, Service Profile, Owner, State, Planned Installation, Created at y Last Update.
 
 ![ISP Customer Dashboard](@images/krill2/rubik/0001.png)
 
-Los campos de trouble ticket son: ID, Customer, Address, Owner, State, Priority, Symptom, Created at y Last Update.
+The trouble tickets fields are: ID, Customer, Address, Owner, State, Priority, Symptom, Created at y Last Update.
 
 ![ISP Customer Dashboard](@images/krill2/rubik/0002.png)
 
 ::: tip
-Desde la barra superior de cada caja resumen se puede crear un nuevo servicio o un trouble ticket pinchando en los respectivos botones.
+From the bar on the top of each summary box a new service or trouble ticket can be created by clicking on the right button.
 :::
