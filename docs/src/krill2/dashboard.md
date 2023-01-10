@@ -1,44 +1,44 @@
 ---
 title: Panel de mandos
-description: Vista inicial de Krill.
+description: Krill's main view.
 lang: en-US
 prev: users
 next: null
 tags:
 - krill2
 - dashboard
-- meta-buscador
+- main search engine
 - widgets
-- menú de usuario
-- usuario
+- user's menu
+- user
 - logout
 ---
-# Panel de mandos
+# Control Panel
 
-Cuando se loguea el usuario por primera vez en la interfaz web se muestra una ventana como la siguiente:
+When the user logs in for the first time in the interface a window like the following is shown:
 
 ![Dashboard](@images/krill2/main/0200.png)
 
-Aquí también podremos encontrar una serie de elementos que nos acompañarán en el resto de páginas de Krill2
+Here we can also find some elements that will appear in the rest of Krill2's pages.
 
-- [Barra de Herramientas y búsqueda local](#barra-de-herramientas-y-busqueda-local)
-- [Menú de usuario](#menu-de-usuario)
-- [Menú Lateral y Meta buscador](#menu-lateral-y-meta-buscador)
+- [Tool's bar and local search](#tools-bar-and-local-search)
+- [user's menu](#users-menu)
+- [Lateral menu and main search engine](#lateral-menu-and-main-search-engine)
 
 ## Dashboards
 
-La página de inicio de KrillUI se puede personalizar con varios Widgets, que le permitirán visualizar el estado general de la red, las incidencias más críticas de hosts y servicios, el estado de salud del sistema de monitorización, etc.
+KrillUI's main page can be customized with different Widgets, they will allow to see the network's general condition, the hosts and services' more critical incidents, the monitorization sistem's health condition, etc.
 
-Podemos tener tantos dashboards como queramos, permitiendo añadir a cada uno diversos widgets para poder tenerlos organizados.
+We can have as many dashboards as we like, and each of them can have different widgets to have them in order.
 
 Para poder crear nuevos dashboards, pulsaremos sobre el icono de los 3 puntos que aparece en la esquina superior derecha, y pulsando sobre `editar dashboard` se nos habilitará la opción de poder ***Crear un dashboard***, ***Renombrar el dashboard***, o ***Eliminar el dashboard***.
 
 ## Widgets
 
-El primer widget que se carga al inicio es el de bienvenida, que ofrece al usuario una pequeña guía de uso de KrillUI.
+The first widget that is shown is the welcome one, it offers the user a little KrillUI's use guide.
 
 ::: tip
-Posteriormente se incorporarán nuevos Widgets que permitirán dotar de mayor funcionalidad a esta pantalla.
+Then more widgets can be added to give the screen more functions.
 :::
 
 Para añadir un widget, una vez que estamos en modo edición del dashboard, lo podemos hacer desde el botón inferior derecho de la pantalla, pulsado sobre el que nos interese. El widget se agregará al primer espacio libre que detecte en la pantalla.
@@ -53,64 +53,64 @@ Tras terminar el "tutorial" y añadir widgets encontramos el dashboard con los w
 
 Algunos widgets son:
 
-- **Resumen de la red**: Gráfica sectorial y coloreada que brinda información actualizada del estado la red en cuánto a Host y Servicios diferenciando sus estados.
-- **Problemas de hosts**: Lista de problemas con mayor afectación de la red ordenados por criticidad referentes a los Hosts.
-- **Problemas de servicios**: Lista de problemas con mayor afectación de la red ordenados por criticidad referentes a los Servicios.
+- **Resumen de la red**: Colored graph by sectors that gives updated information on the network's condition regarding Hosts and Services and differentiating its conditions.
+- **Hosts' problems**: List of the problems related to hosts that affects the network more ordered by criticality.
+- **Services' problems**: List of the problems related to the kksksects the network more ordered by criticality.
 - **Historial de problemas**: Lista de problemas en las últimas 24 horas registrados por Krill.
 
-## Barra de Herramientas y búsqueda local
+## Tool bar and local search
 
 ![AppBar](@images/krill2/main/0205.png)
 
-Coloreado en verde, aloja al buscador local que funciona para cada módulo. También en la parte derecha tiene un desplegable con las vistas y nos da acceso al menú de usuario.
+In green, it has the local searcher for each module. At the right it also have a dropdown with the views and gives us access to the user's menu.
 
-El buscador, permite realizar búsquedas en la vista local, si ésta lo permite, o en la vista principal del módulo activo de Krill. Por ejemplo, si estamos en la ficha de un CPE, y realizamos una búsqueda, ésta nos mostrará el listado de equipos y servicios que coincidan con los criterios de búsqueda.
+The searcher allows to search in the local view, if it is allowed, or in the main view of the Krill's active module. For example, if we are on a CPE's file, and we make a search, it is going to show us a list of services and devices that match the search criteria.
 
 ::: tip
-En el buscador también tenemos acceso a las búsquedas guardadas como favoritas, a las que podemos ir añadiendo las que nosotros queramos, pulsando sobre el botón de marcador de página que aparece a la derecha de la búsqueda.
+In the searcher we also have access to the saved as favorite searches, we can add as many of them as we like clicking on the bookmark that appears at the right of the search. 
 
-A su vez, nos mostrará las últimas 10 búsquedas realizadas para poder acceder a ellas de una manera más rápida.
+At the same time, it will show us the last 10 searches that have been done so we can access them quicker.
 :::
 
-## Menú de usuario
+## User's menu
 
-Muestra en primer lugar con qué usuario estamos logueados, justo debajo muestra las aplicaciones/módulos de Krill. Dependiendo de los permisos que tenga el usuario logueado verá un módulo u otro, o todos.
+It shows first which user are we logged in with, beneath that it shows the Krill's applications/modules. The modules the user sees are based on the permissions the logged in user has. 
 
 <p align="center"><img src="@images/krill2/main/0206.png" max-width=30% width=200;></p>
 
-En este menú podremos cambiar entre un módulo u otro. Siendo los módulos disponibles a día de hoy los siguientes:
+In this menu we can change between modules. The modules available today are:
 
-- **Monitoring**: [Monitorización de equipos y servicios de la red](/krill2/monitoring/)
-- **Customers/ISP**: [Gestión de clientes y CPEs](/krill2/isp-customer/)
-- **PBX**: [Gestión de PBX](/krill2/pbx/)
-- **Radius/Oratio**: [Control de sesiones PPPoE y Pool de IPs](/krill2/radius/)
-- **Installer tools**: [Herramientas del instalador](/krill2/installer-tools/)
-- **Rubik**: [Herramienta de gestión de redes mutualizadas con terceros](/krill2/rubik/)
+- **Monitoring**: [Monitorization of the network's devices and services](/krill2/monitoring/)
+- **Customers/ISP**: [Cutomers and CPEs' management](/krill2/isp-customer/)
+- **PBX**: [PBX management](/krill2/pbx/)
+- **Radius/Oratio**: [PPPoE session and IPs' pool control](/krill2/radius/)
+- **Installer tools**: [Installer tools](/krill2/installer-tools/)
+- **Rubik**: [Tool for managing networks mutualized with other operators](/krill2/rubik/)
 
-Desde este menú también podemos cambiar el idioma de Krill.
+From this menu we can change Krill's language.
 
-Permite elegir el tiempo de auto-refresco de la web, mutear los sonidos de alerta de Krill o activar/desactiar el modo triage. 
+It allows to choose the web's self-refresh time, mute the Krill's alert sounds or activate/deactivate the triage mode.
 
-Y por último puedes desloguear de tu sesión.
+Here you can also unlog your session.
 
-## Menú Lateral y Meta buscador
+## Lateral menu and main search engine
 
-El menú del panel lateral incluye una serie de accesos directos a vistas o fichas de interés.
+The lateral panel's menu includes shortcuts to view or files of interest.
 
-En primer lugar, en la parte más alta está el Metabuscador.
+In the first place, at the top is the main search engine.
 
 <p align="center"><img src="@images/krill2/main/0203.png" max-width=30% width=200;></p>
 
-El meta buscador es capaz de relacionar servicios y hosts en la misma búsqueda, haciendo posible encontrar un CPE buscando cualquier cosa relacionada con él ya sea un dato administrativo o técnico.
+The main search engine can link services and hosts in the seam search, making it possible to find a CPE by searhing anything related to them, administrative or technical information. 
 
 ::: tip
-Más adelante se irán incorporando nuevas secciones dónde realizar búsquedas que nos permitirán encontrar resultados en cualquiera de los módulos que tengamos acceso.
+New sections are going to be incorporated where searches that allows to find results in any of the modules we have access can be done.
 :::
 
-A continuación los menús que cambian según el módulo que hagamos uso.
+Here are the menus that change according to the module we are using.A continuación los menús que cambian según el módulo que hagamos uso.
 
 <p align="center"><img src="@images/krill2/main/0204.png" max-width=30% width=200;></p>
 
-En el caso del módulo de monitorización, por ejemplo, da un acceso rápido a las alarmas y a los problemas de red, así como los diferentes grupos de hosts.
+In the monitorization module, for example, it gives a shortcut to the alarms and the network's problems, as well as to the different host groups.
 
-También se puede acceder a las Vistas tácticas (Tactical Views) que nos permiten visualizar y organizar la información de diferentes elementos de la red: Matrix, Trivial, ONUs pendientes de provisión, sesiones Radius, etc.
+The Tactical View that allows us to view and organize the information on different network's elements: Matrix, Trivial, pending provition ONUs, sessiones Radius, etc, can also be accessed.
