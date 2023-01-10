@@ -1,6 +1,6 @@
 ---
 title: Rubik | Services
-description: Herramienta de gestión de redes mutualizadas con terceros.
+description: Tool for managing networks mutualized with other operators.
 lang: en-US
 prev: /krill2/rubik/
 next: /krill2/rubik/trouble-tickets
@@ -14,124 +14,123 @@ tags:
 ---
 # Rubik | Services
 
-En esta vista tenemos una lista detallada de los últimos servicios, ordenados por defecto por la última modificación.
-
+In this page we have a detailed list of the last services, ordered by default based on the last modification.
 ![Rubik Services](@images/krill2/rubik/0101.png)
 
-Los campos que se muestran son:
+The fields that are shown are:
 
-- **ID**: ID interno del servicio
-- **Administritave ID**: ID del operador mayorista
-- **Service Profile**: Perfil de servicio
-- **Owner**: Operador mayorista que da soporte al servicio
-- **State**: Estado actual en el que se encuentra
-- **Planned Installation**: Fecha planificada de instalación
-- **Created at**: Fecha de creación
-- **Last Update.**: Fecha de última modificación
+- **ID**: Service's internal ID
+- **Administritave ID**: Main operator's ID
+- **Service Profile**: Service's profile
+- **Owner**: Main operator that gives support to the service
+- **State**: Service's actual condition
+- **Planned Installation**: Installation due date
+- **Created at**: Creation's date
+- **Last Update.**: Last modification's date
 
-Desde la barra superior podemos filtrar por owner y por state. Tenemos la opción de exportar los servicios que seleccionemos a un fichero. 
+From the bar at the top we can filter by owner and by condition. We have the option to export the services we select to a file.
 
-## Creación de un servicio
+## Service's creation
 
-Pulsando sobre el botón `Add new service` podemos crear un nuevo servicio. Para ello será necesario rellenar los datos de la dirección de alta del servicio así como los datos del cliente siguiendo los pasos que el formulario irá presentando. Desde esta pantalla también podemos crear un Trouble Ticket si encontramos algún problema con el proceso de alta.
+Clicking on the `Add new service` button we can create a new service. To do so we have to complete the information about the address where the service is going to be installed as well as the customer information following the steps on the form. From this screen we can also create a Trouble Ticket if we find some problem with the registration process.
 
-El proceso de alta es guiado, siguiendo los pasos de [Get coverage](#get-coverage), [Customer Data](#customer-data) y [Summary](#summary). Una vez cumplimentados los datos se creará el servicio y pasará los diferentes estados que el owner tenga en su procedimiento.
+The registration process is guided, following the steps of [Get coverage](#get-coverage), [Customer Data](#customer-data) and [Summary](#summary). Once the information is entered the service is going to be created and will go through the different process the owner has in its procedure.
 
 ### Get coverage
 
-Debemos rellenar los campos para identificar el lugar físico de la instalación, los datos son ofrecidos por los operadores mayoristas y han de ser coincidencias exactas. 
+We must fill in the fields to identify the physical place of the installation, the information is offered by the main operator and have to be exact coincidences. 
 
 ![Rubik Service creation get coverage](@images/krill2/rubik/0102.png)
 
-Los campos a rellenar son: 
+The fields we must fill in are: 
 
-- **Postal Code**: Código postal
-- **Locality**: Localidad o barrio
-- **City**: Ciudad
-- **State / Province**: Estado o provincia
-- **Street Type**: Tipo de calle
-- **Street Name**: Nombre de la calle
-- **Street Number**: Número de la calle
+- **Postal Code**: Postal code
+- **Locality**: Neighborhood or locality
+- **City**: City
+- **State / Province**: State or province
+- **Street Type**: Type of street
+- **Street Name**: treet's name
+- **Street Number**: Street's number
 
 ::: tip
-Los campos desplegables se completarán con las opciones disponibles según se vayan rellenando los datos, autoseleccionadose los valores cuando solo haya uno disponible.
+The fields that have a dropdown are going to be completed with the available options that appear while the information is filled in, the value is going to self select when only one is available.
 :::
 
-Una vez confirmada la dirección de la instalación, se presentará una selección de `subdirecciones`, es decir, portales, escaleras, pisos y puertas en las que comprobar la cobertura.
+Once the installation address is confirmed, a 'subaddress' selection is going to be shown, like doorway, stairs, floors and doors in which the coverage needs to be tested.
 
-Una vez seleccionados completamente los datos de la dirección, al pulsar sobre la subdirección, se confirmará la cobertura (o no) para la misma.
+Once the address information is completely selected, when cliking on the subaddress, its coverage is going to be confirmed (or not).
 
 ::: tip
-En caso de que no haya cobertura no se podrrá continuar con el proceso, pudiendo si fuera necesario, crear una incidencia.
+When there isn't coverage the process can0t be continued, if necessary a ticket can be created reporting the incident.
 :::
 
 ### Customer data
 
-Si hay cobertura para la dirección seleccionada, se deberá rellenar los datos del cliente a quién se va asociar el servicio.
+If there's coverage for the address selected, the information of the customer to whom the service is going to be linked needs to be filled in.
 
 ![Rubik Service creation customer data](@images/krill2/rubik/0103.png)
 
-Los campos necesarios son: 
-- **Owner**: Operador mayorista (campo de solo lectura).
-- **Service Profile**: Perfil de servicio.
-- **Address UID**: Identificador único de la dirección (campo de solo lectura).
-- **Customer**: Nombre del cliente
-- **External ID**: ID externo del cliente, por ejemplo extraído del CRM.
-- **Phone**: Teléfono de contacto
-- **Comments**: Comentarios opcionales.
-- **Remote ID**: ID remoto para el servicio, en función de las especificaciones del operador mayorista. Puede ser el serial number del equipo o cualquier otro dato.
-- **pPAI**: Punto de interconexión facilitado por el operador mayorista en base a sus especificaciones.
+The following fields are necessary: 
+- **Owner**: Main operator (read only field).
+- **Service Profile**: Service profile.
+- **Address UID**: Unique address identifier (read only field).
+- **Customer**: Customer's name.
+- **External ID**: Customer external ID, for example the one in the CRM. 
+- **Phone**: Contact phone.
+- **Comments**: Optional comments.
+- **Remote ID**: Remote ID for the service, following the specifications from the main operator. It can be the device's serial number or any other information. 
+- **pPAI**: Interconnection point that the main operator gives based on its specifiations.
 
 ### Summary
 
-Resumen de los datos de alta de servicio donde se podrá comprobar que todos los datos introducidos son válidos y realizar el alta del servicio.
+Registration information's summary where the information can be checked and the service can be registered.
 
 
-## Edición de un servicio
+## Service's edition
 
-Una vez terminada el alta del servicio se crea una ficha de servicio.
+Once the registration is done a file for the service is created.
 
-En ella tenemos el estado del servicio y las opciones de comunicación directa y con referencia a este servicio con el owner.
+On the file we have the condition of the service and the direct communication options regarding this service with the owner.
 
 ![Rubik Service edition](@images/krill2/rubik/0104.png)
 
-Los estados por los que puede pasar un servicio son: 
+The conditions a service can go through are:
 
-- **Reserved**: Alta reservada, pendiente de confirmar.
-- **Ordering**: Estado temporal entre la reserva y el proceso de confirmación.
-- **Ordered**: Alta ordenada, pendiente de la instalación.
-- **Completed**: Alta completada, servicio activo.
-- **Canceled**: Servicio cancelado durante el proceso de tramitación.
-- **Down**: Servicio dado de baja una vez completado.
+- **Reserved**: Registration reserved, pending confirmation.
+- **Ordering**: Temporary condition between the reservation and the confirmation process.
+- **Ordered**: Registration ordered, pending installation. 
+- **Completed**: Registration completed, active service.
+- **Canceled**: Cancelled service during the process.
+- **Down**: Service unregistered once it is completed.
 
 ::: tip
-El cambio entre estados solamente permite pasar a los disponibles en cada momento de forma automática. Por ejemplo, no se puede solicitar una baja de un servicio que aun no ha sido completado.
+The change between condition only allows to change the available ones at each time automatically. For example, the unregistration of a service can't be requested if the service has not been completed yet.
 :::
 
-Adicionalmente se nos ofrece el resumen con los datos del servicio en la misma ficha. 
+Furthermore, the summary with the service information is offered in the same file.
 
-Desde esta pantalla también se puede asociar un Trouble ticket pulsando en el botón situado en la barra superior.
+From this screen a Trouble Ticket can also be associated by clicking on the button on the bar at the top.
 
 ### Events history
 
-Desde las pestañas superiores de esta vista podemos acceder al histórico de eventos del servicio, es decir por los diferentes estados por los que ha ido pasando, pudiendo ver los datos devueltos en cada cambio.
+From the tabs at the top in this view we can access the service's events historical register, meaning the differents conditions it went through and the information displayed on every change. 
 
 ![Rubik Service event history](@images/krill2/rubik/0105.png)
 
 ### Trouble Tickets
 
-En las pestañas superiores se muestra un listado con los Trouble tickets vinculados al servicio en curso, pudiendo ver un pequeño resumen del estado actual o bien acceder al detalle completo pulsando sobre ellos.
+In the tabs at the top a list with the Trouble tickets linked to the service is shown with a little summary of the current condition or the option to click on them to access the complete report.
 
 ![Rubik Service trouble tickets](@images/krill2/rubik/0106.png)
 
 ### Test & Diagnostics
 
-Si el operador mayorista lo soporta, el servicio mostrará en la parte superior una pestaña para acceder a los test y diagnósticos del servicio en curso.
+If the main operator allows it, the service is going to shown at the top a tab to access the test and diagnostic of the service.
 
 ![Rubik Service Test and diagnostics](@images/krill2/rubik/0107.png)
 
 ::: tip
-Los **diagnósticos** son pasivos, es decir, simplemente consultan información relacionada con el servicio, como puede ser un test de configuración o la señal óptica.
+The **diagnostics** are passive, meaning they just ask for the information related with the service, like a configuration test or the optical signal.
 
-Las **acciones** se realizan sobre el equipo del cliente y pueden por ejemplo resetear la ONT. Para ello debemos confirmar la acción pulsando sobre el botón correspondiente.
+The **actions** are done on the customer's device and can be, for example, restarting the ONT. In order for it to be executed we must confirm the action by clicking the button.
 :::
