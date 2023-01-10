@@ -190,7 +190,7 @@ In this section the call reception time frames can be created and modified.
 
 ![PBX Recepcionists](/img/krill2/pbx/0412.png)
 
-If, for example, we want to create a special time frame for the holidays, we click on the add time frame button:
+If, for example, we want to create a special schedule for the holidays, we click on the add new schedule button:
 
 <p align="center"><img src="/img/krill2/pbx/0413.png" width="500"></p>
 
