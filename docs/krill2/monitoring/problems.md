@@ -26,4 +26,4 @@ The main search thatis going to appear in the search bar on the top will filter 
 problem:true handled:false hard_state:true business_impact:>=2 type:all
 ```
 
-As it is seen in the Alarms view, at the top we have a selector that allows us to filer between Hosts and Services. And we also have a selector that allows us to change the result grouping rules by: Buisiness Impact, state y host.
+As it is seen in the Alarms view, at the top we have a selector that allows us to filer between Hosts and Services. And we also have a selector that allows us to change the result grouping rules by: Buisiness Impact, condition y host.
