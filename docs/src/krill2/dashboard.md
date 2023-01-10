@@ -1,5 +1,5 @@
 ---
-title: Panel de mandos
+title: COntrol Panel
 description: Krill's main view.
 lang: en-US
 prev: users
@@ -31,7 +31,7 @@ KrillUI's main page can be customized with different Widgets, they will allow to
 
 We can have as many dashboards as we like, and each of them can have different widgets to have them in order.
 
-Para poder crear nuevos dashboards, pulsaremos sobre el icono de los 3 puntos que aparece en la esquina superior derecha, y pulsando sobre `editar dashboard` se nos habilitará la opción de poder ***Crear un dashboard***, ***Renombrar el dashboard***, o ***Eliminar el dashboard***.
+To create new dashboards, we are going to click on the 3 dots icon that appear at the top in the right, pressing on 'edit dashboard' it will allow us to ***Create a dashboard***, ***Rename the dashboard***, or ***Delete the dashboard***.
 
 ## Widgets
 
@@ -41,23 +41,22 @@ The first widget that is shown is the welcome one, it offers the user a little K
 Then more widgets can be added to give the screen more functions.
 :::
 
-Para añadir un widget, una vez que estamos en modo edición del dashboard, lo podemos hacer desde el botón inferior derecho de la pantalla, pulsado sobre el que nos interese. El widget se agregará al primer espacio libre que detecte en la pantalla.
+To add a widget, once we are in the dashboard's edition mode, we can do it from the button at the botton on the right of the page, by clicking the one we are interested in. The widget is going to be added in the first free space that it detects on the screen.
 
-Para mover o cambiar el tamaño de un widget debemos primero hacer clic en el icono del candado que aparece en su encabezado(). Después de esto, se habilitará un botón junto a su título.(), que nos permitirá moverlo, y otro en la esquina inferior derecha para poder redimensionarlo().
+To move or change the size of a widget we must first click on the padlock icon that appears on its header(). After that, a button is going to be available next to its title. (), it will allow us to move it, and other at the right bottom corner will allow us to change its size().
 
-Para eliminar un widget, una vez desbloqueado, debemos hacer clic en el botón de la papelera que aparecerá en el lado derecho del encabezado.
+To delete a widget, once it is unlocked, we should click on the trash can button that appears at the right of the header.
 
-Tras terminar el "tutorial" y añadir widgets encontramos el dashboard con los widgest elegidos o los que hay por defecto.
-
+After finishing the "guide" and adding widgets we find the dashboard with the chosen widgets or the default ones.
 ![Widgets](@images/krill2/main/0202.png)
 
 Algunos widgets son:
 
 - **Resumen de la red**: Colored graph by sectors that gives updated information on the network's condition regarding Hosts and Services and differentiating its conditions.
 - **Hosts' problems**: List of the problems related to hosts that affects the network more ordered by criticality.
-- **Services' problems**: List of the problems related to the kksksects the network more ordered by criticality.
-- **Historial de problemas**: Lista de problemas en las últimas 24 horas registrados por Krill.
-
+- **Services' problems**: List of the problems related to services that affects the network more ordered by criticality.
+- **Historial de problemas**: List of problems registered by Krill in the last 24 hours.
+- 
 ## Tool bar and local search
 
 ![AppBar](@images/krill2/main/0205.png)
