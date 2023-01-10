@@ -1,0 +1,33 @@
+---
+home: true
+heroImage: /img/interface-krill2.png
+heroText: Una guía de usuario para Krill
+tagline: null
+actions:
+- text: Manual de Krill
+  link: /es/krill2/login
+  type: primary
+- text: ISP-CLI
+  link: /es/krill2/isp-cli
+  type: primary
+features:
+- title: "Provisión de servicios de red"
+  details: "Provisión de todos los servicios de red de los clientes (velocidad de acceso, línea telefónica, televisión, etc.), independientemente de su marca."
+- title: "Monitorización en tiempo real"
+  details: "Información en tiempo real de los problemas que se producen en la red: CPEs con malos parámetros de señal, equipos caídos o saturados, enlaces que no dan el caudal esperado, etc."
+- title: "Rápida detección de los problemas de la red"
+  details: "Rápida detección de los problemas de la red, en muchas ocasiones antes incluso de que el cliente final lo perciba. A menudo la advertencia previa permitirá que no se produzca una incidencia futura."
+- title: "Configuración automática"
+  details: "Configuración automática de los equipos de abonado: datos de red, telefonía, SSID y clave WiFi, credenciales de acceso, ALC, actualizaciones automáticas de firmware (tanto para ONUs de FTTH, como para routers de casa del abonado, gateways VoIP vía WiMAX, etc.)."
+- title: "Notificaciones personalizadas"
+  details: "Personalización de las notificaciones de los problemas y restablecimientos de la red. Krill permite: especificar la importancia y prioridad de los diversos avisos para notificar sólo cuando así se le indique."
+- title: "Compatibilidad API"
+  details: "Compatibilidad con CRMs de los proveedores de billing para gestión de clientes vía API, independientemente de la tecnología del abonado."
+- title: "Simplicidad de uso"
+  details: "Unifica herramientas bajo un mismo entorno. Gestiona y monitoriza todas las tecnologías de acceso y al estar integrado con el CRM del operador, permite controlar la red a través de la misma interfaz."
+- title: "Distintos perfiles de acceso"
+  details: "Esto permite que cada usuario del sistema cuente con la información necesaria para hacer su trabajo, haciendo que reciba la información de manera selectiva."
+- title: "Alarmas en el móvil"
+  details: "El diseño responsive del software permite tener acceso desde cualquier dispositivo, incluso desde el móvil, a todas sus prestaciones."
+footer: Copyright @ 2023 Phicus
+---

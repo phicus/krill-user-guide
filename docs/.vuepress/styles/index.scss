@@ -1,0 +1,11 @@
+:root {
+  scroll-behavior: smooth;
+  --c-brand: #008f7d;
+  --c-brand-light: #008f7d;
+}
+
+html.dark {
+  // brand colors
+  --c-brand: #008f7d;
+  --c-brand-light: #008f7d;
+}
