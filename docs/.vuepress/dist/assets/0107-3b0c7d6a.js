@@ -1,0 +1,1 @@
+const i="/guide/img/krill2/rubik/0101.png",r="/guide/img/krill2/rubik/0102.png",g="/guide/img/krill2/rubik/0103.png",s="/guide/img/krill2/rubik/0104.png",o="/guide/img/krill2/rubik/0105.png",p="/guide/img/krill2/rubik/0106.png",t="/guide/img/krill2/rubik/0107.png";export{i as _,r as a,g as b,s as c,o as d,p as e,t as f};
