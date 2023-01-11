@@ -13,4 +13,6 @@ else
 
     echo "Pushing to origin..."
     git push >/dev/null
+
+    echo "Done!"
 fi
