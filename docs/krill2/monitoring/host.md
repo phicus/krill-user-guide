@@ -46,6 +46,55 @@ The file has different parts or modules. Each file will show the information nee
 
 It's the main module and the first one on the file for the CPEs, here we have the historical register and the timeline for the host's services. On the top we also have a summary with the technical information, and the information regarding the registration, DHCP and telephony.
 
+### Main info
+
+The host can contain technical and registration data, IPs or Phone info. All of this is grouped in few boxes that organizes all of them.  
+
+### Services Timeline
+
+Every CPE Host can contain different services that includes the last output and their metrics (when available), all are rendered in a timeline with the history of every one and adds the most important info (like IPs or provision events). 
+
+There is a common service list grouped by technology:
+
+**GPON**:
+* **dhcp**: Return IP info (only if IP is provided internally by Phicus DHCP Server)
+* **pppoe/ipoe**: Retrieve the Radius accounting session (only if IP session is provided internally by Phicus Radius Server)
+* **provision**: Return registration info (only if provision is realized by Krill)
+* **qos**: Obtain the Quality of service, snr (signal noise ratio) and another parameters (only if Krill monitorizes the CPE QoS)
+* **tr069**: Return ACS sessions info (only if CPE implements TR069 protocol)
+* **txrx**: Get the transmission and receive signal parameters 
+* **voice[X]**: Related to PBX registration (only if CPE has Voice support, and [X] is related to POTS port number)
+
+**DOCSIS**:
+* **docsis**: Get downstream/upstream invalids channels.
+* **dhcp**: Return IP info (only if IP is provided internally by Phicus DHCP Server)
+* **downstream**: Get the down signal levels
+* **provision**: Return registration info (only if provision is realized by Krill)
+* **qos**: Obtain the Quality of service, noise, signal quality and another parameters (only if Krill monitorizes the CPE QoS)
+* **tr069**: Return ACS sessions info (only if CPE implements TR069 protocol)
+* **upstream**: Get the up signal levels
+* **voice[X]**: Related to PBX registration (only if CPE has Voice support, and [X] is related to POTS port number)
+
+**G.HN**:
+* **dhcp**: Return IP info (only if IP is provided internally by Phicus DHCP Server)
+* **pppoe**: Retrieve the Radius accounting session (only if IP session is provided internally by Phicus Radius Server)
+* **qos**: Obtain the Quality of service, noise, signal quality and another parameters (only if Krill monitorizes the CPE QoS)
+* **setup**: Retrieve the cable length and snr (signal noise ratio)
+* **tr069**: Return ACS sessions info (only if CPE implements TR069 protocol)
+* **voice[X]**: Related to PBX registration (only if CPE has Voice support, and [X] is related to POTS port number)
+
+**WIMAX**:
+* **dhcp**: Return IP info (only if IP is provided internally by Phicus DHCP Server)
+* **info**: Get the CPE model and firmware version
+* **downstream**: Get the down signal levels
+* **pppoe**: Retrieve the Radius accounting session (only if IP session is provided internally by Phicus Radius Server)
+* **qos**: Obtain the Quality of service, noise, signal quality and another parameters (only if Krill monitorizes the CPE QoS)
+* **radio**: Get the air time in upload and download data
+* **setup**: Retrieve the distance to AP and uptime
+* **tr069**: Return ACS sessions info (only if CPE implements TR069 protocol)
+* **upstream**: Get the up signal levels
+* **voice[X]**: Related to PBX registration (only if CPE has Voice support, and [X] is related to POTS port number)
+
 ## Administrative
 
 Customer's administrative information: name, address, map location, comments, etc.

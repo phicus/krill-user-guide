@@ -46,6 +46,55 @@ La ficha se compone de diferentes partes, es modular. Cada ficha mostrará la in
 
 Es el apartado principal e inicial de la ficha para los CPEs, en ella tenemos el histórico y timeline de los servicios del host. También los datos técnicos, de registro, del DHCP y telefonía a modo resumen en la parte superior.
 
+### Información principal
+
+Los hosts pueden contener datos técnicos y de registro, así como información de IPs y telefonía. Todos ellos se encuentran agrupados en diversas cajas organizando toda esta información.
+
+### Services Timeline
+
+Cada Host de tipo CPE puede contener diferentes servicios que incluyen los úlitmos mensajes de salida así como sus métricas (cuando estén disponibles), todo ello es renderizado en un Timeline con el histórico de cada uno, añadiendo los eventos más importantes (como IPs o eventos de provisión).
+
+Esta es una lista de los servicios más uasdos agrupados por tecnología:
+
+**GPON**:
+* **dhcp**: Devuelve la información de la IP (solamente si la IP ha sido gestionada internamente por el servidor DHCP de Phicus)
+* **pppoe/ipoe**: Obtiene la información del accounting de Radius (solo si la sesión ha sido proporcionada internamente por el servidor Radius de Phicus)
+* **provision**: Retorna la información de registro (solo si la provisión es realizada por Krill)
+* **qos**: Obtiene la calidad de servicio, snr (el ratio de señal/ruido) y otros parámetros (solo si Krill monitoriza el QoS del CPE)
+* **tr069**: Retorna la información de las sesiones ACS (solo si el CPE implementa el protocolo TR069)
+* **txrx**: Obtiene los parámetros de transmisión y recepción de señal
+* **voice[X]**: Relacionado con el registro de la PBX (soli si el CPE tiene soporte de Voz, la [X] está relacionada con el número del puerto POTS)
+
+**DOCSIS**:
+* **docsis**: Obtiene los canáles inválidos para downstream/upstream.
+* **dhcp**: Devuelve la información de la IP (solamente si la IP ha sido gestionada internamente por el servidor DHCP de Phicus)
+* **downstream**: Devuelve los niveles de señal en bajada
+* **provision**: Retirna la información de registro (solo si la provisión es realizada por Krill)
+* **qos**: Obtiene la calidad de servicio, snr (el ratio de señal de ruido) y otros parámetros (solo si Krill monitoriza el QoS del CPE)
+* **tr069**: Retorna la información de las sesiones ACS (solo si el CPE implementa el protocolo TR069)
+* **upstream**: Devuelve los niveles de señal en subida
+* **voice[X]**: Relacionado con el registro de la PBX (soli si el CPE tiene soporte de Voz, la [X] está relacionada con el número del puerto POTS)
+
+**G.HN**:
+* **dhcp**: Devuelve la información de la IP (solamente si la IP ha sido gestionada internamente por el servidor DHCP de Phicus)
+* **pppoe**: Obtiene la información del accounting de Radius (solo si la sesión ha sido proporcionada internamente por el servidor Radius de Phicus)
+* **qos**: Obtiene la calidad de servicio, snr (el ratio de señal de ruido) y otros parámetros (solo si Krill monitoriza el QoS del CPE)
+* **setup**: Retorna la longitud del cable y el snr (el ratio de señal/ruido)
+* **tr069**: Retorna la información de las sesiones ACS (solo si el CPE implementa el protocolo TR069)
+* **voice[X]**: Relacionado con el registro de la PBX (soli si el CPE tiene soporte de Voz, la [X] está relacionada con el número del puerto POTS)
+
+**WIMAX**:
+* **dhcp**: Devuelve la información de la IP (solamente si la IP ha sido gestionada internamente por el servidor DHCP de Phicus)
+* **info**: Obtiene el modelo del CPE y la versión de firmware
+* **downstream**: Devuelve los niveles de señal en bajada
+* **pppoe**: Obtiene la información del accounting de Radius (solo si la sesión ha sido proporcionada internamente por el servidor Radius de Phicus)
+* **qos**: Obtiene la calidad de servicio, snr (el ratio de señal de ruido) y otros parámetros (solo si Krill monitoriza el QoS del CPE)
+* **radio**: Obtiene el tiempo de la señal en el aire y los datos tanto de subida como de bajada
+* **setup**: Retorna la distancia hasta el AP así como el tiempo que está UP
+* **tr069**: Retorna la información de las sesiones ACS (solo si el CPE implementa el protocolo TR069)
+* **upstream**: Devuelve los niveles de señal en subida
+* **voice[X]**: Relacionado con el registro de la PBX (soli si el CPE tiene soporte de Voz, la [X] está relacionada con el número del puerto POTS)
+
 ## Administrative
 
 Información de la parte administrativa del customer: su nombre, dirección, posición en el mapa, comentarios, etc.
