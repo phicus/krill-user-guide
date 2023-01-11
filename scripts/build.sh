@@ -7,12 +7,15 @@ else
     git pull --rebase=true >/dev/null
 
     echo "Building VuePress site..."
-    yarn docs:build
-    git add docs/.vuepress/dist
-    git commit -m 'New build'
+    yarn docs:build >/dev/null
+    git add docs/.vuepress/dist >/dev/null
+    git commit -m 'New build' >/dev/null
 
     echo "Pushing to origin..."
     git push >/dev/null
+
+    echo "Syncing with Krill2 server..."
+    scp -r -P4222 docs/.vuepress/dist/* root@lab3:/opt/krill-user-guide/guide >/dev/null
 
     echo "Done!"
 fi
