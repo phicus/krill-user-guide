@@ -711,6 +711,503 @@ Lanzar sesión Tr069 a una ONT.
 ispadmin@lab3.phicus.es > tr069 reconfig cpe0273
 ```
 
+## Herramientas para DOCSIS
+
+### `docsis cmts print`
+
+Permite visualizar la información de todas las cmts disponibles.
+
+```bash
+ispadmin@lab3.phicus.es > docsis cmts print
+CMTS: cmtsCOPACABANA
+uptime: None
+MD: ix=1033 name=ca5-0
+Channels:
+  channel chanid=17 pri=true ifindex=1135 name=In5/0:0 freq=681000000
+  channel chanid=18 pri=true ifindex=1136 name=In5/0:1 freq=687000000
+  channel chanid=19 pri=true ifindex=1137 name=In5/0:2 freq=693000000
+  channel chanid=20 pri=true ifindex=1138 name=In5/0:3 freq=699000000
+  channel chanid=1 pri=false ifindex=1721 name=Ca5/0-upstream0 freq=35800000
+  channel chanid=2 pri=false ifindex=1722 name=Ca5/0-upstream1 freq=35800000
+  channel chanid=3 pri=false ifindex=1723 name=Ca5/0-upstream2 freq=35800000
+  channel chanid=4 pri=false ifindex=1724 name=Ca5/0-upstream3 freq=35800000
+MD: ix=1017 name=ca3-0
+Channels:
+  channel chanid=1 pri=true ifindex=1095 name=In3/0:0 freq=657000000
+  channel chanid=2 pri=true ifindex=1096 name=In3/0:1 freq=663000000
+  channel chanid=3 pri=true ifindex=1097 name=In3/0:2 freq=669000000
+  channel chanid=4 pri=true ifindex=1098 name=In3/0:3 freq=675000000
+  channel chanid=1 pri=false ifindex=1337 name=Ca3/0-upstream0 freq=32600000
+  channel chanid=2 pri=false ifindex=1338 name=Ca3/0-upstream1 freq=32600000
+  channel chanid=3 pri=false ifindex=1339 name=Ca3/0-upstream2 freq=32600000
+  channel chanid=4 pri=false ifindex=1340 name=Ca3/0-upstream3 freq=32600000
+MD: ix=1025 name=ca4-0
+Channels:
+  channel chanid=9 pri=true ifindex=1115 name=In4/0:0 freq=705000000
+  channel chanid=10 pri=true ifindex=1116 name=In4/0:1 freq=711000000
+  channel chanid=11 pri=true ifindex=1117 name=In4/0:2 freq=717000000
+  channel chanid=12 pri=true ifindex=1118 name=In4/0:3 freq=723000000
+  channel chanid=1 pri=false ifindex=1529 name=Ca4/0-upstream0 freq=39000000
+  channel chanid=2 pri=false ifindex=1530 name=Ca4/0-upstream1 freq=39000000
+  channel chanid=3 pri=false ifindex=1531 name=Ca4/0-upstream2 freq=39000000
+  channel chanid=4 pri=false ifindex=1532 name=Ca4/0-upstream3 freq=39000000
+MD: ix=1042 name=ca6-1
+Channels:
+  channel chanid=29 pri=true ifindex=1165 name=In6/1:0 freq=681000000
+  channel chanid=30 pri=true ifindex=1166 name=In6/1:1 freq=687000000
+  channel chanid=31 pri=true ifindex=1167 name=In6/1:2 freq=693000000
+  channel chanid=32 pri=true ifindex=1168 name=In6/1:3 freq=699000000
+  channel chanid=1 pri=false ifindex=1937 name=Ca6/1-upstream0 freq=33600000
+  channel chanid=2 pri=false ifindex=1938 name=Ca6/1-upstream1 freq=33600000
+  channel chanid=3 pri=false ifindex=1939 name=Ca6/1-upstream2 freq=33600000
+  channel chanid=4 pri=false ifindex=1940 name=Ca6/1-upstream3 freq=33600000
+MD: ix=1026 name=ca4-1
+Channels:
+  channel chanid=13 pri=true ifindex=1125 name=In4/1:0 freq=657000000
+  channel chanid=14 pri=true ifindex=1126 name=In4/1:1 freq=663000000
+  channel chanid=15 pri=true ifindex=1127 name=In4/1:2 freq=669000000
+  channel chanid=16 pri=true ifindex=1128 name=In4/1:3 freq=675000000
+  channel chanid=1 pri=false ifindex=1553 name=Ca4/1-upstream0 freq=32600000
+  channel chanid=2 pri=false ifindex=1554 name=Ca4/1-upstream1 freq=32600000
+  channel chanid=3 pri=false ifindex=1555 name=Ca4/1-upstream2 freq=32600000
+  channel chanid=4 pri=false ifindex=1556 name=Ca4/1-upstream3 freq=32600000
+MD: ix=1034 name=ca5-1
+Channels:
+  channel chanid=21 pri=true ifindex=1145 name=In5/1:0 freq=705000000
+  channel chanid=22 pri=true ifindex=1146 name=In5/1:1 freq=711000000
+  channel chanid=23 pri=true ifindex=1147 name=In5/1:2 freq=717000000
+  channel chanid=24 pri=true ifindex=1148 name=In5/1:3 freq=723000000
+  channel chanid=1 pri=false ifindex=1745 name=Ca5/1-upstream0 freq=39000000
+  channel chanid=2 pri=false ifindex=1746 name=Ca5/1-upstream1 freq=39000000
+  channel chanid=3 pri=false ifindex=1747 name=Ca5/1-upstream2 freq=39000000
+  channel chanid=4 pri=false ifindex=1748 name=Ca5/1-upstream3 freq=39000000
+MD: ix=1018 name=ca3-1
+Channels:
+  channel chanid=5 pri=true ifindex=1105 name=In3/1:0 freq=681000000
+  channel chanid=6 pri=true ifindex=1106 name=In3/1:1 freq=687000000
+  channel chanid=7 pri=true ifindex=1107 name=In3/1:2 freq=693000000
+  channel chanid=8 pri=true ifindex=1108 name=In3/1:3 freq=699000000
+  channel chanid=1 pri=false ifindex=1361 name=Ca3/1-upstream0 freq=35800000
+  channel chanid=2 pri=false ifindex=1362 name=Ca3/1-upstream1 freq=35800000
+  channel chanid=3 pri=false ifindex=1363 name=Ca3/1-upstream2 freq=35800000
+  channel chanid=4 pri=false ifindex=1364 name=Ca3/1-upstream3 freq=35800000
+MD: ix=1041 name=ca6-0
+Channels:
+  channel chanid=25 pri=true ifindex=1155 name=In6/0:0 freq=657000000
+  channel chanid=26 pri=true ifindex=1156 name=In6/0:1 freq=663000000
+  channel chanid=27 pri=true ifindex=1157 name=In6/0:2 freq=669000000
+  channel chanid=28 pri=true ifindex=1158 name=In6/0:3 freq=675000000
+  channel chanid=1 pri=false ifindex=1913 name=Ca6/0-upstream0 freq=30400000
+  channel chanid=2 pri=false ifindex=1914 name=Ca6/0-upstream1 freq=30400000
+  channel chanid=3 pri=false ifindex=1915 name=Ca6/0-upstream2 freq=30400000
+  channel chanid=4 pri=false ifindex=1916 name=Ca6/0-upstream3 freq=30400000
+
+Upstreams
+  	itf  id   	freq	width  mp modulation                  	interface
+ 	1337   1   32600000  3200000 122   	qpsk                  	ca3-0-up0 up
+ 	1338   2   32600000  3200000 122   	qpsk                  	ca3-0-up1 up
+ 	1339   3   32600000  3200000 122   	qpsk                  	ca3-0-up2 up
+ 	1340   4   32600000  3200000 122   	qpsk                  	ca3-0-up3 up
+ 	1361   1   35800000  3200000 122   	qpsk                  	ca3-1-up0 up
+ 	1362   2   35800000  3200000 122   	qpsk                  	ca3-1-up1 up
+ 	1363   3   35800000  3200000 122   	qpsk                  	ca3-1-up2 up
+ 	1364   4   35800000  3200000 122   	qpsk                  	ca3-1-up3 up
+ 	1529   1   39000000  3200000 122   	qpsk                  	ca4-0-up0 up
+ 	1530   2   39000000  3200000 122   	qpsk                  	ca4-0-up1 up
+ 	1531   3   39000000  3200000 122   	qpsk                  	ca4-0-up2 up
+ 	1532   4   39000000  3200000 122   	qpsk                  	ca4-0-up3 up
+ 	1553   1   32600000  3200000 122   	qpsk                  	ca4-1-up0 up
+ 	1554   2   32600000  3200000 122   	qpsk                  	ca4-1-up1 up
+ 	1555   3   32600000  3200000 122   	qpsk                  	ca4-1-up2 up
+ 	1556   4   32600000  3200000 122   	qpsk                  	ca4-1-up3 up
+ 	1721   1   35800000  3200000 122   	qpsk                  	ca5-0-up0 up
+ 	1722   2   35800000  3200000 122   	qpsk                  	ca5-0-up1 up
+ 	1723   3   35800000  3200000 122   	qpsk                  	ca5-0-up2 up
+ 	1724   4   35800000  3200000 122   	qpsk                  	ca5-0-up3 up
+ 	1745   1   39000000  3200000 122   	qpsk                  	ca5-1-up0 up
+ 	1746   2   39000000  3200000 122   	qpsk                  	ca5-1-up1 up
+ 	1747   3   39000000  3200000 122   	qpsk                  	ca5-1-up2 up
+ 	1748   4   39000000  3200000 122   	qpsk                  	ca5-1-up3 up
+ 	1913   1   30400000  3200000 122   	qpsk                  	ca6-0-up0 up
+ 	1914   2   30400000  3200000 122   	qpsk                  	ca6-0-up1 up
+ 	1915   3   30400000  3200000 122   	qpsk                  	ca6-0-up2 up
+ 	1916   4   30400000  3200000 122   	qpsk                  	ca6-0-up3 up
+ 	1937   1   33600000  3200000 122   	qpsk                  	ca6-1-up0 up
+ 	1938   2   33600000  3200000 122   	qpsk                  	ca6-1-up1 up
+ 	1939   3   33600000  3200000 122   	qpsk                  	ca6-1-up2 up
+ 	1940   4   33600000  3200000 122   	qpsk                  	ca6-1-up3 up
+
+Downstreams
+  	itf  id   	freq 	modulation  pow                  	interface
+ 	1289   1  657000000     	qam256 46.0                  	in3-0-dn0 up
+ 	1290   2  663000000     	qam256 46.0                  	in3-0-dn1 up
+ 	1291   3  669000000     	qam256 46.0                  	in3-0-dn2 up
+ 	1292   4  675000000     	qam256 46.0                  	in3-0-dn3 up
+ 	1293   5  681000000     	qam256 46.0                  	in3-1-dn0 up
+ 	1294   6  687000000     	qam256 46.0                  	in3-1-dn1 up
+ 	1295   7  693000000     	qam256 46.0                  	in3-1-dn2 up
+ 	1296   8  699000000     	qam256 46.0                  	in3-1-dn3 up
+ 	1297   9  705000000     	qam256 46.0                  	in4-0-dn0 up
+ 	1298  10  711000000     	qam256 46.0                  	in4-0-dn1 up
+ 	1299  11  717000000     	qam256 46.0                  	in4-0-dn2 up
+ 	1300  12  723000000     	qam256 46.0                  	in4-0-dn3 up
+ 	1301  13  657000000     	qam256 46.0                  	in4-1-dn0 up
+ 	1302  14  663000000     	qam256 46.0                  	in4-1-dn1 up
+ 	1303  15  669000000     	qam256 46.0                  	in4-1-dn2 up
+ 	1304  16  675000000     	qam256 46.0                  	in4-1-dn3 up
+ 	1305  17  681000000     	qam256 46.0                  	in5-0-dn0 up
+ 	1306  18  687000000     	qam256 46.0                  	in5-0-dn1 up
+ 	1307  19  693000000     	qam256 46.0                  	in5-0-dn2 up
+ 	1308  20  699000000     	qam256 46.0                  	in5-0-dn3 up
+ 	1309  21  705000000     	qam256 46.0                  	in5-1-dn0 up
+ 	1310  22  711000000     	qam256 46.0                  	in5-1-dn1 up
+ 	1311  23  717000000     	qam256 46.0                  	in5-1-dn2 up
+ 	1312  24  723000000     	qam256 46.0                  	in5-1-dn3 up
+ 	1313  25  657000000     	qam256 44.0                  	in6-0-dn0 up
+ 	1314  26  663000000     	qam256 44.0                  	in6-0-dn1 up
+ 	1315  27  669000000     	qam256 44.0                  	in6-0-dn2 up
+ 	1316  28  675000000     	qam256 44.0                  	in6-0-dn3 up
+ 	1317  29  681000000     	qam256 44.0                  	in6-1-dn0 up
+ 	1318  30  687000000     	qam256 44.0                  	in6-1-dn1 up
+ 	1319  31  693000000     	qam256 44.0                  	in6-1-dn2 up
+ 	1320  32  699000000     	qam256 44.0                  	in6-1-dn3 up
+
+Fiber Nodes
+  FN-1 -  (map: []) (DS: chanids=[] chans=set() / US: chanids=[] chans=set())
+  FN-2 -  (map: []) (DS: chanids=[] chans=set() / US: chanids=[] chans=set())
+  FN-3 -  (map: []) (DS: chanids=[] chans=set() / US: chanids=[] chans=set())
+  FN-4 -  (map: []) (DS: chanids=[] chans=set() / US: chanids=[] chans=set())
+  FN-5 -  (map: []) (DS: chanids=[] chans=set() / US: chanids=[] chans=set())
+  FN-6 -  (map: []) (DS: chanids=[] chans=set() / US: chanids=[] chans=set())
+  FN-7 -  (map: []) (DS: chanids=[] chans=set() / US: chanids=[] chans=set())
+  FN-8 -  (map: []) (DS: chanids=[] chans=set() / US: chanids=[] chans=set())
+  FN-9 -  (map: [(1041, 2621701, 1, 5), (1042, 2687237, 1, 5)]) (DS: chanids=[2686977, 2752513] chans={32, 25, 26, 27, 28, 29, 30, 31} / US: chanids=[1, 1] chans={1})
+  FN-10 -  (map: [(1041, 2621702, 1, 6), (1042, 2687238, 1, 6)]) (DS: chanids=[2686977, 2752513] chans={32, 25, 26, 27, 28, 29, 30, 31} / US: chanids=[2, 2] chans={2})
+  FN-11 -  (map: [(1041, 2621703, 1, 7), (1042, 2687239, 1, 7)]) (DS: chanids=[2686977, 2752513] chans={32, 25, 26, 27, 28, 29, 30, 31} / US: chanids=[3, 3] chans={3})
+  FN-12 -  (map: [(1041, 2621704, 1, 8), (1042, 2687240, 1, 8)]) (DS: chanids=[2686977, 2752513] chans={32, 25, 26, 27, 28, 29, 30, 31} / US: chanids=[4, 4] chans={4})
+CMTS: cmtsKENEDY
+uptime: None
+MD: ix=2000004 name=catv-mac.4
+Channels:
+  channel chanid=1 pri=true ifindex=3000032 name=Downstream 2/0/0 freq=657000000
+  channel chanid=2 pri=true ifindex=3000033 name=Downstream 2/0/1 freq=663000000
+  channel chanid=3 pri=true ifindex=3000034 name=Downstream 2/0/2 freq=669000000
+  channel chanid=4 pri=true ifindex=3000035 name=Downstream 2/0/3 freq=675000000
+  channel chanid=5 pri=true ifindex=3000036 name=Downstream 2/1/0 freq=681000000
+  channel chanid=6 pri=true ifindex=3000037 name=Downstream 2/1/1 freq=687000000
+  channel chanid=7 pri=true ifindex=3000038 name=Downstream 2/1/2 freq=693000000
+  channel chanid=8 pri=true ifindex=3000039 name=Downstream 2/1/3 freq=699000000
+  channel chanid=9 pri=true ifindex=3000040 name=Downstream 2/2/0 freq=705000000
+  channel chanid=10 pri=true ifindex=3000041 name=Downstream 2/2/1 freq=711000000
+  channel chanid=11 pri=true ifindex=3000042 name=Downstream 2/2/2 freq=717000000
+  channel chanid=12 pri=true ifindex=3000043 name=Downstream 2/2/3 freq=723000000
+  channel chanid=13 pri=true ifindex=3000044 name=Downstream 2/3/0 freq=729000000
+  channel chanid=14 pri=true ifindex=3000045 name=Downstream 2/3/1 freq=735000000
+  channel chanid=15 pri=true ifindex=3000046 name=Downstream 2/3/2 freq=741000000
+  channel chanid=16 pri=true ifindex=3000047 name=Downstream 2/3/3 freq=747000000
+  channel chanid=1 pri=false ifindex=5000320 name=Logical Upstream Channel 5/0/0 freq=36800000
+  channel chanid=2 pri=false ifindex=5000324 name=Logical Upstream Channel 5/1/0 freq=40000000
+  channel chanid=3 pri=false ifindex=5000328 name=Logical Upstream Channel 5/2/0 freq=36800000
+  channel chanid=4 pri=false ifindex=5000332 name=Logical Upstream Channel 5/3/0 freq=40000000
+  channel chanid=5 pri=false ifindex=5000336 name=Logical Upstream Channel 5/4/0 freq=36800000
+  channel chanid=6 pri=false ifindex=5000340 name=Logical Upstream Channel 5/5/0 freq=40000000
+  channel chanid=7 pri=false ifindex=5000344 name=Logical Upstream Channel 5/6/0 freq=36800000
+  channel chanid=8 pri=false ifindex=5000348 name=Logical Upstream Channel 5/7/0 freq=40000000
+MD: ix=2000002 name=catv-mac.2
+Channels:
+  channel chanid=1 pri=true ifindex=3000008 name=Downstream 0/2/0 freq=657000000
+  channel chanid=2 pri=true ifindex=3000009 name=Downstream 0/2/1 freq=663000000
+  channel chanid=3 pri=true ifindex=3000010 name=Downstream 0/2/2 freq=669000000
+  channel chanid=4 pri=true ifindex=3000011 name=Downstream 0/2/3 freq=675000000
+  channel chanid=5 pri=true ifindex=3000012 name=Downstream 0/3/0 freq=681000000
+  channel chanid=6 pri=true ifindex=3000013 name=Downstream 0/3/1 freq=687000000
+  channel chanid=7 pri=true ifindex=3000014 name=Downstream 0/3/2 freq=693000000
+  channel chanid=8 pri=true ifindex=3000015 name=Downstream 0/3/3 freq=699000000
+  channel chanid=1 pri=false ifindex=5000208 name=Logical Upstream Channel 3/4.0/0 freq=36800000
+  channel chanid=2 pri=false ifindex=5000210 name=Logical Upstream Channel 3/4.1/0 freq=40000000
+  channel chanid=3 pri=false ifindex=5000212 name=Logical Upstream Channel 3/5.0/0 freq=36800000
+  channel chanid=4 pri=false ifindex=5000214 name=Logical Upstream Channel 3/5.1/0 freq=40000000
+  channel chanid=5 pri=false ifindex=5000216 name=Logical Upstream Channel 3/6.0/0 freq=36800000
+  channel chanid=6 pri=false ifindex=5000218 name=Logical Upstream Channel 3/6.1/0 freq=40000000
+  channel chanid=7 pri=false ifindex=5000220 name=Logical Upstream Channel 3/7.0/0 freq=36800000
+  channel chanid=8 pri=false ifindex=5000222 name=Logical Upstream Channel 3/7.1/0 freq=40000000
+MD: ix=2000001 name=catv-mac.1
+Channels:
+  channel chanid=1 pri=true ifindex=3000000 name=Downstream 0/0/0 freq=657000000
+  channel chanid=2 pri=true ifindex=3000001 name=Downstream 0/0/1 freq=663000000
+  channel chanid=3 pri=true ifindex=3000002 name=Downstream 0/0/2 freq=669000000
+  channel chanid=4 pri=true ifindex=3000003 name=Downstream 0/0/3 freq=675000000
+  channel chanid=5 pri=true ifindex=3000004 name=Downstream 0/1/0 freq=681000000
+  channel chanid=6 pri=true ifindex=3000005 name=Downstream 0/1/1 freq=687000000
+  channel chanid=7 pri=true ifindex=3000006 name=Downstream 0/1/2 freq=693000000
+  channel chanid=8 pri=true ifindex=3000007 name=Downstream 0/1/3 freq=699000000
+  channel chanid=1 pri=false ifindex=5000192 name=Logical Upstream Channel 3/0.0/0 freq=36800000
+  channel chanid=2 pri=false ifindex=5000194 name=Logical Upstream Channel 3/0.1/0 freq=40000000
+  channel chanid=3 pri=false ifindex=5000196 name=Logical Upstream Channel 3/1.0/0 freq=36800000
+  channel chanid=4 pri=false ifindex=5000198 name=Logical Upstream Channel 3/1.1/0 freq=40000000
+  channel chanid=5 pri=false ifindex=5000200 name=Logical Upstream Channel 3/2.0/0 freq=36800000
+  channel chanid=6 pri=false ifindex=5000202 name=Logical Upstream Channel 3/2.1/0 freq=40000000
+  channel chanid=7 pri=false ifindex=5000204 name=Logical Upstream Channel 3/3.0/0 freq=36800000
+  channel chanid=8 pri=false ifindex=5000206 name=Logical Upstream Channel 3/3.1/0 freq=40000000
+MD: ix=2000003 name=catv-mac.3
+Channels:
+  channel chanid=1 pri=true ifindex=3000016 name=Downstream 1/0/0 freq=657000000
+  channel chanid=2 pri=true ifindex=3000017 name=Downstream 1/0/1 freq=663000000
+  channel chanid=3 pri=true ifindex=3000018 name=Downstream 1/0/2 freq=669000000
+  channel chanid=4 pri=true ifindex=3000019 name=Downstream 1/0/3 freq=675000000
+  channel chanid=5 pri=true ifindex=3000020 name=Downstream 1/1/0 freq=681000000
+  channel chanid=6 pri=true ifindex=3000021 name=Downstream 1/1/1 freq=687000000
+  channel chanid=7 pri=true ifindex=3000022 name=Downstream 1/1/2 freq=693000000
+  channel chanid=8 pri=true ifindex=3000023 name=Downstream 1/1/3 freq=699000000
+  channel chanid=9 pri=true ifindex=3000024 name=Downstream 1/2/0 freq=705000000
+  channel chanid=10 pri=true ifindex=3000025 name=Downstream 1/2/1 freq=711000000
+  channel chanid=11 pri=true ifindex=3000026 name=Downstream 1/2/2 freq=717000000
+  channel chanid=12 pri=true ifindex=3000027 name=Downstream 1/2/3 freq=723000000
+  channel chanid=13 pri=true ifindex=3000028 name=Downstream 1/3/0 freq=729000000
+  channel chanid=14 pri=true ifindex=3000029 name=Downstream 1/3/1 freq=735000000
+  channel chanid=15 pri=true ifindex=3000030 name=Downstream 1/3/2 freq=741000000
+  channel chanid=16 pri=true ifindex=3000031 name=Downstream 1/3/3 freq=747000000
+  channel chanid=1 pri=false ifindex=5000256 name=Logical Upstream Channel 4/0.0/0 freq=36800000
+  channel chanid=2 pri=false ifindex=5000258 name=Logical Upstream Channel 4/0.1/0 freq=40000000
+  channel chanid=3 pri=false ifindex=5000260 name=Logical Upstream Channel 4/1.0/0 freq=36800000
+  channel chanid=4 pri=false ifindex=5000262 name=Logical Upstream Channel 4/1.1/0 freq=40000000
+  channel chanid=5 pri=false ifindex=5000264 name=Logical Upstream Channel 4/2.0/0 freq=36800000
+  channel chanid=6 pri=false ifindex=5000266 name=Logical Upstream Channel 4/2.1/0 freq=40000000
+  channel chanid=7 pri=false ifindex=5000268 name=Logical Upstream Channel 4/3.0/0 freq=30400000
+  channel chanid=8 pri=false ifindex=5000270 name=Logical Upstream Channel 4/3.1/0 freq=33600000
+  channel chanid=9 pri=false ifindex=5000272 name=Logical Upstream Channel 4/4.0/0 freq=36800000
+  channel chanid=10 pri=false ifindex=5000274 name=Logical Upstream Channel 4/4.1/0 freq=40000000
+  channel chanid=11 pri=false ifindex=5000276 name=Logical Upstream Channel 4/5.0/0 freq=36800000
+  channel chanid=12 pri=false ifindex=5000278 name=Logical Upstream Channel 4/5.1/0 freq=40000000
+  channel chanid=13 pri=false ifindex=5000280 name=Logical Upstream Channel 4/6.0/0 freq=36800000
+  channel chanid=14 pri=false ifindex=5000282 name=Logical Upstream Channel 4/6.1/0 freq=40000000
+  channel chanid=15 pri=false ifindex=5000284 name=Logical Upstream Channel 4/7.0/0 freq=36800000
+  channel chanid=16 pri=false ifindex=5000286 name=Logical Upstream Channel 4/7.1/0 freq=40000000
+
+Upstreams
+  	itf  id   	freq	width  mp modulation                  	interface
+  5000192   1   36800000  3200000   2   	qpsk                 	up.3-0.0-0 up
+  5000194   2   40000000  3200000   2   	qpsk                 	up.3-0.1-0 up
+  5000196   3   36800000  3200000   1   	qpsk                 	up.3-1.0-0 up
+  5000198   4   40000000  3200000   1   	qpsk                 	up.3-1.1-0 up
+  5000200   5   36800000  3200000   2   	qpsk                 	up.3-2.0-0 up
+  5000202   6   40000000  3200000   2   	qpsk                 	up.3-2.1-0 up
+  5000204   7   36800000  3200000   1   	qpsk                 	up.3-3.0-0 up
+  5000206   8   40000000  3200000   2   	qpsk                 	up.3-3.1-0 up
+  5000208   1   36800000  3200000   2   	qpsk                 	up.3-4.0-0 up
+  5000210   2   40000000  3200000   2   	qpsk                 	up.3-4.1-0 up
+  5000212   3   36800000  3200000   2   	qpsk                 	up.3-5.0-0 up
+  5000214   4   40000000  3200000   2   	qpsk                 	up.3-5.1-0 up
+  5000216   5   36800000  3200000   2   	qpsk                 	up.3-6.0-0 up
+  5000218   6   40000000  3200000   2   	qpsk                 	up.3-6.1-0 up
+  5000220   7   36800000  3200000   2   	qpsk                 	up.3-7.0-0 up
+  5000222   8   40000000  3200000   2   	qpsk                 	up.3-7.1-0 up
+  5000256   1   36800000  3200000   2   	qpsk                 	up.4-0.0-0 up
+  5000258   2   40000000  3200000   2   	qpsk                 	up.4-0.1-0 up
+  5000260   3   36800000  3200000   2   	qpsk                 	up.4-1.0-0 up
+  5000262   4   40000000  3200000   2   	qpsk                 	up.4-1.1-0 up
+  5000264   5   36800000  3200000   2   	qpsk                 	up.4-2.0-0 up
+  5000266   6   40000000  3200000   2   	qpsk                 	up.4-2.1-0 up
+  5000268   7   30400000  3200000   2   	qpsk                 	up.4-3.0-0 up
+  5000270   8   33600000  3200000   2   	qpsk                 	up.4-3.1-0 up
+  5000272   9   36800000  3200000   2   	qpsk                 	up.4-4.0-0 up
+  5000274  10   40000000  3200000   2   	qpsk                 	up.4-4.1-0 up
+  5000276  11   36800000  3200000   2   	qpsk                 	up.4-5.0-0 up
+  5000278  12   40000000  3200000   2   	qpsk                 	up.4-5.1-0 up
+  5000280  13   36800000  3200000   2   	qpsk                 	up.4-6.0-0 up
+  5000282  14   40000000  3200000   2   	qpsk                 	up.4-6.1-0 up
+  5000284  15   36800000  3200000   2   	qpsk                 	up.4-7.0-0 up
+  5000286  16   40000000  3200000   2   	qpsk                 	up.4-7.1-0 up
+  5000320   1   36800000  3200000   2   	qpsk                   	up.5-0-0 up
+  5000324   2   40000000  3200000   2   	qpsk                   	up.5-1-0 up
+  5000328   3   36800000  3200000   2   	qpsk                   	up.5-2-0 up
+  5000332   4   40000000  3200000   2   	qpsk                   	up.5-3-0 up
+  5000336   5   36800000  3200000   2   	qpsk                   	up.5-4-0 up
+  5000340   6   40000000  3200000   2   	qpsk                   	up.5-5-0 up
+  5000344   7   36800000  3200000   2   	qpsk                   	up.5-6-0 up
+  5000348   8   40000000  3200000   2   	qpsk                   	up.5-7-0 up
+
+Downstreams
+  	itf  id   	freq 	modulation  pow                  	interface
+  3000000   1  657000000     	qam256 44.0                   	dn.0-0-0 up
+  3000001   2  663000000     	qam256 44.0                   	dn.0-0-1 up
+  3000002   3  669000000     	qam256 44.0                   	dn.0-0-2 up
+  3000003   4  675000000     	qam256 44.0                   	dn.0-0-3 up
+  3000004   5  681000000     	qam256 44.0                   	dn.0-1-0 up
+  3000005   6  687000000     	qam256 44.0                   	dn.0-1-1 up
+  3000006   7  693000000     	qam256 44.0                   	dn.0-1-2 up
+  3000007   8  699000000     	qam256 44.0                   	dn.0-1-3 up
+  3000008   1  657000000     	qam256 44.0                   	dn.0-2-0 up
+  3000009   2  663000000     	qam256 44.0                   	dn.0-2-1 up
+  3000010   3  669000000     	qam256 44.0                   	dn.0-2-2 up
+  3000011   4  675000000     	qam256 44.0                   	dn.0-2-3 up
+  3000012   5  681000000     	qam256 44.0                   	dn.0-3-0 up
+  3000013   6  687000000     	qam256 44.0                   	dn.0-3-1 up
+  3000014   7  693000000     	qam256 44.0                   	dn.0-3-2 up
+  3000015   8  699000000     	qam256 44.0                   	dn.0-3-3 up
+  3000016   1  657000000     	qam256 44.0                   	dn.1-0-0 up
+  3000017   2  663000000     	qam256 44.0                   	dn.1-0-1 up
+  3000018   3  669000000     	qam256 44.0                   	dn.1-0-2 up
+  3000019   4  675000000     	qam256 44.0                   	dn.1-0-3 up
+  3000020   5  681000000     	qam256 44.0                   	dn.1-1-0 up
+  3000021   6  687000000     	qam256 44.0                   	dn.1-1-1 up
+  3000022   7  693000000     	qam256 44.0                   	dn.1-1-2 up
+  3000023   8  699000000     	qam256 44.0                   	dn.1-1-3 up
+  3000024   9  705000000     	qam256 44.0                   	dn.1-2-0 up
+  3000025  10  711000000     	qam256 44.0                   	dn.1-2-1 up
+  3000026  11  717000000     	qam256 44.0                   	dn.1-2-2 up
+  3000027  12  723000000     	qam256 44.0                   	dn.1-2-3 up
+  3000028  13  729000000     	qam256 44.0                   	dn.1-3-0 up
+  3000029  14  735000000     	qam256 44.0                   	dn.1-3-1 up
+  3000030  15  741000000     	qam256 44.0                   	dn.1-3-2 up
+  3000031  16  747000000     	qam256 44.0                   	dn.1-3-3 up
+  3000032   1  657000000     	qam256 44.0                   	dn.2-0-0 up
+  3000033   2  663000000     	qam256 44.0                   	dn.2-0-1 up
+  3000034   3  669000000     	qam256 44.0                   	dn.2-0-2 up
+  3000035   4  675000000     	qam256 44.0                   	dn.2-0-3 up
+  3000036   5  681000000     	qam256 44.0                   	dn.2-1-0 up
+  3000037   6  687000000     	qam256 44.0                   	dn.2-1-1 up
+  3000038   7  693000000     	qam256 44.0                   	dn.2-1-2 up
+  3000039   8  699000000     	qam256 44.0                   	dn.2-1-3 up
+  3000040   9  705000000     	qam256 44.0                   	dn.2-2-0 up
+  3000041  10  711000000     	qam256 44.0                   	dn.2-2-1 up
+  3000042  11  717000000     	qam256 44.0                   	dn.2-2-2 up
+  3000043  12  723000000     	qam256 44.0                   	dn.2-2-3 up
+  3000044  13  729000000     	qam256 44.0                   	dn.2-3-0 up
+  3000045  14  735000000     	qam256 44.0                   	dn.2-3-1 up
+  3000046  15  741000000     	qam256 44.0                   	dn.2-3-2 up
+  3000047  16  747000000     	qam256 44.0                   	dn.2-3-3 up
+
+Fiber Nodes
+  SG01 -  (map: [(2000001, 257, 8, 2)]) (DS: chanids=[256] chans={1, 2, 3, 4, 5, 6, 7, 8} / US: chanids=[256] chans={1, 2})
+  SG02 -  (map: [(2000001, 258, 8, 4)]) (DS: chanids=[256] chans={1, 2, 3, 4, 5, 6, 7, 8} / US: chanids=[257] chans={3, 4})
+  SG03 -  (map: [(2000001, 259, 8, 6)]) (DS: chanids=[256] chans={1, 2, 3, 4, 5, 6, 7, 8} / US: chanids=[258] chans={5, 6})
+  SG04 -  (map: [(2000001, 260, 8, 8)]) (DS: chanids=[256] chans={1, 2, 3, 4, 5, 6, 7, 8} / US: chanids=[259] chans={8, 7})
+  SG05 -  (map: [(2000002, 517, 37, 10)]) (DS: chanids=[256] chans={1, 2, 3, 4, 5, 6, 7, 8} / US: chanids=[256] chans={1, 2})
+  SG06 -  (map: [(2000002, 518, 37, 12)]) (DS: chanids=[256] chans={1, 2, 3, 4, 5, 6, 7, 8} / US: chanids=[257] chans={3, 4})
+  SG07 -  (map: [(2000002, 519, 37, 14)]) (DS: chanids=[256] chans={1, 2, 3, 4, 5, 6, 7, 8} / US: chanids=[258] chans={5, 6})
+  SG08 -  (map: [(2000002, 520, 37, 16)]) (DS: chanids=[256] chans={1, 2, 3, 4, 5, 6, 7, 8} / US: chanids=[259] chans={8, 7})
+  SG09 -  (map: [(2000003, 777, 74, 18)]) (DS: chanids=[256] chans={1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16} / US: chanids=[256] chans={1, 2})
+  SG10 -  (map: [(2000003, 778, 74, 20)]) (DS: chanids=[256] chans={1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16} / US: chanids=[257] chans={3, 4})
+  SG11 -  (map: [(2000003, 779, 74, 22)]) (DS: chanids=[256] chans={1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16} / US: chanids=[258] chans={5, 6})
+  SG12 -  (map: [(2000003, 780, 74, 26)]) (DS: chanids=[256] chans={1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16} / US: chanids=[259] chans={8, 9, 10, 7})
+  SG13 -  (map: [(2000003, 781, 74, 0)]) (DS: chanids=[256] chans={1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16} / US: chanids=[] chans=set())
+  SG14 -  (map: [(2000003, 782, 74, 28)]) (DS: chanids=[256] chans={1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16} / US: chanids=[260] chans={11, 12})
+  SG15 -  (map: [(2000003, 783, 74, 30)]) (DS: chanids=[256] chans={1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16} / US: chanids=[261] chans={13, 14})
+  SG16 -  (map: [(2000003, 784, 74, 32)]) (DS: chanids=[256] chans={1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16} / US: chanids=[262] chans={16, 15})
+  SG17 -  (map: [(2000004, 1041, 36, 34)]) (DS: chanids=[256] chans={1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16} / US: chanids=[256] chans={1, 2})
+  SG18 -  (map: [(2000004, 1042, 36, 36)]) (DS: chanids=[256] chans={1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16} / US: chanids=[257] chans={3, 4})
+  SG19 -  (map: [(2000004, 1043, 36, 38)]) (DS: chanids=[256] chans={1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16} / US: chanids=[258] chans={5, 6})
+  SG20 -  (map: [(2000004, 1044, 36, 40)]) (DS: chanids=[256] chans={1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16} / US: chanids=[259] chans={8, 7})
+```
+
+### `docsis cmtss print`
+
+Alias de `docsis cmts print`.
+
+### `docsis cm [cmtsID] print`
+
+Permite visualizar toda la información de una cabecera en concreto (nodos, frecuencias, etc).
+
+```bash
+ispadmin@lab3.phicus.es > docsis cm cmtsCasa print
+CMTS: cmtsCasa
+uptime: None
+MD: ix=77 name=catv-mac.1
+Channels:
+  channel chanid=1 pri=true ifindex=141 name=Downstream 0/0/0 freq=464000000
+  channel chanid=2 pri=true ifindex=142 name=Downstream 0/0/1 freq=472000000
+  channel chanid=3 pri=true ifindex=143 name=Downstream 0/1/0 freq=480000000
+  channel chanid=4 pri=true ifindex=144 name=Downstream 0/1/1 freq=488000000
+  channel chanid=5 pri=true ifindex=145 name=Downstream 0/2/0 freq=432000000
+  channel chanid=6 pri=true ifindex=146 name=Downstream 0/2/1 freq=440000000
+  channel chanid=7 pri=true ifindex=147 name=Downstream 0/3/0 freq=448000000
+  channel chanid=8 pri=true ifindex=148 name=Downstream 0/3/1 freq=456000000
+  channel chanid=1 pri=false ifindex=397 name=Logical Upstream Channel 1/0/0 freq=54500000
+  channel chanid=2 pri=false ifindex=398 name=Logical Upstream Channel 1/1/0 freq=48000000
+  channel chanid=3 pri=false ifindex=399 name=Logical Upstream Channel 1/2/0 freq=54500000
+  channel chanid=4 pri=false ifindex=400 name=Logical Upstream Channel 1/3/0 freq=48000000
+  channel chanid=5 pri=false ifindex=401 name=Logical Upstream Channel 1/4/0 freq=54500000
+  channel chanid=6 pri=false ifindex=402 name=Logical Upstream Channel 1/5/0 freq=61000000
+  channel chanid=7 pri=false ifindex=403 name=Logical Upstream Channel 1/6/0 freq=41500000
+  channel chanid=8 pri=false ifindex=404 name=Logical Upstream Channel 1/7/0 freq=35000000
+
+Upstreams
+  	itf  id   	freq	width  mp modulation                  	interface
+  	397   1   54500000  3200000   2   	qpsk                   	up.1-0-0 up
+  	398   2   48000000  3200000   2   	qpsk                   	up.1-1-0 up
+  	399   3   54500000  3200000   2   	qpsk                   	up.1-2-0 up
+  	400   4   48000000  6400000   6   	qpsk                   	up.1-3-0 up
+  	401   5   54500000  6400000   6   	qpsk                   	up.1-4-0 up
+  	402   6   61000000  3200000   2   	qpsk                   	up.1-5-0 up
+  	403   7   41500000  3200000   2   	qpsk                   	up.1-6-0 up
+  	404   8   35000000  3200000   2   	qpsk                   	up.1-7-0 up
+
+Downstreams
+  	itf  id   	freq 	modulation  pow                  	interface
+  	141   1  464000000     	qam256 57.0                   	dn.0-0-0 up
+  	142   2  472000000     	qam256 57.0                   	dn.0-0-1 up
+  	143   3  480000000     	qam256 57.0                   	dn.0-1-0 up
+  	144   4  488000000     	qam256 57.0                   	dn.0-1-1 up
+  	145   5  432000000     	qam256 57.0                   	dn.0-2-0 up
+  	146   6  440000000     	qam256 57.0                   	dn.0-2-1 up
+  	147   7  448000000     	qam256 57.0                   	dn.0-3-0 up
+  	148   8  456000000     	qam256 57.0                   	dn.0-3-1 up
+
+Fiber Nodes
+  nodo1 -  (map: [(77, 1, 1, 1)]) (DS: chanids=[256] chans={1, 2, 3, 4, 5, 6, 7, 8} / US: chanids=[256] chans={1, 2})
+  nodo2 -  (map: [(77, 2, 1, 2)]) (DS: chanids=[256] chans={1, 2, 3, 4, 5, 6, 7, 8} / US: chanids=[257] chans={8, 5, 6, 7})
+  nodowifi -  (map: [(77, 3, 1, 3)]) (DS: chanids=[256] chans={1, 2, 3, 4, 5, 6, 7, 8} / US: chanids=[258] chans={3, 4})
+```
+
+### `docsis cm mac [MAC]`
+
+Permite visualizar la información de un cablemodem en concreto mediante su MAC.
+
+```bash
+cmts 	:      	cmtsCasa  id:           	29	state: online
+fibernode:         	nodo1  md:   	catv-mac.1	ids  : 77/1/7/1
+mac  	: 00:15:96:cb:83:4d  ip:   	10.0.32.48	poll : success
+file 	:                                      	uptime: 8388100
+
+Bandwidth: 10.70 kbps down / 8.63 kbps up
+
+Reg tags :  cmtsCasa,catv-mac.1,nodo1,dn.0-3-0,up.1-0-0
+
+QoS    	: OK dncorr=0.00% dnko=0.00% upcorr=0.00% upko=0.00%
+Downstream : OK dnatt=52.9dB dnrx=4.1dBm dnsnr=41.0dB
+Upstream   : OK upatt=39.8dB uptx=45.0dBm upsnr=38.2dB
+Docsis 	: OK cmtsinvups=0 cminvups=0                                          	 
+
+DOWNSTREAM
+ - id     	itf-name   	freq  	width    	mod 	rx	att	snr   corr 	ko
+ -                                                     	4.1   52.9   41.0   0.00   0.00
+ -  0     	dn.0-3-0 	448MHz   	8MHz 	qam256	4.1   52.9   41.0   0.00   0.00
+
+UPSTREAM
+ - id     	itf-name   	freq  	width    	mod 	tx	att	snr   corr 	ko
+ -                                                    	45.0   39.8   38.2   0.00   0.00
+ -  0     	up.1-0-0   54500KHz	3200KHz   	qpsk   45.0   39.8   38.2   0.00   0.00
+
+SYSTEM DESCRIPTION
+  DESC ARRIS Euro-DOCSIS 2.0 / SIP 2.0 Touchstone Telephony Modem
+  HW_REV 04
+  VENDOR Arris Interactive, L.L.C.
+  BOOTR 5.01
+  SW_REV 6.1.129T.EURO.SIP
+  MODEL WTM552B
+cm.downstream_sfs...
+[20000000]
+```
+
+### `docsis cm reset [MAC]`
+
+Permite reiniciar un cablemodem mediante su MAC.
+
+```bash
+ispadmin@lab.phicus.es > docsis cm reset 001596cb834d
+```
+
 ## Herramientas para WiMAX
 
 ### `wimax ap [AP_ID]`

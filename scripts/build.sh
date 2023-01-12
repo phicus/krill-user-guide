@@ -14,6 +14,8 @@ else
     echo "Pushing to origin..."
     git push >/dev/null
 
+    generate-release -n -t patch -m 'UTD'
+
     echo "Syncing with Krill2 server..."
 #    scp -r -P4222 docs/.vuepress/dist/* root@lab3:/opt/krill-user-guide/guide >/dev/null
 #    rsync -e "ssh -p 4222 -l root" -av --cvs-exclude --delete docs/.vuepress/dist/ lab3:/opt/krill-user-guide/guide >/dev/null
