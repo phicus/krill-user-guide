@@ -1,6 +1,7 @@
 ---
 home: true
 heroImage: /img/interface-krill2.png
+heroHeight: 182
 heroText: Una guía de usuario para Krill
 tagline: null
 actions:
