@@ -3,7 +3,7 @@ import type { SidebarConfig } from '@vuepress/theme-default'
 const krill2Sidebar = {
     en: [{
         text: 'Krill2',
-        collapsible: true,
+        //collapsible: true,
         children: [
             {link: '/krill2/login.md', text: 'Login'},
             {link: '/krill2/users.md', text: 'Users'},
@@ -12,7 +12,7 @@ const krill2Sidebar = {
     }],
     es: [{
         text: 'Krill2',
-        collapsible: true,
+        //collapsible: true,
         children: [
             {link: '/es/krill2/login.md', text: 'Acceso'},
             {link: '/es/krill2/users.md', text: 'Usuarios'},
@@ -24,7 +24,7 @@ const krill2Sidebar = {
 const monitoringSidebar = {
     en: [{
         text: 'Monitoring',
-        collapsible: true,
+        //collapsible: true,
         children: [
             {link: '/krill2/monitoring/alarms.md', text: 'Alarms'},
             {link: '/krill2/monitoring/problems.md', text: 'Problems'},
@@ -42,7 +42,7 @@ const monitoringSidebar = {
     }],
     es: [{
         text: 'Monitoring',
-        collapsible: true,
+        //collapsible: true,
         children: [
             {link: '/es/krill2/monitoring/alarms.md', text: 'Alarmas'},
             {link: '/es/krill2/monitoring/problems.md', text: 'Problemas'},
@@ -63,7 +63,7 @@ const monitoringSidebar = {
 const customerSidebar = {
     en: [{
         text: 'ISP / Customer',
-        collapsible: true,
+        //collapsible: true,
         children: [
             {link: '/krill2/isp-customer/customers.md', text: 'Customers'},
             {link: '/krill2/isp-customer/cpes.md', text: 'CPEs'},
@@ -74,7 +74,7 @@ const customerSidebar = {
     }],
     es: [{
         text: 'ISP / Clientes',
-        collapsible: true,
+        //collapsible: true,
         children: [
             {link: '/es/krill2/isp-customer/customers.md', text: 'Clientes'},
             {link: '/es/krill2/isp-customer/cpes.md', text: 'CPEs'},
@@ -88,7 +88,7 @@ const customerSidebar = {
 const pbxSidebar = {
     en: [{
         text: 'PBXs',
-        collapsible: true,
+        //collapsible: true,
         children: [
             {link: '/krill2/pbx/pbxs.md', text: 'PBXs'},
             {link: '/krill2/pbx/cdrs.md', text: 'CDRs'},
@@ -98,7 +98,7 @@ const pbxSidebar = {
     }],
     es: [{
         text: 'PBXs',
-        collapsible: true,
+        //collapsible: true,
         children: [
             {link: '/es/krill2/pbx/pbxs.md', text: 'PBXs'},
             {link: '/es/krill2/pbx/cdrs.md', text: 'CDRs'},
