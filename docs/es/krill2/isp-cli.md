@@ -804,7 +804,7 @@ Permite visualizar todas las sesiones pppoe activas.
 ispadmin@lab3.phicus.es > radius sessions print
 CPE      Username                         Station ID        IP Address     
          dosmarestracer                   b4-75-0e-98-ce-d0  31.222.116.198
-         AR04005@INTERNET         0c-80-63-a5-1d-f1    10.15.43.196
+         AR04005@INTERNET                 0c-80-63-a5-1d-f1    10.15.43.196
          480098@perico                    e8-48-b8-9f-b9-05     10.15.22.48
          comedificiosantiago              c4-ad-34-15-0e-81    10.15.10.246
 ```
