@@ -21,5 +21,5 @@ It shows everything related with Krill's Radius module.
 
 Its menu has the following elements:
 
-- [Sessions](/guide/krill2/radius/sessions): It shows the active PPPoE sessions as well as the duplicated ones.
-- [IP Pools](/guide/krill2/radius/ip-pools): IPs' Pool with the availability statistics.
+- [Sessions](/guide/krill2/radius/sessions.html): It shows the active PPPoE sessions as well as the duplicated ones.
+- [IP Pools](/guide/krill2/radius/ip-pools.html): IPs' Pool with the availability statistics.

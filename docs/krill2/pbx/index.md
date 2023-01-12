@@ -17,7 +17,7 @@ It is destinated to the management of the network's PBX.
 
 Its menu has the following elements:
 
-- [PBXs](/guide/krill2/pbx/pbxs): everything related to the VIRTUAL PBXs from our customers will be created, modified or deleted.
-- [CDRs](/guide/krill2/pbx/cdrs): we have the incoming and outgoing calls' list of the network.
-- [Holidays](/guide/krill2/pbx/holidays): we can select the holiday days for the PBXs.
-- [Contexts](/guide/krill2/pbx/contexts): we can add, edit, or delete the call's context that affect Krill's PBX.
+- [PBXs](/guide/krill2/pbx/pbxs.html): everything related to the VIRTUAL PBXs from our customers will be created, modified or deleted.
+- [CDRs](/guide/krill2/pbx/cdrs.html): we have the incoming and outgoing calls' list of the network.
+- [Holidays](/guide/krill2/pbx/holidays.html): we can select the holiday days for the PBXs.
+- [Contexts](/guide/krill2/pbx/contexts.html): we can add, edit, or delete the call's context that affect Krill's PBX.

@@ -20,11 +20,11 @@ Apartado web destinado al alta, modificación o baja de los clientes y equipos d
 
 Su menú contiene los siguientes elementos:
 
-- [Customers](/guide/es/krill2/isp-customer/customers): Apartado destinado a los datos administrativos de los clientes
-- [CPEs](/guide/es/krill2/isp-customer/cpes): Apartado destinado a los datos de los equipos que se conectarán en las instalaciones finales
-- [POTs](/guide/es/krill2/isp-customer/potses): Apartado destinado a los datos telefónicos asociados a los CPEs
-- [CPE Profiles](/guide/es/krill2/isp-customer/cpe-profiles): Apartado destinado a las diferentes tarifas usables por las tecnologías en los CPEs: En el mismo apartado se manejan las velocidades de GPON, WiMAX, Docsis y G.HN
-- [Contexts](/guide/es/krill2/isp-customer/contexts): Apartado destinado a los contextos de llamada que la PBX usará para permitir o no permitir llamar a los destinos escogidos
+- [Customers](/guide/es/krill2/isp-customer/customers.html): Apartado destinado a los datos administrativos de los clientes
+- [CPEs](/guide/es/krill2/isp-customer/cpes.html): Apartado destinado a los datos de los equipos que se conectarán en las instalaciones finales
+- [POTs](/guide/es/krill2/isp-customer/potses.html): Apartado destinado a los datos telefónicos asociados a los CPEs
+- [CPE Profiles](/guide/es/krill2/isp-customer/cpe-profiles.html): Apartado destinado a las diferentes tarifas usables por las tecnologías en los CPEs: En el mismo apartado se manejan las velocidades de GPON, WiMAX, Docsis y G.HN
+- [Contexts](/guide/es/krill2/isp-customer/contexts.html): Apartado destinado a los contextos de llamada que la PBX usará para permitir o no permitir llamar a los destinos escogidos
 
 ::: tip Relación CUSTOMERS – CPEs
 
