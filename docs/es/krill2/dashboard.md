@@ -79,12 +79,12 @@ Muestra en primer lugar con qué usuario estamos logueados, justo debajo muestra
 
 En este menú podremos cambiar entre un módulo u otro. Siendo los módulos disponibles a día de hoy los siguientes:
 
-- **Monitoring**: [Monitorización de equipos y servicios de la red](/guide/es/krill2/monitoring/)
-- **Customers/ISP**: [Gestión de clientes y CPEs](/guide/es/krill2/isp-customer/)
-- **PBX**: [Gestión de PBX](/guide/es/krill2/pbx/)
-- **Radius/Oratio**: [Control de sesiones PPPoE y Pool de IPs](/guide/es/krill2/radius/)
-- **Installer tools**: [Herramientas del instalador](/guide/es/krill2/installer-tools/)
-- **Rubik**: [Herramienta de gestión de redes mutualizadas con terceros](/guide/es/krill2/rubik/)
+- **Monitoring**: [Monitorización de equipos y servicios de la red](/es/krill2/monitoring/)
+- **Customers/ISP**: [Gestión de clientes y CPEs](/es/krill2/isp-customer/)
+- **PBX**: [Gestión de PBX](/es/krill2/pbx/)
+- **Radius/Oratio**: [Control de sesiones PPPoE y Pool de IPs](/es/krill2/radius/)
+- **Installer tools**: [Herramientas del instalador](/es/krill2/installer-tools/)
+- **Rubik**: [Herramienta de gestión de redes mutualizadas con terceros](/es/krill2/rubik/)
 
 Desde este menú también podemos cambiar el idioma de Krill.
 

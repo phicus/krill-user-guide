@@ -20,11 +20,11 @@ It is used to register, modify or delete customers and customers' devices in the
 
 Its menu contains the following elements:
 
-- [Customers](/guide/krill2/isp-customer/customers.html): It is used for the customers' administrative information.
-- [CPEs](/guide/krill2/isp-customer/cpes.html): It is used for the information of the devices that are going to be connected in the final facilities.
-- [POTs](/guide/krill2/isp-customer/potses.html): It is used for the information of the telephones that are associated to the CPEs.
-- [CPE Profiles](/guide/krill2/isp-customer/cpe-profiles.html): It is used for the different fares that can be applied to the CPEs depending on the technology; the same bap is used for GPON, WiMAX, Docsis y G.HN speeds.
-- [Contexts](/guide/krill2/isp-customer/contexts.html): It is used for the call context the PBX is going to use to decide whether to enable the call to a particular number or not.
+- [Customers](/krill2/isp-customer/customers.html): It is used for the customers' administrative information.
+- [CPEs](/krill2/isp-customer/cpes.html): It is used for the information of the devices that are going to be connected in the final facilities.
+- [POTs](/krill2/isp-customer/potses.html): It is used for the information of the telephones that are associated to the CPEs.
+- [CPE Profiles](/krill2/isp-customer/cpe-profiles.html): It is used for the different fares that can be applied to the CPEs depending on the technology; the same bap is used for GPON, WiMAX, Docsis y G.HN speeds.
+- [Contexts](/krill2/isp-customer/contexts.html): It is used for the call context the PBX is going to use to decide whether to enable the call to a particular number or not.
 
 ::: tip CUSTOMERS – CPEs bond
 

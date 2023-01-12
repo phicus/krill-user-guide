@@ -17,8 +17,8 @@ tags:
 Módulo en el que se gestiona todo lo relacionado con Bitstream en Krill.
 
 Consta de dos submenús:
-- [Services](/guide/es/krill2/rubik/services.html): Servicios tramitados con los operadores mayoristas.
-- [Trouble Tickets](/guide/es/krill2/rubik/trouble-tickets.html): Gestión de incidencias para aquellos mayoristas que lo permitan.
+- [Services](/es/krill2/rubik/services.html): Servicios tramitados con los operadores mayoristas.
+- [Trouble Tickets](/es/krill2/rubik/trouble-tickets.html): Gestión de incidencias para aquellos mayoristas que lo permitan.
 
 En la pantalla principal hay un resumen de los últimos servicios y trouble tickets generados. Ambos apartados permiten ordenar y filtrar por los diferentes encabezados. También está disponible la herramienta para filtrar por owner y por state del servicio y ticket.
 

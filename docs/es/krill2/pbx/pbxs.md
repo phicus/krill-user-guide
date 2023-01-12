@@ -31,7 +31,7 @@ Se pueden dar dos casos:
     <p align="center"><img src="/img/krill2/pbx/0104.png" width="500"></p>
 
 ::: tip
-Si el cliente seleccionado no tiene POTSes asociados para las extensiones, podemos crearlos siempre previamente desde el módulo de ISP / Customer, [creación de CPEs](/guide/es/krill2/isp-customer/cpes.html#creacion-de-cpes), en el apartado [pestaña POTSes](/guide/es/krill2/isp-customer/cpes.html#pestana-potses), rellenando los campos necesarios:
+Si el cliente seleccionado no tiene POTSes asociados para las extensiones, podemos crearlos siempre previamente desde el módulo de ISP / Customer, [creación de CPEs](/es/krill2/isp-customer/cpes.html#creacion-de-cpes), en el apartado [pestaña POTSes](/es/krill2/isp-customer/cpes.html#pestana-potses), rellenando los campos necesarios:
 
 - **CLI**: Identificador del cpe en la PBX.
 - **SIP Username**: usuario sip de registro (sólo si es necesario).

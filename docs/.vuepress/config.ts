@@ -16,7 +16,8 @@ import {
 } from './config/index'
 
 export default defineUserConfig({
-    base: '/guide/',
+    //base: '/guide/',
+    base: '/',
     title,
     description,
     head,

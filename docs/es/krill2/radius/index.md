@@ -21,5 +21,5 @@ Apartado web que refleja todo lo relacionado con el módulo Radius de Krill.
 
 Su menú contiene los siguientes elementos:
 
-- [Sessions](/guide/es/krill2/radius/sessions.html): Muestra las sesiones PPPoE activas, así como las duplicadas.
-- [IP Pools](/guide/es/krill2/radius/ip-pools.html): Pool de IPs con estadísticas de disponibilidad.
+- [Sessions](/es/krill2/radius/sessions.html): Muestra las sesiones PPPoE activas, así como las duplicadas.
+- [IP Pools](/es/krill2/radius/ip-pools.html): Pool de IPs con estadísticas de disponibilidad.

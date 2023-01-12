@@ -16,8 +16,8 @@ tags:
 Module in which everything related with Bitstream is managed in Krill.
 
 It has two submenus:
-- [Services](/guide/krill2/rubik/services.html): Services that involve the main operator.
-- [Trouble Tickets](/guide/krill2/rubik/trouble-tickets.html): Management of incidents for those main operators that allow it.
+- [Services](/krill2/rubik/services.html): Services that involve the main operator.
+- [Trouble Tickets](/krill2/rubik/trouble-tickets.html): Management of incidents for those main operators that allow it.
 
 In the main page there's a summary of the last generated services and trouble tickets. Both of them can be ordered and filtered by the different headers. There's also available a tool to filter by owner and service or ticket condition.
 
