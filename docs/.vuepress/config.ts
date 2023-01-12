@@ -28,6 +28,7 @@ export default defineUserConfig({
         navbar: navbarMenu.items.en,
         sidebar: sidebarMenu.items.en,
         sidebarDepth: 2,
+        contributors: false
     }),
     lang: locales.defaultLanguage,
     locales: locales.config,
