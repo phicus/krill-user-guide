@@ -1,1 +1,0 @@
-const i="/guide/img/krill2/isp-customer/0201.png",s="/guide/img/krill2/isp-customer/0205.png",o="/guide/img/krill2/isp-customer/0202.png",p="/guide/img/krill2/isp-customer/0203.png";export{i as _,s as a,o as b,p as c};
