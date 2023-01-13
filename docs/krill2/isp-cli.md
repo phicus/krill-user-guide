@@ -87,7 +87,7 @@ loc:CEEIM mdl:RB1100 dscr:RouterOS RB1200
  *  59  l2vlan     ether8.vlan833    PREKRILL-MGNT    up    up     10    0.0    0.0       0.00     0.00     0.00     0.00 
  *  60  l2vlan     ether8.vlan834    PREKRILL-VOIP    up    up     10    0.0    0.0       0.00     0.00     0.00     0.00 
  *  61  l2vlan     ether8.vlan931    DEMOKRILL-HSI    up    up     10    0.0    0.0       0.00     0.00     0.00     0.00 
- *  62  l2vlan     ether8.vlan777        IPTV??       up    up     10    0.0    0.0       0.00     0.00     0.00     0.00 
+ *  62  l2vlan     ether8.vlan777        IPTV         up    up     10    0.0    0.0       0.00     0.00     0.00     0.00 
  *  63  l2vlan     ether8.vlan933    DEMOKRILL-MGNT   up    up     10    0.0    0.0       0.00     0.00     0.00     0.00 
  *  65  l2vlan    ether8.vlan1100       LAB-HSI       up    up     10    0.0    0.0       0.00     0.00     0.00     0.00 
  *  66  l2vlan    ether8.vlan1301       LAB-MGNT      up    up     10    0.0    0.0       0.00     0.00     0.00     0.00 
@@ -123,7 +123,7 @@ loc:HQs mdl:CCR1036 dscr:RouterOS RB1200
  *  59  l2vlan     ether8.vlan833    PREKRILL-MGNT    up    up     10    0.0    0.0       0.00     0.00     0.00     0.00 
  *  60  l2vlan     ether8.vlan834    PREKRILL-VOIP    up    up     10    0.0    0.0       0.00     0.00     0.00     0.00 
  *  61  l2vlan     ether8.vlan931    DEMOKRILL-HSI    up    up     10    0.0    0.0       0.00     0.00     0.00     0.00 
- *  62  l2vlan     ether8.vlan777        IPTV??       up    up     10    0.0    0.0       0.00     0.00     0.00     0.00 
+ *  62  l2vlan     ether8.vlan777        IPTV         up    up     10    0.0    0.0       0.00     0.00     0.00     0.00 
  *  63  l2vlan     ether8.vlan933    DEMOKRILL-MGNT   up    up     10    0.0    0.0       0.00     0.00     0.00     0.00 
  *  65  l2vlan    ether8.vlan1100       LAB-HSI       up    up     10    0.0    0.0       0.00     0.00     0.00     0.00 
  *  66  l2vlan    ether8.vlan1301       LAB-MGNT      up    up     10    0.0    0.0       0.00     0.00     0.00     0.00 
@@ -165,7 +165,7 @@ loc:HQs mdl:CCR1036 dscr:RouterOS RB1200
  *  59  l2vlan     ether8.vlan833    PREKRILL-MGNT    up    up     10    2.5     50.3      0.00     0.00     0.00     0.00 
  *  60  l2vlan     ether8.vlan834    PREKRILL-VOIP    up    up     10    0.0     45.7      0.00     0.00     0.00     0.00 
  *  61  l2vlan     ether8.vlan931    DEMOKRILL-HSI    up    up     10    0.0     45.7      0.00     0.00     0.00     0.00 
- *  62  l2vlan     ether8.vlan777        IPTV??       up    up     10    0.0     45.7      0.00     0.00     0.00     0.00 
+ *  62  l2vlan     ether8.vlan777        IPTV         up    up     10    0.0     45.7      0.00     0.00     0.00     0.00 
  *  63  l2vlan     ether8.vlan933    DEMOKRILL-MGNT   up    up     10    2.5     50.3      0.00     0.00     0.00     0.00 
  *  65  l2vlan    ether8.vlan1100       LAB-HSI       up    up     10   179.9    68.3      0.00     0.00     0.00     0.00 
  *  66  l2vlan    ether8.vlan1301       LAB-MGNT      up    up     10    0.0     50.6      0.00     0.00     0.00     0.00 
@@ -180,8 +180,8 @@ It allows us to list the information of all the ptps, signal, frequency, etc.
 ```bash
 ispadmin@lab3.phicus.es > core ptps print
 *                            name short dista  lcpu  rcpu dnfreq dnch        dnmod  dntx dnrx0 dnrx1 dncapac dna dnqua upfre upch        upmod  uptx  uprx0  uprx1 upcapac upa upqua   dnbw   upbw 
-*Alcazares-MarDeCristal             LUM     -   0.0   0.0      -    -            -     -  -120  -120     0.0   0   100     -    -            -     -    0.0    0.0     0.0   0   100    0.0    0.0 
-*Alcazares-MonteElCalvario          LUM     -   0.0   0.0      -    -            -     -  -120  -120     0.0   0   100     -    -            -     -    0.0    0.0     0.0   0   100    0.0    0.0 
+*Oficina-Casa                LUM     -   0.0   0.0      -    -            -     -  -120  -120     0.0   0   100     -    -            -     -    0.0    0.0     0.0   0   100    0.0    0.0 
+*Oficina-Monte               LUM     -   0.0   0.0      -    -            -     -  -120  -120     0.0   0   100     -    -            -     -    0.0    0.0     0.0   0   100    0.0    0.0 
 ```
 
 ### `core ptp [HOST_NAME] print`
@@ -189,11 +189,11 @@ ispadmin@lab3.phicus.es > core ptps print
 It allows us to see the IPs, signal, frequencies of a certain ptp model.
 
 ```bash
-ispadmin@lab3.phicus.es > core ptp Alcazares-MarDeCristal print
+ispadmin@lab3.phicus.es > core ptp Oficina-Casa print
 process_rawdata
 defaultdict(<class 'list'>, {})
 do_check_llanspeed................ <class 'krill_core.ptp.saf.lumina.Lumina'>
-name             : Alcazares-MarDeCristal
+name             : Oficina-Casa
 model            : CFIPLumina          
 laddress         : 192.168.202.10 laddress=192.168.202.10
 lrunmodel        :           unknown model
@@ -241,54 +241,54 @@ message          : dncapacity=0Mbps below min(1Mbps) dnmse=0.0 above max(-1) dnr
 It allows us to see the different core devices in a certain location.
 
 ```bash
-ispadmin@lab3.phicus.es > core location OLOT print
-SW-OLOT-BOTIGA 172.26.128.20 ut:5742547
+ispadmin@lab3.phicus.es > core location CENTRAL print
+SW-CENTRAL 172.26.128.20 ut:5742547
 loc:OLOT mdl:ES-16-XG dscr:EdgeSwitch 16 XG, 1.9.3, Linux 3.6.5, 1.0.0.4872137
  *  id  type  name                 alias                 admn  oper  speed  in_bw   out_bw  in_disc  ou_disc   in_err   ou_err 
- *  1   eth   0/1                SANT JOAN                up    up   10000  630.7M   1.8G      0.00     0.00     0.00     0.00 
- *  2   eth   0/2                LES PRESES               up    up   10000   1.9G   615.1M     0.00     0.00     0.00     0.00 
- *  3   eth   0/3               FIBRA BATET               up    up    1000   9.2M   53.4M      0.00     0.00     0.00     0.00 
- *  4   eth   0/4                                         up   down  10000   0.0     0.0       0.00     0.00     0.00     0.00 
- *  5   eth   0/5   MEMBRE BONDING OLT 10Gb OLOT_0/17/0   up   down  10000   0.0     0.0       0.00     0.00     0.00     0.00 
- *  6   eth   0/6   MEMBRE BONDING OLT 10Gb OLOT_0/17/1   up   down  10000   0.0     0.0       0.00     0.00     0.00     0.00 
- *  7   eth   0/7         MEMBRE BONDING OLT BATET        up   down    0     0.0     0.0       0.00     0.00     0.00     0.00 
- *  8   eth   0/8         MEMBRE BONDING OLT BATET        up   down   1000   0.0     0.0       0.00     0.00     0.00     0.00 
- *  9   eth   0/9      MEMBRE BONDING OLT OLOT_0/17/0     up   down  10000   0.0     0.0       0.00     0.00     0.00     0.00 
- *  10  eth   0/10     MEMBRE BONDING OLT OLOT_0/17/1     up   down  10000   0.0     0.0       0.00     0.00     0.00     0.00 
- *  11  eth   0/11          TRUNK SWITX MK SFP2           up    up   10000  15.5M   25.3M      0.00     0.00     0.00     0.00 
- *  12  eth   0/12             HOSPITAL OLOT              up    up    1000   3.9M    1.1M      0.00     0.00     0.00     0.00 
- *  13  eth   0/13         ROUTER MK BOTIGA OLOT          up    up    1000  488.5K  824.6K     0.00     0.00     0.00     0.00 
- *  14  eth   0/14                                        up   down    0     0.0     0.0       0.00     0.00     0.00     0.00 
- *  15  eth   0/15             NAS WD EX4100              up    up    1000   3.5K   32.8K      0.00     0.00     0.00     0.00 
- *  16  eth   0/16             NAS WD EX4100              up    up    1000   0.0    32.2K      0.00     0.00     0.00     0.00 
+ *  1   eth   0/1                 CENTRAL                up    up   10000  630.7M   1.8G      0.00     0.00     0.00     0.00 
+ *  2   eth   0/2                 OFICINA                up    up   10000   1.9G   615.1M     0.00     0.00     0.00     0.00 
+ *  3   eth   0/3                 FIBRA                  up    up    1000   9.2M   53.4M      0.00     0.00     0.00     0.00 
+ *  4   eth   0/4                                        up   down  10000   0.0     0.0       0.00     0.00     0.00     0.00 
+ *  5   eth   0/5   		      OLT2   		         up   down  10000   0.0     0.0       0.00     0.00     0.00     0.00 
+ *  6   eth   0/6                 OLT1                   up   down  10000   0.0     0.0       0.00     0.00     0.00     0.00 
+ *  7   eth   0/7                 AP-Casa1               up   down    0     0.0     0.0       0.00     0.00     0.00     0.00 
+ *  8   eth   0/8                 AP-Casa2               up   down   1000   0.0     0.0       0.00     0.00     0.00     0.00 
+ *  9   eth   0/9                 OLT4                   up   down  10000   0.0     0.0       0.00     0.00     0.00     0.00 
+ *  10  eth   0/10                OLT5                   up   down  10000   0.0     0.0       0.00     0.00     0.00     0.00 
+ *  11  eth   0/11                TRUNK SWITX MK SFP2    up    up   10000  15.5M   25.3M      0.00     0.00     0.00     0.00 
+ *  12  eth   0/12                                       up    up    1000   3.9M    1.1M      0.00     0.00     0.00     0.00 
+ *  13  eth   0/13                ROUTER MK              up    up    1000  488.5K  824.6K     0.00     0.00     0.00     0.00 
+ *  14  eth   0/14                                       up   down    0     0.0     0.0       0.00     0.00     0.00     0.00 
+ *  15  eth   0/15                NAS 2                  up    up    1000   3.5K   32.8K      0.00     0.00     0.00     0.00 
+ *  16  eth   0/16                NAS 1                  up    up    1000   0.0    32.2K      0.00     0.00     0.00     0.00 
 
 boards...
 entities...
-MK-FIBRA-OLOT 10.255.254.23 ut:2952791
+MK-FIBRA-CENTRAL 10.255.254.23 ut:2952791
 loc:OLOT mdl:RB1100 dscr:RouterOS RB1100x4
  *  id   type                name               alias  admn  oper  speed  in_bw   out_bw  in_disc  ou_disc   in_err   ou_err 
  *  1    eth       ether1--CONTROL-CORRENT              up    up    100   341.4    1.0K      0.00     0.00     0.00     0.00 
- *  2    eth    ether2--SWITX-1-BOTIGA-ETHER13          up    up    1000  829.8K  490.2K     0.00     0.00     0.00     0.00 
+ *  2    eth    ether2--SWITX-1-FIBRA-ETHER13           up    up    1000  829.8K  490.2K     0.00     0.00     0.00     0.00 
  *  3    eth                ether3                      up   down    0     0.0     0.0       0.00     0.00     0.00     0.00 
  *  4    eth               ether4--                     up   down    0     0.0     0.0       0.00     0.00     0.00     0.00 
  *  5    eth        ether5-SWITX-MK-CRS326              up    up    100    7.5K   27.7K      0.00     0.00     0.00     0.00 
  *  6    eth         ether6--SAI-DELTA-1                up    up    1000   92.3   893.1      0.00     0.00     0.00     0.00 
  *  7    eth         ether7--SAI-DELTA-2                up    up    1000   91.7   892.9      0.00     0.00     0.00     0.00 
  *  8    eth               ether8-                      up   down    0     0.0     0.0       0.00     0.00     0.00     0.00 
- *  9    eth     ether9-GESTIO-OLT-OLOT-10Gb            up    up    1000   21.9    1.2K      0.00     0.00     0.00     0.00 
- *  10   eth     ether10-GESTIO-OLT-OLOT-10Gb           up   down    0     0.0     0.0       0.00     0.00     0.00     0.00 
- *  11   eth       ether11-GESTIO-OLT-BATET             up    up    100    13.0    1.2K      0.00     0.00     0.00     0.00 
- *  12   eth       ether12-GESTIO-OLT-OLOT              up    up    100   314.3    1.2K      0.00     0.00     0.00     0.00 
- *  13   eth       ether13-GESTIO-OLT-OLOT              up   down    0     0.0     0.0       0.00     0.00     0.00     0.00 
- *  14  bridge    bridge--VLAN-100-HOSPITAL             up    up     0    248.8    0.0       0.00     0.00     0.00     0.00 
+ *  9    eth     ether9-GESTIO-OLT2-10Gb                up    up    1000   21.9    1.2K      0.00     0.00     0.00     0.00 
+ *  10   eth     ether10-GESTIO-OLT1-10Gb               up   down    0     0.0     0.0       0.00     0.00     0.00     0.00 
+ *  11   eth       ether11-GESTIO-OLT4                  up    up    100    13.0    1.2K      0.00     0.00     0.00     0.00 
+ *  12   eth       ether12-GESTIO-OLT5                  up    up    100   314.3    1.2K      0.00     0.00     0.00     0.00 
+ *  13   eth       ether13-GESTIO-OLT6                  up   down    0     0.0     0.0       0.00     0.00     0.00     0.00 
+ *  14  bridge    bridge--VLAN-100-CENTRAL              up    up     0    248.8    0.0       0.00     0.00     0.00     0.00 
  *  16  bridge      bridge-CONTROL-CORRENT              up    up     0    496.6   713.7      0.00     0.00     0.00     0.00 
  *  17  bridge             loopback                     up    up     0     0.0     51.0      0.00     0.00     0.00     0.00 
  *  20  l2vlan         ether2.vlan-100                  up    up    1000   3.8K   363.6      0.00     0.00     0.00     0.00 
- *  22  l2vlan     ether2.vlan-333-TRONCAL              up    up    1000  617.5K  479.6K     0.00     0.00     0.00     0.00 
+ *  22  l2vlan     ether2.vlan-222-TRONCAL              up    up    1000  617.5K  479.6K     0.00     0.00     0.00     0.00 
  *  25  bridge        bridge-GESTIO-OLT                 up    up     0    466.6   416.0K     0.00     0.00     0.00     0.00 
  *  34  bridge   bridge2-sai-control-corrent            up    up     0     0.0     53.4      0.00     0.00     0.00     0.00 
- *  38  l2vlan      ether5.vlan-555-GESTIO             down  down   100    0.0     0.0       0.00     0.00     0.00     0.00 
- *  39  l2vlan         vlan-555--GESTIO                down  down    0     0.0     0.0       0.00     0.00     0.00     0.00
+ *  38  l2vlan      ether5.vlan-534-GESTIO             down  down   100    0.0     0.0       0.00     0.00     0.00     0.00 
+ *  39  l2vlan         vlan-534--GESTIO                down  down    0     0.0     0.0       0.00     0.00     0.00     0.00
 ```
 
 ## DHCP Tools
@@ -474,7 +474,7 @@ last registration info:
 This command can be used specifying other selection parameters:
 - CPE ID: `gpon onu id 0267`
 - CPE_NAME: `gpon onu cpe cpe0267`
-  :::
+:::
 
 ### `gpon onu do factory-reset by-sn [SERIAL_NUMBER]`
 
@@ -488,7 +488,7 @@ ispadmin@lab3.phicus.es > gpon onu do factory-reset by-sn 444632326a183197
 The same command can be used specifying other selection parameters:
 - CPE ID: `gpon onu do factory-reset id 0267`
 - CPE_NAME: `gpon onu do factory-reset cpe cpe0267`
-  :::
+:::
 
 ### `gpon onu do reboot by-sn [SERIAL_NUMBER]`
 
@@ -502,7 +502,7 @@ ispadmin@lab3.phicus.es > gpon onu do reboot by-sn 444632326a183197
 The same command can be used specifying other selection parameters:
 - CPE ID: `gpon onu do reboot id 0267`
 - CPE_NAME: `gpon onu do reboot cpe cpe0267`
-  :::
+:::
 
 ### `gpon onu do reboot by-sn [SERIAL_NUMBER]`
 
@@ -516,7 +516,7 @@ ispadmin@lab3.phicus.es > gpon onu do unprovision by-sn 444632326a183197
 The same command can be used specifying other selection parameters:
 - CPE ID: `gpon onu do unprovision id 0267`
 - CPE_NAME: `gpon onu do unprovision cpe cpe0267`
-  :::
+:::
 
 ### `gpon onus  bandwidth olt [OLT_ID]`
 
@@ -720,7 +720,7 @@ It allows to visualize the information of all the available cmts.
 
 ```bash
 ispadmin@lab3.phicus.es > docsis cmts print
-CMTS: cmtsCOPACABANA
+CMTS: cmtsCENTRAL
 uptime: None
 MD: ix=1033 name=ca5-0
 Channels:
@@ -1214,12 +1214,12 @@ ispadmin@lab.phicus.es > docsis cm reset 001596cb834d
 ### `wimax ap [AP_ID]`
 
 ```bash
-ispadmin@lab3.phicus.es >  wimax ap AP-RUEDA-CMB
+ispadmin@lab3.phicus.es >  wimax ap AP-Casa
                         ap short                 SSID freq  bw   dist  n   dnbw   upbw   at etc
-              AP-RUEDA-CMB  CMBM                 ssid 5200  20   9999 24    0.0    0.0 2360.1 497 days, 2:27:52 ----> - 
+              AP-LAB        CMBM                 ssid 5200  20   9999 24    0.0    0.0 2360.1 497 days, 2:27:52 ----> - 
 ====================================================================================================
-aphost  : AP-RUEDA-CMB                   address : 172.25.11.131
-uptime  : 42949672                       sysdescr: Linux Rueda_CM 2.6.32.27 #1 Wed Jul 7 15:20:45 UTC 2021 mips
+aphost  : AP-LAB                        address : X.X.X.X
+uptime  : 42949672                       sysdescr: Linux Rueda_CM  #1 Wed Jul 7 15:20:45 UTC 2021 mips
 cls     : MCambiumBaseStation            
 freq    : 5200                           chanbw  : 20
 distance: 9999                           txpower : 30.0
@@ -1265,7 +1265,7 @@ ispadmin@lab3.phicus.es > wimax aps stats print
 [2023-01-03 11:35:40 CET] WARNING: [libkrill.ssh.myssh/246305] _poll is_host_up AP-LAB-01 ('172.16.142.101', 22) is DOWN (Unable to connect to 172.16.142.101: timed out)
                         ap short                 SSID freq  bw   dist  n   dnbw   upbw   at etc
 FAIL:
- - AP-LAB-01                     : ["transport ('172.16.142.101', 22) is down"]
+ - AP-LAB-01                     : ["transport ('X.X.X.X', 22) is down"]
 ```
 
 ### `wimax update host [AP_ID]`
@@ -1301,17 +1301,17 @@ It allows us to see al the active pppoe sessions.
 ```bash
 ispadmin@lab3.phicus.es > radius sessions print
 CPE      Username                         Station ID        IP Address     
-         dosmarestracer                   b4-75-0e-98-ce-d0  31.222.116.198
-         AR04005@INTERNET                 0c-80-63-a5-1d-f1    10.15.43.196
-         480098@perico                    e8-48-b8-9f-b9-05     10.15.22.48
-         comedificiosantiago              c4-ad-34-15-0e-81    10.15.10.246
+         demotracer                   b4-75-0e-98-ce-d0      X.X.X.X
+         AR04005@LAB3                 0c-80-63-a5-1d-f1      X.X.X.X
+         480098@LAB1                  e8-48-b8-9f-b9-05      X.X.X.X
+         comedifi@LAB2                c4-ad-34-15-0e-81      X.X.X.X
 ```
 
 ::: tip
 If we want to filter the pppoe sessions, the commands can be linked using:
 ```bash
 ispadmin@lab3.phicus.es > radius sessions print | include dosmarestracer
-dosmarestracer                   b4-75-0e-98-ce-d0  31.222.116.198
+dosmarestracer                   b4-75-0e-98-ce-d0  X.X.X.X
 ```
 :::
 
