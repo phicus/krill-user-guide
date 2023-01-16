@@ -5,9 +5,6 @@ import { mediumZoomPlugin } from '@vuepress/plugin-medium-zoom'
 import { searchPlugin } from '@vuepress/plugin-search'
 import { prismjsPlugin } from '@vuepress/plugin-prismjs'
 import { nprogressPlugin } from '@vuepress/plugin-nprogress'
-import { sitemapPlugin } from 'vuepress-plugin-sitemap2'
-import { removeHtmlExtensionPlugin } from 'vuepress-plugin-remove-html-extension'
-
 import { activeHeaderLinksPlugin } from '@vuepress/plugin-active-header-links'
 import {
     head,
@@ -45,9 +42,5 @@ export default defineUserConfig({
         }),
         prismjsPlugin(),
         activeHeaderLinksPlugin(),
-        sitemapPlugin({
-            hostname: 'https://guide.phicus.es'
-        }),
-        removeHtmlExtensionPlugin()
     ]
 })
