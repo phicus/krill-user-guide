@@ -1,0 +1,1 @@
+import{_ as a,n as t,p as s,Q as e,s as c}from"./framework-b76f3d1b.js";const r={},n=e("h1",{id:"api-v2",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#api-v2","aria-hidden":"true"},"#"),c(" API V2")],-1),o=[n];function _(i,d){return t(),s("div",null,o)}const l=a(r,[["render",_],["__file","api-v2.html.vue"]]);export{l as default};

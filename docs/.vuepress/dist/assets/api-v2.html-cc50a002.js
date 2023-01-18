@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-724a54d3","path":"/es/krill2/api-v2.html","title":"API V2","lang":"es-ES","frontmatter":{},"headers":[],"git":{"updatedTime":1673941715000},"filePathRelative":"es/krill2/api-v2.md"}');export{e as data};
