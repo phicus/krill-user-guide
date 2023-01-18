@@ -4,7 +4,7 @@ description: Visión general de la API REST v2.
 lang: es-ES
 sidebar: auto
 sidebarDepth: 2
-prev: users
+prev: null
 next: null
 tags:
 - krill2
