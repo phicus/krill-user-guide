@@ -1,37 +1,37 @@
-- [REST API v2 Overview](#rest-api-v2-overview)
-  - [Introduction](#introduction)
-- [Migrating from API v1](#migrating-from-api-v1)
-  - [Listing CPEs, Customers, POTSs.](#listing-cpes-customers-potss)
-- [Hierarchy](#hierarchy)
-  - [CRM toolbar - api/v2/isp](#crm-toolbar---apiv2isp)
-    - [Filtering attributes](#filtering-attributes)
-    - [Joins](#joins)
-    - [Pagination](#pagination)
-  - [PBX management - api/v2/pbx](#pbx-management---apiv2pbx)
-  - [Monitoring resources - api/v2/monitoring](#monitoring-resources---apiv2monitoring)
-  - [RADIUS management - api/v2/oratio](#radius-management---apiv2oratio)
-  - [GPON provision - api/v2/gpon](#gpon-provision---apiv2gpon)
-  - [DOCSIS management - api/v2/docsis](#docsis-management---apiv2docsis)
-  - [Rubik resources - api/v2/rubik](#rubik-resources---apiv2rubik)
-  - [Plankton management - api/v2/plankton](#plankton-management---apiv2plankton)
+---
+title: API v2
+description: REST API v2 Overview.
+lang: en-US
+sidebar: auto
+sidebarDepth: 2
+prev: users
+next: null
+tags:
+- krill2
+- dashboard
+- meta-buscador
+- widgets
+- menú de usuario
+- usuario
+- logout
+---
 
 # REST API v2 Overview
 
 ## Introduction
 
-The [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) APIv2 allows you to manage Krill objects and resources by HTTP requests.
+The [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) API v2 allows you to manage Krill objects and resources by HTTP requests.
 
-You can check the technical definition [here](https://apikrill.phicus.es/swagger/v2/).
+You can check the technical definition [here (Swagger)](https://apikrill.phicus.es/swagger/v2/).
 
-
-# Migrating from API v1
+## Migrating from API v1
 
 The `APIv1` will be active for a while... but you should adapt your client to `APIv2` version.
 
 In this chapter, we assume you have been using `APIv1` only for `cpes`, `customers` and `potses` resources.
 
 Some quick tips to make easier to migrate:
- - prefix for all URLs changes from `api` to `api/v2`
+ - prefix for all URLs changes from `/api` to `/api/v2`
  - all resources are now under an app.
  - most of resources are now paginated.
  - probably, you will access by HTTPS.
@@ -40,7 +40,8 @@ Some quick tips to make easier to migrate:
 ## Listing CPEs, Customers, POTSs.
 
 With v1:
-```
+
+```bash
 GET api/cpes/?sn=0000deadbeef0000
 
 HTTP/1.1 200 OK
@@ -113,8 +114,10 @@ X-Frame-Options: DENY
     }
 ]
 ```
+
 With v2
-```
+
+```bash
 GET api/v2/isp/cpes/?sn=0000deadbeef0000
 
 HTTP/1.1 200 OK
@@ -228,14 +231,21 @@ X-Frame-Options: DENY
 
 Changes about urls and paginated response are the same for `customers` and `potses` resources.
 
-# Hierarchy
+## Hierarchy
+
 Krill's entire REST API is organized under `https://<hostname>/api/v2/`. The URL structure is divided at the root level by some of these applications: isp, pbx, monitoring, auth, me, installer, oratio, rubik and plankton. Within each application exists diferent resources to use.
 
-## CRM toolbar - api/v2/isp
+## Endpoints
+
+### CRM
+
+Endpoint: `/api/v2/isp`
+
 Here you can query, create, modify and delete CRM objects (Customers, CPEs, POTSs).
 
-### Filtering attributes
-```
+#### Filtering attributes
+
+```bash
 GET api/v2/isp/cpes/74/?attrs=id,cpename
 
 HTTP/1.1 200 OK
@@ -261,9 +271,9 @@ X-Frame-Options: DENY
 }
 ```
 
-### Joins
+#### Joins
 
-```
+```bash
 GET api/v2/isp/cpes/74/?attrs=id&joins==customer,potses
 
 HTTP/1.1 200 OK
@@ -339,9 +349,10 @@ X-Frame-Options: DENY
     ]
 }
 ```
-### Pagination
 
-```
+#### Pagination
+
+```bash
 GET api/v2/isp/cpes/?attrs=id&offset=42&limit=3
 HTTP/1.1 200 OK
 Access-Control-Allow-Credentials: True
@@ -378,26 +389,47 @@ X-Frame-Options: DENY
 }
 ```
 
-## PBX management - api/v2/pbx
+### PBX management
+
+Endpoint: `/api/v2/pbx`
+
 Here you can query, create, modify and delete PBXv objects (pbxs, recepcionists, groups, queues, ddis, schedules, holidays).
 
-## Monitoring resources - api/v2/monitoring
- - obtain current status of monitored hosts and services
- - historial of changes for them
- - datasets with monitored metrics
- - perform actions (reschedule checks, etc.)
+### Monitoring resources
 
-## RADIUS management - api/v2/oratio
+Endpoint: `/api/v2/monitoring`
 
-## GPON provision - api/v2/gpon
+ - Obtain current status of monitored hosts and services
+ - History of changes for them
+ - Datasets with monitored metrics
+ - Perform actions (reschedule checks, etc.)
+
+###  RADIUS management
+
+Endpoint: `/api/v2/oratio`
+
+PPPoE sessions and IP Pool stats information.
+
+### GPON provision
+
+Endpoint: `/api/v2/gpon`
+
 Realtime information about OLTs, PONs and ONUs provisioned.
 
-## DOCSIS management - api/v2/docsis
+### DOCSIS management
+
+Endpoint: `/api/v2/docsis`
+
 Tecnhical information about CMTSs, Macs domains and fiber nodes.
 
+### Rubik resources
 
-## Rubik resources - api/v2/rubik
+Endpoint: `/api/v2/rubik`
+
 Here you can query, create, modify and delete Rubik objects (Addresses, Services, Tickets), for integration with an external CRM.
 
-## Plankton management - api/v2/plankton
+### Plankton management
+
+Endpoint: `/api/v2/plankton`
+
 Here you can query, create, modify and delete Plankton FTTH Services, for integration with an external CRM.
