@@ -85,6 +85,7 @@ En este menú podremos cambiar entre un módulo u otro. Siendo los módulos disp
 - **Radius/Oratio**: [Control de sesiones PPPoE y Pool de IPs](/es/krill2/radius/)
 - **Installer tools**: [Herramientas del instalador](/es/krill2/installer-tools/)
 - **Rubik**: [Herramienta de gestión de redes mutualizadas con terceros](/es/krill2/rubik/)
+- **Logger**: [Reporte de logs de la API y del panel de administración](/es/krill2/logger/)
 
 Desde este menú también podemos cambiar el idioma de Krill.
 
