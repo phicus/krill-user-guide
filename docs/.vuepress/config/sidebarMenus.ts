@@ -163,6 +163,23 @@ const ispCliSidebar = {
     }],
 }
 
+const loggerSidebar = {
+    en: [{
+        text: 'Logger',
+        // collapsible: true,
+        children: [
+            {link: '/krill2/logger/', text: 'Logger'},
+        ],
+    }],
+    es: [{
+        text: 'Logger',
+        // collapsible: true,
+        children: [
+            {link: '/es/krill2/logger/', text: 'Logger'},
+        ]
+    }],
+}
+
 const main = {
     // en-EN
     en: {

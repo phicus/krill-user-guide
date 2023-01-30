@@ -87,6 +87,7 @@ In this menu we can change between modules. The modules available today are:
 - **Radius/Oratio**: [PPPoE session and IPs' pool control](/krill2/radius/)
 - **Installer tools**: [Installer tools](/krill2/installer-tools/)
 - **Rubik**: [Tool for managing networks mutualized with other operators](/krill2/rubik/)
+- **Logger**: [Log reports from API and Admin panel](/krill2/logger/)
 
 From this menu we can change Krill's language.
 

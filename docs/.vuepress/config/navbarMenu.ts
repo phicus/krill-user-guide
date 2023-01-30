@@ -42,6 +42,10 @@ const menu = [
                         text: 'Installer tools',
                         link: '/krill2/installer-tools/'
                     },
+                    {
+                        text: 'Logger',
+                        link: '/krill2/logger/'
+                    },
                 ]
             }
         ]
@@ -95,6 +99,11 @@ const menuEs = [
                         text: 'Herramientas del Instalador',
                         link: '/es/krill2/installer-tools/'
                     },
+                    {
+                        text: 'Logger',
+                        link: '/es/krill2/logger/'
+                    },
+
                 ]
             }
         ]
