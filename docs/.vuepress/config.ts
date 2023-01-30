@@ -3,6 +3,7 @@ import { backToTopPlugin } from '@vuepress/plugin-back-to-top'
 import { externalLinkIconPlugin } from '@vuepress/plugin-external-link-icon'
 import { mediumZoomPlugin } from '@vuepress/plugin-medium-zoom'
 import { searchPlugin } from '@vuepress/plugin-search'
+// import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 import { prismjsPlugin } from '@vuepress/plugin-prismjs'
 import { nprogressPlugin } from '@vuepress/plugin-nprogress'
 import { activeHeaderLinksPlugin } from '@vuepress/plugin-active-header-links'
@@ -40,6 +41,12 @@ export default defineUserConfig({
         searchPlugin({
             locales: locales.searchPlugin,
         }),
+        // docsearchPlugin({
+        //     appId: 'PB6PF8EDIT',
+        //     apiKey: 'PB6PF8EDIT',
+        //     locales: locales.searchPlugin,
+        //     indexName: 'krill-user-guide',
+        // }),
         prismjsPlugin(),
         activeHeaderLinksPlugin(),
     ]
