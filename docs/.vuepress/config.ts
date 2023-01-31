@@ -2,8 +2,8 @@ import { defineUserConfig, defaultTheme } from 'vuepress'
 import { backToTopPlugin } from '@vuepress/plugin-back-to-top'
 import { externalLinkIconPlugin } from '@vuepress/plugin-external-link-icon'
 import { mediumZoomPlugin } from '@vuepress/plugin-medium-zoom'
-import { searchPlugin } from '@vuepress/plugin-search'
-// import { docsearchPlugin } from '@vuepress/plugin-docsearch'
+// import { searchPlugin } from '@vuepress/plugin-search'
+import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 import { prismjsPlugin } from '@vuepress/plugin-prismjs'
 import { nprogressPlugin } from '@vuepress/plugin-nprogress'
 import { activeHeaderLinksPlugin } from '@vuepress/plugin-active-header-links'
@@ -38,15 +38,15 @@ export default defineUserConfig({
         nprogressPlugin(),
         externalLinkIconPlugin(),
         mediumZoomPlugin(),
-        searchPlugin({
-            locales: locales.searchPlugin,
-        }),
-        // docsearchPlugin({
-        //     appId: 'PB6PF8EDIT',
-        //     apiKey: 'PB6PF8EDIT',
+        // searchPlugin({
         //     locales: locales.searchPlugin,
-        //     indexName: 'krill-user-guide',
         // }),
+        docsearchPlugin({
+            appId: '2NLE2B4YK5',
+            apiKey: '21be73e3e862794947a3e9b2a54e6511',
+            locales: locales.searchPlugin,
+            indexName: 'guide-phicus',
+        }),
         prismjsPlugin(),
         activeHeaderLinksPlugin(),
     ]
