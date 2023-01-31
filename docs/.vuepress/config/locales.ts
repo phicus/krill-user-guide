@@ -34,9 +34,19 @@ export const locales = {
     searchPlugin : {
         '/': {
             placeholder: 'Search...',
+            translations: {
+                button: {
+                    buttonText: 'Search...',
+                },
+            },
         },
         '/es/': {
             placeholder: 'Buscar...',
+            translations: {
+                button: {
+                    buttonText: 'Buscar...',
+                },
+            },
         },
     }
 }
