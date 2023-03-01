@@ -420,7 +420,7 @@ Realtime information about OLTs, PONs and ONUs provisioned.
 
 Endpoint: `/api/v2/docsis`
 
-Tecnhical information about CMTSs, Macs domains and fiber nodes.
+Technical information about CMTSs, Macs domains and fiber nodes.
 
 ### Rubik resources
 

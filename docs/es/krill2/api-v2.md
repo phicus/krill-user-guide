@@ -18,28 +18,28 @@ tags:
 
 # Visión general de la API REST v2
 
-## Introduction
+## Introducción
 
-The [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) API v2 allows you to manage Krill objects and resources by HTTP requests.
+La [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) API v2 te permite controlar los recursos y objetos de Krill mediante peticiones HTTP.
 
-You can check the technical definition [here (Swagger)](https://apikrill.phicus.es/swagger/v2/).
+Puedes consultar las definiciones técnicas en [Swagger](https://apikrill.phicus.es/swagger/v2/).
 
-## Migrating from API v1
+## Migrar desde la API v1
 
-The `APIv1` will be active for a while... but you should adapt your client to `APIv2` version.
+La `APIv1` va a permanecer activa durante un tiempo... pero debéis tratar de adaptar el cliente API a la nueva versión `V2`.
 
-In this chapter, we assume you have been using `APIv1` only for `cpes`, `customers` and `potses` resources.
+En este apartado asumimos que ya estáis haciendo uso del `APIv1` para manejar los recursos referentes a `CPE`, `CUSTOMER` y `POTSES`.
 
-Some quick tips to make easier to migrate:
-- prefix for all URLs changes from `/api` to `/api/v2`
-- all resources are now under an app.
-- most of resources are now paginated.
-- probably, you will access by HTTPS.
-- if you need it, auth now may include [OAuth](https://oauth.net/). Please, contact Phicus team for details.
+Algunos consejos para agilizar la migración:
+- El prefijo para todas las URLs cambia de `/api` a `/api/v2`.
+- Todos los recursos están ahora bajo una APP.
+- La mayoría de los recursos están ahora paginados.
+- Es altamente probable que debas entrar por HTTPS en vez de HTTP.
+- Si lo requerís, el acceso ahora es posible por método [OAuth](https://oauth.net/). Si estás interesado contacta con el equipo de Phicus.
 
-## Listing CPEs, Customers, POTSs.
+## Listando CPEs, Customers y POTSes.
 
-With v1:
+Con API v1:
 
 ```bash
 GET api/cpes/?sn=0000deadbeef0000
@@ -115,7 +115,7 @@ X-Frame-Options: DENY
 ]
 ```
 
-With v2
+Con v2
 
 ```bash
 GET api/v2/isp/cpes/?sn=0000deadbeef0000
@@ -229,11 +229,11 @@ X-Frame-Options: DENY
 
 ```
 
-Changes about urls and paginated response are the same for `customers` and `potses` resources.
+Los cambios sobre las URLs y la paginación en cuanto a las respuestas para `customers` y `potses` son los mismos.
 
-## Hierarchy
+## Jerarquía
 
-Krill's entire REST API is organized under `https://<hostname>/api/v2/`. The URL structure is divided at the root level by some of these applications: isp, pbx, monitoring, auth, me, installer, oratio, rubik and plankton. Within each application exists diferent resources to use.
+La API-REST de Krill está organizada bajo `https://<hostname>/api/v2/`. La estructura de las URLs está dividida por aplicación o módulo para estas aplicaciones, accediendo desde el módulo inicial/root: isp, pbx, monitoring, auth, me, installer, oratio, rubik and plankton. Dentro de cada aplicación existen diferentes recursos disponibles..
 
 ## Endpoints
 
@@ -241,9 +241,9 @@ Krill's entire REST API is organized under `https://<hostname>/api/v2/`. The URL
 
 Endpoint: `/api/v2/isp`
 
-Here you can query, create, modify and delete CRM objects (Customers, CPEs, POTSs).
+En este endpoint puedes listar, crear, modificar y eliminar los objetos que el CRM maneja: Customers, CPEs, POTSes.
 
-#### Filtering attributes
+#### Filtrando atributos
 
 ```bash
 GET api/v2/isp/cpes/74/?attrs=id,cpename
@@ -350,7 +350,7 @@ X-Frame-Options: DENY
 }
 ```
 
-#### Pagination
+#### Paginación
 
 ```bash
 GET api/v2/isp/cpes/?attrs=id&offset=42&limit=3
@@ -389,47 +389,47 @@ X-Frame-Options: DENY
 }
 ```
 
-### PBX management
+### Manejo de PBX
 
 Endpoint: `/api/v2/pbx`
 
-Here you can query, create, modify and delete PBXv objects (pbxs, recepcionists, groups, queues, ddis, schedules, holidays).
+En este endpoint puedes listar, crear, modificar y eliminar los objetos relacionados con la PBXv: (pbxs, recepcionists, groups, queues, ddis, schedules, holidays).
 
-### Monitoring resources
+### Monitorización de equipos y servicios
 
 Endpoint: `/api/v2/monitoring`
 
-- Obtain current status of monitored hosts and services
-- History of changes for them
-- Datasets with monitored metrics
-- Perform actions (reschedule checks, etc.)
+- Obtener el estado actual de los hosts y servicios monitorizados por Krill
+- Histórico de cambios sobre los hosts y servicios
+- Datasets con las gráficas generadas por la monitorización
+- Llevar a cabo acciones como reschedule, checks, etc
 
-###  RADIUS management
+###  Gestión RADIUS
 
 Endpoint: `/api/v2/oratio`
 
-PPPoE sessions and IP Pool stats information.
+Sesiones PPPoE e información sobre el estado de los Pools de IP.
 
-### GPON provision
+### Provisión GPON
 
 Endpoint: `/api/v2/gpon`
 
-Realtime information about OLTs, PONs and ONUs provisioned.
+Información en tiempo real sobre las OLTs, PONs, ONUs provisionados.
 
-### DOCSIS management
+### Gestión DOCSIS
 
 Endpoint: `/api/v2/docsis`
 
-Tecnhical information about CMTSs, Macs domains and fiber nodes.
+Información técnica sobre CMTSs, Mac domains y fiber-nodes.
 
-### Rubik resources
+### Recursos Rubik
 
 Endpoint: `/api/v2/rubik`
 
 Here you can query, create, modify and delete Rubik objects (Addresses, Services, Tickets), for integration with an external CRM.
 
-### Plankton management
+### Gestión de Plankton
 
 Endpoint: `/api/v2/plankton`
 
-Here you can query, create, modify and delete Plankton FTTH Services, for integration with an external CRM.
+En este endopint puedes listar, crear, modificar y eliminar los servicios FTTH de Plankton para integrarlos con el CRM.
