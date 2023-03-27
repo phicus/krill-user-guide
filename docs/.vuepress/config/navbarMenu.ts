@@ -50,7 +50,13 @@ const menu = [
             }
         ]
     },
-    { text: 'API (V2)', link: '/krill2/api-v2' },
+    {
+        text: 'API',
+        children: [
+            { text: 'API (V2)', link: '/krill2/api-v2' },
+            { text: 'Postman Samples', link: '/krill2/postman' },
+        ]
+    },
     { text: 'ISP-CLI', link: '/krill2/isp-cli' },
     // { text: 'Changelog', items: getChildrenNavbar('../change-log/', 'Changelog') },
 ]
@@ -108,7 +114,13 @@ const menuEs = [
             }
         ]
     },
-    { text: 'API (V2)', link: '/es/krill2/api-v2' },
+    {
+        text: 'API',
+        children: [
+            { text: 'API (V2)', link: '/es/krill2/api-v2' },
+            { text: 'Ejemplos Postman', link: '/es/krill2/postman' },
+        ]
+    },
     { text: 'ISP-CLI', link: '/es/krill2/isp-cli' },
     // { text: 'Changelog', items: getChildrenNavbar('../change-log/', 'Changelog') },
 ]

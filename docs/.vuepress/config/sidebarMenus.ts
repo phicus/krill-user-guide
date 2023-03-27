@@ -180,6 +180,25 @@ const loggerSidebar = {
     }],
 }
 
+const apiSidebar = {
+    en: [{
+        text: 'API v2',
+        // collapsible: true,
+        children: [
+            {link: '/krill2/api-v2.md', text: 'API v2'},
+            {link: '/krill2/postman.md', text: 'Postman samples'},
+        ],
+    }],
+    es: [{
+        text: 'API v2',
+        // collapsible: true,
+        children: [
+            {link: '/es/krill2/api-v2.md', text: 'API v2'},
+            {link: '/es/krill2/postman.md', text: 'Ejemplos postman'},
+        ]
+    }],
+}
+
 const main = {
     // en-EN
     en: {
@@ -187,35 +206,12 @@ const main = {
         '/krill2/users': krill2Sidebar.en,
         '/krill2/dashboard': krill2Sidebar.en,
         '/krill2/monitoring/': monitoringSidebar.en,
-        // '/krill2/monitoring/alarms.html': monitoringSidebar.en,
-        // '/krill2/monitoring/problems.html': monitoringSidebar.en,
-        // '/krill2/monitoring/matrix.html': monitoringSidebar.en,
-        // '/krill2/monitoring/host-groups.html': monitoringSidebar.en,
-        // '/krill2/monitoring/sonar.html': monitoringSidebar.en,
-        // '/krill2/monitoring/unprovisioned-onus.html': monitoringSidebar.en,
-        // '/krill2/monitoring/worldmap.html': monitoringSidebar.en,
-        // '/krill2/monitoring/smart-tree.html': monitoringSidebar.en,
-        // '/krill2/monitoring/host-events.html': monitoringSidebar.en,
-        // '/krill2/monitoring/history.html': monitoringSidebar.en,
         '/krill2/isp-customer/': customerSidebar.en,
-        // '/krill2/isp-customer/customers': customerSidebar.en,
-        // '/krill2/isp-customer/cpes': customerSidebar.en,
-        // '/krill2/isp-customer/potses': customerSidebar.en,
-        // '/krill2/isp-customer/cpe-profiles': customerSidebar.en,
-        // '/krill2/isp-customer/contexts': customerSidebar.en,
         '/krill2/pbx/': pbxSidebar.en,
-        // '/krill2/pbx/pbxs': pbxSidebar.en,
-        // '/krill2/pbx/cdrs': pbxSidebar.en,
-        // '/krill2/pbx/holidays': pbxSidebar.en,
-        // '/krill2/pbx/contexts': pbxSidebar.en,
         '/krill2/radius/': radiusSidebar.en,
-        // '/krill2/radius/sessions': radiusSidebar.en,
-        // '/krill2/radius/ip-pools': radiusSidebar.en,
         '/krill2/rubik/': rubikSidebar.en,
-        // '/krill2/rubik/services': rubikSidebar.en,
-        // '/krill2/rubik/trouble-tickets': rubikSidebar.en,
         '/krill2/isp-cli': ispCliSidebar.en,
-        //'/change-log/': getChildrenSidebar('../../change-log/'),
+        '/krill2/api-v2': apiSidebar.en,
     },
     // es-ES
     es: {
@@ -223,36 +219,13 @@ const main = {
         '/es/krill2/users': krill2Sidebar.es,
         '/es/krill2/dashboard': krill2Sidebar.es,
         '/es/krill2/monitoring/': monitoringSidebar.es,
-        // '/es/krill2/monitoring/alarms.html': monitoringSidebar.es,
-        // '/es/krill2/monitoring/problems.html': monitoringSidebar.es,
-        // '/es/krill2/monitoring/matrix.html': monitoringSidebar.es,
-        // '/es/krill2/monitoring/host-groups.html': monitoringSidebar.es,
-        // '/es/krill2/monitoring/sonar.html': monitoringSidebar.es,
-        // '/es/krill2/monitoring/unprovisioned-onus.html': monitoringSidebar.es,
-        // '/es/krill2/monitoring/worldmap.html': monitoringSidebar.es,
-        // '/es/krill2/monitoring/smart-tree.html': monitoringSidebar.es,
-        // '/es/krill2/monitoring/host-events.html': monitoringSidebar.es,
-        // '/es/krill2/monitoring/history.html': monitoringSidebar.es,
         '/es/krill2/isp-customer/': customerSidebar.es,
-        // '/es/krill2/isp-customer/customers': customerSidebar.es,
-        // '/es/krill2/isp-customer/cpes': customerSidebar.es,
-        // '/es/krill2/isp-customer/potses': customerSidebar.es,
-        // '/es/krill2/isp-customer/cpe-profiles': customerSidebar.es,
-        // '/es/krill2/isp-customer/contexts': customerSidebar.es,
         '/es/krill2/pbx/': pbxSidebar.es,
-        // '/es/krill2/pbx/pbxs': pbxSidebar.es,
-        // '/es/krill2/pbx/cdrs': pbxSidebar.es,
-        // '/es/krill2/pbx/holidays': pbxSidebar.es,
-        // '/es/krill2/pbx/contexts': pbxSidebar.es,
         '/es/krill2/radius/': radiusSidebar.es,
-        // '/es/krill2/radius/sessions': radiusSidebar.es,
-        // '/es/krill2/radius/ip-pools': radiusSidebar.es,
         '/es/krill2/rubik/': rubikSidebar.es,
-        // '/es/krill2/rubik/services': rubikSidebar.es,
-        // '/es/krill2/rubik/trouble-tickets': rubikSidebar.es,
         '/es/krill2/isp-cli': ispCliSidebar.es,
+        '/es/krill2/api-v2': apiSidebar.es,
     }
-    //'/es/change-log/': getChildrenSidebar('../../es/change-log/'),
 }
 
 export const sidebarMenu = {
