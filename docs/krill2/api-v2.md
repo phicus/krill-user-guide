@@ -5,15 +5,10 @@ lang: en-US
 sidebar: auto
 sidebarDepth: 2
 prev: null
-next: null
+next: postman
 tags:
 - krill2
-- dashboard
-- meta-buscador
-- widgets
-- menú de usuario
-- usuario
-- logout
+- api
 ---
 
 # REST API v2 Overview
