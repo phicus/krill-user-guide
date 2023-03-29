@@ -246,7 +246,7 @@ Respuesta (Ejemplo: `/api/v2/monitoring/cpes/585/info`):
 ```
 ![image](/img/krill2/api/get_monitoring_host_info.png)
 
-## Obtener información de monitorización diferido (icinga)
+## Obtener información de monitorización diferido
 
 Método: **GET**
 
