@@ -4,7 +4,7 @@ description: Lista de cambios y novedades de Krill 2
 lang: es-ES
 navbar: false
 sidebar: auto
-sidebarDepth: 1
+sidebarDepth: 2
 prev: null
 next: null
 tags:

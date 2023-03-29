@@ -4,7 +4,7 @@ description: Krill 2 Changelog
 lang: en-US
 navbar: false
 sidebar: auto
-sidebarDepth: 1
+sidebarDepth: 2
 prev: null
 next: null
 tags:
