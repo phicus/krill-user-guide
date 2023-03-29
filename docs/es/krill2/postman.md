@@ -339,7 +339,7 @@ Response (Ejemplo: `/api/v2/monitoring/hosts/pim0585`):
 ```
 ![image](/img/krill2/api/get_monitoring_host.png)
 
-## Obtener los tipos de gráficas de un host:
+## Obtener los tipos de gráficas de un host
 
 Método: **GET**
 
