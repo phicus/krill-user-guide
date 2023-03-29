@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-341932a0","path":"/es/krill2/pbx/","title":"PBX","lang":"es-ES","frontmatter":{"title":"PBX","description":"Gestión de PBX.","lang":"es-ES","prev":null,"next":"pbxs","tags":["krill2","módulo","pbx"]},"headers":[],"git":{"updatedTime":1673517488000},"filePathRelative":"es/krill2/pbx/index.md"}');export{e as data};
