@@ -392,7 +392,7 @@ tags:
 * La información de estado, mensaje de salida y métricas ahora son en tiempo real en los resultados de búsqueda.
 * El visor de Estado de un PON ahora muestra qué equipos se están monitorizando y cuales no.
 * Se ha añadido la opción de añadir el line-profile en el formulario de creación de CPEs.
-* La búsqueda de CPEs solo se realizará al pulsar <Enter> o bien pulsando sobre el botón de Buscar.
+* La búsqueda de CPEs solo se realizará al pulsar `Enter` o bien pulsando sobre el botón de Buscar.
 * A la hora de crear un POTS y éste de error, ahora muestra el motivo exacto por el que no se puede crear.
 
 **Corrección de diversos errores**:

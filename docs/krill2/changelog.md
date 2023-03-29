@@ -392,7 +392,7 @@ tags:
 * Status information, exit message and metrics are now real-time in search results.
 * The Status viewer of a PON now shows which devices are being monitored and which are not.
 * The option to add the line-profile in the CPE creation form has been added.
-* The search for CPEs will only be carried out by pressing <Enter> or by clicking on the Search button.
+* The search for CPEs will only be carried out by pressing `Enter` or by clicking on the Search button.
 * When creating a POTS and this error, now shows the exact reason why it cannot be created.
 
 **Some minor bugfixes**:
