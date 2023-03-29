@@ -15,7 +15,393 @@ tags:
 
 # Novedades
 
-## julio 2022
+## Marzo 2023
+
+### Krill
+
+**Algunas mejoras**:
+
+* Ahora protegemos el servicio DHCP de posibles incongruencias de CPEs GPON sin serial number definido.
+
+**Corrección de diversos errores**:
+
+* Se ha corregido un error que impedía mostrar correctamente el Uptime de equipos WiMAX.
+* Se ha corregido un error que hacía que los cambios de un customer no se vieran reflejados en la ficha tras guardarlos.
+* Se han corregido los enlaces de las caídas e incidencias reportadas a Slack y que permiten acceder a las diferentes vistas de Krill.
+* Se ha corregido parte de la documentación de Swagger para consumo de la API por parte de terceros, en la que faltaban los filtros de búsqueda de equipos/servicios y el endpoint para obtener los datasets de una métrica para dibujar las gráficas.
+* Se ha corregido un error que hacía que el endpoint `/monitoring/status/summary` no devolviera los sumatorios correctos para cada estado.
+* Se ha corregido un error que podía provocar bloqueos a la hora de responder a las peticiones de la API.
+* Se ha agregado soporte al Radius para gestionar pool de IPs a través de NetElastic.
+* Se ha agregado soporte de la opción 82 de Fiberhome al Radius a través de NetElastic.
+* Se ha corregido un error que establecía el `address_profile` de un equipo dado de alta a "fijo" en vez de a su valor por defecto establecido.
+
+### Krill-GPON
+
+**Corrección de diversos errores**:
+
+* Se ha corregido un error que podía producirse al tratar de provisionar un equipo en OLTs CData.
+* Se ha corregido un error que se provocaba al hacer un memento full en equipos CData.
+* Se ha corregido un error que impedía reportar el estadod e las ONUs por corte de fibra en OLTs Fiberhome.
+
+### Krill-UI
+
+**Algunas mejoras**:
+
+* Se ha añadido un checkbox para poder activar o desactivar la repetición automática de las locuciones de recepción de una PBX.
+
+**Corrección de diversos errores**:
+
+* Se ha rediseñado y adaptado la pantalla de login a dispositivos móviles.
+* Se ha corregido un error en los enlaces de los diferentes estados de la vista Sonar de Krill que impedían localizar los equipos o servicios a los que se hacía referencia.
+* Se ha corregido un error que impedía crear un customer si se seleccionaba una localidad previamente dada de alta.
+* Se ha corregido un error que impedía editar un recepcionista si éste no tenía definida ninguna opción de salto.
+* Se han traducido al español algunas de las cabeceras de las tablas de la vista Technology de un Host de tipo CPE.
+* Se ha suavizado el color de los estados de los servicios y deshabilitado aquellas acciones que no se pueden realizar en aquellos hosts que se encuentran DOWN en la ficha.
+* Se ha corregido el widget `Summary` que no enlazaba correctamente con los equipos/servicios del estado sobre el que se pulsaba.
+* Se ha corregido la vista `Somar` y `Host-groups` para mostrar correctamente el resumen de estados.
+* La vista `World-Map` ahora hará auto-zoom y centrarse sobre los equipos localizados tras cada búsqueda o refresco de datos.
+* Se ha corregido un error que impedía trasladar correctamente las búsquedas entre las diferentes vistas de monitorización.
+* Se ha corregido un error que impedía mostrar el diálogo de confirmación de acciones de un CPE en la vista móvil.
+* Se ha corregido un error que impedía marcar el timeline de un host para poder hacer zoom en él sin tener que recargar la página.
+* Se ha corregido un error que impedía mostrar el enlace a la edición de un CPE en la ficha del mismo cuando no se encontraba monitorizado.
+* Se ha corregido la vista `Host-groups` para mostrar los estados correctos y los enlaces para ver los equipos de cada estado.
+* Se ha corregido un error que podía provocar la duplicidad de filtros `type:host` en el cuadro de búsqueda.
+
+### Rubik
+
+**Corrección de diversos errores**:
+
+* Se ha corregido un error en el cambio de estado de un servicio al intentar pasarlo a completado o baja del operador PTV.
+* Se ha habilitado la opción de mostrar estados transitorios dentro de los servicios, inhabilitando los botones de cambio mientras se encuentre en este estado.
+* Se ha corregido la ordenación de tickets en Rubik.
+
+## Febrero 2023
+
+### Krill
+
+**Algunas mejoras**:
+
+* Añadimos un nuevo fabricante a la monitorización del core: TelcoSystem
+* Se ha optimizado el motor de base de datos para mejorar los tiempos de respuesta
+
+**Corrección de diversos errores**:
+
+* Se ha corregido el servicio de chequeo de ficheros abiertos de Asterisk
+* Se ha corregido un error que impedía realizar determinadas búsquedas de equipos y servicios.
+* Solucionado un error que provocaba que no se actualizara la fecha de modificación al hacer cambios en un CPE.
+* Solucionado un problema que podía impedir que se generaran correctamente automáticamente las credenciales PPP en entornos mono-kiwi.
+* Corregido un error que podía provocar una excepción al intentar desprovisionar un CPE de tecnología Ethernet.
+* Corregido un error que impedía filtrar métricas por valores negativos.
+* Solucionado un error que impedía mostrar correctamente el servicio y el modelo con el que se provisiona un equipo en OLTs Huawei en la vista Technology de un CPE.
+* Solucionado un error que hacía que se devolviera una excepción al intentar realizar una petición CWMP Info a un CPE en estado DOWN.
+
+### Krill-GPON
+
+**Algunas mejoras**:
+
+* Nueva integración de OLTs CData.
+
+**Corrección de diversos errores**:
+
+* Se ha corregido un error que podía provocar desfases horarios en las fechas relacionadas con las concesiones PPPoE de Radius.
+
+### Krill-UI
+
+**Algunas mejoras**:
+
+* Se ha optimizado la vista móvil para equipos de core.
+* Se ha adaptado al móvil las vistas de resultados de búsquedas de equipos y servicios, y la ficha de los equipos para optimizarla al tamaño de los dispositivos.
+* Se ha añadido una nueva columna en el listado de equipos y servicios con la fecha desde el último cambio de estado.
+* Se ha añadido a la ayuda el nuevo módulo de Logger
+
+**Corrección de diversos errores**:
+
+* Se ha corregido la búsqueda de contextos dentro del módulo de PBX.
+* Se ha corregido un error que impedía seleccionar como idioma de la PBX francés, alemán o italiano.
+* Se ha corregido la acción de recheck dentro del listado de equipos y servicios.
+* Se ha corregido un error que impedía cambiar el número de elementos por página en la vista matrix.
+* Se ha corregido un error que impedía que se mostrara el Uptime de un equipo en determinados casos.
+* Se ha corregido un error que provocaba que se perdieran las búsquedas al cambiar a la vista de WorldMap.
+* Se han corregido algunos de los filtros de las vistas API Reports y Admin logs del módulo Logger.
+
+### PBX
+
+**Algunas mejoras**:
+
+* Se ha añadido la opción de poder generar o actualizar un recepcionista sin fijar un horario.
+
+**Corrección de diversos errores**:
+
+* Solucionado un error que podía provocar un error al intentar actualizar una Queue o un Group de una PBX existente.
+
+## Enero 2023
+
+### Krill
+
+**Algunas mejoras**:
+
+* Optimización en la ejecución de tareas asíncronas
+* La WANMAC se calculará de forma automática para equipos Nucom.
+* Se ha cambiado el algoritmo de seleccion de BRAS para soportar más de uno sobre una misma shared network.
+* Añadido nuevo notificador para la aplicación móvil que próximamente estará disponible en el PlayStore de Android y el AppStore de iOS.
+* Se ha añadido a la documentación de la API, la entrada /api/v2/isp/cpe-profiles
+* Se han reincorporado los comandos de DOCSIS al ISP-CLI.
+* Se ha actualizado la agrupación de datos históricos de las métricas de determinados servicios.
+
+**Corrección de diversos errores**:
+
+* Corrección de un error que podía provocar que los certificados SSL no fueran renovados de manera automática.
+* Corregido un error que provocaba de forma eventual saturaciones en la cola del RabbitMQ.
+* Se ha corregido un error que impedía el selector de direccionamiento y que impedía también que se mostraran correctamente los accountings cuando un equipo estaba en modo dhcp + radius.
+* Se ha optimizado el tamaño de los JSON que devuelve la API para la parte las peticiones de monitorización (/api/v2/monitoring/*).
+* Se han corregido las falsas alarmas por valor dentro de los umbrales para los Switch.
+* Se ha corregido un error que impedía que se pudiera reiniciar el FreeRadius tras realizar cambios en un CPE.
+* Se ha corregido un error que impedía que se enviaran las notificaciones de un CPE al que se le había marcado el envío de éstas.
+
+### Krill-UI
+
+**Algunas mejoras**:
+
+* Se ha optimizado la carga de datos de servicios en la ficha de los hosts.
+* Se han añadido nuevas traducciones referentes a los estados en las vistas de trouble-tickets.
+* Se ha añadido un nuevo módulo que permite ver el log de peticiones vía API y vía panel de administración, con toda la información relativa al usuario, IP, cambios realizados, etc.
+* Se ha integrado la guía de usuario de Krill en la interfaz de usuario, a través de un icono de ayuda en la esquina superior derecha.
+* Se ha habilitado el buscador general en la vista de sesiones PPPoE del módulo Radius.
+* Se ha añadido la opción de poder especificar el rango de fechas inicial para las métricas de host o servicios. Por defecto está establecido a las últimas 6 horas.
+
+**Corrección de diversos errores**:
+
+* Se ha corregido la magnitud de la leyenda en la gráfica de ancho de banda de la ficha de los CPEs.
+* Corregido un error al hacer click sobre la lista de trouble-tickets.
+* Se ha corregido el paginador en la lista de trouble-tickets.
+* Se ha corregido un error que podía impedir que aparecieran los botones de Ack / Downtime en la ficha de los hosts.
+* Se han recuperado las acciones y la información de registro en equipos Bitstream.
+* Se ha corregido un error que impedía que se recuperaran las métricas de los servicios correctamente al cambiar entre los diversos servicios de un host.
+* Se han eliminado los números móviles de la lista de selección de extensiones válidas para los grupos, colas, ddis, recepcionistas, etc.
+* Se ha corregido un error que impedía que se pudieran realizar búsquedas en la vista de holidays, cdrs y contexts.
+
+### Rubik
+
+**Algunas mejoras**:
+
+* Se ha añadido la integración con PTV como nuevo operador mayorista en Rubik.
+
+### Krill-DOCSIS
+
+**Corrección de diversos errores**:
+
+* Se ha disminuido el tiempo de polling para calcular el ancho de banda de las CMTS.
+* Se ha corregido un error en el polling de las CMTS que podía provocar memory-leaks.
+
+## Diciembre 2022
+
+### Krill
+
+**Corrección de diversos errores**:
+
+* Solucionado un bug que impedía que un CPE con remote_id definido en Kiwi no cogiera la ip por DHCP que le correspondía.
+* Corregido un error que provocaba el envío de alarmas por el estado de las interfaces de las ONTs en Calix
+
+### Krill-GPON
+
+**Corrección de diversos errores**:
+
+* Se ha corregido el valor del estado devuelto de algunas ONTs cuando éstas están offline para OLTs Fiberhome.
+* Se ha corregido el mensaje devuelto al intentar realizar un Factory-reset vía OMCI a ONUs que no son compatibles con este método.
+* Se ha mejorado la provisión por perfiles para equipos Uplink.
+* Se ha corregido un error que provocaba un mensaje de error cuando no había conectividad con ninguno de los equipos de un PON al solicitar el estado de éste.
+
+### Krill-UI
+
+**Algunas mejoras**:
+
+* Se añade al panel de IPs aquellas que vengan en el servicio info de los CPEs dentro de su ficha.
+* Se añade el histórico de peticiones vía API a la ficha de los CPEs.
+* Se añade al panel de IPs aquellas que vengan por SNMP en la ficha de los hosts
+* En la vista technology de los hosts se añade una columna para mostrar los paquetes corregidos y los paquetes KO tanto en subida como en bajada.
+* Se añade la columna PPPoE Username a la vista matrix
+* La vista matrix ya no muestra resultados si no hay una búsqueda válida, y en su lugar sugiere los filtros almacenados en favoritos y las últimas búsquedas realizadas.
+
+**Corrección de diversos errores**:
+
+* Al cambiar entre módulos ahora se resetea el cuadro de búsqueda para evitar resultados inesperados.
+* Corregida la exportación de CSV en la vista matrix
+* Se ha corregido un error que impedía que se mostrara correctamente seleccionado el país y la localidad de un CPE.
+
+### Rubik
+
+**Corrección de diversos errores**:
+
+* Se han corregido y añadido nuevas traducciones para facilitar los mensajes mostrados en las vistas de alta y edición de servicios
+
+## Noviembre 2022
+
+### Krill
+
+**Algunas mejoras**:
+
+* Mejorado el sistema de auto-renovación de certificados SSL
+* Monitorización de los servicios de los PTPs.
+
+**Corrección de diversos errores**:
+
+* Se ha corregido el mensaje devuelto si no se puede realizar una desprovisión de un CPE.
+
+### Krill GPON
+
+**Algunas mejoras**:
+
+* Se ha añadido Televés a la monitorización en tiempo real del estado de un PON.
+* Se añade la monitorización y provisión de equipos Uplink/Vsol.
+
+**Corrección de diversos errores**:
+
+* Corregido un error en el formateo de fechas para algunos equipos a la hora de mostrar el estado del PON.
+* Corregido un error a la hora de devolver valores ópticos nulos para Calix.
+
+### Krill-DOCSIS
+
+**Algunas mejoras**:
+
+* Se ha mejorado la monitorización de equipos DOCSIS.
+
+### Krill-UI
+
+**Algunas mejoras**:
+
+* Se ha añadido la característica de modificar el estado de internet, acceso, VoIP externo y habilitar notificaciones desde el listado de CPEs.
+* Se añade un nuevo meta-buscador desde el menú lateral de la UI, que lanza búsquedas en paralelo en distintos apartados de Krill para facilitar y optimizar las búsquedas. Se irán añadiendo nuevos apartados de búsqueda más adelante.
+* Detección del tipo de búsqueda (host o servicios) basado en el resto de criterios utilizados.
+* Ahora se obtiene la dirección de un CPE a partir de la de su customer si el CPE no tiene ninguna.
+* Optimización de la ficha para equipos de core que tienen gran cantidad de servicios.
+* Optimización de la ficha para todo tipo de equipos desde dispositivos móviles.
+* En la vista SmartTree ahora se puede ocultar el panel de información, si no se quiere, pulsando sobre el botón de la barra de título del mismo.
+
+**Corrección de diversos errores**:
+
+* Corregidos los filtros y la ordenación de resultados basados en métricas (perfdatas).
+* Corregido un problema que impedía que se mostrara la tabla de eventos de un host, si éste contenía una fecha inválida en la ficha de equipos.
+* Se ha corregido la búsqueda por host/servicio en el vista de histórico.
+* Se ha corregido un error que impedía que se actualizaran algunos atributos tras borrar su valor en la edición de clientes y cpes.
+* Corregido un error que impedía mostrar todos los resultados a la vez, tras seleccionar `todos` en el desplegable de elementos por página en el listado de PBXs.
+* Corregido un problema que hacía que el listado de días festivos y contextos se solaparan por encima de la barra de herramientas al hacer scroll.
+* Corregido un problema que impedía que se volviera a solicitar los elementos tras cambiar el número de elementos por página en la vista de CDRs.
+
+### Rubik
+
+**Algunas mejoras**:
+
+* Se han añadido textos y traducciones para todos los atributos que se mostraban en el sumario previo a la creación de servicios.
+
+**Corrección de diversos errores**:
+
+* Corregido el mensaje de confirmación de creación de servicios.
+* Corregido un problema que impedía que se obtuvieran resultados en la búsqueda de direcciones tras eliminar alguno de los valores de los desplegables de dirección en el formulario de creación de servicios.
+
+## Octubre 2022
+
+### Krill
+
+**Algunas mejoras**:
+
+* Mayor agilidad de respuesta en los cambios del DHCP y Radius ante cambios en la parte administrativa
+* DHCP: Posibilidad de asignar más de una IP Fija tras una ONT Bridge
+* Krill-ACS: Se ha reducido el tiempo de expiración de los flags de reinicio, factory-reset, etc.
+* Se añaden los servicios `dhcp-config`, `freeradius-config` y `asterisk-config` a los servicios monitorizados por el servidor.
+
+**Corrección de diversos errores**:
+
+* Solucionado un problema que impedía en determinadas ocasiones la des-autenticación de sesiones PPPoE tras cambios en Kiwi.
+
+### Krill-GPON
+
+**Algunas mejoras**:
+
+* Se ha parametrizado el uso de IGMP para el servicio de IPTV
+* Cuando se define un service-port válido tanto para acceso a internet como para VoIP, y el ISP/CRM marca el acceso a internet como deshabilitado, Krill sólo ha de armar el SP correspondiente si es para el servicio de telefonía.
+* Se ha actualizado el sistema de monitorización de ONUs y permite detectar caídas masivas para dotarlo de una mayor estabilidad.
+
+### Krill-WiMAX
+
+**Corrección de diversos errores**:
+
+* Ahora se inyectan correctamente las variables de id de registro y host de registro para equipos WiMAX.
+
+### Krill-UI
+
+**Algunas mejoras**:
+
+* Se ha mejorado la búsqueda y se han añadido nuevas columnas a la vista Matrix.
+* Se ha mejorado el filtro de búsqueda de equipos registrados a una OLT/CableModem en diversas vistas.
+* Se ha modificado la visualización del listado de modelos en el formulario de edición de equipos.
+* El campo `Fixed Address` ahora es dependiente del `Address Profile` y se ha eliminado el check de dynamic/fixed.
+* Se han reordenado las columnas de la tabla de POTSes y se ha establecido un ancho mínimo para facilitar su lectura.
+* Los cambios que afectan a los equipos desde la parte administrativa (Customer/ISP) ahora se muestran en tiempo real en la parte de monitorización.
+* Se ha aumentado el número máximo de resultados a mostrar, indicando con un mensaje si hubiera más equipos con la búsqueda actual.
+* Se ha añadido un sumario en la parte inferior del mapa con el número total de equipos que se están mostrando en pantalla, frente al total de equipos que coinciden con la búsqueda actual.
+* Se añade a la vista CPE-Profiles el número total de equipos que tiene cada perfil.
+* Se añade a la vista CPE la funcionalidad para editar de forma masiva los atributos: Activo, Acceso, Enable-Notifications y External-VoIP.
+* Se ha añadido el esquema de la PBX al módulo de PBX.
+
+**Corrección de diversos errores**:
+
+* Se ha corregido un error que provocaba discrepancias entre el número de ONTs que se mostraban en la ficha monitor de una OLT y el comando show-onus del CLI.
+* Se han corregido los colores de algunos estados en la vista de histórico del módulo de monitorización, así como el filtro de estados.
+* Se ha corregido el formulario de edición de CPEs para evitar el error que impedía el cambio de velocidad de cable-modem y equipos de tipo Ethernet.
+* Se ha eliminado la agrupación de marcadores en el nivel máximo de zoom para facilitar su visualización.
+* Se ha corregido la regla de validación de MACs de la ficha de edición y creación de CPEs para permitir insertar valores con el formato 6c:44:2a:eb:a9:a1.
+
+## Septiembre 2022
+
+### Krill
+
+**Algunas mejoras**:
+
+* Nuevo diseño de notificaciones por email
+
+**Corrección de diversos errores**:
+
+* Se han corregido algunos comandos de Core en ISP-CLI
+* Se ha corregido la monitorización de Switches CRS de Mikrotik
+* Se han restaurado las gráficas de ONUg por OLT e ITFS de los equipos de Core.
+* Se ha corregido un error que provocaba que no se identificaran correctamente algunos Hosts al recibir un trap y por tanto a la hora de notificar aparecieran como Unknown.
+
+### Krill-GPON
+
+**Algunas mejoras**:
+
+* Se ha añadido la configuración de VoIP vía OMCI para ONTs FiberHome
+
+**Corrección de diversos errores**:
+
+* Se ha solucionado un problema que provocaba la aparición de algunas ONTs inexistentes en OLTs de Calix
+* Se ha corregido la provisión de equipos ya existentes en OLTs de Calix
+* Se ha solucionado un problema que impedía cargar la información de las OLTs de Calix
+
+### Krill-UI
+
+**Algunas mejoras**:
+
+* Tareas por lotes para CPEs en ISP (cambio de line-profile)
+* Se ha mejorado la información relacionada con las IPs en la ficha de monitorización de Hosts.
+* En la vista World-Map ahora se permite alternar entre el nombre del Host y el nombre del cliente (solo para equipos de tipo CPE)
+* Se ha mejorado la sugerencia de canales wifi (para redes de 2.4 y 5 GHz) en el diagnóstico de Site-Survey en la ficha de CPEs.
+* Se ha reducido el número de peticiones para obtener la inforamción CWMP de un equipo en su ficha.
+* Las búsquedas por defecto se realizan de tipo Host, añadiéndose la opción de alternar entre Host, Servicios y todos los resultados.
+* Se han añadido columnas que no habían sido migradas de Krill 1 a la vista Matrix y se ha optimizado la información que se muestra en ella.
+* La información de estado, mensaje de salida y métricas ahora son en tiempo real en los resultados de búsqueda.
+* El visor de Estado de un PON ahora muestra qué equipos se están monitorizando y cuales no.
+* Se ha añadido la opción de añadir el line-profile en el formulario de creación de CPEs.
+* La búsqueda de CPEs solo se realizará al pulsar <Enter> o bien pulsando sobre el botón de Buscar.
+* A la hora de crear un POTS y éste de error, ahora muestra el motivo exacto por el que no se puede crear.
+
+**Corrección de diversos errores**:
+
+* Se han corregido las gráficas en tiempo real (y añadido la de QoS) para las fichas de equipos Docsis.
+* Se ha corregido el filtrado de la vista Host-Groups a l ahora de mostrar los equipos de un tipo determinado (visto para los Hostgroups de tipo Realm).
+* Se ha corregido un problema que impedía guardar algunos cambios realizados en una PBX.
+
+## Julio 2022
 
 ### Krill
 
@@ -77,7 +463,7 @@ tags:
 
 * Se ha corregido un error que se provocaba al tratar de obtener información de los STAs de algunos APs.
 
-## mayo 2022
+## Mayo 2022
 
 ### Krill
 
@@ -127,7 +513,7 @@ tags:
 
 * Se ha añadido en el cuadro de diálogo de nuevo CPE, el ID y el external-ID en el listado de clientes para facilitar su búsqueda.
 
-## abril 2022
+## Abril 2022
 
 ### Krill
 
@@ -193,7 +579,7 @@ tags:
 
 * Ahora las plantillas de flujo de servicios usan FQDN en vez de la dirección IP.
 
-## marzo 2022
+## Marzo 2022
 
 ### Krill
 
@@ -304,7 +690,7 @@ tags:
 
 * Se ha corregido un error del check de los servicios `downstream` y `upstream` referente al cálculo de los valores de las métricas `dnairtime` y `upairtime`.
 
-## febrero 2022
+## Febrero 2022
 
 ### Krill
 
@@ -369,7 +755,7 @@ tags:
 
 * Se ha corregido un error que hacía desaparecer información de accountings en la ficha de los equipos.
 
-## enero 2022
+## Enero 2022
 
 ### Krill
 
@@ -459,7 +845,7 @@ tags:
 * Validación de alarmas de PON por pérdida de ONUs.
 * Monitorización de RX para determinadas tarjetas.
 
-## diciembre 2021
+## Diciembre 2021
 
 ### Krill UI
 
@@ -567,7 +953,7 @@ tags:
 * Los cambios en las PBX no lanzaban el playbook del asterik
 * No se permitía dejar vacío el campo address_profile, ahora si
 
-## noviembre 2021
+## Noviembre 2021
 
 ### Krill UI
 
@@ -662,7 +1048,7 @@ tags:
 * Desajuste de memento cuando varios trabajadores comienzan a desaprovisionarse al mismo tiempo.
 * Configurado celery para que descubra automáticamente las tareas en kws y las comparta en kiwi.
 
-## octubre 2021
+## Octubre 2021
 
 ### Krill UI
 
