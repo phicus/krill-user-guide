@@ -6,6 +6,9 @@
 
 1. Install Node / NPM ([Ubuntu installation guide](https://ubunlog.com/nodejs-npm-instalacion-ubuntu-20-04-18-04/))
 2. Install Yarn ([Ubuntu installation guide](https://linuxize.com/post/how-to-install-yarn-on-ubuntu-20-04/))
+3. Install generate-release package ([Installation](https://www.npmjs.com/package/generate-release))
+4. Install Git flow plugin ([Installation](https://howtoinstall.co/en/git-flow))
+5. Init flow inside folder: `git flow init`
 
 ### Setup repository
 

@@ -199,6 +199,23 @@ const apiSidebar = {
     }],
 }
 
+const changelogSidebar = {
+    en: [{
+        text: 'Changelog',
+        // collapsible: true,
+        children: [
+            {link: '/krill2/changelog.md', text: 'Changelog'},
+        ],
+    }],
+    es: [{
+        text: 'Novedades',
+        // collapsible: true,
+        children: [
+            {link: '/es/krill2/changelog.md', text: 'Novedades'},
+        ]
+    }],
+}
+
 const main = {
     // en-EN
     en: {
@@ -212,6 +229,7 @@ const main = {
         '/krill2/rubik/': rubikSidebar.en,
         '/krill2/isp-cli': ispCliSidebar.en,
         '/krill2/api-v2': apiSidebar.en,
+        '/krill2/changelog': changelogSidebar.en,
     },
     // es-ES
     es: {
@@ -225,6 +243,7 @@ const main = {
         '/es/krill2/rubik/': rubikSidebar.es,
         '/es/krill2/isp-cli': ispCliSidebar.es,
         '/es/krill2/api-v2': apiSidebar.es,
+        '/es/krill2/changelog': changelogSidebar.es,
     }
 }
 
