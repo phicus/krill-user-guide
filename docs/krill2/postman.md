@@ -246,7 +246,7 @@ Response (Sample: `/api/v2/monitoring/cpes/585/info`):
 ```
 ![image](/img/krill2/api/get_monitoring_host_info.png)
 
-## Query deferred monitoring host info (icinga)
+## Query deferred monitoring host info
 
 Method: **GET**
 
