@@ -58,7 +58,7 @@ const menu = [
         ]
     },
     { text: 'ISP-CLI', link: '/krill2/isp-cli' },
-    // { text: 'Changelog', items: getChildrenNavbar('../change-log/', 'Changelog') },
+    //{ text: 'Changelog', link: '/krill2/changelog' },
 ]
 
 const menuEs = [
@@ -122,7 +122,7 @@ const menuEs = [
         ]
     },
     { text: 'ISP-CLI', link: '/es/krill2/isp-cli' },
-    // { text: 'Changelog', items: getChildrenNavbar('../change-log/', 'Changelog') },
+    //{ text: 'Novedades', link: '/es/krill2/changelog' },
 ]
 
 export const navbarMenu = {

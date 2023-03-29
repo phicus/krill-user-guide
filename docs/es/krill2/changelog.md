@@ -1,4 +1,19 @@
-# Changelog
+---
+title: Novedades
+description: Lista de cambios y novedades de Krill 2
+lang: es-ES
+navbar: false
+sidebar: auto
+sidebarDepth: 1
+prev: null
+next: null
+tags:
+- krill2
+- cambios
+- changelog
+---
+
+# Novedades
 
 ## julio 2022
 

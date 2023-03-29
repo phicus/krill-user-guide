@@ -1,3 +1,18 @@
+---
+title: Changelog
+description: Krill 2 Changelog
+lang: en-US
+navbar: false
+sidebar: auto
+sidebarDepth: 1
+prev: null
+next: null
+tags:
+- krill2
+- changes
+- changelog
+---
+
 # Changelog
 
 ## July 2022
