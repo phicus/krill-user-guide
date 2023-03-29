@@ -10,13 +10,21 @@
 ### Setup repository
 
 1. Inside `krill-user-guide` folder
-2. Install dependencies: `yarn install`
+2. Change to `develop` branch: `git checkout develop`
+3. Install dependencies: `yarn install`
 
 ### Development server
 
 To run development server:
-```
+```bash
 yarn docs:dev
+```
+
+### Deploy changes and sync with guide server
+
+To deploy changes and sync you must commit and push work. Then from root repository folder:
+```bash
+bash scripts/build.sh
 ```
 
 ## Folders structure
