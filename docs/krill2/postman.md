@@ -14,7 +14,7 @@ tags:
 
 # Postman REST API v2 samples
 
-## Query a cpe by its `external_id` and get its ID
+## Query cpe by its `external_id` and get its ID
 
 Method: **GET**
 
