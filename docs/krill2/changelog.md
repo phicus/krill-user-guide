@@ -15,6 +15,35 @@ tags:
 
 # Changelog
 
+## April 2023
+
+### Krill
+
+**New features**:
+
+* A support to recover and show the diagnostic information in devices that uses the data-model TR1818 (TR069) has been added.
+
+**Bug's correction**:
+
+* A bug that could make the DHCP service inoperative has been fixed.
+* A bug that could make that a CPE disappears from the monitorization after being updated has been fixed.
+* A bug that could trigger locks when answering the API requests has been fixed.
+* A bug that made already innactive IP sessions to be shown in the CPE tab has been fixed.
+* The feature that allows to sort the historical and notifications view by different fields has been fixed.
+
+### Krill-GPON
+
+**New features**:
+
+* The information of the TX/RX service for devices connected to CData OLTs has been optimized.
+
+### Krill-UI
+
+**New features**:
+
+* A button to refresh the `host-groups` without having to click F5 in the browser has been added.
+* The ordered by default in the IP-Pools view has been changed to the `expiry_time` field of the Radius module.
+
 ## March 2023
 
 ### Krill

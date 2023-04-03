@@ -15,6 +15,35 @@ tags:
 
 # Novedades
 
+## Abril 2023
+
+### Krill
+
+**Nuevas características**:
+
+* Se ha añadido soporte para recuperar y mostrar la información de diagnóstico en equipos que usen el data-model TR181 (TR069).
+
+**Corrección de bugs**:
+
+* Se ha corregido un error que podía provocar que el servicio DHCP se quedara inoperativo.
+* Se ha corregido un error que podía hacer que un CPE, tras ser actualizado, desapareciera de la monitorización.
+* Se ha corregido un error que podía provocar bloqueos a la hora de responder a las peticiones de la API.
+* Se ha corregido un error que hacía que se mostraran sesiones de IP ya inactivas en la ficha de un CPE.
+* Se ha corregido la ordenación por diversos campos en la vista de histórico y notificaciones.
+
+### Krill-GPON
+
+**Nuevas características**:
+
+* Se ha optimizado la información del servicio TX/RX para equipos conectados a OLTs CData.
+
+### Krill-UI
+
+**Nuevas características**:
+
+* Se ha añadido un botón para refrescar la vista de `host-groups` sin tener que pulsar F5 en el navegador.
+* Se ha cambiado el ordenado por defecto en la vista IP-Pools al campo `expiry_time` del módulo Radius.
+
 ## Marzo 2023
 
 ### Krill
