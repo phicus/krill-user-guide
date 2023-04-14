@@ -428,3 +428,32 @@ Here you can query, create, modify and delete Rubik objects (Addresses, Services
 Endpoint: `/api/v2/plankton`
 
 Here you can query, create, modify and delete Plankton FTTH Services, for integration with an external CRM.
+
+
+## Widgets urls
+
+Graphs: `/widgets/graphs/[bandwidth|txrx|upstream|downstream|qos]/?token=[token]&host=[host-name]&realtime=[true|false]&start=[magnitudeUnit]&end=[magnitudeUnit]`
+
+Device: `/widgets/device/?token=[token]&host=[host-name]`
+
+Widget Graphs `/widgets/graphs/{graphType}/:`
+
+Graph Types:
+bandwidth,
+txrx (GPON tech only),
+upstream (DOCSIS tech only),
+downstream (DOCSIS tech only),
+qos (DOCSIS tech only).
+
+Query Parameters:
+- token (required): extracted from login API request or from app_token browser local storage persistence
+- host (required): host name like cpe23133 (DOCSIS) or cpe115087 (GPON)
+- realtime (default: false): data from realtime info or from influx history
+- start (default: 1d): if not realtime, time period from start of request for data sets
+- end (default: 0m): if not realtime, time period to end of request data sets
+- refresh (default: 60 secs): if realtime, integer value for refresh interval between requests (in seconds)
+
+Time Periods:
+- Time periods are strings with magnitude & unit, like 24h or 7d
+- Valid units are: M for months, d for days, h for hours and m for minutes
+
