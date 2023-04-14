@@ -36,6 +36,7 @@ tags:
 **Nuevas características**:
 
 * Se ha optimizado la información del servicio TX/RX para equipos conectados a OLTs CData.
+* Nueva integración de OLTs VSOL con chipset Broadcom, usando el `dba_profile` como limitación en subida.
 
 ### Krill-UI
 
@@ -43,6 +44,15 @@ tags:
 
 * Se ha añadido un botón para refrescar la vista de `host-groups` sin tener que pulsar F5 en el navegador.
 * Se ha cambiado el ordenado por defecto en la vista IP-Pools al campo `expiry_time` del módulo Radius.
+* Se han unificado las pestañas de Información básica, administrativa y POTSes en la edición de CPEs dentro del módulo `Customers`.
+* Se ha añadido validación al campo `holidays` tanto en la edición de PBXs como en la creación de los propios Holidays dentro del módulo `PBX`.
+* El listado de servicios de la ficha de un equipo, tanto en el TimeLine como en la pestaña de servicios, ahora se ordenan primero por estado, luego por `business_impact` y finalmente por nombre.
+* Se han optimizado las peticiones de información de un equipo y sus servicios en la ficha para evitar tiempos innecesarios sin visualizar datos
+
+**Corrección de bugs**:
+
+* Se ha corregido un error en el detalle de un servicio de un host que impedía que se mostrara si éste tenía habilitados los checks activos o pasivos.
+* Se ha corregido un error que podía impedir la creación de una PBX para clientes previamente creados.
 
 ## Marzo 2023
 
