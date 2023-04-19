@@ -429,14 +429,18 @@ Endpoint: `/api/v2/plankton`
 
 En este endopint puedes listar, crear, modificar y eliminar los servicios FTTH de Plankton para integrarlos con el CRM.
 
-### Widget Graphs `/widgets/graphs/{graphType}/`:
+## Widgest
+
+### Widget Graphs 
+
+Endpoint: `/widgets/graphs/{graphType}/`:
 
 Graph Types:
-• `bandwidth`
-• `txrx` (GPON tech only)
-• `upstream` (DOCSIS tech only)
-• `downstream` (DOCSIS tech only)
-• `qos` (DOCSIS tech only)
+- `bandwidth`
+- `txrx` (GPON tech only)
+- `upstream` (DOCSIS tech only)
+- `downstream` (DOCSIS tech only)
+- `qos` (DOCSIS tech only)
 
 Query Parameters:
 - `token` (required): extracted from login API request or from `app_token` browser local storage persistence
@@ -455,7 +459,9 @@ Examples:
 - Downstream chart for DOCSIS bgt23133 host for last 7 days: `/widgets/graphs/downstream/?host_name=bgt23133&start=7d&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgwNzcxNjkzLCJpYXQiOjE2ODA2ODUyOTMsImp0aSI6ImU1NzdlNjc1OGU5YTQ2ODhhNmMwZjEwNDE0ODUwMTNkIiwidXNlcl9pZCI6NX0.mUJQ3EiHfMTKnKrZSYApJ-9VAOJJmMLv7zr1aeN2uYo`
 - TxRx chart for GPON aca115087 host for last 24 hours: `/widgets/graphs/txrx/?host_name=aca115087&start=24h&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgwNzcxNjkzLCJpYXQiOjE2ODA2ODUyOTMsImp0aSI6ImU1NzdlNjc1OGU5YTQ2ODhhNmMwZjEwNDE0ODUwMTNkIiwidXNlcl9pZCI6NX0.mUJQ3EiHfMTKnKrZSYApJ-9VAOJJmMLv7zr1aeN2uYo`
 
-## Widget Device `/widgets/device/`:
+### Widget Device 
+
+Endpoints: `/widgets/device/`:
 
 Query Parameters:
 - `token` (required): extracted from login API request or from `app_token` browser local storage persistence
