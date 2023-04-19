@@ -428,3 +428,38 @@ Here you can query, create, modify and delete Rubik objects (Addresses, Services
 Endpoint: `/api/v2/plankton`
 
 En este endopint puedes listar, crear, modificar y eliminar los servicios FTTH de Plankton para integrarlos con el CRM.
+
+### Widget Graphs `/widgets/graphs/{graphType}/`:
+
+Graph Types:
+• `bandwidth`
+• `txrx` (GPON tech only)
+• `upstream` (DOCSIS tech only)
+• `downstream` (DOCSIS tech only)
+• `qos` (DOCSIS tech only)
+
+Query Parameters:
+- `token` (required): extracted from login API request or from `app_token` browser local storage persistence
+- `host_name` (required): host name like `bgt23133` (DOCSIS) or `aca115087` (GPON)
+- `realtime` (default: **false**): data from realtime info or from influx history
+- `start` (default: **1d**): if not realtime, time period from start of request for data sets
+- `end` (default: **0m**): if not realtime, time period to end of request data sets
+- `refresh` (default: **60 secs**): if realtime, integer value for refresh interval between requests (in seconds)
+
+Time Periods:
+- Time periods are strings with magnitude & unit, like `24h` or `7d`
+- Valid units are: `M` for months, `d` for days, `h` for hours and `m` for minutes
+
+Examples:
+- Realtime Bandwidth chart for bgt23133 with refresh every 30 secs: `/widgets/graphs/bandwidth/?host_name=bgt23133&realtime=true&refresh=30&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgwNzcxNjkzLCJpYXQiOjE2ODA2ODUyOTMsImp0aSI6ImU1NzdlNjc1OGU5YTQ2ODhhNmMwZjEwNDE0ODUwMTNkIiwidXNlcl9pZCI6NX0.mUJQ3EiHfMTKnKrZSYApJ-9VAOJJmMLv7zr1aeN2uYo`
+- Downstream chart for DOCSIS bgt23133 host for last 7 days: `/widgets/graphs/downstream/?host_name=bgt23133&start=7d&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgwNzcxNjkzLCJpYXQiOjE2ODA2ODUyOTMsImp0aSI6ImU1NzdlNjc1OGU5YTQ2ODhhNmMwZjEwNDE0ODUwMTNkIiwidXNlcl9pZCI6NX0.mUJQ3EiHfMTKnKrZSYApJ-9VAOJJmMLv7zr1aeN2uYo`
+- TxRx chart for GPON aca115087 host for last 24 hours: `/widgets/graphs/txrx/?host_name=aca115087&start=24h&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgwNzcxNjkzLCJpYXQiOjE2ODA2ODUyOTMsImp0aSI6ImU1NzdlNjc1OGU5YTQ2ODhhNmMwZjEwNDE0ODUwMTNkIiwidXNlcl9pZCI6NX0.mUJQ3EiHfMTKnKrZSYApJ-9VAOJJmMLv7zr1aeN2uYo`
+
+## Widget Device `/widgets/device/`:
+
+Query Parameters:
+- `token` (required): extracted from login API request or from `app_token` browser local storage persistence
+- `host_name` (required): host name like `bgt23133` (DOCSIS) or `aca115087` (GPON)
+
+Examples:
+- Device representation for bgt8317: `/widgets/device/?host_name=bgt8317&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgwNzcxNjkzLCJpYXQiOjE2ODA2ODUyOTMsImp0aSI6ImU1NzdlNjc1OGU5YTQ2ODhhNmMwZjEwNDE0ODUwMTNkIiwidXNlcl9pZCI6NX0.mUJQ3EiHfMTKnKrZSYApJ-9VAOJJmMLv7zr1aeN2uYo`
