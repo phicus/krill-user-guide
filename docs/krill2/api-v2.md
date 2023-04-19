@@ -429,7 +429,7 @@ Endpoint: `/api/v2/plankton`
 
 Here you can query, create, modify and delete Plankton FTTH Services, for integration with an external CRM.
 
-## Widgest
+## Widgets
 
 ### Widget Graphs 
 
