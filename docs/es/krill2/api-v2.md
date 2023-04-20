@@ -457,9 +457,9 @@ Periodos de tiempo:
 - Unidades válidas: `M` para meses, `d` para días, `h` para horas and `m` para minutos
 
 Ejemplos:
-- Grafica de ancho de banda en tiempo real para el cpe23133 con actualización cada 30 segundos: `/widgets/graphs/bandwidth/?host_name=cpe23133&realtime=true&refresh=30&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgwNzcxNjkzLCJpYXQiOjE2ODA2ODUyOTMsImp0aSI6ImU1NzdlNjc1OGU5YTQ2ODhhNmMwZjEwNDE0ODUwMTNkIiwidXNlcl9pZCI6NX0.mUJQ3EiHfMTKnKrZSYApJ-9VAOJJmMLv7zr1aeN2uYo`
-- Grafica de "Downstream" para el cpe23133 de DOCSIS de los ultimos 7 dias: `/widgets/graphs/downstream/?host_name=cpe23133&start=7d&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgwNzcxNjkzLCJpYXQiOjE2ODA2ODUyOTMsImp0aSI6ImU1NzdlNjc1OGU5YTQ2ODhhNmMwZjEwNDE0ODUwMTNkIiwidXNlcl9pZCI6NX0.mUJQ3EiHfMTKnKrZSYApJ-9VAOJJmMLv7zr1aeN2uYo`
-- Grafica de "TxRx" para el cpe115087 de GPON de las ultimas 24 horas: `/widgets/graphs/txrx/?host_name=cpe115087&start=24h&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgwNzcxNjkzLCJpYXQiOjE2ODA2ODUyOTMsImp0aSI6ImU1NzdlNjc1OGU5YTQ2ODhhNmMwZjEwNDE0ODUwMTNkIiwidXNlcl9pZCI6NX0.mUJQ3EiHfMTKnKrZSYApJ-9VAOJJmMLv7zr1aeN2uYo`
+- Gráfica de ancho de banda en tiempo real para el cpe23133 con actualización cada 30 segundos: `/widgets/graphs/bandwidth/?host_name=cpe23133&realtime=true&refresh=30&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgwNzcxNjkzLCJpYXQiOjE2ODA2ODUyOTMsImp0aSI6ImU1NzdlNjc1OGU5YTQ2ODhhNmMwZjEwNDE0ODUwMTNkIiwidXNlcl9pZCI6NX0.mUJQ3EiHfMTKnKrZSYApJ-9VAOJJmMLv7zr1aeN2uYo`
+- Gráfica de "Downstream" para el cpe23133 de DOCSIS de los ultimos 7 dias: `/widgets/graphs/downstream/?host_name=cpe23133&start=7d&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgwNzcxNjkzLCJpYXQiOjE2ODA2ODUyOTMsImp0aSI6ImU1NzdlNjc1OGU5YTQ2ODhhNmMwZjEwNDE0ODUwMTNkIiwidXNlcl9pZCI6NX0.mUJQ3EiHfMTKnKrZSYApJ-9VAOJJmMLv7zr1aeN2uYo`
+- Gráfica de "TxRx" para el cpe115087 de GPON de las ultimas 24 horas: `/widgets/graphs/txrx/?host_name=cpe115087&start=24h&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgwNzcxNjkzLCJpYXQiOjE2ODA2ODUyOTMsImp0aSI6ImU1NzdlNjc1OGU5YTQ2ODhhNmMwZjEwNDE0ODUwMTNkIiwidXNlcl9pZCI6NX0.mUJQ3EiHfMTKnKrZSYApJ-9VAOJJmMLv7zr1aeN2uYo`
 
 ### Widget Device 
 
