@@ -55,6 +55,7 @@ const menu = [
         children: [
             { text: 'API (V2)', link: '/krill2/api-v2' },
             { text: 'Postman Samples', link: '/krill2/postman' },
+            { text: 'Widgets', link: '/krill2/widgets' },
         ]
     },
     { text: 'ISP-CLI', link: '/krill2/isp-cli' },
@@ -119,6 +120,7 @@ const menuEs = [
         children: [
             { text: 'API (V2)', link: '/es/krill2/api-v2' },
             { text: 'Ejemplos Postman', link: '/es/krill2/postman' },
+            { text: 'Widgets', link: '/es/krill2/widgets' },
         ]
     },
     { text: 'ISP-CLI', link: '/es/krill2/isp-cli' },

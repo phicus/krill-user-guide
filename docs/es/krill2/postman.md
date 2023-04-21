@@ -5,7 +5,7 @@ lang: es-ES
 sidebar: auto
 sidebarDepth: 2
 prev: api-v2
-next: null
+next: widgets
 tags:
 - krill2
 - api
