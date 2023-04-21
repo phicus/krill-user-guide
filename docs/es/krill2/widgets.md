@@ -40,7 +40,7 @@ Un ejemplo de iframe sería:
 
 ## Widget Graphs
 
-Endpoint: `/widgets/graphs/{graphType}/`:
+Endpoint: `/widgets/monitoring/graphs/{graphType}/`:
 
 Tipos de graficas:
 - `bandwidth`
@@ -62,18 +62,18 @@ Periodos de tiempo:
 - Unidades válidas: `M` para meses, `d` para días, `h` para horas and `m` para minutos
 
 Ejemplos:
-- Gráfica de ancho de banda en tiempo real para el cpe23133 con actualización cada 30 segundos: `/widgets/graphs/bandwidth/?host_name=cpe23133&realtime=true&refresh=30&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgwNzcxNjkzLCJpYXQiOjE2ODA2ODUyOTMsImp0aSI6ImU1NzdlNjc1OGU5YTQ2ODhhNmMwZjEwNDE0ODUwMTNkIiwidXNlcl9pZCI6NX0.mUJQ3EiHfMTKnKrZSYApJ-9VAOJJmMLv7zr1aeN2uYo`
-- Gráfica de "Downstream" para el cpe23133 de DOCSIS de los últimos 7 días: `/widgets/graphs/downstream/?host_name=cpe23133&start=7d&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgwNzcxNjkzLCJpYXQiOjE2ODA2ODUyOTMsImp0aSI6ImU1NzdlNjc1OGU5YTQ2ODhhNmMwZjEwNDE0ODUwMTNkIiwidXNlcl9pZCI6NX0.mUJQ3EiHfMTKnKrZSYApJ-9VAOJJmMLv7zr1aeN2uYo`
-- Gráfica de "TxRx" para el cpe115087 de GPON de las últimas 24 horas: `/widgets/graphs/txrx/?host_name=cpe115087&start=24h&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgwNzcxNjkzLCJpYXQiOjE2ODA2ODUyOTMsImp0aSI6ImU1NzdlNjc1OGU5YTQ2ODhhNmMwZjEwNDE0ODUwMTNkIiwidXNlcl9pZCI6NX0.mUJQ3EiHfMTKnKrZSYApJ-9VAOJJmMLv7zr1aeN2uYo`
+- Gráfica de ancho de banda en tiempo real para el cpe23133 con actualización cada 30 segundos: `/widgets/monitoring/graphs/bandwidth/?host_name=cpe23133&realtime=true&refresh=30&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgwNzcxNjkzLCJpYXQiOjE2ODA2ODUyOTMsImp0aSI6ImU1NzdlNjc1OGU5YTQ2ODhhNmMwZjEwNDE0ODUwMTNkIiwidXNlcl9pZCI6NX0.mUJQ3EiHfMTKnKrZSYApJ-9VAOJJmMLv7zr1aeN2uYo`
+- Gráfica de "Downstream" para el cpe23133 de DOCSIS de los últimos 7 días: `/widgets/monitoring/graphs/downstream/?host_name=cpe23133&start=7d&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgwNzcxNjkzLCJpYXQiOjE2ODA2ODUyOTMsImp0aSI6ImU1NzdlNjc1OGU5YTQ2ODhhNmMwZjEwNDE0ODUwMTNkIiwidXNlcl9pZCI6NX0.mUJQ3EiHfMTKnKrZSYApJ-9VAOJJmMLv7zr1aeN2uYo`
+- Gráfica de "TxRx" para el cpe115087 de GPON de las últimas 24 horas: `/widgets/monitoring/graphs/txrx/?host_name=cpe115087&start=24h&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgwNzcxNjkzLCJpYXQiOjE2ODA2ODUyOTMsImp0aSI6ImU1NzdlNjc1OGU5YTQ2ODhhNmMwZjEwNDE0ODUwMTNkIiwidXNlcl9pZCI6NX0.mUJQ3EiHfMTKnKrZSYApJ-9VAOJJmMLv7zr1aeN2uYo`
 
 ## Widget Device
 
-Endpoints: `/widgets/device/`:
+Endpoints: `/widgets/monitoring/device/`:
 
 Parámetros de consulta:
 - `token` (obligatorio): extraído de la solicitud de la API al inicio de sesión o del almacenamiento local persistente del navegador `app_token`
 - `host_name` (obligatorio): nombre del host `cpe23133` (DOCSIS) o `cpe115087` (GPON)
 
 Ejemplos:
-- Representación del dispositivo para el cpe8317: `/widgets/device/?host_name=cpe8317&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgwNzcxNjkzLCJpYXQiOjE2ODA2ODUyOTMsImp0aSI6ImU1NzdlNjc1OGU5YTQ2ODhhNmMwZjEwNDE0ODUwMTNkIiwidXNlcl9pZCI6NX0.mUJQ3EiHfMTKnKrZSYApJ-9VAOJJmMLv7zr1aeN2uYo`
+- Representación del dispositivo para el cpe8317: `/widgets/monitoring/device/?host_name=cpe8317&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgwNzcxNjkzLCJpYXQiOjE2ODA2ODUyOTMsImp0aSI6ImU1NzdlNjc1OGU5YTQ2ODhhNmMwZjEwNDE0ODUwMTNkIiwidXNlcl9pZCI6NX0.mUJQ3EiHfMTKnKrZSYApJ-9VAOJJmMLv7zr1aeN2uYo`
 
