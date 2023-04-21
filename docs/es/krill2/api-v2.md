@@ -427,5 +427,4 @@ Here you can query, create, modify and delete Rubik objects (Addresses, Services
 
 Endpoint: `/api/v2/plankton`
 
-En este endopint puedes listar, crear, modificar y eliminar los servicios FTTH de Plankton para integrarlos con el CRM.
-
+En este endpoint puedes listar, crear, modificar y eliminar los servicios FTTH de Plankton para integrarlos con el CRM.
