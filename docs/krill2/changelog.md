@@ -22,6 +22,9 @@ tags:
 **New features**:
 
 * A support to recover and show the diagnostic information in devices that uses the data-model TR1818 (TR069) has been added.
+* The reception and treatment of PTP Ceragon traps had been enabled.
+* Now the `internal_id` or the `external_id` can be used for the CPEs API's information requests in mono-kiwi enviroments.
+* The data base requests from the API had been optimized in mono-kiwi enviroments with a lot of realms.
 
 **Bug's correction**:
 
@@ -36,6 +39,14 @@ tags:
 **New features**:
 
 * The information of the TX/RX service for devices connected to CData OLTs has been optimized.
+* New integration of VSOL OLTs with Broadcom's chipset, using the `dba_profile` as an upstream limmitation.
+* The unkwnown onus unprovisioner now takes into consideration the cpe `provision_enabled` check.
+* Now, when a host or its internet access is deactivated, if it has RF it is turned off first, and if it has CATV, the TV is deactivated before deactivating the device.
+
+**Bug's correction**:
+
+* A mistake that could show wrong data in the devices conected to ZTE OLTs info has been fixed.
+* A mistake that prevented the reprovision of a CPE when it is activated or deactivated or after changing its CATV status had been fixed.
 
 ### Krill-UI
 
@@ -43,6 +54,19 @@ tags:
 
 * A button to refresh the `host-groups` without having to click F5 in the browser has been added.
 * The ordered by default in the IP-Pools view has been changed to the `expiry_time` field of the Radius module.
+* The basic basic information, administrative information and POTSes tabs had been unified in the CPEs edition inside the `Customers` module.
+* Validation has been added to the `holidays` gap in the PBXs edition as well as in the Holiday's creation inside the `PBX` module.
+* The services' list in the device page is now ordered first by status, then by `business_impact` and finally by name in the timeline as well as in the services tab.
+* The device's information requests and their services had been optimized in the file to avoid unnecessary time lapses without seeing information.
+* Now from the CPEs' list of the `Customers` module the devices, internet access, notifications, and the use of external VoIP can be activated/deactivated by clicking the icons in the table.
+* More gaps had been added to the CPEs quick creation of the `Customers` module and now the model is automatically selected if the SN is selected from the pending provision list. 
+
+**Bug's correction**:
+
+* A mistake in a host's service detail that prevented it from showing if it had the active or pasive checks enabled had been fixed.
+* A mistake that could prevent the creation of a PBX for customers previously created had been fixed.
+* A mistake that prevented the CDR detail of a certain phone to be shown in the CPE page had been fixed.
+* A mistake that could prevent the PBX update from its edtion form had been fixed.
 
 ## March 2023
 
