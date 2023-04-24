@@ -22,6 +22,9 @@ tags:
 **Nuevas características**:
 
 * Se ha añadido soporte para recuperar y mostrar la información de diagnóstico en equipos que usen el data-model TR181 (TR069).
+* Se ha habilitado la recepción y tratamiento de traps de equipos PTP Ceragon.
+* Ahora se puede usar el `internal_id` o el `external_id` como identificadores para las peticiones de información de CPEs de la API en entornos mono-kiwi.
+* Se ha optimizado las peticiones a la base de datos desde la API en entornos mono-kiwi con muchos realms.
 
 **Corrección de bugs**:
 
@@ -37,6 +40,13 @@ tags:
 
 * Se ha optimizado la información del servicio TX/RX para equipos conectados a OLTs CData.
 * Nueva integración de OLTs VSOL con chipset Broadcom, usando el `dba_profile` como limitación en subida.
+* El desprovisionador de onus desconocidas ahora tiene en cuenta el check del cpe `provision_enabled`.
+* Ahora cuando se desactiva un host o su acceso a internet, si éste tiene RF se apaga primero, y si tiene CATV, primero se desactiva la TV antes de desactivar el equipo.
+
+**Corrección de bugs**:
+
+* Se ha corregido un error que podía mostrar datos erráticos en el INFO de equipos conectados a OLTs ZTE.
+* Se ha corregido un error que impedía la reprovisión de un CPE al activarlo o desactivarlo o tras cambiar el estado de su CATV.
 
 ### Krill-UI
 
@@ -48,11 +58,15 @@ tags:
 * Se ha añadido validación al campo `holidays` tanto en la edición de PBXs como en la creación de los propios Holidays dentro del módulo `PBX`.
 * El listado de servicios de la ficha de un equipo, tanto en el TimeLine como en la pestaña de servicios, ahora se ordenan primero por estado, luego por `business_impact` y finalmente por nombre.
 * Se han optimizado las peticiones de información de un equipo y sus servicios en la ficha para evitar tiempos innecesarios sin visualizar datos
+* Ahora desde el listado de CPEs del módulo `Customers` se pueden activar/desactivar los equipos, el acceso a internet, las notificaciones y el uso de VoIP externo haciendo click sobre los iconos de la tabla.
+* Se han añadido más campos al formulario de creación rápida de CPEs del módulo `Customers` y ahora también se selecciona automáticamente el modelo si se selecciona un S/N desde la lista de pendientes de provisión.
 
 **Corrección de bugs**:
 
 * Se ha corregido un error en el detalle de un servicio de un host que impedía que se mostrara si éste tenía habilitados los checks activos o pasivos.
 * Se ha corregido un error que podía impedir la creación de una PBX para clientes previamente creados.
+* Se ha corregido un error que impedía mostrar el detalle de los CDR de un determinado teléfono a través de la ficha del CPE.
+* Se ha corregido un error que podía impedir la actualización de PBX desde su formulario de edición.
 
 ## Marzo 2023
 
