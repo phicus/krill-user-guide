@@ -15,6 +15,56 @@ tags:
 
 # Novedades
 
+## Mayo 2023
+
+### Krill
+
+**Nuevas características**:
+
+* Se han añadido dos Widgets de monitorización para poder ser usados desde aplicaciones externas. Para más información: https://guide.phicus.es/krill2/widgets
+* Ahora se permite la autorización en NetElastic usando `username` en formato ASCII así como la utilización de IPPools para poder compartir rangos.
+
+**Corrección de diversos errores**:
+
+* Se ha corregido un error que impedía que se generaran, en determinadas circunstancias, los usuarios SIPs en las PBXs tras crear o modificar un CPE.
+* Se ha solucionado un problema que podía impedir la reconfiguración de un CPE vía TR069 tras haber aplicado un cambio en sus parámetros, por ejemplo cambiar su SSID.
+* Se ha solucionado un problema que impedía el corte de servicio PPPoE de un cliente tras ser desautorizado.
+
+### Krill-GPON
+
+**Corrección de diversos errores**:
+
+* Se ha corregido un posible error al intentar reprovisionar un equipo ya provisionado en OLTs CData.
+* Se ha corregido un error en el filtrado por frame/slot/port dentro del proceso de polling de OLTs CData. 
+* Se han corregido las gráficas de ancho de banda para equipos conectados a OLTs de VSOL/CData.
+
+### Krill-WiMAX
+
+**Corrección de bugs**:
+
+* Se ha corregido el cálculo de ancho de banda que en ocasiones podía ofrecer valores excesivos en APs de Ubiquiti.
+
+### Krill-UI
+
+**Nuevas características**:
+
+* El botón de crear CPE en el módulo `Customers` ahora permite crearlo a través del formulario completo o bien usando el cuadro de diálogo de creación rápida.
+* Se ha añadido más información a la tabla de SubAddress en la creación de servicios de Rubik.
+* Se ha añadido una nueva vista para consultar el histórico de sesiones en el módulo de Radius y se han añadido filtros tanto en la vista del nuevo histórico como en la de sesiones online.
+
+**Corrección de bugs**:
+
+* Se ha corregido un error que impedía que se mostraran los enlaces personalizados en las fichas de equipos de Core.
+* Se ha corregido la sección de POTSes de la ficha de creación de CPEs desde dispositivos móviles para facilitar su gestión.
+* Se ha corregido la ordenación de TroubleTickets en las tablas de Rubik.
+* Se ha corregido un error que impedía que se pudieran realizar correctamente búsquedas en el reporte de Admin Logs del módulo Logger.
+
+### Rubik
+
+**Corrección de bugs**:
+
+* Se han solucionado algunos errores menores relacionados con los TroubleTickets, ServiceEvents y los serializadores de los ServiceProfiles para determinados owners.
+
 ## Abril 2023
 
 ### Krill

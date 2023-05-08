@@ -15,6 +15,56 @@ tags:
 
 # Changelog
 
+## May 2023
+
+### Krill
+
+**New features**:
+
+* Two monitorization Widgets to be used from external applications had been added. For more information: https://guide.phicus.es/krill2/widgets
+* Now the NetElastic monitorizarion using `username` in ASCII format is allowed as well as the use of IPPools to share IP ranges.
+
+**Some minor bugfixes**:
+
+* A bug that didn't allowed, under certain circumstances, SIP users generation in the PBXs after create or modify a CPE has been fixed.
+* A problem that could prevent CPE's reconfiguration through TR069 after applying a change in it's parameters, for example SSID, has been fixed.
+* A problem that prevented the cut of the PPPoE service for a client after it was deauthorized has been fixed.
+
+### Krill-GPON
+
+**Some minor bugfixes**:
+
+* A posible bug when trying to reprovision a device already provisioned in the CData OLTs has been fixed.
+* A bug in the filtering by frame/slot/port in the polling process of the CData OLTs has been fixed.
+* The bandwith graphics for devices conected to VSOL/CData OLTs have been fixed.
+
+### Krill-WiMAX
+
+**Bug's correction**:
+
+* The bandwith calculation, that in some cases could offer excesive values, in Ubiquiti's APs has been fixed.
+
+### Krill-UI
+
+**New features**:
+
+* The create CPE button in the `Customers` module now allows to create it through the complete form or using the quick creation form as well.
+* More information has been added to the SubAddress table in the Rubik's services creation.
+* A new view to see the session's historical record in the Radius module and new filters in the new historical view as well as in the online sessions view have been added
+
+**Bug's correction**:
+
+* A bug that prevented the personalized links to be shown in the core devices page has been fixed.
+* The POTSes section of the CPEs creation form from mobile devices has been fixed to make it's managament easier.
+* The ordination of the TroubleTickets in Rubik's tables has been fixed.
+* A bug that prevented the searchs in the Admin Logs report in the Logger module to be done correctly has been fixed.
+
+### Rubik
+
+**Bug's correction**:
+
+* Some minors bugs related to TroubleTickets, ServiceEvents and the ServiceProfile's serializers for certain owners have been fixed.
+
 ## April 2023
 
 ### Krill
