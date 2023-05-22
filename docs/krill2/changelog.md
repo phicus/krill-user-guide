@@ -23,6 +23,9 @@ tags:
 
 * Two monitorization Widgets to be used from external applications had been added. For more information: https://guide.phicus.es/krill2/widgets
 * Now the NetElastic monitorizarion using `username` in ASCII format is allowed as well as the use of IPPools to share IP ranges.
+* Cisco CMTS' resources monitoring has been added.
+* VSOL, CData and Casa System core devices' monitoring has been added.
+* Mikrotik APs' backup is done automatically now.
 
 **Some minor bugfixes**:
 
@@ -51,6 +54,9 @@ tags:
 * The create CPE button in the `Customers` module now allows to create it through the complete form or using the quick creation form as well.
 * More information has been added to the SubAddress table in the Rubik's services creation.
 * A new view to see the session's historical record in the Radius module and new filters in the new historical view as well as in the online sessions view have been added
+* The option to create a customer from the CPEs' creation form in the Customer module has been added.
+* The search of addresses and coverage in the creation of Rubik's services has been optimized.
+* More details about the possible failures in the Rubik's coverage searcher are shown now.
 
 **Bug's correction**:
 
@@ -58,6 +64,8 @@ tags:
 * The POTSes section of the CPEs creation form from mobile devices has been fixed to make it's managament easier.
 * The ordination of the TroubleTickets in Rubik's tables has been fixed.
 * A bug that prevented the searchs in the Admin Logs report in the Logger module to be done correctly has been fixed.
+* The last update date in the device's file from mobile devices has been fixed.
+* A mistake in the PBX's edition that prevented the creation of new schedules once the existing elements in the Schedulers were deleted has been fixed.
 
 ### Rubik
 
