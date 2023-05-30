@@ -26,20 +26,29 @@ tags:
 * Se ha añadido la monitorización de recursos de las CMTS Cisco.
 * Se ha añadido la monitorización al core de equpos VSOL, CData y Casa System.
 * Ahora se crea de forma automática un backup de los APs de Mikrotik.
+* Se ha añadido el log de traps recibidos de equipos Eltek.
+* Ahora permitimos configurar servidores de telefonía secundarios.
 
 **Corrección de diversos errores**:
 
 * Se ha corregido un error que impedía que se generaran, en determinadas circunstancias, los usuarios SIPs en las PBXs tras crear o modificar un CPE.
 * Se ha solucionado un problema que podía impedir la reconfiguración de un CPE vía TR069 tras haber aplicado un cambio en sus parámetros, por ejemplo cambiar su SSID.
 * Se ha solucionado un problema que impedía el corte de servicio PPPoE de un cliente tras ser desautorizado.
+* Se ha corregido la exportación a CSV desde el panel de administración.
+* Ahora se tiene en cuenta la variable `monitor: false` a la hora de peticionar vía SNMP a los dispositivos.
 
 ### Krill-GPON
+
+**Nuevas características**:
+
+* Se ha implementado la eliminación de serial number duplicados para ONUs de VSol y CData.
 
 **Corrección de diversos errores**:
 
 * Se ha corregido un posible error al intentar reprovisionar un equipo ya provisionado en OLTs CData.
 * Se ha corregido un error en el filtrado por frame/slot/port dentro del proceso de polling de OLTs CData. 
 * Se han corregido las gráficas de ancho de banda para equipos conectados a OLTs de VSOL/CData.
+* Ahora se reprovisionan de forma automática las ONUs cuando un POTS se modifica.
 
 ### Krill-WiMAX
 
@@ -57,6 +66,7 @@ tags:
 * Se ha añadido la opción de crear un cliente desde el formulario de creación de CPEs en el módulo Customers.
 * Se ha optimizado la búsqueda de direcciones y cobertura en la creación de servicios de Rubik.
 * Ahora se muestra mayor detalle de los posibles errores en el buscador de cobertura de Rubik.
+* Se ha añadido en la vista de gráficas del host una opción para poder ver también las gráficas de sus servicios.
 
 **Corrección de bugs**:
 

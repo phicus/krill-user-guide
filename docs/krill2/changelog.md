@@ -26,20 +26,29 @@ tags:
 * Cisco CMTS' resources monitoring has been added.
 * VSOL, CData and Casa System core devices' monitoring has been added.
 * Mikrotik APs' backup is done automatically now.
+* The received traps log for Eltek's devices has been added.
+* Now it is possible to configure secondary telephony servers.
 
 **Some minor bugfixes**:
 
 * A bug that didn't allowed, under certain circumstances, SIP users generation in the PBXs after create or modify a CPE has been fixed.
 * A problem that could prevent CPE's reconfiguration through TR069 after applying a change in it's parameters, for example SSID, has been fixed.
 * A problem that prevented the cut of the PPPoE service for a client after it was deauthorized has been fixed.
+* The CSV export from the administration panel has been corrected.
+* Now the `monitor: false` variable is considered when an SNMP petition is made to the devices
 
 ### Krill-GPON
+
+**New features**:
+
+* The duplicated serial number removal has been added for VSol and CData ONUs.
 
 **Some minor bugfixes**:
 
 * A posible bug when trying to reprovision a device already provisioned in the CData OLTs has been fixed.
 * A bug in the filtering by frame/slot/port in the polling process of the CData OLTs has been fixed.
 * The bandwith graphics for devices conected to VSOL/CData OLTs have been fixed.
+* Now the ONUs are automatically reprovisioned when a POTS is modified.
 
 ### Krill-WiMAX
 
@@ -57,6 +66,7 @@ tags:
 * The option to create a customer from the CPEs' creation form in the Customer module has been added.
 * The search of addresses and coverage in the creation of Rubik's services has been optimized.
 * More details about the possible failures in the Rubik's coverage searcher are shown now.
+* An option to see the host's services graphs has been added to the graphs view.
 
 **Bug's correction**:
 
