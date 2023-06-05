@@ -15,6 +15,20 @@ tags:
 
 # Novedades
 
+## Junio 2023
+
+### Krill
+
+**Corrección de errores**:
+ 
+* Ahora se tiene en cuenta la variable `monitor: false` a la hora de peticionar vía SNMP a los dispositivos.
+
+### Krill-GPON
+
+**Corrección de errores**:
+
+* Se ha corregido un error que impedía mostrar el TimeLine de onus provisionadas en OLTs de Televés.
+
 ## Mayo 2023
 
 ### Krill

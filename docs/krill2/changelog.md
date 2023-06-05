@@ -15,6 +15,20 @@ tags:
 
 # Changelog
 
+## June 2023
+
+### Krill
+
+**Some minor bugfixes**:
+
+* Now the `monitor: false` variable is taken into account when requesting devices via SNMP.
+
+### Krill-GPON
+
+**Some minor bugfixes**:
+
+* An error has been corrected that prevented the TimeLine of provisioned onus from being displayed in Televes OLTs.
+
 ## May 2023
 
 ### Krill
