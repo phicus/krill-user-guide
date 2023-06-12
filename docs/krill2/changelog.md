@@ -19,8 +19,16 @@ tags:
 
 ### Krill
 
+**New features**:
+
+* The option to specify in models, speed profiles, etc. the realm or realms to which they belong has been added.
+* Now when a CPE is deleted at the administrative level, the TV is disconnected and it is also unsubscribed from the OLT.
+
 **Some minor bugfixes**:
 
+* Fixed a bug that could cause false positive alarms of the "Decreased bandwidth" type.
+* Fixed CATV activation for certain ONUs connected to CData OLTs
+* The CData OLTs provisioner has been modified so that it creates the TR069 WAN via OMCI and the rest via pexpect.
 * Now the `monitor: false` variable is taken into account when requesting devices via SNMP.
 
 ### Krill-GPON
@@ -28,6 +36,19 @@ tags:
 **Some minor bugfixes**:
 
 * An error has been corrected that prevented the TimeLine of provisioned onus from being displayed in Televes OLTs.
+
+### Rubik
+
+**New features**:
+
+* Updated Onivia client import.
+* Now the API returns the information of the IUA, the CTOs and the GPON password of the Onivia services.
+
+### Krill-UI
+
+**New features**:
+
+* The device widget now shows the TV profile if it is selected and is represented by an RF cable on the ONT.
 
 ## May 2023
 
