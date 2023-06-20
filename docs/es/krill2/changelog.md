@@ -19,15 +19,55 @@ tags:
 
 ### Krill
 
+**Nuevas funcionalidades**:
+
+* Se ha añadido la opción de especificar en los modelos, perfiles de velicidad, etc el realm o realms a los que pertenecen.
+* Ahora cuando se borra un CPE a nivel administrativo, se le desconecta la TV y éste se da de baja también de la OLT.
+* Ahora las concesiones legales de IP almacenan también el external ID para facilitar la identificación de los clientes.
+* Los line-profiles ahora se encuentran separados por realm en entornos multi-realm.
+
 **Corrección de errores**:
- 
+
+* Se ha corregido un error que podía provocar alarmas con falsos positivos del tipo "Decreased bandwith".
+* Se ha corregido la activación de CATV para determinadas ONUs conectadas a OLTs CData
+* Se ha modificado el provisionador de OLTs CData para que realice la creación de la WAN de TR069 vía OMCI y el resto vía pexpect.
 * Ahora se tiene en cuenta la variable `monitor: false` a la hora de peticionar vía SNMP a los dispositivos.
+* Se ha corregido un error que podía provocar un error 400 al intentar editar el DDI de una PBX.
+* Se ha corregido un error que podía provocar un error 500 al lanzar un reset de un CPE DOCSIS.
+
 
 ### Krill-GPON
 
 **Corrección de errores**:
 
 * Se ha corregido un error que impedía mostrar el TimeLine de onus provisionadas en OLTs de Televés.
+* Se ha corregido un error que podía provocar una respuesta errónea al peticionar un `/info` en determinados CPEs.
+* Se ha corregido un error que podía provocar un error al intentar hacer un factory reset a algunos CPEs con tecnología `ethernet`.
+
+### Rubik
+
+**Nuevas funcionalidades**:
+
+* Se ha actualizado la importación de clientes de Onivia.
+* Ahora la API devuelve la información del IUA, los CTOs y el password GPON de los servicios de Onivia.
+* Los servicios dados de alta en el mayorista Onivia ahora muestran información del CTO, la IUA así como la GPON password.
+
+**Corrección de errores**:
+
+* Se han corregido diversos errores gráficos en la edición de CTOs.
+
+### Krill-ui
+
+**Nuevas características**:
+
+* En el widget del dispositivo ahora se muestra el perfil de TV si éste está seleccionado y se representa con un cable RF en la ONT.
+* La ficha del CPE ahora muestra en la barra superior si el modelo disponible de antena RF para la televisión de color gris, y si tiene algún perfil de TV asociado éste se pondrá de color verde.
+* Se ha optimizado la vista de PON Status, para diferenciar si se quiere mostrar información de un PON desde otra vista, o accedemos a ella para ver el estado en tiempo real de todos los pones de las distintas OLTs monitorizadas.
+
+**Corrección de errores**:
+
+* Para evitar errores, se ha deshabilitado la acción de recheck para aquellos equipos o servicios que tengan monitorización pasiva.
+* Se han corregido diversos errores gráficos en la vista de Pon Status.
 
 ## Mayo 2023
 

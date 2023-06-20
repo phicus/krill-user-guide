@@ -19,15 +19,54 @@ tags:
 
 ### Krill
 
+**New features**:
+
+* The option to specify in models, speed profiles, etc. the realm or realms to which they belong has been added.
+* Now when a CPE is deleted at the administrative level, the TV is disconnected and it is also unsubscribed from the OLT.
+* Now the legal IP's concessions also save the external ID to make customer identification easier. 
+* The line-profiles are now separated by realm in multi-realm enviroments.
+
 **Some minor bugfixes**:
 
+* Fixed a bug that could cause false positive alarms of the "Decreased bandwidth" type.
+* Fixed CATV activation for certain ONUs connected to CData OLTs
+* The CData OLTs provisioner has been modified so that it creates the TR069 WAN via OMCI and the rest via pexpect.
 * Now the `monitor: false` variable is taken into account when requesting devices via SNMP.
+* A bug that could cause a 400 error when trying to edit a PBX's DDI has been fixed.
+* A bug that could cause a 500 error when reseting a DOCSIS's CPE has been fixed.
 
 ### Krill-GPON
 
 **Some minor bugfixes**:
 
 * An error has been corrected that prevented the TimeLine of provisioned onus from being displayed in Televes OLTs.
+* A bug that could trigger a mistaken answer when petitioning `/info` in certain CPEs has been fixed.
+* A bug that could trigger a mistake when trying to do a factory reset in some CPEs with `ethernet` technology has been fixed.
+
+### Rubik
+
+**New features**:
+
+* Updated Onivia client import.
+* Now the API returns the information of the IUA, the CTOs and the GPON password of the Onivia services.
+* The services activated in the Onivia wholesaler now show information about the CTO, the IUA as well as the GPON password.
+
+**Some minor bugfixes**:
+
+* Different graphic bugs in the CTOs edition have been fixed.
+
+### Krill-UI
+
+**New features**:
+
+* The device widget now shows the TV profile if it is selected and is represented by an RF cable on the ONT.
+* The CPEs page now shows in the upper bar if the model has an RF antenna for television available with the CATV indicator in grey, if it has some TV profile associated the CATV indicator will be green.
+* The PON Status view has been optimized to diferenciate if we want the PON information shown from another view, or if we access to it to see the real time status of all the pones in the different OLTs that are being monitored.
+
+**Some minor bugfixes**:
+
+* To avoid mistakes, the recheck option had been disabled for the devices or services that have a passive monitoring.
+* Different graphic bugs in the PON Status view have been fixed.
 
 ## May 2023
 
