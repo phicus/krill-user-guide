@@ -15,6 +15,14 @@ tags:
 
 # Changelog
 
+## July 2023
+
+### Krill-UI
+
+**Some minor bugfixes**:
+
+* The s/n validator has been corrected to allow for 12 or 16 alphanumeric characters in both the customer module and the installer-tools.
+
 ## June 2023
 
 ### Krill
