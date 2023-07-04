@@ -15,6 +15,14 @@ tags:
 
 # Novedades
 
+## Julio 2023
+
+### Krill-ui
+
+**Corrección de errores**:
+
+* Se ha corregido el validador de s/n para permitir 12 o 16 caracteres alfanuméricos tanto en el módulo `customer`, como en `installer-tools`.
+
 ## Junio 2023
 
 ### Krill
