@@ -17,7 +17,21 @@ tags:
 
 ## July 2023
 
+### Krill
+
+**New features**:
+
+* The option to stop providing service to a customer because they haven't paid or any other reason in a DHCP+Radius enviroment has been added.
+* Now in the DHCP+Radius enviroments the speed atributes are being sent.
+
 ### Krill-UI
+
+**New features**:
+
+* The `customer` module has been refactored to adapt it to mono-kiwi, making the realm selection to apply the filters in the different views easier.
+* The option to export a CSV in in the Customers, CPEs y CPE-Profiles views of the `customer` module has been added.
+* The option to introduce new postal codes with digits and the `-` symbol has been added to make it compatible with postal codes from all over the world.
+* The graphs for certain CPEs services have been improved (downstream, upstream, docsis...).
 
 **Some minor bugfixes**:
 
