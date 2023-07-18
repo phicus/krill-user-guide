@@ -23,6 +23,11 @@ tags:
 
 * The option to stop providing service to a customer because they haven't paid or any other reason in a DHCP+Radius enviroment has been added.
 * Now in the DHCP+Radius enviroments the speed atributes are being sent.
+* The possibility to add the customer name as the ONU's description in the Uplink and V-Sol OLTs.
+
+**Some minor bugfixes**:
+
+* A bug that prevented from giving IP to some devices via Wanmax has been fixed.
 
 ### Krill-UI
 

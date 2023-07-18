@@ -23,6 +23,11 @@ tags:
 
 * Se ha añadido la posibilidad de cortar el servicio a un cliente final por impago o cualquier otro motivo en entornos DHCP+Radius.
 * Ahora en los entornos DHCP+Radius también se envían los atributos de velocidad.
+* Posibilidad de añadir el nombre del customer como descripción de la ONU en OLTs Uplink y V-Sol
+
+**Corrección de errores**:
+
+* Se ha corregido un error que impedia dar IP a algunos equipos por Wanmac
 
 ### Krill-ui
 
