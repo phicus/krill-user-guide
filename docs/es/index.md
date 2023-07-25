@@ -9,7 +9,7 @@ actions:
   link: /es/krill2/login
   type: primary
 - text: API (V2)
-  link: /es/krill2/api-v2
+  link: /es/krill2/api/api-v2
   type: primary
 - text: ISP-CLI
   link: /es/krill2/isp-cli

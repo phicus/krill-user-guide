@@ -21,7 +21,7 @@ In this page we have a detailed list of the last services, ordered by default ba
 The fields that are shown are:
 
 - **ID**: Service's internal ID
-- **Administritave ID**: Main operator's ID
+- **Administrative ID**: Main operator's ID
 - **Service Profile**: Service's profile
 - **Owner**: Main operator that gives support to the service
 - **State**: Service's actual condition

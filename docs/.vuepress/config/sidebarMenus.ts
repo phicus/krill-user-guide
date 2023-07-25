@@ -185,16 +185,16 @@ const apiSidebar = {
         text: 'API v2',
         // collapsible: true,
         children: [
-            {link: '/krill2/api-v2.md', text: 'API v2'},
-            {link: '/krill2/postman.md', text: 'Postman samples'},
+            {link: '/krill2/api/api-v2.md', text: 'API v2'},
+            {link: '/krill2/api/postman.md', text: 'Postman samples'},
         ],
     }],
     es: [{
         text: 'API v2',
         // collapsible: true,
         children: [
-            {link: '/es/krill2/api-v2.md', text: 'API v2'},
-            {link: '/es/krill2/postman.md', text: 'Ejemplos postman'},
+            {link: '/es/krill2/api/api-v2.md', text: 'API v2'},
+            {link: '/es/krill2/api/postman.md', text: 'Ejemplos postman'},
         ]
     }],
 }
@@ -228,7 +228,7 @@ const main = {
         '/krill2/radius/': radiusSidebar.en,
         '/krill2/rubik/': rubikSidebar.en,
         '/krill2/isp-cli': ispCliSidebar.en,
-        '/krill2/api-v2': apiSidebar.en,
+        '/krill2/api/api-v2': apiSidebar.en,
         '/krill2/changelog': changelogSidebar.en,
     },
     // es-ES
@@ -242,7 +242,7 @@ const main = {
         '/es/krill2/radius/': radiusSidebar.es,
         '/es/krill2/rubik/': rubikSidebar.es,
         '/es/krill2/isp-cli': ispCliSidebar.es,
-        '/es/krill2/api-v2': apiSidebar.es,
+        '/es/krill2/api/api-v2': apiSidebar.es,
         '/es/krill2/changelog': changelogSidebar.es,
     }
 }

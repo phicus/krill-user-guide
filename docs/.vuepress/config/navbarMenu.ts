@@ -53,8 +53,9 @@ const menu = [
     {
         text: 'API',
         children: [
-            { text: 'API (V2)', link: '/krill2/api-v2' },
-            { text: 'Postman Samples', link: '/krill2/postman' },
+            { text: 'API (V2)', link: '/krill2/api/api-v2' },
+            { text: 'Rubik API', link: '/krill2/api/rubik' },
+            { text: 'Postman Samples', link: '/krill2/api/postman' },
             { text: 'Widgets', link: '/krill2/widgets' },
         ]
     },
@@ -118,8 +119,9 @@ const menuEs = [
     {
         text: 'API',
         children: [
-            { text: 'API (V2)', link: '/es/krill2/api-v2' },
-            { text: 'Ejemplos Postman', link: '/es/krill2/postman' },
+            { text: 'API (V2)', link: '/es/krill2/api/api-v2' },
+            { text: 'Rubik API', link: '/es/krill2/api/rubik' },
+            { text: 'Ejemplos Postman', link: '/es/krill2/api/postman' },
             { text: 'Widgets', link: '/es/krill2/widgets' },
         ]
     },
