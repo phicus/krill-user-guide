@@ -37,10 +37,12 @@ tags:
 * The option to export a CSV in in the Customers, CPEs y CPE-Profiles views of the `customer` module has been added.
 * The option to introduce new postal codes with digits and the `-` symbol has been added to make it compatible with postal codes from all over the world.
 * The graphs for certain CPEs services have been improved (downstream, upstream, docsis...).
+* The realms are now categorized by technology in the Host-Groups view.
 
 **Some minor bugfixes**:
 
 * The s/n validator has been corrected to allow for 12 or 16 alphanumeric characters in both the customer module and the installer-tools.
+* The way the SNMP request is made to the Huawei OLTs has been changed to prevent possible timeouts.
 
 ## June 2023
 
