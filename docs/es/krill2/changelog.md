@@ -15,6 +15,36 @@ tags:
 
 # Novedades
 
+## Agosto 2023
+
+### Krill
+
+**Nuevas funcionalidades**:
+
+* Se ha adaptado la opción 82 de DHCP para el servicio de Radius. 
+
+**Corrección de errores**:
+
+* Se ha corregido un error que podía provocar que no se monitorizaran correctamente los servicios de un CPE en determinadas circunstancias.
+
+### Krill-ui
+
+**Nuevas funcionalidades**:
+
+* Se ha añadido la opción para poder descargar CSV de los listados en el módulo de Customer/ISP.
+
+**Corrección de errores**:
+
+* Se ha modificado la regla de validación de los label de un POT a 30 caracteres.
+* Se han eliminado los enlaces y referencias a la vista PON Status de los equipos DOCSIS y limitado los Registration tags a los más importantes.
+* Se ha ocultado la IP fija para aquellos equipos que tengan un Address-Profile diferente a ésta
+
+### Krill-GPON
+
+**Corrección de errores**:
+
+* Se ha corregido un error que podía ocasionar que las OLTs no borraran las ONUs tras un OK del comando SNMP correspondiente.
+
 ## Julio 2023
 
 ### Krill
