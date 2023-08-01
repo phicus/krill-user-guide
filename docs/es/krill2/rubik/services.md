@@ -22,7 +22,7 @@ En esta vista tenemos una lista detallada de los últimos servicios, ordenados p
 Los campos que se muestran son:
 
 - **ID**: ID interno del servicio
-- **Administritave ID**: ID del operador mayorista
+- **Administrative ID**: ID del operador mayorista
 - **Service Profile**: Perfil de servicio
 - **Owner**: Operador mayorista que da soporte al servicio
 - **State**: Estado actual en el que se encuentra
