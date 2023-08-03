@@ -15,6 +15,36 @@ tags:
 
 # Changelog
 
+## August 2023
+
+### Krill
+
+**New features**:
+
+* The DHCP's option 82 has been adapted for the Radius service.
+
+**Some minor bugfixes**:
+
+* A bug that could prevent from monitoring the CPE services properly in certain circumstances has been fixed.
+
+### Krill-UI
+
+**New features**:
+
+* The option to download a CSV file with the lists in the Customer/ISP module has been added.
+
+**Some minor bugfixes**:
+
+* The 30 characters validation rule for the POT label has been modified.
+* The links and references to the PON Status view for the DOCSIS devices have been deleted and the Registration tags have been limited to the most important ones.
+* The fixed IP for the devices that have a different Address-Profile has been hidden.
+
+### Krill-GPON
+
+**Some minor bugfixes**:
+
+* A mistake that could prevent the OLTs from deleting the ONUs after the confirmation from the correspondent SNMP command has been fixed.
+
 ## July 2023
 
 ### Krill
