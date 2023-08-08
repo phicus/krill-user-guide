@@ -26,7 +26,7 @@ tags:
 **Corrección de errores**:
 
 * Se ha corregido un error que podía provocar que no se monitorizaran correctamente los servicios de un CPE en determinadas circunstancias.
-*  Se han corregido las gráficas de algunos Switches que no mostraban correctamente sus métricas.
+* Se han corregido las gráficas de algunos Switches que no mostraban correctamente sus métricas.
 
 ### Krill-ui
 
