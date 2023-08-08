@@ -26,18 +26,23 @@ tags:
 **Corrección de errores**:
 
 * Se ha corregido un error que podía provocar que no se monitorizaran correctamente los servicios de un CPE en determinadas circunstancias.
+*  Se han corregido las gráficas de algunos Switches que no mostraban correctamente sus métricas.
 
 ### Krill-ui
 
 **Nuevas funcionalidades**:
 
 * Se ha añadido la opción para poder descargar CSV de los listados en el módulo de Customer/ISP.
+* Se ha simplificado la creación y modificación de Schedules de una PBX.
 
 **Corrección de errores**:
 
 * Se ha modificado la regla de validación de los label de un POT a 30 caracteres.
 * Se han eliminado los enlaces y referencias a la vista PON Status de los equipos DOCSIS y limitado los Registration tags a los más importantes.
 * Se ha ocultado la IP fija para aquellos equipos que tengan un Address-Profile diferente a ésta
+* Se ha deshabilitado el campo `serial_number` para aquellos equipos que no tengan habilitada la variable `cpegpon_noserialnumber_allowed=true` para evitar que éste se pueda modificar tras la creación del CPE.
+* Se ha corregido la funcionalidad de recheck para los servicios, que al pulsar su botón no mostraban ninguna información ni lanzaban dicho comando.
+
 
 ### Krill-GPON
 
