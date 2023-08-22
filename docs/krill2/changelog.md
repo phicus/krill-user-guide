@@ -27,6 +27,9 @@ tags:
 
 * A bug that could prevent from monitoring the CPE services properly in certain circumstances has been fixed.
 * Fixed the graphs of some Switches that did not display their metrics correctly.
+* Optimized DHCP and Radius patch deployments making them much faster.
+* Static IP is now only set when `Address profile` is set to Static IP.
+* Now, when a CPE has the `No reprovision` check, it will not be acted upon in any case.
 
 ### Krill-UI
 
@@ -42,6 +45,7 @@ tags:
 * The fixed IP for the devices that have a different Address-Profile has been hidden.
 * The `serial_number` field has been disabled for those computers that do not have the `cpegpon_noserialnumber_allowed=true` variable enabled to prevent it from being modified after the CPE is created.
 * The recheck functionality for the services has been corrected, when pressing its button did not show any information or launch said command.
+* The DDI validation rule has been modified to allow the addition of international prefixes: p. ex: 0034612345678.
 
 ### Krill-GPON
 
