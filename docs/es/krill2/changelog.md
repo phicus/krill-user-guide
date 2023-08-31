@@ -30,6 +30,8 @@ tags:
 * Se han optimizado los despliegues de modificaciones de DHCP y Radius haciéndolos mucho más rápidos.
 * Ahora solo se establece la IP fija cuando el `Address profile` está establecido en IP Fija.
 * Ahora, cuando un CPE tenga el check de `No reprovisionar`, no se actuará en ningún caso sobre él.
+* Corregido un error que impedía en determinadas circunstancias restaurar backups de OLTs.
+* Se ha solucionado un problema que podían hacer que no se tuvieran en cuenta los address_profile_mapping definidos en el radius.
 
 ### Krill-ui
 
@@ -46,6 +48,8 @@ tags:
 * Se ha deshabilitado el campo `serial_number` para aquellos equipos que no tengan habilitada la variable `cpegpon_noserialnumber_allowed=true` para evitar que éste se pueda modificar tras la creación del CPE.
 * Se ha corregido la funcionalidad de recheck para los servicios, que al pulsar su botón no mostraban ninguna información ni lanzaban dicho comando.
 * Se ha modificado la regla de validación de DDIs para permitir añadir los prefijos internaciones: p. ej: 0034612345678.
+* Se ha corregido el enlace que muestra los hosts asociados a un host-group de realm por tegnología.
+* Se ha ampliado el campo comment para la vista detalle de localizaciones en la vista sonar.
 
 ### Krill-GPON
 

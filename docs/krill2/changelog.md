@@ -30,6 +30,8 @@ tags:
 * Optimized DHCP and Radius patch deployments making them much faster.
 * Static IP is now only set when `Address profile` is set to Static IP.
 * Now, when a CPE has the `No reprovision` check, it will not be acted upon in any case.
+* Fixed an error that prevented in certain circumstances to restore backups of OLTs.
+* Fixed an issue that could cause address_profile_mapping defined in radius to be ignored.
 
 ### Krill-UI
 
@@ -46,6 +48,8 @@ tags:
 * The `serial_number` field has been disabled for those computers that do not have the `cpegpon_noserialnumber_allowed=true` variable enabled to prevent it from being modified after the CPE is created.
 * The recheck functionality for the services has been corrected, when pressing its button did not show any information or launch said command.
 * The DDI validation rule has been modified to allow the addition of international prefixes: p. ex: 0034612345678.
+* Fixed the link showing the hosts associated with a realm host-group by technology.
+* The comment field for the detail view of locations in the sonar view has been expanded.
 
 ### Krill-GPON
 
