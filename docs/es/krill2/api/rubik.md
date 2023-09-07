@@ -23,7 +23,7 @@ Puedes consultar las definiciones técnicas en [Swagger](https://apikrill.phicus
 
 ::: tip Algunos puntos de interés:
 
-- El prefijo para todas las URLs es `/api/v2/rubik`.
+- El prefijo para todas las URLs es **`/api/v2/rubik`**.
 - La mayoría de los recursos de obtención de datos están paginados.
 - Se debe entrar por HTTPS en vez de HTTP.
 - Si lo requerís, el acceso ahora es posible por método [OAuth](https://oauth.net/). Si estás interesado contacta con el
@@ -34,7 +34,7 @@ Puedes consultar las definiciones técnicas en [Swagger](https://apikrill.phicus
 
 ### Servicios
 
-Request URL (GET): `/api/v2/rubik/services`
+Request URL (Method: **GET**): **`/api/v2/rubik/services`**
 
 En este endpoint puedes listar, crear, modificar y eliminar los servicios independientemente del **owner** al que
 pertenezcan.
@@ -44,18 +44,18 @@ pertenezcan.
 Los resultados vienen paginados por defecto con un máximo de 10 elementos por página. Estos valores los podemos
 modificar a través de los parámetros **query parameters**:
 
-* `limit`: Número de elementos por página
-* `offset`: A partir de qué número de elemento se obtienen los resultados
+* **`limit`**: Número de elementos por página
+* **`offset`**: A partir de qué número de elemento se obtienen los resultados
 
 Obtendremos un JSON con los siguientes atributos:
 
-* `count`: Número total de elementos
-* `next`: Siguiente página de resultados
-* `previous`: Página anterior de resultados
-* `results`: Resultados limitados al número de elementos por página especificado
+* **`count`**: Número total de elementos
+* **`next`**: Siguiente página de resultados
+* **`previous`**: Página anterior de resultados
+* **`results`**: Resultados limitados al número de elementos por página especificado
 
 ::: details Ejemplo de uso
-Request URL (GET): `/api/v2/rubik/services/?limit=5&offset=5`:
+Request URL (Method: **GET**): **`/api/v2/rubik/services/?limit=5&offset=5`**:
 
 Response:
 
@@ -183,16 +183,16 @@ Response:
 
 #### Ordenado de resultados
 
-Usaremos el **query parameter**: `sort`, para poder aplicar ordenado a los resultados, indicando el atributo por el que
+Usaremos el **query parameter**: **`sort`**, para poder aplicar ordenado a los resultados, indicando el atributo por el que
 queremos ordenar.
 
 ::: tip Orden descendente
-Si queremos que el orden sea inverso, añadiremos un carácter `-` delante del atributo, por
-ejemplo: `/api/v2/rubik/services/?sort=-owner`.
+Si queremos que el orden sea inverso, añadiremos un carácter **`-`** delante del atributo, por
+ejemplo: **`/api/v2/rubik/services/?sort=-owner`**.
 :::
 
 ::: details Ejemplo de uso
-Request URL (GET): `/api/v2/rubik/services/?sort=-owner`
+Request URL (Method: **GET**): **`/api/v2/rubik/services/?sort=-owner`**
 
 Response:
 
@@ -321,12 +321,12 @@ Response:
 
 El listado de servicios podemos filtrarlo por los siguientes atributos:
 
-* `search`: búsqueda de texto dentro de la mayor parte de los atributos del objeto servicio.
-* `owner`: filtrar por el nombre del *owner* del servicio.
-* `state`: filtrar por el estado (*state*) del servicio.
+* **`search`**: búsqueda de texto dentro de la mayor parte de los atributos del objeto servicio.
+* **`owner`**: filtrar por el nombre del **owner** del servicio.
+* **`state`**: filtrar por el estado (**state**) del servicio.
 
 ::: details Ejemplo de uso
-Request URL (GET): `/api/v2/rubik/services/?owner=telesilvestre&state=canceled&limit=5&offset=0`
+Request URL (Method: **GET**): **`/api/v2/rubik/services/?owner=telesilvestre&state=canceled&limit=5&offset=0`**
 
 Response:
 
@@ -455,17 +455,17 @@ Response:
 
 Para crear un servicio debemos de realizar unos pasos previos:
 
-1. [Obtención de la configuración de los diferentes *owners* que tengamos habilitados.](#obtencion-de-configuracion-de-owners)
+1. [Obtención de la configuración de los diferentes **owners** que tengamos habilitados.](#obtencion-de-configuracion-de-owners)
 2. [Búsqueda de cobertura](#busqueda-de-cobertura)
 3. [Dar de alta el servicio](#dar-de-alta-el-servicio)
 
-#### Obtención de configuración de *owners*:
+#### Obtención de configuración de **owners**:
 
-Cada *owner* o *propietario del servicio* tiene una configuración específica que lo distingue de los demás y habilita o no ciertas características en la creación y modificación de servicios.
+Cada **owner** o **propietario del servicio** tiene una configuración específica que lo distingue de los demás y habilita o no ciertas características en la creación y modificación de servicios.
 
-Para obtener la configuración de los diferentes *owners* haremos la siguiente petición: `/api/v2/rubik/owner-settings/`.
+Para obtener la configuración de los diferentes **owners** haremos la siguiente petición: **`/api/v2/rubik/owner-settings/`**.
 
-Obtendremos un JSON en el que se especificará cada configuración por *owner*:
+Obtendremos un JSON en el que se especificará cada configuración por **owner**:
 
 ```json
 {
@@ -501,17 +501,17 @@ Obtendremos un JSON en el que se especificará cada configuración por *owner*:
 
 Los atributos que configuran cada owner son los siguientes:
 
-* `diagnostic_actions`: Posibles acciones sobre la ONT. Por ejemplo: Reset.
-* `diagnostic_tests`: Posibles test de diagnóstico. Por ejemplo: "Check optical status".
-* `has_otb_change`: Permite cambiar el CTO tras el alta del servicio.
-* `has_product_order`: El servicio tiene "Product orders".
-* `has_products_api`: El servicio requiere obtener los productos disponibles para la búsqueda de cobertura una vez especificada una dirección.
-* `has_tickets`: El servicio tiene la posibilidad de crear *tickets de soporte*.
-* `needs_planning_date`: El servicio debe especificar una fecha de planificación de instalación antes de cambiar su estado a *ordered*. 
-* `needs_reason`: El servicio necesita un motivo para poder cambiar su estado a *cancelled* o a *issue*.
-* `ppais`: Listado de PPAIs disponibles para el servicio.
-* `reserve_expiration`: Tiempo máximo (en horas) de expiración de la reserva del servicio antes de ser cancelada automáticamente si no se ha cambiado su estado a *ordered*.
-* `service_profiles`: Listado de *service_profiles* disponibles para el servicio.
+* **`diagnostic_actions`**: Posibles acciones sobre la ONT. Por ejemplo: Reset.
+* **`diagnostic_tests`**: Posibles test de diagnóstico. Por ejemplo: "Check optical status".
+* **`has_otb_change`**: Permite cambiar el CTO tras el alta del servicio.
+* **`has_product_order`**: El servicio tiene "Product orders".
+* **`has_products_api`**: El servicio requiere obtener los productos disponibles para la búsqueda de cobertura una vez especificada una dirección.
+* **`has_tickets`**: El servicio tiene la posibilidad de crear **tickets de soporte**.
+* **`needs_planning_date`**: El servicio debe especificar una fecha de planificación de instalación antes de cambiar su estado a **ordered**. 
+* **`needs_reason`**: El servicio necesita un motivo para poder cambiar su estado a **cancelled** o a **issue**.
+* **`ppais`**: Listado de PPAIs disponibles para el servicio.
+* **`reserve_expiration`**: Tiempo máximo (en horas) de expiración de la reserva del servicio antes de ser cancelada automáticamente si no se ha cambiado su estado a **ordered**.
+* **`service_profiles`**: Listado de **service_profiles** disponibles para el servicio.
 
 #### Búsqueda de cobertura
 
@@ -519,28 +519,24 @@ La búsqueda de cobertura, a su vez, se descompone en varias fases:
 
 1. [Búsqueda de la dirección del cliente hasta el número de la calle o tipo de dirección (plaza, avenida, etc).](#busqueda-de-direccion)
 2. [Búsqueda de la vivienda del cliente, especificando portal, piso, puerta, etc.](#busqueda-de-vivienda)
-3. [Si el *owner* que da servicio necesita especificar el tipo de producto que se va a tramitar, solicitamos los disponibles.](#busqueda-de-productos)
+3. [Si el **owner** que da servicio necesita especificar el tipo de producto que se va a tramitar, solicitamos los disponibles.](#busqueda-de-productos)
 4. [Verificamos que para la dirección, vivienda y producto especificado hay cobertura.](#verificacion-de-cobertura) 
 
 ##### Búsqueda de dirección
 
-Para buscar las direcciones posibles de un cliente debemos realizar una petición de tipo GET al endpoint: `/api/v2/rubik/addresses/` pasándole algunos de los siguientes *query params* disponibles para poder acotar los resultados:
+Para buscar las direcciones posibles de un cliente debemos realizar una petición de tipo GET al endpoint: **`/api/v2/rubik/addresses/`** pasándole algunos de los siguientes *query params* disponibles para poder acotar los resultados:
 
-* `city`: Ciudad
-* `country`: País
-* `locality`: Localidad o barrio
-* `postCode`: Código postal
-* `stateOrProvince`: Estado o provincia
-* `streetType`: Tipo de vía pública: Calle, Avenida, Plaza, etc.
-* `streetName`: Nombre de la calle u otro tipo de calle
-* `streetNr`: Número que identifica la propiedad en la vía pública. Se puede combinar con streetNrLast para direcciones de rango
-* `streetSuffix`: Un modificador que denota una dirección relativa
-* `streetNrLast`: Último número de un rango de números de calles asignados a una propiedad
-* `streetNrLastSuffix`: Sufijo del último número de calle para una dirección de rango
-
-::: tip
-La especificación de direcciones viene dada bajo la nomenclatura del modelo de datos de [TMForum](https://datamodel.tmforum.org/en/latest/Common/GeographicAddress/)
-:::
+* **`city`**: Ciudad
+* **`country`**: País
+* **`locality`**: Localidad o barrio
+* **`postCode`**: Código postal
+* **`stateOrProvince`**: Estado o provincia
+* **`streetType`**: Tipo de vía pública: Calle, Avenida, Plaza, etc.
+* **`streetName`**: Nombre de la calle u otro tipo de calle
+* **`streetNr`**: Número que identifica la propiedad en la vía pública. Se puede combinar con streetNrLast para direcciones de rango
+* **`streetSuffix`**: Un modificador que denota una dirección relativa
+* **`streetNrLast`**: Último número de un rango de números de calles asignados a una propiedad
+* **`streetNrLastSuffix`**: Sufijo del último número de calle para una dirección de rango
 
 La respuesta obtenida será un JSON del tipo:
 
@@ -565,7 +561,7 @@ La respuesta obtenida será un JSON del tipo:
 ```
 
 ::: details Ejemplo de uso
-Request URL (GET): `/api/v2/rubik/addresses/?postCode=17200&streetName=Espanya&streetType=Placa&streetNr=7`
+Request URL (Method: **GET**): **`/api/v2/rubik/addresses/?postCode=17200&streetName=Abat%20Escarre&streetType=CALLE&streetNr=2`**
 
 Response:
 
@@ -573,23 +569,23 @@ Response:
 {
     "addresses": [
         {
-            "id": "17000830104400007       ",
-            "streetNr": 7,
+            "id": "17000831539000002       ",
+            "streetNr": 2,
             "streetNrSuffix": "",
             "streetNrLast": "",
             "streetNrLastSuffix": "",
-            "streetName": "Espanya",
-            "streetType": "PLACA",
+            "streetName": "Abat Escarre",
+            "streetType": "CALLE",
             "streetSuffix": "",
             "postCode": "17200",
             "locality": "Palafrugell",
             "city": "PALAFRUGELL",
             "stateOrProvince": "GIRONA",
             "country": "spain",
-            "geographicLocation": "Nº 7",
+            "geographicLocation": "Nº 2",
             "type": "finca",
             "source": "neba",
-            "uid": "17000830104400007       "
+            "uid": "17000831539000002       "
         }
     ],
     "_meta": {
@@ -652,10 +648,10 @@ Response:
                 "ZARAGOZA"
             ],
             "streetType": [
-                "PLACA"
+                "CALLE"
             ],
             "streetName": [
-                "Espanya"
+                "Abat Escarre"
             ],
             "streetNr": []
         },
@@ -667,7 +663,7 @@ Response:
 
 ##### Búsqueda de vivienda
 
-Una vez que tenemos identificada la dirección del usuario, tenemos que buscar la vivienda en sí. Para ello debemos realizar una petición de tipo POST al endpoint: `/api/v2/rubik/subaddresses/` pasándole como **body** o **payload** el objeto JSON *address* obtenido de la anterior consulta.
+Una vez que tenemos identificada la dirección del usuario, tenemos que buscar la vivienda en sí. Para ello debemos realizar una petición de tipo POST al endpoint: **`/api/v2/rubik/subaddresses/`** pasándole como **body** o **payload** el objeto JSON **address** obtenido de la anterior consulta.
 
 Obtendremos un listado de viviendas, con el siguiente esquema:
 ```json
@@ -684,43 +680,54 @@ Obtendremos un listado de viviendas, con el siguiente esquema:
 
 Los posibles atributos del detalle de la vivienda son:
 
-* `buildingName`: 
-* `levelNumber`: 
-* `subUnitNumber`: 
-* `subUnitType`:
-* `buildingNameSuffix`: 
-* `stairCase`: 
-* `doorType`: 
-* `door`:  
+* **`buildingName`**: Nombre del edificio, si éste tuviera alguno conocido.
+* **`buildingNameSuffix`**: Prefijo del nombre del edificio.
+* **`levelNumber`**: Número de nivel, por ejemplo: 1, para 1er piso.
+* **`subUnitNumber`**: Discriminador de la subunidad, a menudo simplemente un número simple, por ejemplo FLAT 5.
+* **`subUnitType`**: Tipo de subunidad, como: piso, muelle, suite, tienda, torre, etc.
+* **`stairCase`**: Escalera, pudiendo ser un número o una letra. 
+* **`door`**: Número o letra indicativa de la puerta.
+* **`doorType`**: Tipo de puerta, por ejemplo: Izqda, Dcha, etc. 
 
+
+Los UIDs son los diferentes identificadores únicos de dirección y vivienda. Éstos pueden ser dados en diferentes formatos (Gescal, Aravato, o cualquier otro identificador interno del **owner**). Por ello dentro de los posibles UIDs de una vivienda se devolverán JSON del tipo:
+
+```json
 {
-"externalId": "17000830104400007         002",
-"refId": "gescal"
+  "externalId": "17000830104400007         002",
+  "refId": "gescal"
 }
+```
+
+En el que se especifica el **`externalId`** que es el propio identificador de la vivienda, y el **`refId`**, que especifica el formato en el que viene dicho **id**.
+
+::: tip Nota adicional sobre los UIDs
+La lista de UIDs también puede venir acompañada de un atributo **`product`** o un atributo **`_meta`**, dependiendo de las especificaciones propias del **owner**.
+:::
 
 ::: details Ejemplo de uso
-Request URL (POST): `/api/v2/rubik/subaddresses`
+Request URL (Method: **POST**): **`/api/v2/rubik/subaddresses`**
 
 Request payload:
 ```json
 {
-    "id": "17000830104400007       ",
-    "streetNr": 7,
+    "id": "17000831539000002       ",
+    "streetNr": 2,
     "streetNrSuffix": "",
     "streetNrLast": "",
     "streetNrLastSuffix": "",
-    "streetName": "Espanya",
-    "streetType": "PLACA",
+    "streetName": "Abat Escarre",
+    "streetType": "CALLE",
     "streetSuffix": "",
     "postCode": "17200",
     "locality": "Palafrugell",
     "city": "PALAFRUGELL",
     "stateOrProvince": "GIRONA",
     "country": "spain",
-    "geographicLocation": "Nº 7",
+    "geographicLocation": "Nº 2",
     "type": "finca",
     "source": "neba",
-    "uid": "17000830104400007       "
+    "uid": "17000831539000002       "
 }
 ```
 
@@ -736,13 +743,32 @@ Response:
             "buildingName": "",
             "buildingNameSuffix": "",
             "stairCase": null,
-            "levelNumber": "002",
+            "levelNumber": "BA",
             "doorType": null,
             "door": null
         },
         "uids": [
             {
-                "externalId": "17000830104400007         002",
+                "externalId": "17000831539000002         BA",
+                "refId": "gescal"
+            }
+        ]
+    },
+    {
+        "owner": "neba",
+        "geographicSubAddress": {
+            "subUnitType": "",
+            "subUnitNumber": "",
+            "buildingName": "",
+            "buildingNameSuffix": "",
+            "stairCase": null,
+            "levelNumber": "CH",
+            "doorType": null,
+            "door": null
+        },
+        "uids": [
+            {
+                "externalId": "17000831539000002         CH",
                 "refId": "gescal"
             }
         ]
@@ -751,10 +777,301 @@ Response:
 ```
 :::
 
-
-
 ##### Búsqueda de productos
+
+Si el **owner** así lo especificara en su configuración, éste puede requerir especificar un tipo de **product** para adjuntar al UID del que se quiera comprobar la cobertura, para ello deberemos realizar una petición de tipo POST al endpoint **`/api/v2/rubik/products`**, indicando dentro del **payload** o **body** de la petición el **subaddress** obtenido en la consulta anterior sobre la que se quiera obtener los productos.
+
+La respuesta a este endpoint será un JSON con los siguientes atributos:
+
+```json
+{
+    "owner": "neba",
+    "uids": [
+        {
+            "externalId": "17000831539000002         BA",
+            "refId": "gescal",
+            "product": "ftth-local",
+            "_meta": {
+                "lagl": "17660007032755",
+                "overload": false,
+                "extension_datetime": null,
+                "extension_description": null
+            }
+        }
+    ]
+}
+```
+
+Este JSON, de estructura similar a la respuesta de la [búsqueda de viviendas](#busqueda-de-vivienda), contiene una lista de **products** asociados dentro de los UIDs con posibilidad de añadie información adicional dentro del atributo **`_meta`**.
+
+::: tip Nota para el **owner** NEBA
+Si el producto devuelto contiene el valor *sin-cobertura* es una vivienda en la que directamente no existe posibilidad actual de tramitar altas de servicios, sin necesidad de comprobar la cobertura.
+
+Ejemplo de respuesta:
+```json
+{
+    "owner": "neba",
+    "uids": [
+        {
+            "externalId": "17000830104400007         002",
+            "refId": "gescal",
+            "product": "sin-cobertura",
+            "_meta": {
+                "overload": false,
+                "extension_datetime": null,
+                "extension_description": null
+            }
+        }
+    ]
+}
+```
+:::
+
+::: details Ejemplo de uso
+Request URL (Method: **POST**): **`/api/v2/rubik/products`**
+
+Request payload:
+```json
+{
+    "owner": "neba",
+    "geographicSubAddress": {
+        "subUnitType": "",
+        "subUnitNumber": "",
+        "buildingName": "",
+        "buildingNameSuffix": "",
+        "stairCase": null,
+        "levelNumber": "BA",
+        "doorType": null,
+        "door": null
+    },
+    "uids": [
+        {
+            "externalId": "17000831539000002         BA",
+            "refId": "gescal"
+        }
+    ]
+}
+```
+
+Response:
+
+```json
+{
+    "owner": "neba",
+    "uids": [
+        {
+            "externalId": "17000831539000002         BA",
+            "refId": "gescal",
+            "product": "ftth-local",
+            "_meta": {
+                "lagl": "17660007032755",
+                "overload": false,
+                "extension_datetime": null,
+                "extension_description": null
+            }
+        },
+        {
+            "externalId": "17000831539000002         BA",
+            "refId": "gescal",
+            "product": "ftth-residencial",
+            "_meta": {
+                "ppapie": "17100007062061",
+                "overload": false,
+                "extension_datetime": null,
+                "extension_description": null
+            }
+        },
+        {
+            "externalId": "17000831539000002         BA",
+            "refId": "gescal",
+            "product": "ftth-empresa",
+            "_meta": {
+                "ppapie": "17100007062061",
+                "overload": false,
+                "extension_datetime": null,
+                "extension_description": null
+            }
+        }
+    ]
+}
+```
+:::
 
 ##### Verificación de cobertura
 
+Tras obtener el **UID** (identificador único de la vivienda) y el **product** (si éste fuera necesario por el **owner**) es necesario comprobar si existe cobertura para él.
+
+La verificación de cobertura se realiza haciendo una petición POST al endpoint **`/api/v2/rubik/verify/`**, y en ella se deben especificar el **owner** así como el **UID** sobre el que se quiere realizar la comprobación:
+
+```json
+{
+    "owner": "neba",
+    "uids": [
+        {
+            "externalId": "17000831539000002         BA",
+            "refId": "gescal",
+            "product": "ftth-local",
+            "_meta": {
+                "lagl": "17660007032755",
+                "overload": false,
+                "extension_datetime": null,
+                "extension_description": null
+            }
+        }
+    ]
+}
+```
+
+La respuesta de esta petición será un JSON con los siguientes atributos:
+
+* **`code`**: 100 para cobertura, 302 para no cobertura.
+* **`message`**: Mensaje de confirmación o rechazo de cobertura.
+* **`description`**: Detalle de la respuesta obtenida por el **owner** a la verificación de cobertura.
+* **`_meta`**: Datos adicionales ofrecidos por el **owner**.
+
+::: details Ejemplo de uso
+Request URL (Method: **POST**): **`/api/v2/rubik/products`**
+
+Request payload:
+```json
+{
+    "owner": "neba",
+    "uids": [
+        {
+            "externalId": "17000831539000002         BA",
+            "refId": "gescal",
+            "product": "ftth-local",
+            "_meta": {
+                "lagl": "17660007032755",
+                "overload": false,
+                "extension_datetime": null,
+                "extension_description": null
+            }
+        }
+    ]
+}
+```
+
+Response:
+```json
+{
+    "code": 100,
+    "message": "address verified successfully",
+    "description": "LRE C=1766008 P=17100007062061 L=17660007032755",
+    "_meta": [
+        {    
+            "IN-PAI-L": "1766008001",
+            "CO-PRD-PAI-L": null
+        },
+        {   
+            "IN-PAI-L": null,
+            "CO-PRD-PAI-L": null
+        }
+    ]
+}
+```
+:::
+
 #### Dar de alta el servicio
+
+Una vez se ha confirmado que una vivienda tiene cobertura se puede proceder a tramitar el alta del servicio sobre ésta.
+
+El alta de un servicio se realiza haciendo una petición POST al endpoint **`/api/v2/rubik/services/`**, y en ella se deben especificar los datos de la dirección, vivienda, UIDs, así como otros valores necesarios para poder tramitar el alta.
+
+Atributos para el alta de un servicio:
+
+* **`owner`**: Nombre del **owner** o propietario de servicio sobre el que se va a tramitar el alta.
+* **`service_profile`**: Perfil del servicio (los diferentes valores disponibles se obtienen de la [configuración del *owner*](#obtencion-de-configuracion-de-owners)).
+* **`tv_remote_id`**: Perfil de TV, si éste fuera requerido por el **owner** (los diferentes valores disponibles se obtienen de la [configuración del *owner*](#obtencion-de-configuracion-de-owners)).
+* **`crm_external_id`**: ID externo usado para identificar al cliente final. Puede ser el DNI, ID del CRM, etc.
+* **`crm_customer_label`**: Nombre del cliente final.
+* **`crm_phone_label`**: Número de contacto del cliente final.
+* **`crm_contact_label`**: Comentarios adicionales del cliente final. Por ejemplo, disponibilidad horaria, o ubicación de instalación de la ONT, etc.
+* **`remote_id`**: ID remoto de la ONU en función de las especificaciones del **owner**.
+* **`ppai`**: Punto de interconexión, si éste fura requerido por el **owner** (los diferentes valores disponibles se obtienen de la [configuración del *owner*](#obtencion-de-configuracion-de-owners)).
+* **`uids`**: Lista de UIDs sobre la que se va a hacer la instalación. Si el owner requiere la especificación de *product*, este valor deberá estar especificado en la UID correspondiente.
+* **`address`**: Objeto **address** seleccionado de la [búsqueda de dirección](#busqueda-de-direccion), conteniendo en su interior el **geographicSubAddress** seleccionado en la [búsqueda de vivienda](#busqueda-de-vivienda)
+
+::: details Ejemplo de uso
+Request URL (Method: **POST**): **`/api/v2/rubik/products`**
+
+Request payload:
+```json
+{
+    "owner": "neba",
+    "service_profile": "F11",
+    "tv_remote_id": "",
+    "crm_external_id": "1",
+    "crm_customer_label": "Prueba",
+    "crm_phone_label": "600123456",
+    "crm_contact_label": "Comentario",
+    "uids": [
+        {
+            "externalId": "17000831539000002         BA",
+            "refId": "gescal",
+            "product": "ftth-local",
+            "_meta": {
+                "lagl": "17660007032755",
+                "overload": false,
+                "extension_datetime": null,
+                "extension_description": null
+            }
+        }
+    ],
+    "remote_id": "1",
+    "ppai": "NO_APLICA",
+    "address": {
+        "id": "17000831539000002       ",
+        "streetNr": 2,
+        "streetNrSuffix": "",
+        "streetNrLast": "",
+        "streetNrLastSuffix": "",
+        "streetName": "Abat Escarre",
+        "streetType": "CALLE",
+        "streetSuffix": "",
+        "postCode": "17200",
+        "locality": "Palafrugell",
+        "city": "PALAFRUGELL",
+        "stateOrProvince": "GIRONA",
+        "country": "spain",
+        "geographicLocation": "Nº 2",
+        "type": "finca",
+        "source": "neba",
+        "uid": "17000831539000002       ",
+        "geographicSubAddress": [
+            {
+                "owner": "neba",
+                "geographicSubAddress": {
+                    "subUnitType": "",
+                    "subUnitNumber": "",
+                    "buildingName": "",
+                    "buildingNameSuffix": "",
+                    "stairCase": null,
+                    "levelNumber": "BA",
+                    "doorType": null,
+                    "door": null
+                },
+                "uids": [
+                    {
+                        "externalId": "17000831539000002         BA",
+                        "refId": "gescal",
+                        "product": "ftth-local",
+                        "_meta": {
+                            "lagl": "17660007032755",
+                            "overload": false,
+                            "extension_datetime": null,
+                            "extension_description": null
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}
+```
+
+Response:
+```json
+
+```
+:::
