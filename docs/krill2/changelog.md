@@ -15,6 +15,19 @@ tags:
 
 # Changelog
 
+## September 2023
+
+### Krill-GPON
+
+**New functionalities**:
+
+* The option to do a `load_memento` per PON individually for Huawei OLTs has been added.
+* Added support for ONUs XGSpon.
+
+**Some minor bugfixes**:
+
+* Provisioning has been modified to support ONTs with 10G speeds in Dual card scenarios (support for XGSpon and Gpon).
+
 ## August 2023
 
 ### Krill
