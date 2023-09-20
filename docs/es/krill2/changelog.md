@@ -17,6 +17,17 @@ tags:
 
 ## Septiembre 2023
 
+### Krill-GPON
+
+**Nuevas funcionalidades**:
+
+* Se ha añadido la opción de hacer un `load_memento` por PON de manera individual para OLTs Huawei.
+* Se añade el soporte para ONUs XGSpon.
+
+**Corrección de errores**:
+
+* Se ha modificado la provision para soportar ONTs con velocidades 10G en escenarios con tarjetas Duales (soporte para XGSpon y Gpon)
+
 ## Agosto 2023
 
 ### Krill
@@ -50,7 +61,7 @@ tags:
 * Se ha deshabilitado el campo `serial_number` para aquellos equipos que no tengan habilitada la variable `cpegpon_noserialnumber_allowed=true` para evitar que éste se pueda modificar tras la creación del CPE.
 * Se ha corregido la funcionalidad de recheck para los servicios, que al pulsar su botón no mostraban ninguna información ni lanzaban dicho comando.
 * Se ha modificado la regla de validación de DDIs para permitir añadir los prefijos internaciones: p. ej: 0034612345678.
-* Se ha corregido el enlace que muestra los hosts asociados a un host-group de realm por tegnología.
+* Se ha corregido el enlace que muestra los hosts asociados a un host-group de realm por tecnología.
 * Se ha ampliado el campo comment para la vista detalle de localizaciones en la vista sonar.
 
 ### Krill-GPON
