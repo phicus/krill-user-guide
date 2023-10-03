@@ -15,6 +15,32 @@ tags:
 
 # Changelog
 
+## October 2023
+
+### Krill
+
+**New features**:
+
+* The process of querying and assigning IPs in the Radius service pools has been optimized.
+
+### Krill-GPON
+
+**New features**:
+
+* The functionality of detecting fiber cuts via Trap is added, for certain Huawei OLTs that support it.
+
+### Krill-DOCSIS
+
+**Some minor bugfixes**:
+
+* Fixed the count of connected cable-modems causing inconsistencies between the number displayed in the Host-groups view and the total number of elements.
+
+### Krill-UI
+
+**Some minor bugfixes**:
+
+* Fixed a bug that could prevent teams from being displayed if a user had certain permissions.
+
 ## September 2023
 
 ### Krill-GPON
