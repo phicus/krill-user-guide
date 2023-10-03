@@ -15,6 +15,32 @@ tags:
 
 # Novedades
 
+## Octubre 2023
+
+### Krill
+
+**Nuevas funcionalidades**:
+
+* Se ha optimizado el proceso de consulta y asignación de IPs en los pool del servicio Radius.
+
+### Krill-GPON
+
+**Nuevas funcionalidades**:
+
+* Se añade la funcionalidad de detección de cortes de fibra vía Trap, para determinadas OLTs Huawei que lo soportan.
+
+### Krill-DOCSIS
+
+**Corrección de errores**:
+
+* Se ha corregido el conteo de cable-modems conectados provocando incoherencias entre el número mostrado en la vista Host-groups y el número total de elementos.
+
+### Krill-ui
+
+**Corrección de errores**:
+
+* Se ha solucionado un error que podía impedir la visualización de equipos si un usuario tenía determinados permisos.
+
 ## Septiembre 2023
 
 ### Krill-GPON
