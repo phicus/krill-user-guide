@@ -22,6 +22,8 @@ tags:
 **Nuevas funcionalidades**:
 
 * Se ha optimizado el proceso de consulta y asignación de IPs en los pool del servicio Radius.
+* Se añade un nuevo HostGroup tipo `cpeprobe` para equipos sonda de la red, permitiendo su filtrado también desde la vista HostGroups de la UI.
+* Se ha añadido la posibilidad de marcado PPPOE cuando el NAS sea de tipo DHCP.
 
 ### Krill-GPON
 
@@ -29,17 +31,35 @@ tags:
 
 * Se añade la funcionalidad de detección de cortes de fibra vía Trap, para determinadas OLTs Huawei que lo soportan.
 
+**Corrección de errores**:
+
+* Se ha corregido un error que impedía la eliminación de ONUs duplicadas en el momento de la provisión.
+* Se ha solucionado un error con la provisión de determinados modelos de ZTE.
+
 ### Krill-DOCSIS
 
 **Corrección de errores**:
 
 * Se ha corregido el conteo de cable-modems conectados provocando incoherencias entre el número mostrado en la vista Host-groups y el número total de elementos.
+* Se ha corregido la monitorización del número de cablemodems.
+
 
 ### Krill-ui
+
+**Nuevas funcionalidades**:
+
+* Se añade la opción de adjuntar información adicional en el bloque de tecnical data de la ficha de un Host: SSID, WPA2-Key, User, Password, etc.
+* Ahora ficha monitor de un CPE mostrará la distancia a la que se encuentra de su equipo de registro en función de su tecnología (OLT, Cabecera Docsis, AP, etc)
+* Se ha mejorado la exportación a CSV de la vista CPEs del módulo Customer, pudiendo ahora filtrar los datos antes de ser exportados.
 
 **Corrección de errores**:
 
 * Se ha solucionado un error que podía impedir la visualización de equipos si un usuario tenía determinados permisos.
+* Se ha corregido la ordenación por last-state-since y ancho de banda en bajada y subida dentro de la vista matrix.
+* Se ha solucionado un problema en el filtrado de la vista History, que no distinguía correctamente entre hosts y servicios.
+* Se ha detectado y solucionado un error que impedía que se mostrara el ONU-ID de equipos que tuvieran valor 0 para este atributo.
+* Refactorización del módulo PBX para unificar a la nueva API mono-kiwi.
+* Se elimina la opción de mostrar todos los elementos en la vista Matrix para evitar timeouts al poder encontrarse una gran cantidad de elementos.
 
 ## Septiembre 2023
 

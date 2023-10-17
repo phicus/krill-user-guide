@@ -22,6 +22,8 @@ tags:
 **New features**:
 
 * The process of querying and assigning IPs in the Radius service pools has been optimized.
+* A new HostGroup type `cpeprobe` is added for network probe devices, allowing its filtering also from the HostGroups view of the UI.
+* The possibility of PPPOE marking has been added when the NAS is DHCP type.
 
 ### Krill-GPON
 
@@ -29,17 +31,34 @@ tags:
 
 * The functionality of detecting fiber cuts via Trap is added, for certain Huawei OLTs that support it.
 
+**Some minor bugfixes**:
+
+* Fixed a bug that prevented duplicate ONUs from being removed at provisioning time.
+* Fixed a bug with the provisioning of certain ZTE models.
+
 ### Krill-DOCSIS
 
 **Some minor bugfixes**:
 
 * Fixed the count of connected cable-modems causing inconsistencies between the number displayed in the Host-groups view and the total number of elements.
+* Monitoring of the number of cable modems has been corrected.
 
 ### Krill-UI
+
+**New features**:
+
+* The option to attach additional information is added to the technical data block of a Host file: SSID, WPA2-Key, User, Password, etc.
+* Now the monitor tab of a CPE will show the distance it is from its recording equipment depending on its technology (OLT, Docsis Header, AP, etc.)
+* The CSV export of the CPEs view of the Customer module has been improved, now being able to filter the data before being exported.
 
 **Some minor bugfixes**:
 
 * Fixed a bug that could prevent teams from being displayed if a user had certain permissions.
+* The sorting by last-state-since and bandwidth in download and upload within the matrix view has been corrected.
+* Fixed an issue in History view filtering that did not correctly distinguish between hosts and services.
+* An error that prevented the ONU-ID of computers that had a value of 0 for this attribute from being displayed has been detected and solved.
+* Refactoring of the PBX module to unify the new mono-kiwi API.
+* The option to show all elements in the Matrix view is eliminated to avoid timeouts when a large number of elements can be found.
 
 ## September 2023
 
