@@ -24,6 +24,11 @@ tags:
 * Se ha optimizado el proceso de consulta y asignación de IPs en los pool del servicio Radius.
 * Se añade un nuevo HostGroup tipo `cpeprobe` para equipos sonda de la red, permitiendo su filtrado también desde la vista HostGroups de la UI.
 * Se ha añadido la posibilidad de marcado PPPOE cuando el NAS sea de tipo DHCP.
+* Se ha añadido validación de datos en el endpoint de `/api/v2/pbx/holidays` para evitar poder registrar datos repetidos o con formato erróneo.
+
+**Corrección de errores**:
+
+* Se ha eliminado la duplicidad de CPEs en algunas consultas en la API de monitorización.
 
 ### Krill-GPON
 
@@ -51,6 +56,7 @@ tags:
 * Se añade la opción de adjuntar información adicional en el bloque de tecnical data de la ficha de un Host: SSID, WPA2-Key, User, Password, etc.
 * Ahora ficha monitor de un CPE mostrará la distancia a la que se encuentra de su equipo de registro en función de su tecnología (OLT, Cabecera Docsis, AP, etc)
 * Se ha mejorado la exportación a CSV de la vista CPEs del módulo Customer, pudiendo ahora filtrar los datos antes de ser exportados.
+* Ahora ficha monitor de un CPE mostrará la distancia a la que se encuentra de su equipo de registro en función de su tecnología (OLT, Cabecera Docsis, AP, etc)
 
 **Corrección de errores**:
 
