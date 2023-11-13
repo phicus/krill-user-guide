@@ -1490,7 +1490,7 @@ Los posibles estados que maneja Rubik en base al TMF622 son los siguientes:
 
 #### Alta de servicio NEBA con incidencias
 ##### Incidencia con el API de NEBA
-Si existe alguna incidencia con el API de NEBA como por ejemplo, el certificado está caducado, el servicio pasa a estado **Acknowledged**. El operador solicitante podrá reintentar establecer la comunicación con el API de NEBA.
+Si existe alguna incidencia con el API de NEBA (ejemplo: el certificado está caducado) el servicio pasa a estado **Acknowledged**. El operador solicitante podrá reintentar establecer la comunicación con el API de NEBA.
 ![AltaNebaIncidenciaAPI](/img/api/rubik/alta_servicio_incidencia_neba.png)
 
 
