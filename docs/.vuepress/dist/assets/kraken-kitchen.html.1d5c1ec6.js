@@ -1,1 +1,0 @@
-const e={key:"v-11e79cb0",path:"/es/change-log/kraken-kitchen.html",title:"Kraken Kitchen",lang:"Spanish",frontmatter:{},excerpt:"",headers:[{level:2,title:"2022-02-01",slug:"_2022-02-01",children:[{level:3,title:"Algunas correcciones",slug:"algunas-correcciones",children:[]}]}],git:{updatedTime:1671635286e3},filePathRelative:"es/change-log/kraken-kitchen.md"};export{e as data};
