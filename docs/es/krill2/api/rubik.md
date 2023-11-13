@@ -1430,7 +1430,7 @@ Request payload:
         "CO-OPD-VLAN-FTTH": "1234",
         "IN-PORTABILIDAD": "N",
     }
-}'
+}
 ```
 
 Response:
