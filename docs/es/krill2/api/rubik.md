@@ -1024,9 +1024,9 @@ Los atributos que configuran cada owner son los siguientes:
 * **`has_otb_change`**: Permite cambiar el CTO tras el alta del servicio.
 * **`has_products_api`**: El servicio requiere obtener los productos disponibles para la búsqueda de cobertura una vez especificada una dirección.
 * **`has_tickets`**: El servicio tiene la posibilidad de crear **tickets de soporte**.
-* **`ppais`**: Listado de PPAIs disponibles para el servicio.
+* **`ppais`**: Listado de PPAIs/Links/LAGL disponibles para el servicio.
 * **`reserve_expiration`**: Tiempo máximo (en horas) de expiración de la reserva del servicio antes de ser cancelada automáticamente si no se ha cambiado su estado a **ordered**.
-* **`service_profiles`**: Listado de **service_profiles** disponibles para el servicio.
+* **`service_profiles`**: Listado de perfiles de velocidad disponibles para el servicio.
 
 
 #### Dar de alta el servicio
