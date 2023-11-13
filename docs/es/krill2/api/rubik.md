@@ -1139,7 +1139,7 @@ Response:
 
 ### Ejemplos de uso en NEBA
 
-#### Alta NEBA LOCAL sobre vacante (sin portabilidad)
+#### Alta NEBA LOCAL sobre vacante (sin portabilidad númerica)
 
 Cuando no hay instalación previa de telefonica. Se solitica instalar PTRO. No existe **IUA** (Identificador Unico de Acceso) en la vivienda.
 
@@ -1202,7 +1202,7 @@ Response:
 ```
 :::
 
-#### Alta NEBA LOCAL sobre ocupado (sin portabilidad)
+#### Alta NEBA LOCAL sobre ocupado (sin portabilidad númerica)
 
 Existe instalación previa del PTRO y se conoce el **IUA**.
 
@@ -1266,7 +1266,7 @@ Response:
 ```
 :::
 
-#### Alta NEBA sobre vacante (sin portabilidad)
+#### Alta NEBA sobre vacante (sin portabilidad númerica)
 
 No existe instalación previa de telefonica. Se solitica instalar PTRO. No existe **IUA** en la vivienda
 
@@ -1328,7 +1328,7 @@ Response:
 ```
 :::
 
-#### Alta NEBA sobre ocupado (sin portabilidad)
+#### Alta NEBA sobre ocupado (sin portabilidad númerica)
 
 Existe instalacion previa del PTRO y se conoce el **IUA**.
 
@@ -1392,7 +1392,7 @@ Response:
 ```
 :::
 
-#### Alta NEBA Empresas sobre ocupado (sin portabilidad)
+#### Alta NEBA Empresas sobre ocupado (sin portabilidad númerica)
 Existe instalación previa del PTRO y se conoce el **IUA**.
 
 ::: details Ejemplo de uso
