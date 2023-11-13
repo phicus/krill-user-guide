@@ -948,10 +948,10 @@ Response:
 
 ### Alta de servicio
 
-Para crear un servicio debemos de realizar unos pasos previos:
+Rubik para crear un servicio realiza los pasos previos:
 
 1. [Obtención de la configuración de los diferentes **owners** que tengamos habilitados.](#obtencion-de-configuracion-de-owners)
-2. [Búsqueda de cobertura](#busqueda-de-cobertura)
+2. [Consulta de cobertura](#consulta-de-cobertura)
 3. [Dar de alta el servicio](#dar-de-alta-el-servicio)
 
 #### Obtención de configuración de **owners**:
@@ -974,11 +974,8 @@ Obtendremos un JSON en el que se especificará cada configuración por **owner**
             "TST_FTTH_ONT_OLT": "Verificación de Configuración ONT en OLT"
         },
         "has_otb_change": false,
-        "has_product_order": false,
         "has_products_api": true,
         "has_tickets": false,
-        "needs_planning_date": false,
-        "needs_reason": false,
         "ppais": [
             {
                 "id": "300000000001",
@@ -1025,11 +1022,8 @@ Los atributos que configuran cada owner son los siguientes:
 * **`diagnostic_actions`**: Posibles acciones sobre la ONT. Por ejemplo: Reset.
 * **`diagnostic_tests`**: Posibles test de diagnóstico. Por ejemplo: "Check optical status".
 * **`has_otb_change`**: Permite cambiar el CTO tras el alta del servicio.
-* **`has_product_order`**: El servicio tiene "Product orders".
 * **`has_products_api`**: El servicio requiere obtener los productos disponibles para la búsqueda de cobertura una vez especificada una dirección.
 * **`has_tickets`**: El servicio tiene la posibilidad de crear **tickets de soporte**.
-* **`needs_planning_date`**: El servicio debe especificar una fecha de planificación de instalación antes de cambiar su estado a **ordered**. 
-* **`needs_reason`**: El servicio necesita un motivo para poder cambiar su estado a **cancelled** o a **issue**.
 * **`ppais`**: Listado de PPAIs disponibles para el servicio.
 * **`reserve_expiration`**: Tiempo máximo (en horas) de expiración de la reserva del servicio antes de ser cancelada automáticamente si no se ha cambiado su estado a **ordered**.
 * **`service_profiles`**: Listado de **service_profiles** disponibles para el servicio.
@@ -1478,11 +1472,11 @@ Los posibles estados que maneja Rubik en base al TMF622 son los siguientes:
 
 * **`Pending Cancellation`**: Se ha tramitado la baja/cancelación del servicio, pero aún no hay respuesta por parte del operador Mayorista. Se podrá cancelar el servicio en cualquier etapa del proceso.
 
-* **`Cancelled`**: Se ha cancelado el servicio. 
+* **`Cancelled`**: Se ha cancelado o dado de baja el servicio. 
 
 * **`Completed`**: Cuando el servicio cumple con todos los requisitos y finaliza con éxito, alcanza el estado de completado.
 
-* **`Failed`**: En caso de que el servicio no pueda completarse exitosamente debido a algún inconveniente, se marca como fallido.
+* **`Failed`**: En caso de que el servicio no pueda completarse exitosamente debido a algún inconveniente por parte del owner, se marca como fallido.
 
 ### Ciclos de vida en NEBA
 #### Alta de servicio sin incidencias 
