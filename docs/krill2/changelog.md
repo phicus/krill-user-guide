@@ -29,7 +29,7 @@ tags:
 **Some minor bugfixes**:
 
 * Optimization of Free-radius queries to reduce the load on the database.
-* Port 4280 has been blocked and redirected to 443 to prevent non-HTTPS access to both the API and the UI.
+* Port 4280 has been redirected to 443 to prevent non-HTTPS access to both the API and the UI, except for the `/api` and `/admin` endpoints.
 * Fixed an issue in the API endpoint for fetching events from a Host, which prevented it from working when using the `-start_time` sort parameter.
 
 ### Krill-GPON

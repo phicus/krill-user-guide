@@ -29,7 +29,7 @@ tags:
 **Corrección de errores**:
 
 * Optimización de queries de Free-radius para reducir la carga de la bbdd.
-* Se ha bloqueado el puerto 4280 y redirigido al 443 para evitar que se acceda vía no HTTPS tanto a la API como a la UI.
+* Se ha redirigido el puerto 4280 al 443 para evitar que se acceda vía no HTTPS tanto a la API como a la UI, excepto el endpoint `/api` y el `/admin`
 * Se ha solucionado un problema en el endpoint de la API correspondiente a la obtención de eventos de un Host, que impedía su funcionamiento al usar el parámetro de ordenación `-start_time`.
 
 ### Krill-GPON
