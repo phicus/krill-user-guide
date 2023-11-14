@@ -15,6 +15,38 @@ tags:
 
 # Changelog
 
+## November 2023
+
+### Krill
+
+**New features**:
+
+* Added the functionality to obtain Bitstream equipment info.
+* Trunks can now be created or deleted on Asterik servers for multi-asterisk clients
+* Added the option to have different telephony trunks in different Asterisk under the same Krill.
+* The option to request information on Bitstream type equipment via API has been added.
+
+**Some minor bugfixes**:
+
+* Optimization of Free-radius queries to reduce the load on the database.
+* Port 4280 has been blocked and redirected to 443 to prevent non-HTTPS access to both the API and the UI.
+* Fixed an issue in the API endpoint for fetching events from a Host, which prevented it from working when using the `-start_time` sort parameter.
+
+### Krill-GPON
+
+**Some minor bugfixes**:
+
+* The OID of some OLTs that did not correctly report the PON type (gpon, xgspon, etc.) has been corrected.
+* A problem with the FiberHome OLT Patcher that caused it to work incompletely has been fixed.
+* Fixed a bug that prevented a ONU from being deleted if its ID was not on the whitelist.
+
+### Krill-UI
+
+**New features**:
+
+* The editing tab of a CPE now tries to locate on the map by street, or by town, postal code or province to try to show the location closest to the real one if it is not found.
+* The "Remote ID" has been added to the technical information block of a CPE if this had been specified.
+
 ## October 2023
 
 ### Krill

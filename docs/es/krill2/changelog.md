@@ -15,6 +15,38 @@ tags:
 
 # Novedades
 
+## Noviembre 2023
+
+### Krill
+
+**Nuevas funcionalidades**:
+
+* Se añade la funcionalidad de obtener un Info de equipos Bitstream.
+* Ahora se pueden crear o eliminar Trunks en los servidores de Asterik para clientes con multi-asterisk
+* Se añade la opción de tener diferentes trunks de telefonía en diferentes Asterisk bajo un mismo Krill.
+* Se ha añadido la opción de solicitar un info de equipos de tipo Bitstream vía API.
+
+**Corrección de errores**:
+
+* Optimización de queries de Free-radius para reducir la carga de la bbdd.
+* Se ha bloqueado el puerto 4280 y redirigido al 443 para evitar que se acceda vía no HTTPS tanto a la API como a la UI.
+* Se ha solucionado un problema en el endpoint de la API correspondiente a la obtención de eventos de un Host, que impedía su funcionamiento al usar el parámetro de ordenación `-start_time`.
+
+### Krill-GPON
+
+**Corrección de errores**:
+
+* Se ha corregido el OID de algunas OLTs que no reportaban correctamente el tipo de PON (gpon, xgspon, etc.)
+* Se ha solucionado un problema con el Patcher de las OLTs FiberHome que hacía que funcionara de manera incompleta.
+* Se ha corregido un error que impedía eliminar una ONU si su ID no se encontraba en la whitelist.
+
+### Krill-ui
+
+**Nuevas funcionalidades**:
+
+* La ficha de edición de un CPE ahora intenta ubicar en el mapa por calle, o por localidad, código postal o provincia para intentar mostrar la ubicación más próxima a la real si ésta no se encuentra.
+* Se ha añadido al bloque de información técnica de un CPE el "Remote ID" si éste se hubiera especificado.
+
 ## Octubre 2023
 
 ### Krill
