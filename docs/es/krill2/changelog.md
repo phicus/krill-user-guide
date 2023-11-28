@@ -31,6 +31,7 @@ tags:
 * Optimización de queries de Free-radius para reducir la carga de la bbdd.
 * Se ha redirigido el puerto 4280 al 443 para evitar que se acceda vía no HTTPS tanto a la API como a la UI, excepto el endpoint `/api` y el `/admin`
 * Se ha solucionado un problema en el endpoint de la API correspondiente a la obtención de eventos de un Host, que impedía su funcionamiento al usar el parámetro de ordenación `-start_time`.
+* Se ha corregido un problema que impedía la monitorización de determinados SAIs. 
 
 ### Krill-GPON
 
@@ -46,6 +47,13 @@ tags:
 
 * La ficha de edición de un CPE ahora intenta ubicar en el mapa por calle, o por localidad, código postal o provincia para intentar mostrar la ubicación más próxima a la real si ésta no se encuentra.
 * Se ha añadido al bloque de información técnica de un CPE el "Remote ID" si éste se hubiera especificado.
+* Se añade la posibilidad de incorporar en la ficha monitor el prefijo IPv6 cuando esté activa la opción 37.
+
+### Krill-DOCSIS
+
+**Corrección de errores**:
+
+* Se ha corregido un error que impedía obtener un info de equipos DOCSIS al no venir en el formato esperado el uptime.
 
 ## Octubre 2023
 
