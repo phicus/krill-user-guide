@@ -31,6 +31,7 @@ tags:
 * Optimization of Free-radius queries to reduce the load on the database.
 * Port 4280 has been redirected to 443 to prevent non-HTTPS access to both the API and the UI, except for the `/api` and `/admin` endpoints.
 * Fixed an issue in the API endpoint for fetching events from a Host, which prevented it from working when using the `-start_time` sort parameter.
+* A problem that prevented the monitoring of certain UPSs has been corrected.
 
 ### Krill-GPON
 
@@ -46,6 +47,13 @@ tags:
 
 * The editing tab of a CPE now tries to locate on the map by street, or by town, postal code or province to try to show the location closest to the real one if it is not found.
 * The "Remote ID" has been added to the technical information block of a CPE if this had been specified.
+* The possibility of incorporating the IPv6 prefix in the monitor tab is added when option 37 is active.
+
+### Krill-DOCSIS
+
+**Some minor bugfixes**:
+
+* An error has been corrected that prevented information from being obtained from DOCSIS equipment as it did not come in the expected format at uptime.
 
 ## October 2023
 
