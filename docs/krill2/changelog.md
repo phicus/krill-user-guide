@@ -95,7 +95,7 @@ tags:
 * The option to attach additional information is added to the technical data block of a Host file: SSID, WPA2-Key, User, Password, etc.
 * Now the monitor tab of a CPE will show the distance it is from its recording equipment depending on its technology (OLT, Docsis Header, AP, etc.)
 * The CSV export of the CPEs view of the Customer module has been improved, now being able to filter the data before being exported.
-* Now the monitor tab of a CPE will show the distance it is from its recording equipment depending on its technology (OLT, Docsis Header, AP, etc.)
+
 
 **Some minor bugfixes**:
 
@@ -167,8 +167,8 @@ tags:
 
 **New features**:
 
-* The option to stop providing service to a customer because they haven't paid or any other reason in a DHCP+Radius enviroment has been added.
-* Now in the DHCP+Radius enviroments the speed atributes are being sent.
+* The option to stop providing service to a customer because they haven't paid or any other reason in a DHCP+Radius environment has been added.
+* Now in the DHCP+Radius environments the speed atributes are being sent.
 * The possibility to add the customer name as the ONU's description in the Uplink and V-Sol OLTs.
 
 **Some minor bugfixes**:
@@ -199,7 +199,7 @@ tags:
 * The option to specify in models, speed profiles, etc. the realm or realms to which they belong has been added.
 * Now when a CPE is deleted at the administrative level, the TV is disconnected and it is also unsubscribed from the OLT.
 * Now the legal IP's concessions also save the external ID to make customer identification easier. 
-* The line-profiles are now separated by realm in multi-realm enviroments.
+* The line-profiles are now separated by realm in multi-realm environments.
 
 **Some minor bugfixes**:
 
@@ -319,8 +319,8 @@ tags:
 
 * A support to recover and show the diagnostic information in devices that uses the data-model TR1818 (TR069) has been added.
 * The reception and treatment of PTP Ceragon traps had been enabled.
-* Now the `internal_id` or the `external_id` can be used for the CPEs API's information requests in mono-kiwi enviroments.
-* The data base requests from the API had been optimized in mono-kiwi enviroments with a lot of realms.
+* Now the `internal_id` or the `external_id` can be used for the CPEs API's information requests in mono-kiwi environments.
+* The data base requests from the API had been optimized in mono-kiwi environments with a lot of realms.
 
 **Bug's correction**:
 
