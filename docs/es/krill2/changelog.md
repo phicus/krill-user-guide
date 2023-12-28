@@ -96,7 +96,7 @@ tags:
 * Se añade la opción de adjuntar información adicional en el bloque de tecnical data de la ficha de un Host: SSID, WPA2-Key, User, Password, etc.
 * Ahora ficha monitor de un CPE mostrará la distancia a la que se encuentra de su equipo de registro en función de su tecnología (OLT, Cabecera Docsis, AP, etc)
 * Se ha mejorado la exportación a CSV de la vista CPEs del módulo Customer, pudiendo ahora filtrar los datos antes de ser exportados.
-* Ahora ficha monitor de un CPE mostrará la distancia a la que se encuentra de su equipo de registro en función de su tecnología (OLT, Cabecera Docsis, AP, etc)
+
 
 **Corrección de errores**:
 
