@@ -15,6 +15,47 @@ tags:
 
 # Novedades
 
+## Enero 2024
+
+### Krill
+
+**Nuevas funcionalidades**:
+
+* Se ha limitado el consumo de RAM del MySQL para evitar posibles colapsos del sistema en momentos puntuales.
+* Se ha agregado la funcionalidad de monitorear la cobertura de equipos de tecnología móvil (LTE, 4G, 5G)
+
+**Corrección de errores**:
+
+* Se ha solucionado un problema que provocaba la desaparición de algunas gráficas de determinados equipos PTP.
+
+### Krill-GPON
+
+**Nuevas funcionalidades**:
+
+* Ahora se permite crear más de una WAN vía OMCI para equipos ZTE.
+* Los S/N se convierten en hexadecimal para los equipos de CData
+
+**Corrección de errores**:
+
+* Se ha corregido un problema de determinados fabricantes que requieren realizar la provisión en formato ASCII.
+* Se ha modificado la disposición para ajustar el tipo de servicio en la creación de la wan vía OMCI.
+
+### Interfaz de usuario de Krill
+
+**Nuevas funcionalidades**:
+
+* Ahora los selectores de rangos de fechas muestran algunos valores en modo más "humano".
+* Se añaden filtros para buscar eventos de tipo `iplease6` y `iplease6pd` en la vista HostEvents.
+* Se ha homogeneizado el intervalo de tiempo por defecto para las vistas de gráficos de host y servicios.
+
+**Corrección de errores**:
+
+* Se ha añadido la posibilidad de permitir en el campo notas de cpes y clientes más de 255 caracteres.
+* Se ha corregido un error que impidió realizar búsquedas en el módulo Customer/ISP desde el móvil.
+* Solucionado un error que impedía editar Customers o CPEs si se enviaba un número de decimales demasiado grande en las coordenadas geográficas.
+* Corregido un error que impedía crear múltiples opciones para un recepcionista en el módulo PBX.
+* Se ha corregido un problema que podía provocar una pantalla de error si se accedía a determinadas vistas desde un dispositivo móvil que no estaban preparados para este tipo de dispositivos.
+
 ## Noviembre 2023
 
 ### Krill

@@ -15,6 +15,47 @@ tags:
 
 # Changelog
 
+## January 2023
+
+### Krill
+
+**New features**:
+
+* MySQL RAM consumption has been limited to avoid possible system crashes at specific times.
+* The functionality of monitoring the coverage of mobile technology equipment (LTE, 4G, 5G) has been added
+
+**Some minor bugfixes**:
+
+* A problem that caused some graphics on certain PTP devices to disappear has been fixed.
+
+### Krill-GPON
+
+**New features**:
+
+* It is now allowed to create more than one WAN via OMCI for ZTE devices.
+* S/N are converted to hexadecimal for CData teams
+
+**Some minor bugfixes**:
+
+* A problem has been corrected for certain manufacturers that require provisioning in ASCII format.
+* The provision to adjust the type of service when creating the wan via OMCI has been modified.
+
+### Krill User Interface
+
+**New features**:
+
+* Date range selectors now display some values in a more "human" mode.
+* Added filters to search for events of type `iplease6` and `iplease6pd` in the HostEvents view.
+* The default time interval for host and service graph views has been standardized.
+
+**Some minor bugfixes**:
+
+* The possibility of allowing more than 255 characters in the cpes and client notes field has been added.
+* An error that prevented searching in the Customer/ISP module from mobile has been fixed.
+* Fixed an error that prevented Customers or CPEs from being edited if too large a number of decimal places was sent in the geographical coordinates.
+* Fixed a bug that prevented creating multiple options for a receptionist in the PBX module.
+* Fixed an issue that could cause an error screen if certain views were accessed from a mobile device that was not mobile-ready.
+
 ## November 2023
 
 ### Krill
