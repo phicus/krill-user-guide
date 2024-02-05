@@ -15,7 +15,7 @@ tags:
 
 # Changelog
 
-## January 2023
+## January 2024
 
 ### Krill
 
