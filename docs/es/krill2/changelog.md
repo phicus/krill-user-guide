@@ -15,6 +15,47 @@ tags:
 
 # Novedades
 
+## Febrero 2024
+
+### Krill
+
+**Corrección de errores**:
+
+* Se ha solucionado un problema en la monitorización de equipos EdgePower.
+* Se ha corregido un error que impedía que se reiniciara una ONU tras un cambio de redireccionamiento para configurar sus nuevos valores.
+* Se ha solucionado un error que impedía en determinados casos que se guardaran las métricas de UpBw y DnBw para las gráficas en equipos Bitstream.
+* Se ha arreglado un problema que hacía que no se tuviera en cuenta la variable `default_snmp_community` para equipos sin SNMP configurado.
+
+### Krill-GPON
+
+**Nuevas funcionalidades**:
+
+* Se ha añadido la opción de poder forzar la desprovisión de un S/N que se encuentre duplicado en el memento.
+
+### Krill-WiMAX
+
+**Nuevas funcionalidades**:
+
+* Se han añadido a la monitorización nuevos modelos de APs del fabricante Mimosa.
+
+### Krill-DOCSIS
+
+**Nuevas funcionalidades**:
+
+* Se ha añadido la posibilidad de disponer un selector por tipo de servicio o direccionamiento para activar Dual-Stack Ipv6 o solo Ipv4.
+
+### Interfaz de usuario de Krill
+
+**Corrección de errores**:
+
+* Se ha solucionado un problema que podía provocar el bloqueo del selector de rangos de fecha en algunas vistas al seleccionar uno de los rangos prefijados.
+* Se ha corregido un problema que impedía que se mostraran ciertos valores de perfiles en la vista de CPEs del módulo Customers, si estaba seleccionado el filtro para todos los Realm.
+* Se ha modificado la regla de validación del campo IP Fija basándose en el valor del perfil de direccionamiento en las vistas de creación y modificación de CPEs del módulo Customers.
+* Se ha solucionado un error en el filtrado de la vista Host-Events que impedía que se mostraran datos.
+* Se ha corregido un error en la ficha de clientes y CPEs que impedía guardar datos por la longitud de las coordenadas geográficas.
+* Se ha solucionado un error que impedía que se mostraran las gráficas de un host en la vista móvil.
+* Se ha corregido un error que provocaba que no se detectaran los cambios realizados en la configuración de los POTSes en la ficha de edición de un CPE.
+
 ## Enero 2024
 
 ### Krill
@@ -27,6 +68,11 @@ tags:
 **Corrección de errores**:
 
 * Se ha solucionado un problema que provocaba la desaparición de algunas gráficas de determinados equipos PTP.
+* Corregido un error que provocaba que el servicio de monitorización fallará al hacer un borrado de un CPE via API
+* Reducido el timeout de las tareas de Docsis
+* Se ha modificado la prioridad de ejecución de tareas para evitar colapsos que puedan bloquear algunas tareas más necesarias.
+* Se solucionado un bug en el servicio DHCP que provocaba que no se aplicaran los últimos cambios introducidos en la configuración.
+* Se ha corregido un problema con la configuración de las cuenta SIP de determinadas ONTs.
 
 ### Krill-GPON
 
@@ -40,6 +86,12 @@ tags:
 * Se ha corregido un problema de determinados fabricantes que requieren realizar la provisión en formato ASCII.
 * Se ha modificado la disposición para ajustar el tipo de servicio en la creación de la wan vía OMCI.
 
+### Krill-DOCSIS
+
+**Corrección de errores**:
+
+* Se ha solucionado un problema que podía provocar timeouts en la ejecución de determinadas tareas.
+
 ### Interfaz de usuario de Krill
 
 **Nuevas funcionalidades**:
@@ -47,6 +99,8 @@ tags:
 * Ahora los selectores de rangos de fechas muestran algunos valores en modo más "humano".
 * Se añaden filtros para buscar eventos de tipo `iplease6` y `iplease6pd` en la vista HostEvents.
 * Se ha homogeneizado el intervalo de tiempo por defecto para las vistas de gráficos de host y servicios.
+* Incluir en la ficha CPE los valores de señal de equipos LTE.
+* Se ha añadido una nueva opción que permitirá añadir funcionalidades a las fichas de los equipos en función de su Fabricante, marca, tipo de equipo, etc.
 
 **Corrección de errores**:
 
@@ -55,6 +109,8 @@ tags:
 * Solucionado un error que impedía editar Customers o CPEs si se enviaba un número de decimales demasiado grande en las coordenadas geográficas.
 * Corregido un error que impedía crear múltiples opciones para un recepcionista en el módulo PBX.
 * Se ha corregido un problema que podía provocar una pantalla de error si se accedía a determinadas vistas desde un dispositivo móvil que no estaban preparados para este tipo de dispositivos.
+* Se ha solucionado un problema que impedía que se mostraran cierta gráficas de ancho de banda.
+* Se ha corregido un error que impedía que se mostraran los resultados en la vista CWMP.
 
 ## Noviembre 2023
 
