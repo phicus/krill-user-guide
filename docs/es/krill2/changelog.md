@@ -25,12 +25,14 @@ tags:
 * Se ha corregido un error que impedía que se reiniciara una ONU tras un cambio de redireccionamiento para configurar sus nuevos valores.
 * Se ha solucionado un error que impedía en determinados casos que se guardaran las métricas de UpBw y DnBw para las gráficas en equipos Bitstream.
 * Se ha arreglado un problema que hacía que no se tuviera en cuenta la variable `default_snmp_community` para equipos sin SNMP configurado.
+* Se ha solucionado un error en las gráficas de tiempo real de determinadas ONUs de la marca FullDomus.
 
 ### Krill-GPON
 
 **Nuevas funcionalidades**:
 
 * Se ha añadido la opción de poder forzar la desprovisión de un S/N que se encuentre duplicado en el memento.
+* Ahora se puede usar TR069 Profile para insertar la URL del ACS en ONUs de la marca VSOL. 
 
 ### Krill-WiMAX
 
@@ -55,6 +57,8 @@ tags:
 * Se ha corregido un error en la ficha de clientes y CPEs que impedía guardar datos por la longitud de las coordenadas geográficas.
 * Se ha solucionado un error que impedía que se mostraran las gráficas de un host en la vista móvil.
 * Se ha corregido un error que provocaba que no se detectaran los cambios realizados en la configuración de los POTSes en la ficha de edición de un CPE.
+* Se ha corregido un error que impedía la exportación a CSV desde la vista de CPEs del módulo Customer al seleccionar equipos.
+* Se ha solucionado la búsqueda de Customers en la creación de PBX hasta no seleccionar algún REALM, aunque ya hubiera uno seleccionado previamente, en el módulo de PBX.
 
 ## Enero 2024
 

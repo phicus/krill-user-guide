@@ -25,12 +25,14 @@ tags:
 * Fixed a bug that prevented a UNO from restarting after a redirection change to configure its new values.
 * Fixed a bug that prevented UpBw and DnBw metrics for graphs on Bitstream equipment from being saved in certain cases.
 * Fixed an issue that caused the `default_snmp_community` variable to be ignored for machines without SNMP configured.
+* Fixed a bug in the real time graphs of certain FullDomus branded ONUs.
 
 ### Krill-GPON
 
 **New features**:
 
 * The option has been added to be able to force the deprovisioning of an S/N that is duplicated in the memento.
+* TR069 Profile can now be used to insert the ACS URL into VSOL branded ONUs.
 
 ### Krill-WiMAX
 
@@ -55,6 +57,8 @@ tags:
 * Fixed a bug in the Customers and CPEs tab that prevented data from being saved due to the longitude of the geographic coordinates.
 * Fixed a bug that prevented a host's graphs from displaying in the mobile view.
 * Fixed a bug that caused changes made to the POTS configuration in the edit tab of a CPE to be undetected.
+* Fixed a bug in the real time graphs of certain FullDomus branded ONUs.
+* The search for Customers in the creation of PBXs has been solved until a REALM is selected, even if one has already been selected previously, in the PBX module.
 
 ## January 2024
 
