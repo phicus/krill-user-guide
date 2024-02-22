@@ -15,6 +15,51 @@ tags:
 
 # Changelog
 
+## February 2024
+
+### Krill
+
+**Some minor bugfixes**:
+
+* Fixed an issue with EdgePower equipment monitoring.
+* Fixed a bug that prevented a UNO from restarting after a redirection change to configure its new values.
+* Fixed a bug that prevented UpBw and DnBw metrics for graphs on Bitstream equipment from being saved in certain cases.
+* Fixed an issue that caused the `default_snmp_community` variable to be ignored for machines without SNMP configured.
+* Fixed a bug in the real time graphs of certain FullDomus branded ONUs.
+
+### Krill-GPON
+
+**New features**:
+
+* The option has been added to be able to force the deprovisioning of an S/N that is duplicated in the memento.
+* TR069 Profile can now be used to insert the ACS URL into VSOL branded ONUs.
+
+### Krill-WiMAX
+
+**New features**:
+
+* New models of APs from the manufacturer Mimosa have been added to the monitoring.
+
+### Krill-DOCSIS
+
+**New features**:
+
+* Added the possibility to have a selector by type of service or addressing to enable Dual-Stack Ipv6 or Ipv4 only.
+
+### Krill User Interface
+
+**Some minor bugfixes**:
+
+* Fixed an issue that could cause the date range selector to crash in some views when selecting one of the preset ranges.
+* Fixed an issue that prevented certain profile values from being displayed in the CPEs view of the Customers module if the filter for all Realm was selected.
+* Fixed the validation rule for the Fixed IP field based on the value of the addressing profile in the CPEs creation and modification views of the Customers module.
+* Fixed a bug in the Host-Events view filtering that prevented data from being displayed.
+* Fixed a bug in the Customers and CPEs tab that prevented data from being saved due to the longitude of the geographic coordinates.
+* Fixed a bug that prevented a host's graphs from displaying in the mobile view.
+* Fixed a bug that caused changes made to the POTS configuration in the edit tab of a CPE to be undetected.
+* Fixed a bug in the real time graphs of certain FullDomus branded ONUs.
+* The search for Customers in the creation of PBXs has been solved until a REALM is selected, even if one has already been selected previously, in the PBX module.
+
 ## January 2024
 
 ### Krill
@@ -27,6 +72,11 @@ tags:
 **Some minor bugfixes**:
 
 * A problem that caused some graphics on certain PTP devices to disappear has been fixed.
+* Fixed a bug that caused the monitoring service to fail when deleting a CPE via API.
+* Reduced the timeout of Docsis tasks.
+* Modified the priority of task execution to avoid crashes that could block some more necessary tasks.
+* Fixed a bug in the DHCP service that caused the last changes made to the configuration not to be applied.
+* Fixed a problem with the SIP account configuration of certain ONTs.
 
 ### Krill-GPON
 
@@ -40,6 +90,12 @@ tags:
 * A problem has been corrected for certain manufacturers that require provisioning in ASCII format.
 * The provision to adjust the type of service when creating the wan via OMCI has been modified.
 
+### Krill-DOCSIS
+
+**Some minor bugfixes**:
+
+* Fixed an issue that could cause timeouts in the execution of certain tasks.
+
 ### Krill User Interface
 
 **New features**:
@@ -47,6 +103,8 @@ tags:
 * Date range selectors now display some values in a more "human" mode.
 * Added filters to search for events of type `iplease6` and `iplease6pd` in the HostEvents view.
 * The default time interval for host and service graph views has been standardized.
+* Include in the CPE tab the signal values of LTE equipment.
+* A new option has been added that will allow adding functionalities to the equipment tabs according to their Manufacturer, brand, type of equipment, etc.
 
 **Some minor bugfixes**:
 
@@ -55,6 +113,8 @@ tags:
 * Fixed an error that prevented Customers or CPEs from being edited if too large a number of decimal places was sent in the geographical coordinates.
 * Fixed a bug that prevented creating multiple options for a receptionist in the PBX module.
 * Fixed an issue that could cause an error screen if certain views were accessed from a mobile device that was not mobile-ready.
+* Fixed a problem that prevented certain bandwidth graphs from being displayed.
+* Fixed a bug that prevented results from being displayed in CWMP view.
 
 ## November 2023
 
