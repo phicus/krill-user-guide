@@ -138,3 +138,14 @@ Access to the CPE's bandwith graph as well as the graphs for any other metric re
 Events historical register and notifications delivery for the Host/CPE.
 
 ![MonitoringHostEvents](/img/krill2/monitoring/host/0009.png)
+
+## Extra actions
+
+This is a selector to be able to choose between the BS of Albentia to be selected in case of proximity, so that it is not automatic, but allows a selection of one or the other
+to be able to balance.
+
+In this way, if we have BS_A and BS_B in the same tower, we will be able to prioritise the connection to BS_A or BS_B so that we can distribute customers equally and not in an automatic way as it happened until now for Albentia.
+
+![MonitoringHostEvents](/img/krill2/monitoring/host/0010.png)
+
+In the case of Linksys, it is also possible to choose the update file to be inserted into the CPE.

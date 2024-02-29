@@ -138,3 +138,15 @@ Acceso a la gráfica de ancho de banda cursado por el CPE así como cualquier ot
 Histórico de eventos y envío de notificaciones del host/CPE
 
 ![MonitoringHostEvents](/img/krill2/monitoring/host/0009.png)
+
+## Extra actions
+
+Se trata de un selector para poder elegir entre la BS de Albentia que elegir en caso de proximidad, de forma que no se haga automático, sino que se permita una selección de uno o de otro
+para poder equilibrar.
+
+De esta forma si tenemos EB_A y EB_B en una misma torre, podremos priorizar la conexión a la EB_A o la EB_B de forma que podamos repartir clientes de manera equitativa y no de forma
+automática como ocurría hasta ahora para Albentia.
+
+![MonitoringHostEvents](/img/krill2/monitoring/host/0010.png)
+
+También es posible elegir en caso de Linksys el archivo de actualización que se quiere insertar en el CPE.
