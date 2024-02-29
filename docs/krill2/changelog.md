@@ -26,6 +26,10 @@ tags:
 * Fixed a bug that prevented UpBw and DnBw metrics for graphs on Bitstream equipment from being saved in certain cases.
 * Fixed an issue that caused the `default_snmp_community` variable to be ignored for machines without SNMP configured.
 * Fixed a bug in the real time graphs of certain FullDomus branded ONUs.
+* Fixed a bug that caused IP not to be assigned after changing the NAT addressing type to public.
+* Fixed a problem with the display of PacketLoss graphs of the CPEs, which in some cases did not inject the metrics correctly.
+* The scale of the Ping metric has been revised so that the unit of measurement is in ms.
+* Accounting processing time has been optimized.
 
 ### Krill-GPON
 
@@ -33,6 +37,11 @@ tags:
 
 * The option has been added to be able to force the deprovisioning of an S/N that is duplicated in the memento.
 * TR069 Profile can now be used to insert the ACS URL into VSOL branded ONUs.
+
+**Some minor bugfixes**:
+
+* Fixed an issue that prevented provisioning on certain equipment connected to VSol OLTs.
+* Fixed a bug that prevented the real-time graphs of FullDomus devices from displaying correctly.
 
 ### Krill-WiMAX
 
@@ -59,6 +68,8 @@ tags:
 * Fixed a bug that caused changes made to the POTS configuration in the edit tab of a CPE to be undetected.
 * Fixed a bug in the real time graphs of certain FullDomus branded ONUs.
 * The search for Customers in the creation of PBXs has been solved until a REALM is selected, even if one has already been selected previously, in the PBX module.
+* The export of data to CSV from the Customer module, which sometimes returned a 502 error, has been fixed.
+* Fixed Customers search error when registering a PBX without having previously selected a Realm different from the current value.
 
 ## January 2024
 
