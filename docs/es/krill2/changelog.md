@@ -26,6 +26,10 @@ tags:
 * Se ha solucionado un error que impedía en determinados casos que se guardaran las métricas de UpBw y DnBw para las gráficas en equipos Bitstream.
 * Se ha arreglado un problema que hacía que no se tuviera en cuenta la variable `default_snmp_community` para equipos sin SNMP configurado.
 * Se ha solucionado un error en las gráficas de tiempo real de determinadas ONUs de la marca FullDomus.
+* Se ha corregido un error que hacía que no se asignara IP tras hacer un cambio del tipo de direccionamiento de NAT a pública. 
+* Se ha solucionado el problema de visualización de las gráficas de PacketLoss de los CPEs que en algunos casos no inyectaba correctamente las métricas.
+* Se ha revisado la escala de la métrica Ping para que la unidad de medida sea en ms.
+* Se ha optimizado el tiempo de procesamiento del Accounting.
 
 ### Krill-GPON
 
@@ -33,6 +37,11 @@ tags:
 
 * Se ha añadido la opción de poder forzar la desprovisión de un S/N que se encuentre duplicado en el memento.
 * Ahora se puede usar TR069 Profile para insertar la URL del ACS en ONUs de la marca VSOL. 
+
+**Corrección de errores**:
+
+* Se ha solucionado un problema que impedía la provisión en determinados equipos conectados a OLTs VSol.
+* Se ha solucionado el error que impedía visualizar correctamente las gráficas en tiempo real de equipos FullDomus.
 
 ### Krill-WiMAX
 
@@ -59,6 +68,8 @@ tags:
 * Se ha corregido un error que provocaba que no se detectaran los cambios realizados en la configuración de los POTSes en la ficha de edición de un CPE.
 * Se ha corregido un error que impedía la exportación a CSV desde la vista de CPEs del módulo Customer al seleccionar equipos.
 * Se ha solucionado la búsqueda de Customers en la creación de PBX hasta no seleccionar algún REALM, aunque ya hubiera uno seleccionado previamente, en el módulo de PBX.
+* Se ha corregido la exportación de datos a CSV desde el módulo Customer, que en ocasiones devolvía un error 502.
+* Se ha solucionado el error de búsqueda de Customers al dar de alta una PBX sin haber seleccionado previamente un Realm diferente al valor actual.
 
 ## Enero 2024
 
