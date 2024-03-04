@@ -3,7 +3,7 @@ title: Monitoring | Host
 description: Host's technical file.
 lang: en-US
 prev: /krill2/monitoring/history
-next: null
+next: /krill2/monitoring/cpe
 tags:
 - krill2
 - module
@@ -12,6 +12,8 @@ tags:
 - services
 ---
 # Monitoring | Host
+
+[[toc]]
 
 The file is th main element in Krill about the host's monitoring. It is generated for each CPE and for each network device or server.
 

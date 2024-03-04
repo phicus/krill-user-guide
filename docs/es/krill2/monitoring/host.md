@@ -3,7 +3,7 @@ title: Monitoring | Ficha del Host
 description: Ficha técnica del Host
 lang: es-ES
 prev: history
-next: null
+next: cpe
 tags:
 - krill2
 - módulo
@@ -12,6 +12,8 @@ tags:
 - services
 ---
 # Monitoring | Ficha del Host
+
+[[toc]]
 
 La ficha es el elemento principal de la monitorización de los hosts que hay en Krill. Se genera para cada CPE y para cada equipo de red o servidor.
 

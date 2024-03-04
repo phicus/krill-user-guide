@@ -38,6 +38,7 @@ const monitoringSidebar = {
             {link: '/krill2/monitoring/host-events.md', text: 'Host Events'},
             {link: '/krill2/monitoring/history.md', text: 'History'},
             {link: '/krill2/monitoring/host.md', text: 'Host'},
+            {link: '/krill2/monitoring/cpe.md', text: 'CPE'},
         ],
     }],
     es: [{
@@ -55,7 +56,8 @@ const monitoringSidebar = {
             {link: '/es/krill2/monitoring/cwmp-table.md', text: 'Tabla CWMP'},
             {link: '/es/krill2/monitoring/host-events.md', text: 'Eventos de Hosts'},
             {link: '/es/krill2/monitoring/history.md', text: 'Histórico'},
-            {link: '/es/krill2/monitoring/host.md', text: 'Ficha'},
+            {link: '/es/krill2/monitoring/host.md', text: 'Ficha del Host'},
+            {link: '/es/krill2/monitoring/cpe.md', text: 'CPE'},
         ]
     }]
 }
