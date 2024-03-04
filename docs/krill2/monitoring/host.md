@@ -3,7 +3,7 @@ title: Monitoring | Host
 description: Host's technical file.
 lang: en-US
 prev: /krill2/monitoring/history
-next: null
+next: /krill2/monitoring/cpe
 tags:
 - krill2
 - module

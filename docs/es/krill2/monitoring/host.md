@@ -3,7 +3,7 @@ title: Monitoring | Ficha del Host
 description: Ficha técnica del Host
 lang: es-ES
 prev: history
-next: null
+next: cpe
 tags:
 - krill2
 - módulo
