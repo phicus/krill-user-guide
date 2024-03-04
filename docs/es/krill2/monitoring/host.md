@@ -13,6 +13,8 @@ tags:
 ---
 # Monitoring | Ficha del Host
 
+[[toc]]
+
 La ficha es el elemento principal de la monitorización de los hosts que hay en Krill. Se genera para cada CPE y para cada equipo de red o servidor.
 
 En la ficha se reúne toda la información obtenida por los diferentes servicios de Krill y se muestra información en tiempo real y también del histórico de aquellos servicios que se guarde registro.

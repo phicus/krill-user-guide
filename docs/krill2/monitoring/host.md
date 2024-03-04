@@ -13,6 +13,8 @@ tags:
 ---
 # Monitoring | Host
 
+[[toc]]
+
 The file is th main element in Krill about the host's monitoring. It is generated for each CPE and for each network device or server.
 
 In the file appears all the information obtained through the different Krill services and it is shown in real time as well as the historical register of the services in the cases it is being saved.
