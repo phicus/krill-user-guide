@@ -97,3 +97,38 @@ Esta es una lista de los servicios más uasdos agrupados por tecnología:
 * **tr069**: Retorna la información de las sesiones ACS (solo si el CPE implementa el protocolo TR069)
 * **upstream**: Devuelve los niveles de señal en subida
 * **voice[X]**: Relacionado con el registro de la PBX (soli si el CPE tiene soporte de Voz, la [X] está relacionada con el número del puerto POTS)
+
+## Configuración
+
+Ofrece la posibilidad de configurar los canales WIFI , cambiar la potencia de transmisión, cambio de canal, configurar los ajustes del SSID.
+
+<p align="center"><img src="/img/krill2/monitoring/host/-0003.png" width=""></p>
+
+También se muestran las WANs obtenidas de la provisión y del servicio ACS.
+
+<p align="center"><img src="/img/krill2/monitoring/host/-0004.png" width=""></p>
+
+## Dispositivos
+
+Muestra información de los dispositivos conectados al equipo, como son el nombre, banda de frecuencia, SSID, IP, MAC, etc.
+
+<p align="center"><img src="/img/krill2/monitoring/host/-0005.png" width=""></p>
+
+
+## Diagnósticos
+
+Si el CPE lo permite se pueden hacer diversos tests que permiten un diagnóstico rápido del estado de la conexión del cliente y del WiFi que emite el equipo: 
+
+- Ping, donde podemos elegir a qué IP hacer el ping desde el equipo. 
+- DNS, donde podemos elegir a qué destino intentar alcanzar vía DNS
+- Site Survey para ver la ocupación de las redes y el ruido en los canales de las antenas del equipo.
+- Test de velocidad, donde podemos comprobar la velocidad del servicio.
+
+<p align="center"><img src="/img/krill2/monitoring/host/-0006.png" width=""></p>
+
+
+## Graphs
+
+Acceso a la gráfica de ancho de banda cursado, Tx/Rx, Attenuation, Pondesv por el CPE así como cualquier otra métrica relativa al propio Host con histórico de tiempo y posibilidad de escoger las fechas de visualización.
+
+<p align="center"><img src="/img/krill2/monitoring/host/-0007.png" width=""></p>
