@@ -45,7 +45,7 @@ La ficha se compone de diferentes partes, es modular. Cada ficha mostrará la in
 
 <p align="center"><img src="/img/krill2/monitoring/host/-0002.png" width=""></p>
 
-## CPE Overview
+## CPE General
 
 Es el apartado principal e inicial de la ficha para los CPEs, en ella tenemos el histórico, tareas, los dispositivos conectados y timeline de los servicios del host. También los datos técnicos, de registro, del DHCP y telefonía a modo resumen.
 
@@ -125,7 +125,6 @@ Si el CPE lo permite se pueden hacer diversos tests que permiten un diagnóstico
 - Test de velocidad, donde podemos comprobar la velocidad del servicio.
 
 <p align="center"><img src="/img/krill2/monitoring/host/-0006.png" width=""></p>
-
 
 ## Graphs
 
