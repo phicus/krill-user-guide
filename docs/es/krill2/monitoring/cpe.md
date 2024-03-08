@@ -53,7 +53,7 @@ Es el apartado principal e inicial de la ficha para los CPEs, en ella tenemos el
 
 Los hosts pueden contener datos técnicos y de registro, así como información de IPs y telefonía. Todos ellos se encuentran agrupados en diversas cajas organizando toda esta información.
 
-### Services Timeline
+### Cronograma de servicios
 
 Cada Host de tipo CPE puede contener diferentes servicios que incluyen los úlitmos mensajes de salida así como sus métricas (cuando estén disponibles), todo ello es renderizado en un Timeline con el histórico de cada uno, añadiendo los eventos más importantes (como IPs o eventos de provisión).
 
@@ -126,7 +126,7 @@ Si el CPE lo permite se pueden hacer diversos tests que permiten un diagnóstico
 
 <p align="center"><img src="/img/krill2/monitoring/host/-0006.png" width=""></p>
 
-## Graphs
+## Gráficas
 
 Acceso a la gráfica de ancho de banda cursado, Tx/Rx, Attenuation, Pondesv por el CPE así como cualquier otra métrica relativa al propio Host con histórico de tiempo y posibilidad de escoger las fechas de visualización.
 
