@@ -104,7 +104,7 @@ It offers the possibility to configure the WIFI channels, change the transmissio
 
 <p align="center"><img src="/img/krill2/monitoring/host/-0003.png" width=""></p>
 
-También se muestran las WANs obtenidas de la provisión y del servicio ACS.
+The WANs obtained from the provision and the ACS service are also shown.
 
 <p align="center"><img src="/img/krill2/monitoring/host/-0004.png" width=""></p>
 
