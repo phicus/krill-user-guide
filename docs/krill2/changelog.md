@@ -15,6 +15,30 @@ tags:
 
 # Changelog
 
+## March 2024
+
+### Krill
+
+**Some minor bugfixes**:
+
+* The accounting service has been optimised to de-stress the hard disk and server processor load.
+* [Keyser]: Fixed the reconfiguration action when making a change to a UN configuration.
+
+### Krill-GPON
+
+**Some minor bugfixes**:
+
+* A problem has been fixed with S/N searches that affected VSol equipment, which stored this data in different ways (all upper case, upper and lower case, etc).
+
+### Krill User Interface
+
+**Some minor bugfixes**:
+
+* Changed date range settings for chart widgets so that they can better update metrics (Note: Requires re-configuring date ranges).
+* Fixed exporting data to CSV from Matrix view.
+* [Keyser]: Fixed changing SSID passwords.
+* PING metric scaling has been modified so that it is returned on graphs in `ms`.
+
 ## February 2024
 
 ### Krill
