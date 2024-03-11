@@ -15,6 +15,30 @@ tags:
 
 # Novedades
 
+## Marzo 2024
+
+### Krill
+
+**Corrección de errores**:
+
+* Se ha optimizado el servicio de accounting para desestresar el disco duro y la carga del procesador del servidor.
+* [Keyser]: Se ha corregido la acción de reconfiguración al realizar una modificación en la configuración de una ONU. 
+
+### Krill-GPON
+
+**Corrección de errores**:
+
+* Se ha solucionado un problema con las búsquedas por S/N que afectaba a equipos de VSol, que almacenaban dicho dato de distintas formas (todo mayúscula, mayúsculas y minúscula, etc).
+
+### Interfaz de usuario de Krill
+
+**Corrección de errores**:
+
+* Se ha cambiado la configuración de rangos de fechas para los widgets de gráficas de forma que puedan actualizar mejor las métricas. (Nota: Implica volver a configurar dichos rangos.)
+* Se ha solucionado la exportación de datos a CSV desde la vista Matrix.
+* [Keyser]: Se ha corregido el cambio de contraseñas de los SSIDs.
+* Se ha modificado la escala de la métrica PING para que sea devuelta en las gráficas en `ms`.
+
 ## Febrero 2024
 
 ### Krill
