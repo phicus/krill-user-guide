@@ -23,12 +23,15 @@ tags:
 
 * Se ha optimizado el servicio de accounting para desestresar el disco duro y la carga del procesador del servidor.
 * [Keyser]: Se ha corregido la acción de reconfiguración al realizar una modificación en la configuración de una ONU. 
+* Se ha solucionado un problema que impedía que se lanzaran sesiones TR069 para reiniciar o reconfigurar ONUs desde la utilidad de ISPCLI.
 
 ### Krill-GPON
 
 **Corrección de errores**:
 
 * Se ha solucionado un problema con las búsquedas por S/N que afectaba a equipos de VSol, que almacenaban dicho dato de distintas formas (todo mayúscula, mayúsculas y minúscula, etc).
+* Se ha solucionado un error que impedía reiniciar ONUs en determinados casos en los que fallaba la acción por SNMP, habilitándola en ese caso por Telnet.
+* Se ha corregido el consumo de ancho de banda por PON y ONTs en equipos ZTE. 
 
 ### Interfaz de usuario de Krill
 
