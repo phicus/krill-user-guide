@@ -1,6 +1,8 @@
-import { defineUserConfig, defaultTheme } from 'vuepress'
+import { viteBundler } from '@vuepress/bundler-vite'
+import { defineUserConfig } from 'vuepress'
+import { defaultTheme } from '@vuepress/theme-default'
 import { backToTopPlugin } from '@vuepress/plugin-back-to-top'
-import { externalLinkIconPlugin } from '@vuepress/plugin-external-link-icon'
+//import { externalLinkIconPlugin } from '@vuepress/plugin-external-link-icon'
 import { mediumZoomPlugin } from '@vuepress/plugin-medium-zoom'
 // import { searchPlugin } from '@vuepress/plugin-search'
 import { docsearchPlugin } from '@vuepress/plugin-docsearch'
@@ -17,13 +19,12 @@ import {
 } from './config/index'
 
 export default defineUserConfig({
-    //base: '/guide/',
+    bundler: viteBundler(),
     base: '/',
     title,
     description,
     head,
     theme: defaultTheme({
-        // default theme config
         logo: '/logo.png',
         locales: locales.theme,
         navbar: navbarMenu.items.en,
@@ -36,11 +37,11 @@ export default defineUserConfig({
     plugins: [
         backToTopPlugin(),
         nprogressPlugin(),
-        externalLinkIconPlugin(),
+        //externalLinkIconPlugin(),
         mediumZoomPlugin(),
-        // searchPlugin({
-        //     locales: locales.searchPlugin,
-        // }),
+        // // searchPlugin({
+        // //     locales: locales.searchPlugin,
+        // // }),
         docsearchPlugin({
             appId: '2NLE2B4YK5',
             apiKey: '21be73e3e862794947a3e9b2a54e6511',
