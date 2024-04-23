@@ -17,11 +17,30 @@ tags:
 
 ## Abril 2024
 
+### Krill
+
+**Nuevas funcionalidades**:
+
+* Se ha añadido la opción de enviar alarmas a Microsoft Teams.
+
+### Krill-KEA
+
+**Nuevas funcionalidades**:
+
+* Se ha habilitado la API para poder monitorizar el uso de pools de IPs.
+
 ### Krill-GPON
+
+**Nuevas funcionalidades**:
+
+* Se ha añadido la opción de configurar una validación de versión de hardware / software para realizar la provisión de las ONTs.
+* Se ha añadido el perfil de ONT al fabricante Calix.
+* Se ha añadido la provisión para el modelo HN8145X6 de HWTC.
 
 **Corrección de errores**:
 
 * Se ha corregido la provisión del model F601 para las OLTs VSOL.
+* Se ha modificado la forma de habilitar la opción 82 del DHCP para el fabricante VSOL.
 
 ### Krill-ui
 
@@ -37,6 +56,7 @@ tags:
 * Se ha solucionado un problema que podía provocar que no se cargara el timeline en la ficha de los CPEs.
 * Se ha corregido la previsualización en el mapa de las direcciones tanto de los customers como de sus CPEs.
 * Se ha habilitado la caja de información de registro en la nueva ficha del CPE de Keyser.
+* Se ha solucionado un error que impedía que se pudiera pulsar en ningún botón en la nueva ficha de los CPEs.
 
 ## Marzo 2024
 
