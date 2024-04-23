@@ -15,6 +15,50 @@ tags:
 
 # Changelog
 
+
+## April 2024
+
+### Krill
+
+**New features**:
+
+* The option to send alarms to Microsoft Teams has been added.
+
+### Krill-KEA
+
+**New features**:
+
+* The API has been enabled to be able to monitor the use of IP pools.
+
+### Krill-GPON
+
+**New features**:
+
+* Added the option to configure a hardware/software version validation for ONT provisioning.
+* The ONT profile has been added to the Calix manufacturer.
+* Provisioning has been added for HWTC model HN8145X6.
+
+**Some minor bugfixes**:
+
+* The provisioning of the F601 model for VSOL OLTs has been corrected.
+* The way to enable DHCP option 82 for the manufacturer VSOL has been modified.
+
+### Krill-UI
+
+**New features**:
+
+* The `external_id` and `customer_external_id` fields have been added in the matrix view for service type results.
+* Now by default, the first location and the first country will be selected from those available for the registration of customers and CPEs.
+
+**Some minor bugfixes**:
+
+* Fixed a bug that prevented all ONUs pending provisioning from being displayed in the CPE creation form and in the unconfigured ONUs view itself.
+* Fixed an issue that prevented a service's metrics from loading when the refresh button was pressed.
+* Fixed an issue that could cause the timeline in the CPEs tab not to load.
+* The preview on the map of the addresses of both customers and their CPEs has been corrected.
+* The registration information box has been enabled in the new Keyser CPE tab.
+* Fixed a bug that prevented any buttons from being clickable in the new CPEs tab.
+
 ## March 2024
 
 ### Krill
