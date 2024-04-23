@@ -15,6 +15,29 @@ tags:
 
 # Novedades
 
+## Abril 2024
+
+### Krill-GPON
+
+**Corrección de errores**:
+
+* Se ha corregido la provisión del model F601 para las OLTs VSOL.
+
+### Krill-ui
+
+**Nuevas funcionalidades**:
+
+* Se han añadido los campos `external_id` y `customer_external_id` en la vista matrix para resultados de tipo servicio.
+* Ahora por defecto, se seleccionará la primera localización y el primer país de entre los disponibles para el alta de customers y CPEs.
+
+**Corrección de errores**:
+
+* Se ha corregido un error que impedía que se mostraran todas las ONUs pendientes de provisionar en el formulario de creación de CPEs y en la propia vista de ONUs no configuradas.
+* Se ha corregido un problema que impedía que se cargaran las métricas de un servicio al pulsar el botón refresh.
+* Se ha solucionado un problema que podía provocar que no se cargara el timeline en la ficha de los CPEs.
+* Se ha corregido la previsualización en el mapa de las direcciones tanto de los customers como de sus CPEs.
+* Se ha habilitado la caja de información de registro en la nueva ficha del CPE de Keyser.
+
 ## Marzo 2024
 
 ### Krill

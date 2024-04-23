@@ -15,6 +15,30 @@ tags:
 
 # Changelog
 
+
+## April 2024
+
+### Krill-GPON
+
+**Some minor bugfixes**:
+
+* The provisioning of the F601 model for VSOL OLTs has been corrected.
+
+### Krill-UI
+
+**New features**:
+
+* The `external_id` and `customer_external_id` fields have been added in the matrix view for service type results.
+* Now by default, the first location and the first country will be selected from those available for the registration of customers and CPEs.
+
+**Some minor bugfixes**:
+
+* Fixed a bug that prevented all ONUs pending provisioning from being displayed in the CPE creation form and in the unconfigured ONUs view itself.
+* Fixed an issue that prevented a service's metrics from loading when the refresh button was pressed.
+* Fixed an issue that could cause the timeline in the CPEs tab not to load.
+* The preview on the map of the addresses of both customers and their CPEs has been corrected.
+* The registration information box has been enabled in the new Keyser CPE tab.
+
 ## March 2024
 
 ### Krill
