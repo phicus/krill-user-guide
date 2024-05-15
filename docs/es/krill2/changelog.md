@@ -15,6 +15,14 @@ tags:
 
 # Novedades
 
+## Mayo 2024
+
+### Krill
+
+**Nuevas funcionalidades**:
+ 
+* Ahora Krill permite discriminar los atributos personalizados por NAS vendor en el módulo Krill-Radius.
+
 ## Abril 2024
 
 ### Krill
