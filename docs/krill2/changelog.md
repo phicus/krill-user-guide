@@ -15,6 +15,13 @@ tags:
 
 # Changelog
 
+## May 2024
+
+### Krill
+
+**New features**:
+ 
+* Krill now allows discriminating custom attributes by NAS provider in the Krill-Radius module.
 
 ## April 2024
 
