@@ -23,6 +23,26 @@ tags:
  
 * Krill now allows discriminating custom attributes by NAS provider in the Krill-Radius module.
 
+### Krill-UI
+
+**New features**:
+ 
+* In the ISP view, if there is only a single Realm, it will be selected by default.
+
+### Krill-GPON
+
+**Some minor bugfixes**:
+ 
+* Fixed an issue with the reprovisioning of certain ZTE/PTin devices with the `nni_type` attribute.
+* Fixed a bug that could be caused by loading the memento from the configuration file.
+* Fixed a bug caused in the provisioning by not skipping pending UNOs without serial number.
+
+### Keyser
+
+**Some minor bugfixes**:
+ 
+* Initial WiFi configuration problem with Keyser and Huawei ONTs.
+
 ## April 2024
 
 ### Krill
