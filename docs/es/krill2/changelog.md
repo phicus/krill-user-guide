@@ -15,6 +15,41 @@ tags:
 
 # Novedades
 
+## Junio 2024
+
+### Krill
+
+ **Nuevas funcionalidades**:
+
+ * Se ha incorporado un nuevo comando a nuestro ISP-Cli, para comprobar el estado de los Peers de telefonía.
+ * Se ha optimizado el almacenamiento de métricas de los diferentes servicios para reducir el almacenamiento en disco y el consumo de RAM.
+
+ **Corrección de errores**:
+ 
+ * Se ha solucionado un problema que provocaba en redes grandes que el sistema de monitorización se quedara bloqueado y necesitara un reinicio.
+ * Se ha modificado la generación del atributo de velocidad para los NAS CISCO, para que éste se genere sólo para clientes pppoe.
+ * Corregido un error que impedía que llegaran las alarmas a los CPEs que tenían marcado el check de `enable notifications`.
+ * Se ha solucionado diversos errores que podían aparecer en varios de los endpoinst de la API de monitorización.
+
+### Krill-GPON
+
+**Nuevas características**:
+
+* Se ha añadido una nueva alarma para notificar cuando un PON excede de XXX numero de onts conectadas.
+* Mejora de la provision de equipos ZTE para incluir ipv4/ipv6 en la wan de internet e incluir wan pppoe.
+
+### Krill-DOCSIS
+
+**Nuevas características**:
+
+* Se ha mejorado el tiempo de las tareas de reinicio de los equipos Docsis.
+
+### Krill-UI
+
+**Nuevas características**:
+
+* Para evitar que en las fichas de los equipos no aparezca ninguna dirección, ahora se muestra tanto la del cliente como la del propio CPE.
+
 ## Mayo 2024
 
 ### Krill
