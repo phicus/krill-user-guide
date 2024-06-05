@@ -58,11 +58,16 @@ tags:
  
 * Krill now allows discriminating custom attributes by NAS provider in the Krill-Radius module.
 
+**Some minor bugfixes**:
+
+* Fixed an issue that prevented the generation of backups of PTPs when the monitor=False attribute was set.
+
 ### Krill-UI
 
 **New features**:
  
 * In the ISP view, if there is only a single Realm, it will be selected by default.
+* The option to save the UI configuration (dashboard, refresh times, etc.) associated with the user to be able to retrieve it from any other device has been added. The new option has been enabled within the user menu that is displayed in the top right icon with the initials. 
 
 ### Krill-GPON
 
@@ -77,6 +82,7 @@ tags:
 **Some minor bugfixes**:
  
 * Initial WiFi configuration problem with Keyser and Huawei ONTs.
+* Fixes a bug that caused hosts to keep appearing connected to a computer's LAN when there were none.
 
 ## April 2024
 
