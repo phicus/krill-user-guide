@@ -15,6 +15,41 @@ tags:
 
 # Changelog
 
+## Junio 2024
+
+### Krill
+
+**New features**:
+
+ * A new command has been added to our ISP-Cli, to check the status of the telephony Peers.BX.
+ * The storage of metrics for the different services has been optimized to reduce disk storage and RAM consumption.
+
+**Some minor bugfixes**:
+ 
+ * Fixed a problem that caused the monitoring system to freeze in large networks and require a restart.
+ * The generation of the speed attribute for CISCO NAS has been modified so that it is generated only for pppoe clients.
+ * Fixed a bug that prevented alarms from arriving to CPEs that had the `enable notifications` check box checked.
+ * Several bugs that could appear in several of the endpoinst of the monitoring API have been fixed.
+
+### Krill-GPON
+
+**New features**:
+
+* A new alarm has been added to notify when a PON exceeds XXX number of connected onts.
+* Improved provisioning of ZTE equipment to include ipv4/ipv6 in the internet wan and to include wan pppoe.
+
+### Krill-DOCSIS
+
+**New features**:
+
+* The time taken to restart Docsis equipment has been improved.
+
+### Krill-UI
+
+**New features**:
+
+* In order to avoid that no address is shown on the equipment cards, both the address of the client and the CPE itself are now displayed.
+
 ## May 2024
 
 ### Krill
@@ -23,11 +58,16 @@ tags:
  
 * Krill now allows discriminating custom attributes by NAS provider in the Krill-Radius module.
 
+**Some minor bugfixes**:
+
+* Fixed an issue that prevented the generation of backups of PTPs when the monitor=False attribute was set.
+
 ### Krill-UI
 
 **New features**:
  
 * In the ISP view, if there is only a single Realm, it will be selected by default.
+* The option to save the UI configuration (dashboard, refresh times, etc.) associated with the user to be able to retrieve it from any other device has been added. The new option has been enabled within the user menu that is displayed in the top right icon with the initials. 
 
 ### Krill-GPON
 
@@ -42,6 +82,7 @@ tags:
 **Some minor bugfixes**:
  
 * Initial WiFi configuration problem with Keyser and Huawei ONTs.
+* Fixes a bug that caused hosts to keep appearing connected to a computer's LAN when there were none.
 
 ## April 2024
 

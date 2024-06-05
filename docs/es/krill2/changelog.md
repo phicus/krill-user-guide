@@ -15,6 +15,41 @@ tags:
 
 # Novedades
 
+## Junio 2024
+
+### Krill
+
+ **Nuevas funcionalidades**:
+
+ * Se ha incorporado un nuevo comando a nuestro ISP-Cli, para comprobar el estado de los Peers de telefonía.
+ * Se ha optimizado el almacenamiento de métricas de los diferentes servicios para reducir el almacenamiento en disco y el consumo de RAM.
+
+ **Corrección de errores**:
+ 
+ * Se ha solucionado un problema que provocaba en redes grandes que el sistema de monitorización se quedara bloqueado y necesitara un reinicio.
+ * Se ha modificado la generación del atributo de velocidad para los NAS CISCO, para que éste se genere sólo para clientes pppoe.
+ * Corregido un error que impedía que llegaran las alarmas a los CPEs que tenían marcado el check de `enable notifications`.
+ * Se ha solucionado diversos errores que podían aparecer en varios de los endpoinst de la API de monitorización.
+
+### Krill-GPON
+
+**Nuevas características**:
+
+* Se ha añadido una nueva alarma para notificar cuando un PON excede de XXX numero de onts conectadas.
+* Mejora de la provision de equipos ZTE para incluir ipv4/ipv6 en la wan de internet e incluir wan pppoe.
+
+### Krill-DOCSIS
+
+**Nuevas características**:
+
+* Se ha mejorado el tiempo de las tareas de reinicio de los equipos Docsis.
+
+### Krill-UI
+
+**Nuevas características**:
+
+* Para evitar que en las fichas de los equipos no aparezca ninguna dirección, ahora se muestra tanto la del cliente como la del propio CPE.
+
 ## Mayo 2024
 
 ### Krill
@@ -23,15 +58,20 @@ tags:
  
 * Ahora Krill permite discriminar los atributos personalizados por NAS vendor en el módulo Krill-Radius.
 
+**Corrección de errores**:
+
+* Se ha solucionado un problema que impedía la generación de backups de los PTPs cuando estaba el atributo monitor=False
+
 ### Krill-UI
 
 **Nuevas características**:
  
 * En la vista ISP si sólo hay un único Realm, éste se seleccionará por defecto.
+* Se añade la opción de guardar la configuración de la UI (dashboard, tiempos de refresco, etc) asociada al usuario para poder rescatarla desde cualquier otro dispositivo. La nueva opción se ha habilitado dentro del menú de usuario que se despliega en el icono superior derecho con las iniciales. 
 
 ### Krill-GPON
 
-**Corrección de erroress**:
+**Corrección de errores**:
  
 * Solucionado un problema con la reprovisión de ciertos equipos ZTE/PTin con el atributo `nni_type`.
 * Se ha corregido un error que podía provocarse al hacer una carga del memento desde el fichero de configuración.
@@ -39,9 +79,10 @@ tags:
 
 ### Keyser
 
-**Corrección de erroress**:
+**Corrección de errores**:
  
 * Problema configuración inicial del WiFi con Keyser y ONTs Huawei.
+* Se corrige un bug que provocaba que siguieran apareciendo hosts conectados a la LAN de un equipo cuando no había ninguno.
 
 ## Abril 2024
 
