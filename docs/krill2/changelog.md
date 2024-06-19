@@ -37,6 +37,11 @@ tags:
 
 * A new alarm has been added to notify when a PON exceeds XXX number of connected onts.
 * Improved provisioning of ZTE equipment to include ipv4/ipv6 in the internet wan and to include wan pppoe.
+* A new field has been included in the FiberHome equipment in order to be able to filter by model in the validations.
+
+**Some minor bugfixes**:
+
+* Fixed a bug where the port of a UNO to be configured in CDATA was not correctly obtained.
 
 ### Krill-DOCSIS
 
@@ -49,6 +54,7 @@ tags:
 **New features**:
 
 * In order to avoid that no address is shown on the equipment cards, both the address of the client and the CPE itself are now displayed.
+* (KEYSER) The customer notes field has been added within the new tab.
 
 ## May 2024
 
