@@ -41,7 +41,7 @@ tags:
 
 **Some minor bugfixes**:
 
-* Fixed a bug where the port of a UNO to be configured in CDATA was not correctly obtained.
+* Fixed a bug where the port of an ONT to be configured in CDATA was not correctly obtained.
 
 ### Krill-DOCSIS
 
