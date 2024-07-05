@@ -15,6 +15,29 @@ tags:
 
 # Novedades
 
+## Julio 2024
+
+### Krill
+
+ **Nuevas funcionalidades**:
+
+ * Ahora se permite en el servicio Radius controlar el COA en IPoE y PPPoE.
+ * Hemos añadido soporte para IANA en el servicio Radius IPV6. 
+
+ **Corrección de errores**:
+
+ * Se ha modificado el funcionamiento del servicio Radius para evitar las alertas de IPs duplicadas en CGNAT y en el check de detección de duplicados por NAS.
+
+### Krill-UI
+
+**Nuevas características**:
+
+ * Se ha actualizado Installer Tools, añadiéndole el campo modelo, que se auto-seleccionará al seleccionar un equipo pendiente de provisionar, y se ha eliminado el campo Realms, realizándose las búsquedas en todos los realms que tenga permiso el usuario.
+
+ **Corrección de errores**:
+
+ * (KEYSER) Se ha homogeneizado los colores para las gráficas de ancho de banda en tiempo real.
+
 ## Junio 2024
 
 ### Krill
