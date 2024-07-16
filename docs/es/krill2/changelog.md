@@ -27,7 +27,8 @@ tags:
  **Corrección de errores**:
 
  * Se ha modificado el funcionamiento del servicio Radius para evitar las alertas de IPs duplicadas en CGNAT y en el check de detección de duplicados por NAS.
-
+ * Se ha optimizado el proceso de cálculo de reservas de prefijos IPv6 en radius.
+ 
 ### Krill-UI
 
 **Nuevas características**:
