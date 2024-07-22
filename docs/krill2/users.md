@@ -2,7 +2,7 @@
 title: Users
 description: Krill's temporary module used to manage the users and their permissions, among other things.
 lang: en-US
-prev: login
+prev: create-users
 next: dashboard
 tags:
 - krill2

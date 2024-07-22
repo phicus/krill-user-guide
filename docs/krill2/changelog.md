@@ -27,7 +27,8 @@ tags:
 **Some minor bugfixes**:
 
  * The operation of the Radius service has been modified to avoid alerts of duplicate IPs in CGNAT and in the duplicate detection check by NAS.
-
+ * The process of calculating IPv6 prefix reservations in radius has been optimized.
+ 
 ### Krill-UI
 
 **New features**:
