@@ -3,7 +3,7 @@ title: Acceso
 description: La vista inicial de Krill que sirve como página de acceso.
 lang: es-ES
 prev: null
-next: users
+next: create-users
 tags:
 - krill2
 - acceso

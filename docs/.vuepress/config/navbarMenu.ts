@@ -8,6 +8,10 @@ const menu = [
                 link: '/krill2/login'
             },
             {
+                text: 'Create users',
+                link: '/krill2/create-users'
+            },
+            {
                 text: 'Users',
                 link: '/krill2/users'
             },
@@ -71,6 +75,10 @@ const menuEs = [
             {
                 text: 'Acceso',
                 link: '/es/krill2/login'
+            },
+            {
+                text: 'Crear usuarios',
+                link: '/es/krill2/create-users'
             },
             {
                 text: 'Usuarios',

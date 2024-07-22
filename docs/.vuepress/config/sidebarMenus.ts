@@ -6,6 +6,7 @@ const krill2Sidebar = {
         //collapsible: true,
         children: [
             {link: '/krill2/login.md', text: 'Login'},
+            {link: '/krill2/create-users.md', text: 'Create users'},
             {link: '/krill2/users.md', text: 'Users'},
             {link: '/krill2/dashboard.md', text: 'Dashboard'},
         ],
@@ -15,6 +16,7 @@ const krill2Sidebar = {
         //collapsible: true,
         children: [
             {link: '/es/krill2/login.md', text: 'Acceso'},
+            {link: '/es/krill2/create-users.md', text: 'Crear usuarios'},
             {link: '/es/krill2/users.md', text: 'Usuarios'},
             {link: '/es/krill2/dashboard.md',text: 'Cuadro de mandos'},
         ]
@@ -222,6 +224,7 @@ const main = {
     // en-EN
     en: {
         '/krill2/login': krill2Sidebar.en,
+        '/krill2/create-users': krill2Sidebar.en,
         '/krill2/users': krill2Sidebar.en,
         '/krill2/dashboard': krill2Sidebar.en,
         '/krill2/monitoring/': monitoringSidebar.en,
@@ -236,6 +239,7 @@ const main = {
     // es-ES
     es: {
         '/es/krill2/login': krill2Sidebar.es,
+        '/es/krill2/create-users': krill2Sidebar.es,
         '/es/krill2/users': krill2Sidebar.es,
         '/es/krill2/dashboard': krill2Sidebar.es,
         '/es/krill2/monitoring/': monitoringSidebar.es,

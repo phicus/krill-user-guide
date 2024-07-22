@@ -2,7 +2,7 @@
 title: Usuarios
 description: Módulo temporal de Krill para manejar los usuarios y sus permisos, entre otras cosas.
 lang: es-ES
-prev: login
+prev: create-users
 next: dashboard
 tags:
 - krill2
