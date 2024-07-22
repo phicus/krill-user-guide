@@ -3,14 +3,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="generator" content="VuePress 2.0.0-rc.9" />
+    <meta name="generator" content="VuePress 2.0.0-rc.14" />
     <style>
       :root {
         --c-bg: #fff;
       }
+
       html.dark {
         --c-bg: #22272e;
       }
+
       html,
       body {
         background-color: var(--c-bg);
@@ -21,17 +23,558 @@
       const systemDarkMode =
         window.matchMedia &&
         window.matchMedia('(prefers-color-scheme: dark)').matches
-      if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+
+      if (userMode === 'light') {
+        document.documentElement.dataset.theme = 'light'
+      } else if (userMode === 'dark' || systemDarkMode) {
         document.documentElement.classList.toggle('dark', true)
+        document.documentElement.dataset.theme = 'dark'
       }
     </script>
     <link rel="icon" type="image/png" href="/icon.png"><meta name="application-name" content="Krill User Guide"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Krill User Guide"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="msapplication-TileColor" content="#548b7d"><meta name="theme-color" content="#548b7d"><title>API v2 - Postman | Una guía de usuario para Krill</title><meta name="description" content="Ejemplos de la API REST v2 en Postman.">
-    <link rel="preload" href="/assets/style-fc4fee0d.css" as="style"><link rel="stylesheet" href="/assets/style-fc4fee0d.css">
-    <link rel="modulepreload" href="/assets/app-d7d7d7e0.js"><link rel="modulepreload" href="/assets/postman.html-a1ebeb45.js"><link rel="modulepreload" href="/assets/get_datasets-8b18457a.js">
-    <link rel="prefetch" href="/assets/index.html-87f53f21.js" as="script"><link rel="prefetch" href="/assets/index.html-40f33c09.js" as="script"><link rel="prefetch" href="/assets/changelog.html-f06dbb65.js" as="script"><link rel="prefetch" href="/assets/create-users.html-d32bb849.js" as="script"><link rel="prefetch" href="/assets/dashboard.html-e1479d6d.js" as="script"><link rel="prefetch" href="/assets/isp-cli.html-2e1d04f3.js" as="script"><link rel="prefetch" href="/assets/login.html-7dff3c17.js" as="script"><link rel="prefetch" href="/assets/users.html-7358bbd7.js" as="script"><link rel="prefetch" href="/assets/widgets.html-4f51acb3.js" as="script"><link rel="prefetch" href="/assets/kiwi.html-a369837f.js" as="script"><link rel="prefetch" href="/assets/kraken-kitchen.html-1a530f86.js" as="script"><link rel="prefetch" href="/assets/krill-acs.html-3031e0db.js" as="script"><link rel="prefetch" href="/assets/krill-adamo-ivr-ui.html-30b82b9d.js" as="script"><link rel="prefetch" href="/assets/krill-chati-ui.html-37bf281c.js" as="script"><link rel="prefetch" href="/assets/krill-core.html-4a33f777.js" as="script"><link rel="prefetch" href="/assets/krill-gpon.html-33e05ac5.js" as="script"><link rel="prefetch" href="/assets/krill-installer-ui.html-3cbb4bbd.js" as="script"><link rel="prefetch" href="/assets/krill-isp-ui.html-e4b9b514.js" as="script"><link rel="prefetch" href="/assets/krill-monitoring-ui.html-6b12e8ad.js" as="script"><link rel="prefetch" href="/assets/krill-oratio-ui.html-70b584fc.js" as="script"><link rel="prefetch" href="/assets/krill-pbx-ui.html-e618ef1e.js" as="script"><link rel="prefetch" href="/assets/krill-rubik-ui.html-2ac7554a.js" as="script"><link rel="prefetch" href="/assets/krill-ui.html-7da4acd7.js" as="script"><link rel="prefetch" href="/assets/krill-webservice-api.html-3d67c55a.js" as="script"><link rel="prefetch" href="/assets/krill-wimax.html-a3de4bac.js" as="script"><link rel="prefetch" href="/assets/krill.html-29a6523b.js" as="script"><link rel="prefetch" href="/assets/changelog.html-d94d2aa6.js" as="script"><link rel="prefetch" href="/assets/create-users.html-24899930.js" as="script"><link rel="prefetch" href="/assets/dashboard.html-947e1604.js" as="script"><link rel="prefetch" href="/assets/isp-cli.html-5676c06e.js" as="script"><link rel="prefetch" href="/assets/login.html-3b71d056.js" as="script"><link rel="prefetch" href="/assets/users.html-6262aa83.js" as="script"><link rel="prefetch" href="/assets/widgets.html-aecb25ed.js" as="script"><link rel="prefetch" href="/assets/api-v2.html-cac394a3.js" as="script"><link rel="prefetch" href="/assets/postman.html-5f9ff3fc.js" as="script"><link rel="prefetch" href="/assets/rubik.html-4b8de4c2.js" as="script"><link rel="prefetch" href="/assets/index.html-3d066920.js" as="script"><link rel="prefetch" href="/assets/contexts.html-3ef7f317.js" as="script"><link rel="prefetch" href="/assets/cpe-profiles.html-f020d3b6.js" as="script"><link rel="prefetch" href="/assets/cpes.html-eff094df.js" as="script"><link rel="prefetch" href="/assets/customers.html-45760b02.js" as="script"><link rel="prefetch" href="/assets/index.html-9bd84bfc.js" as="script"><link rel="prefetch" href="/assets/potses.html-7cf81bcf.js" as="script"><link rel="prefetch" href="/assets/index.html-7ffe9079.js" as="script"><link rel="prefetch" href="/assets/alarms.html-64fbf3f7.js" as="script"><link rel="prefetch" href="/assets/cpe.html-686f239b.js" as="script"><link rel="prefetch" href="/assets/cwmp-table.html-e3b9eb18.js" as="script"><link rel="prefetch" href="/assets/history.html-83ea7456.js" as="script"><link rel="prefetch" href="/assets/host-events.html-490de33f.js" as="script"><link rel="prefetch" href="/assets/host-groups.html-b69aaefd.js" as="script"><link rel="prefetch" href="/assets/host.html-cbf55530.js" as="script"><link rel="prefetch" href="/assets/index.html-b9ec67e9.js" as="script"><link rel="prefetch" href="/assets/matrix.html-098d7e20.js" as="script"><link rel="prefetch" href="/assets/problems.html-b86f7335.js" as="script"><link rel="prefetch" href="/assets/smart-tree.html-a6bc4304.js" as="script"><link rel="prefetch" href="/assets/sonar.html-b1949bd2.js" as="script"><link rel="prefetch" href="/assets/unprovisioned-onus.html-60ec53f3.js" as="script"><link rel="prefetch" href="/assets/worldmap.html-69651c71.js" as="script"><link rel="prefetch" href="/assets/cdrs.html-ed0f4efa.js" as="script"><link rel="prefetch" href="/assets/contexts.html-1547d15f.js" as="script"><link rel="prefetch" href="/assets/holidays.html-1e4b9a39.js" as="script"><link rel="prefetch" href="/assets/index.html-0211a9b2.js" as="script"><link rel="prefetch" href="/assets/pbxs.html-0ad3e6b4.js" as="script"><link rel="prefetch" href="/assets/index.html-3bace8b2.js" as="script"><link rel="prefetch" href="/assets/ip-pools.html-2d54ef06.js" as="script"><link rel="prefetch" href="/assets/sessions.html-e3ff9bd7.js" as="script"><link rel="prefetch" href="/assets/index.html-fd663e73.js" as="script"><link rel="prefetch" href="/assets/services.html-5b16cfdc.js" as="script"><link rel="prefetch" href="/assets/trouble-tickets.html-df483b9b.js" as="script"><link rel="prefetch" href="/assets/api-v2.html-c64dd6db.js" as="script"><link rel="prefetch" href="/assets/rubik.html-22b4aa53.js" as="script"><link rel="prefetch" href="/assets/index.html-c0b97c79.js" as="script"><link rel="prefetch" href="/assets/contexts.html-d3e98e64.js" as="script"><link rel="prefetch" href="/assets/cpe-profiles.html-3be0be2c.js" as="script"><link rel="prefetch" href="/assets/cpes.html-546b182e.js" as="script"><link rel="prefetch" href="/assets/customers.html-a7db0fe8.js" as="script"><link rel="prefetch" href="/assets/index.html-fc2c9de3.js" as="script"><link rel="prefetch" href="/assets/potses.html-3c9ec430.js" as="script"><link rel="prefetch" href="/assets/index.html-fe79f37d.js" as="script"><link rel="prefetch" href="/assets/alarms.html-342fa468.js" as="script"><link rel="prefetch" href="/assets/cpe.html-b2e91b3a.js" as="script"><link rel="prefetch" href="/assets/cwmp-table.html-34ee6c5d.js" as="script"><link rel="prefetch" href="/assets/history.html-d483bc4c.js" as="script"><link rel="prefetch" href="/assets/host-events.html-e1b52400.js" as="script"><link rel="prefetch" href="/assets/host-groups.html-b4d9df94.js" as="script"><link rel="prefetch" href="/assets/host.html-0d0c9f1e.js" as="script"><link rel="prefetch" href="/assets/index.html-b377bad7.js" as="script"><link rel="prefetch" href="/assets/matrix.html-3f32589e.js" as="script"><link rel="prefetch" href="/assets/problems.html-097284d8.js" as="script"><link rel="prefetch" href="/assets/smart-tree.html-292aa2fd.js" as="script"><link rel="prefetch" href="/assets/sonar.html-9938e411.js" as="script"><link rel="prefetch" href="/assets/unprovisioned-onus.html-c93970c7.js" as="script"><link rel="prefetch" href="/assets/worldmap.html-7066842e.js" as="script"><link rel="prefetch" href="/assets/cdrs.html-20840d15.js" as="script"><link rel="prefetch" href="/assets/contexts.html-1ae1463b.js" as="script"><link rel="prefetch" href="/assets/holidays.html-834eb471.js" as="script"><link rel="prefetch" href="/assets/index.html-e767e011.js" as="script"><link rel="prefetch" href="/assets/pbxs.html-cc7a15ac.js" as="script"><link rel="prefetch" href="/assets/index.html-bef9c59e.js" as="script"><link rel="prefetch" href="/assets/ip-pools.html-23ea03b7.js" as="script"><link rel="prefetch" href="/assets/sessions.html-95f15397.js" as="script"><link rel="prefetch" href="/assets/index.html-3d6b41f2.js" as="script"><link rel="prefetch" href="/assets/services.html-f3c64845.js" as="script"><link rel="prefetch" href="/assets/trouble-tickets.html-f2e7c2ce.js" as="script"><link rel="prefetch" href="/assets/404.html-94b9b27d.js" as="script"><link rel="prefetch" href="/assets/style-e9220a04.js" as="script"><link rel="prefetch" href="/assets/docsearch-73ab5631.js" as="script"><link rel="prefetch" href="/assets/index-b8e03656.js" as="script">
+    <link rel="preload" href="/assets/style-edd45e1e.css" as="style"><link rel="stylesheet" href="/assets/style-edd45e1e.css">
+    <link rel="modulepreload" href="/assets/app-dfe735a8.js"><link rel="modulepreload" href="/assets/postman.html-fbc4e21a.js"><link rel="modulepreload" href="/assets/get_datasets-8b18457a.js">
+    <link rel="prefetch" href="/assets/index.html-b19325f9.js" as="script"><link rel="prefetch" href="/assets/index.html-944b1020.js" as="script"><link rel="prefetch" href="/assets/changelog.html-0dc84db4.js" as="script"><link rel="prefetch" href="/assets/create-users.html-dc84d868.js" as="script"><link rel="prefetch" href="/assets/dashboard.html-5fb11438.js" as="script"><link rel="prefetch" href="/assets/isp-cli.html-444d58fb.js" as="script"><link rel="prefetch" href="/assets/login.html-33e66737.js" as="script"><link rel="prefetch" href="/assets/users.html-fd4ee796.js" as="script"><link rel="prefetch" href="/assets/widgets.html-f1a60d6b.js" as="script"><link rel="prefetch" href="/assets/kiwi.html-65386599.js" as="script"><link rel="prefetch" href="/assets/kraken-kitchen.html-14bce0f4.js" as="script"><link rel="prefetch" href="/assets/krill-acs.html-c64a4f88.js" as="script"><link rel="prefetch" href="/assets/krill-adamo-ivr-ui.html-893fdf8c.js" as="script"><link rel="prefetch" href="/assets/krill-chati-ui.html-324dff89.js" as="script"><link rel="prefetch" href="/assets/krill-core.html-3934e686.js" as="script"><link rel="prefetch" href="/assets/krill-gpon.html-c0a4ebff.js" as="script"><link rel="prefetch" href="/assets/krill-installer-ui.html-95cdfae5.js" as="script"><link rel="prefetch" href="/assets/krill-isp-ui.html-74fda5e8.js" as="script"><link rel="prefetch" href="/assets/krill-monitoring-ui.html-305ec636.js" as="script"><link rel="prefetch" href="/assets/krill-oratio-ui.html-e0f6472c.js" as="script"><link rel="prefetch" href="/assets/krill-pbx-ui.html-59d072b1.js" as="script"><link rel="prefetch" href="/assets/krill-rubik-ui.html-31560409.js" as="script"><link rel="prefetch" href="/assets/krill-ui.html-d7eab154.js" as="script"><link rel="prefetch" href="/assets/krill-webservice-api.html-ff39a0bc.js" as="script"><link rel="prefetch" href="/assets/krill-wimax.html-d83b31d1.js" as="script"><link rel="prefetch" href="/assets/krill.html-8ab72c04.js" as="script"><link rel="prefetch" href="/assets/changelog.html-47ce2c74.js" as="script"><link rel="prefetch" href="/assets/create-users.html-f385ad25.js" as="script"><link rel="prefetch" href="/assets/dashboard.html-d653e5da.js" as="script"><link rel="prefetch" href="/assets/isp-cli.html-58db775e.js" as="script"><link rel="prefetch" href="/assets/login.html-dda3cbb9.js" as="script"><link rel="prefetch" href="/assets/users.html-742e3b3b.js" as="script"><link rel="prefetch" href="/assets/widgets.html-091a25f7.js" as="script"><link rel="prefetch" href="/assets/api-v2.html-68e2369a.js" as="script"><link rel="prefetch" href="/assets/postman.html-faab27d5.js" as="script"><link rel="prefetch" href="/assets/rubik.html-f2fb1dd8.js" as="script"><link rel="prefetch" href="/assets/index.html-ddd02052.js" as="script"><link rel="prefetch" href="/assets/contexts.html-caa3cf63.js" as="script"><link rel="prefetch" href="/assets/cpe-profiles.html-6eb753cd.js" as="script"><link rel="prefetch" href="/assets/cpes.html-d207a993.js" as="script"><link rel="prefetch" href="/assets/customers.html-f6f1e47d.js" as="script"><link rel="prefetch" href="/assets/index.html-eaec1aac.js" as="script"><link rel="prefetch" href="/assets/potses.html-3e0faa1b.js" as="script"><link rel="prefetch" href="/assets/index.html-c1ec3781.js" as="script"><link rel="prefetch" href="/assets/alarms.html-af1fb5df.js" as="script"><link rel="prefetch" href="/assets/cpe.html-934b3065.js" as="script"><link rel="prefetch" href="/assets/cwmp-table.html-27209f93.js" as="script"><link rel="prefetch" href="/assets/history.html-2b5dbdfa.js" as="script"><link rel="prefetch" href="/assets/host-events.html-6b354002.js" as="script"><link rel="prefetch" href="/assets/host-groups.html-25946900.js" as="script"><link rel="prefetch" href="/assets/host.html-f4f42ece.js" as="script"><link rel="prefetch" href="/assets/index.html-85bef802.js" as="script"><link rel="prefetch" href="/assets/matrix.html-89f2c04f.js" as="script"><link rel="prefetch" href="/assets/problems.html-ab7c30b2.js" as="script"><link rel="prefetch" href="/assets/smart-tree.html-f18c7f74.js" as="script"><link rel="prefetch" href="/assets/sonar.html-452dcd8b.js" as="script"><link rel="prefetch" href="/assets/unprovisioned-onus.html-a8a8b515.js" as="script"><link rel="prefetch" href="/assets/worldmap.html-0968d503.js" as="script"><link rel="prefetch" href="/assets/cdrs.html-26848008.js" as="script"><link rel="prefetch" href="/assets/contexts.html-a31ab441.js" as="script"><link rel="prefetch" href="/assets/holidays.html-2b66747d.js" as="script"><link rel="prefetch" href="/assets/index.html-32fc40ab.js" as="script"><link rel="prefetch" href="/assets/pbxs.html-5e64a24f.js" as="script"><link rel="prefetch" href="/assets/index.html-0ab95b8b.js" as="script"><link rel="prefetch" href="/assets/services.html-ed7214c2.js" as="script"><link rel="prefetch" href="/assets/trouble-tickets.html-67a24d01.js" as="script"><link rel="prefetch" href="/assets/index.html-bb8a66ca.js" as="script"><link rel="prefetch" href="/assets/ip-pools.html-92da91db.js" as="script"><link rel="prefetch" href="/assets/sessions.html-263c4eb6.js" as="script"><link rel="prefetch" href="/assets/api-v2.html-1b662687.js" as="script"><link rel="prefetch" href="/assets/rubik.html-6ca86c54.js" as="script"><link rel="prefetch" href="/assets/index.html-35fc29dd.js" as="script"><link rel="prefetch" href="/assets/contexts.html-15ff8c1b.js" as="script"><link rel="prefetch" href="/assets/cpe-profiles.html-c1e002cf.js" as="script"><link rel="prefetch" href="/assets/cpes.html-be81a0b4.js" as="script"><link rel="prefetch" href="/assets/customers.html-703ac679.js" as="script"><link rel="prefetch" href="/assets/index.html-e9964518.js" as="script"><link rel="prefetch" href="/assets/potses.html-61011f7c.js" as="script"><link rel="prefetch" href="/assets/index.html-89c4bd87.js" as="script"><link rel="prefetch" href="/assets/alarms.html-a14e92cd.js" as="script"><link rel="prefetch" href="/assets/cpe.html-ddec5f78.js" as="script"><link rel="prefetch" href="/assets/cwmp-table.html-b4f1546f.js" as="script"><link rel="prefetch" href="/assets/history.html-c74488e7.js" as="script"><link rel="prefetch" href="/assets/host-events.html-97018fc2.js" as="script"><link rel="prefetch" href="/assets/host-groups.html-9e164a4c.js" as="script"><link rel="prefetch" href="/assets/host.html-fd7b10be.js" as="script"><link rel="prefetch" href="/assets/index.html-6c09d021.js" as="script"><link rel="prefetch" href="/assets/matrix.html-0e365a12.js" as="script"><link rel="prefetch" href="/assets/problems.html-b5f0ef33.js" as="script"><link rel="prefetch" href="/assets/smart-tree.html-9e9b27eb.js" as="script"><link rel="prefetch" href="/assets/sonar.html-81ae7978.js" as="script"><link rel="prefetch" href="/assets/unprovisioned-onus.html-75cc85ff.js" as="script"><link rel="prefetch" href="/assets/worldmap.html-bf6031e4.js" as="script"><link rel="prefetch" href="/assets/cdrs.html-0a27daae.js" as="script"><link rel="prefetch" href="/assets/contexts.html-ddf3b001.js" as="script"><link rel="prefetch" href="/assets/holidays.html-6892937d.js" as="script"><link rel="prefetch" href="/assets/index.html-1e605fcf.js" as="script"><link rel="prefetch" href="/assets/pbxs.html-186cba89.js" as="script"><link rel="prefetch" href="/assets/index.html-0085608d.js" as="script"><link rel="prefetch" href="/assets/ip-pools.html-c994d62d.js" as="script"><link rel="prefetch" href="/assets/sessions.html-948c0cdf.js" as="script"><link rel="prefetch" href="/assets/index.html-aaaaf982.js" as="script"><link rel="prefetch" href="/assets/services.html-30fd4b2a.js" as="script"><link rel="prefetch" href="/assets/trouble-tickets.html-50d885b1.js" as="script"><link rel="prefetch" href="/assets/404.html-3a847c7c.js" as="script"><link rel="prefetch" href="/assets/style-e9220a04.js" as="script"><link rel="prefetch" href="/assets/docsearch-73ab5631.js" as="script"><link rel="prefetch" href="/assets/index-259683c7.js" as="script">
   </head>
   <body>
-    <div id="app"><!----></div>
-    <script type="module" src="/assets/app-d7d7d7e0.js" defer></script>
+    <div id="app"><!--[--><div class="vp-theme-container no-sidebar external-link-icon"><!--[--><header class="vp-navbar"><div class="vp-toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a class="route-link" href="/es/"><img class="vp-site-logo" src="/logo.png" alt="Una guía de usuario para Krill"><span class="vp-site-name vp-hide-mobile" aria-hidden="true">Una guía de usuario para Krill</span></a></span><div class="vp-navbar-items-wrapper" style=""><!--[--><!--]--><nav class="vp-navbar-items vp-hide-mobile" aria-label="site navigation"><!--[--><div class="vp-navbar-item"><a class="route-link auto-link" href="/es/" aria-label="Inicio"><!---->Inicio<!----></a></div><div class="vp-navbar-item"><div class="vp-navbar-dropdown-wrapper"><button class="vp-navbar-dropdown-title" type="button" aria-label="Krill2"><span class="title">Krill2</span><span class="arrow down"></span></button><button class="vp-navbar-dropdown-title-mobile" type="button" aria-label="Krill2"><span class="title">Krill2</span><span class="right arrow"></span></button><ul style="display:none;" class="vp-navbar-dropdown"><!--[--><li class="vp-navbar-dropdown-item"><a class="route-link auto-link" href="/es/krill2/login.html" aria-label="Acceso"><!---->Acceso<!----></a></li><li class="vp-navbar-dropdown-item"><a class="route-link auto-link" href="/es/krill2/create-users.html" aria-label="Crear usuarios"><!---->Crear usuarios<!----></a></li><li class="vp-navbar-dropdown-item"><a class="route-link auto-link" href="/es/krill2/users.html" aria-label="Usuarios"><!---->Usuarios<!----></a></li><li class="vp-navbar-dropdown-item"><a class="route-link auto-link" href="/es/krill2/dashboard.html" aria-label="Cuadro de mandos"><!---->Cuadro de mandos<!----></a></li><li class="vp-navbar-dropdown-item"><!--[--><h4 class="vp-navbar-dropdown-subtitle"><span>Módulos</span></h4><ul class="vp-navbar-dropdown-subitem-wrapper"><!--[--><li class="vp-navbar-dropdown-subitem"><a class="route-link auto-link" href="/es/krill2/monitoring/" aria-label="Monitoring"><!---->Monitoring<!----></a></li><li class="vp-navbar-dropdown-subitem"><a class="route-link auto-link" href="/es/krill2/isp-customer/" aria-label="Customers/ISP"><!---->Customers/ISP<!----></a></li><li class="vp-navbar-dropdown-subitem"><a class="route-link auto-link" href="/es/krill2/pbx/" aria-label="PBX"><!---->PBX<!----></a></li><li class="vp-navbar-dropdown-subitem"><a class="route-link auto-link" href="/es/krill2/radius/" aria-label="Radius"><!---->Radius<!----></a></li><li class="vp-navbar-dropdown-subitem"><a class="route-link auto-link" href="/es/krill2/rubik/" aria-label="Rubik"><!---->Rubik<!----></a></li><li class="vp-navbar-dropdown-subitem"><a class="route-link auto-link" href="/es/krill2/installer-tools/" aria-label="Herramientas del Instalador"><!---->Herramientas del Instalador<!----></a></li><li class="vp-navbar-dropdown-subitem"><a class="route-link auto-link" href="/es/krill2/logger/" aria-label="Logger"><!---->Logger<!----></a></li><!--]--></ul><!--]--></li><!--]--></ul></div></div><div class="vp-navbar-item"><div class="vp-navbar-dropdown-wrapper"><button class="vp-navbar-dropdown-title" type="button" aria-label="API"><span class="title">API</span><span class="arrow down"></span></button><button class="vp-navbar-dropdown-title-mobile" type="button" aria-label="API"><span class="title">API</span><span class="right arrow"></span></button><ul style="display:none;" class="vp-navbar-dropdown"><!--[--><li class="vp-navbar-dropdown-item"><a class="route-link auto-link" href="/es/krill2/api/api-v2.html" aria-label="API (V2)"><!---->API (V2)<!----></a></li><li class="vp-navbar-dropdown-item"><a class="route-link auto-link" href="/es/krill2/api/rubik.html" aria-label="Rubik API"><!---->Rubik API<!----></a></li><li class="vp-navbar-dropdown-item"><a class="route-link route-link-active auto-link" href="/es/krill2/api/postman.html" aria-label="Ejemplos Postman"><!---->Ejemplos Postman<!----></a></li><li class="vp-navbar-dropdown-item"><a class="route-link auto-link" href="/es/krill2/widgets.html" aria-label="Widgets"><!---->Widgets<!----></a></li><!--]--></ul></div></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/es/krill2/isp-cli.html" aria-label="ISP-CLI"><!---->ISP-CLI<!----></a></div><div class="vp-navbar-item"><div class="vp-navbar-dropdown-wrapper"><button class="vp-navbar-dropdown-title" type="button" aria-label="Select language"><span class="title">Idiomas</span><span class="arrow down"></span></button><button class="vp-navbar-dropdown-title-mobile" type="button" aria-label="Select language"><span class="title">Idiomas</span><span class="right arrow"></span></button><ul style="display:none;" class="vp-navbar-dropdown"><!--[--><li class="vp-navbar-dropdown-item"><a class="route-link auto-link" href="/krill2/api/postman.html" aria-label="🇬🇧 English"><!---->🇬🇧 English<!----></a></li><li class="vp-navbar-dropdown-item"><a class="route-link route-link-active auto-link" href="/es/krill2/api/postman.html" aria-label="🇪🇸 Spanish"><!---->🇪🇸 Spanish<!----></a></li><!--]--></ul></div></div><!--]--></nav><!--[--><!--]--><button class="vp-toggle-color-mode-button" title="toggle color mode"><svg class="light-icon" viewbox="0 0 32 32" style=""><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg class="dark-icon" viewbox="0 0 32 32" style="display:none;"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><!--[--><div id="docsearch-container" style="display:none;"></div><div><button type="button" class="DocSearch DocSearch-Button" aria-label="Buscar..."><span class="DocSearch-Button-Container"><svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 20 20"><path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="DocSearch-Button-Placeholder">Buscar...</span></span><span class="DocSearch-Button-Keys"><kbd class="DocSearch-Button-Key"><svg width="15" height="15" class="DocSearch-Control-Key-Icon"><path d="M4.505 4.496h2M5.505 5.496v5M8.216 4.496l.055 5.993M10 7.5c.333.333.5.667.5 1v2M12.326 4.5v5.996M8.384 4.496c1.674 0 2.116 0 2.116 1.5s-.442 1.5-2.116 1.5M3.205 9.303c-.09.448-.277 1.21-1.241 1.203C1 10.5.5 9.513.5 8V7c0-1.57.5-2.5 1.464-2.494.964.006 1.134.598 1.24 1.342M12.553 10.5h1.953" stroke-width="1.2" stroke="currentColor" fill="none" stroke-linecap="square"></path></svg></kbd><kbd class="DocSearch-Button-Key">K</kbd></span></button></div><!--]--></div></header><!--]--><div class="vp-sidebar-mask"></div><!--[--><aside class="vp-sidebar"><nav class="vp-navbar-items" aria-label="site navigation"><!--[--><div class="vp-navbar-item"><a class="route-link auto-link" href="/es/" aria-label="Inicio"><!---->Inicio<!----></a></div><div class="vp-navbar-item"><div class="vp-navbar-dropdown-wrapper"><button class="vp-navbar-dropdown-title" type="button" aria-label="Krill2"><span class="title">Krill2</span><span class="arrow down"></span></button><button class="vp-navbar-dropdown-title-mobile" type="button" aria-label="Krill2"><span class="title">Krill2</span><span class="right arrow"></span></button><ul style="display:none;" class="vp-navbar-dropdown"><!--[--><li class="vp-navbar-dropdown-item"><a class="route-link auto-link" href="/es/krill2/login.html" aria-label="Acceso"><!---->Acceso<!----></a></li><li class="vp-navbar-dropdown-item"><a class="route-link auto-link" href="/es/krill2/create-users.html" aria-label="Crear usuarios"><!---->Crear usuarios<!----></a></li><li class="vp-navbar-dropdown-item"><a class="route-link auto-link" href="/es/krill2/users.html" aria-label="Usuarios"><!---->Usuarios<!----></a></li><li class="vp-navbar-dropdown-item"><a class="route-link auto-link" href="/es/krill2/dashboard.html" aria-label="Cuadro de mandos"><!---->Cuadro de mandos<!----></a></li><li class="vp-navbar-dropdown-item"><!--[--><h4 class="vp-navbar-dropdown-subtitle"><span>Módulos</span></h4><ul class="vp-navbar-dropdown-subitem-wrapper"><!--[--><li class="vp-navbar-dropdown-subitem"><a class="route-link auto-link" href="/es/krill2/monitoring/" aria-label="Monitoring"><!---->Monitoring<!----></a></li><li class="vp-navbar-dropdown-subitem"><a class="route-link auto-link" href="/es/krill2/isp-customer/" aria-label="Customers/ISP"><!---->Customers/ISP<!----></a></li><li class="vp-navbar-dropdown-subitem"><a class="route-link auto-link" href="/es/krill2/pbx/" aria-label="PBX"><!---->PBX<!----></a></li><li class="vp-navbar-dropdown-subitem"><a class="route-link auto-link" href="/es/krill2/radius/" aria-label="Radius"><!---->Radius<!----></a></li><li class="vp-navbar-dropdown-subitem"><a class="route-link auto-link" href="/es/krill2/rubik/" aria-label="Rubik"><!---->Rubik<!----></a></li><li class="vp-navbar-dropdown-subitem"><a class="route-link auto-link" href="/es/krill2/installer-tools/" aria-label="Herramientas del Instalador"><!---->Herramientas del Instalador<!----></a></li><li class="vp-navbar-dropdown-subitem"><a class="route-link auto-link" href="/es/krill2/logger/" aria-label="Logger"><!---->Logger<!----></a></li><!--]--></ul><!--]--></li><!--]--></ul></div></div><div class="vp-navbar-item"><div class="vp-navbar-dropdown-wrapper"><button class="vp-navbar-dropdown-title" type="button" aria-label="API"><span class="title">API</span><span class="arrow down"></span></button><button class="vp-navbar-dropdown-title-mobile" type="button" aria-label="API"><span class="title">API</span><span class="right arrow"></span></button><ul style="display:none;" class="vp-navbar-dropdown"><!--[--><li class="vp-navbar-dropdown-item"><a class="route-link auto-link" href="/es/krill2/api/api-v2.html" aria-label="API (V2)"><!---->API (V2)<!----></a></li><li class="vp-navbar-dropdown-item"><a class="route-link auto-link" href="/es/krill2/api/rubik.html" aria-label="Rubik API"><!---->Rubik API<!----></a></li><li class="vp-navbar-dropdown-item"><a class="route-link route-link-active auto-link" href="/es/krill2/api/postman.html" aria-label="Ejemplos Postman"><!---->Ejemplos Postman<!----></a></li><li class="vp-navbar-dropdown-item"><a class="route-link auto-link" href="/es/krill2/widgets.html" aria-label="Widgets"><!---->Widgets<!----></a></li><!--]--></ul></div></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/es/krill2/isp-cli.html" aria-label="ISP-CLI"><!---->ISP-CLI<!----></a></div><div class="vp-navbar-item"><div class="vp-navbar-dropdown-wrapper"><button class="vp-navbar-dropdown-title" type="button" aria-label="Select language"><span class="title">Idiomas</span><span class="arrow down"></span></button><button class="vp-navbar-dropdown-title-mobile" type="button" aria-label="Select language"><span class="title">Idiomas</span><span class="right arrow"></span></button><ul style="display:none;" class="vp-navbar-dropdown"><!--[--><li class="vp-navbar-dropdown-item"><a class="route-link auto-link" href="/krill2/api/postman.html" aria-label="🇬🇧 English"><!---->🇬🇧 English<!----></a></li><li class="vp-navbar-dropdown-item"><a class="route-link route-link-active auto-link" href="/es/krill2/api/postman.html" aria-label="🇪🇸 Spanish"><!---->🇪🇸 Spanish<!----></a></li><!--]--></ul></div></div><!--]--></nav><!--[--><!--]--><!----><!--[--><!--]--></aside><!--]--><!--[--><main class="vp-page"><!--[--><!--]--><div class="theme-default-content"><!--[--><!--]--><div><h1 id="ejemplos-de-la-api-rest-v2-en-postman" tabindex="-1"><a class="header-anchor" href="#ejemplos-de-la-api-rest-v2-en-postman"><span>Ejemplos de la API REST v2 en Postman</span></a></h1><h2 id="consultar-un-cpe-por-su-external-id-y-obtener-su-id" tabindex="-1"><a class="header-anchor" href="#consultar-un-cpe-por-su-external-id-y-obtener-su-id"><span>Consultar un cpe por su <code>external_id</code> y obtener su id</span></a></h2><p>Método: <strong>GET</strong></p><p>URL: <code>/api/v2/isp/cpes/?external_id={external_id}&amp;realm={realm}</code></p><p>Los parámetros: <code>external_id</code>, <code>realm</code>, son opcionales y nos permiten acotar la lista de resultados. Es decir, si ponemos solamente el valor del <code>realm</code>, obtendremos un listado paginado con todos los CPEs de ese Realm.</p><p>Respuesta (Ejemplo: <code>/api/v2/isp/cpes/?external_id=pim0585&amp;realm=pim</code>)):</p><pre><code>{
+  &quot;count&quot;: 1,
+  &quot;next&quot;: null,
+  &quot;previous&quot;: null,
+  &quot;results&quot;: [
+    {
+      &quot;id&quot;: 585,
+      &quot;access&quot;: true,
+      &quot;address&quot;: &quot;&quot;,
+      &quot;active&quot;: true,
+      &quot;address_profile&quot;: &quot;public&quot;,
+      &quot;bridge&quot;: false,
+      &quot;city&quot;: &quot;&quot;,
+      &quot;country&quot;: &quot;&quot;,
+      &quot;cpename&quot;: &quot;pim0585&quot;,
+      &quot;created&quot;: &quot;2023-02-08T10:53:20+01:00&quot;,
+      &quot;customer&quot;: 848,
+      &quot;disable_provision&quot;: false,
+      &quot;disable_reconfig&quot;: false,
+      &quot;expiration_date&quot;: null,
+      &quot;dsn&quot;: null,
+      &quot;enable_notifications&quot;: false,
+      &quot;external_id&quot;: &quot;pim0585&quot;,
+      &quot;external_voip&quot;: false,
+      &quot;fixed_address&quot;: null,
+      &quot;has_tr069&quot;: true,
+      &quot;internal_id&quot;: &quot;pim0585&quot;,
+      &quot;latitude&quot;: &quot;38.0124867&quot;,
+      &quot;line_profile&quot;: &quot;residential&quot;,
+      &quot;locality&quot;: &quot;&quot;,
+      &quot;longitude&quot;: &quot;-1.1699524&quot;,
+      &quot;mac&quot;: null,
+      &quot;model&quot;: &quot;HS8145V&quot;,
+      &quot;mtamac&quot;: null,
+      &quot;notes&quot;: &quot;&quot;,
+      &quot;postalcode&quot;: null,
+      &quot;probe&quot;: false,
+      &quot;pppoe_password&quot;: &quot;&quot;,
+      &quot;pppoe_username&quot;: &quot;&quot;,
+      &quot;profile&quot;: 8,
+      &quot;realm&quot;: &quot;pim&quot;,
+      &quot;remote_id&quot;: null,
+      &quot;sn&quot;: &quot;48575443614711a7&quot;,
+      &quot;tech&quot;: &quot;gpon&quot;,
+      &quot;tech_updated&quot;: &quot;2023-02-17T11:11:19+01:00&quot;,
+      &quot;topology&quot;: &quot;&quot;,
+      &quot;tv_profile&quot;: null,
+      &quot;updated&quot;: &quot;2023-02-17T11:11:19+01:00&quot;,
+      &quot;voip_profile&quot;: null,
+      &quot;wanmac&quot;: null,
+      &quot;me_vlan&quot;: null,
+      &quot;lan_cidr&quot;: null,
+      &quot;wifi_password&quot;: &quot;&quot;,
+      &quot;wifi_profile&quot;: null,
+      &quot;wifi_ssid&quot;: &quot;&quot;,
+      &quot;_links&quot;: {
+        &quot;actions&quot;: {
+          &quot;reboot&quot;: &quot;/api/v2/isp/cpes/585/reboot&quot;,
+          &quot;unprovision&quot;: &quot;/api/v2/isp/cpes/585/unprovision&quot;,
+          &quot;reprovision&quot;: &quot;/api/v2/isp/cpes/585/reprovision&quot;,
+          &quot;factory&quot;: &quot;/api/v2/isp/cpes/585/factory&quot;,
+          &quot;reconfig&quot;: &quot;/api/v2/isp/cpes/585/reconfig&quot;,
+          &quot;diagnostic&quot;: &quot;/api/v2/isp/cpes/585/cwmp_diagnostic&quot;
+        },
+        &quot;links&quot;: {
+          &quot;customer&quot;: &quot;/api/v2/isp/cpes/585/customer&quot;,
+          &quot;profile&quot;: &quot;/api/v2/isp/cpes/585/profile&quot;,
+          &quot;model&quot;: &quot;/api/v2/isp/cpes/585/model&quot;,
+          &quot;potses&quot;: &quot;/api/v2/isp/cpes/585/potses&quot;,
+          &quot;events&quot;: &quot;/api/v2/isp/cpes/585/events&quot;,
+          &quot;cdrs&quot;: &quot;/api/v2/isp/cpes/585/events?type=cdr&quot;,
+          &quot;logs&quot;: &quot;/api/v2/isp/cpes/585/logs&quot;,
+          &quot;livestatus&quot;: &quot;/api/v2/isp/cpes/585/livestatus&quot;,
+          &quot;links&quot;: &quot;/api/v2/isp/cpes/585/links&quot;,
+          &quot;info&quot;: &quot;/api/v2/isp/cpes/585/info&quot;,
+          &quot;cwmp_info&quot;: &quot;/api/v2/isp/cpes/585/cwmp_info&quot;
+        }
+      },
+      &quot;_services&quot;: [
+        &quot;provision&quot;,
+        &quot;tr069&quot;,
+        &quot;dhcp&quot;,
+        &quot;txrx&quot;
+      ],
+      &quot;is_router&quot;: true,
+      &quot;avatar&quot;: &quot;HG4101&quot;,
+      &quot;tr069&quot;: true
+    }
+  ]
+}
+</code></pre><p><img src="/img/krill2/api/get_cpe.png" alt="image"></p><h2 id="monitorizacion-en-tiempo-real-de-un-equipo" tabindex="-1"><a class="header-anchor" href="#monitorizacion-en-tiempo-real-de-un-equipo"><span>Monitorización en tiempo real de un equipo</span></a></h2><p>Método: <strong>GET</strong></p><p>URL: <code>/api/v2/monitoring/cpes/{id}/info</code></p><p>Nota: El campo <code>id</code>, se encuentra dentro de los atributos que devuelve la petición anterior.</p><p>Respuesta (Ejemplo: <code>/api/v2/monitoring/cpes/585/info</code>):</p><pre><code>{
+  &quot;alarms&quot;: [
+    {
+      &quot;level&quot;: &quot;warning&quot;,
+      &quot;type&quot;: &quot;processerror&quot;,
+      &quot;admin_status&quot;: &quot;init&quot;,
+      &quot;name&quot;: &quot;The GPON ONT configuration recovery fails&quot;,
+      &quot;extra&quot;: &quot;effect=serviceaffect curr=0 prev=1&quot;
+    }
+  ],
+  &quot;dnbw&quot;: 0,
+  &quot;ips&quot;: [
+    &quot;10.8.33.14&quot;
+  ],
+  &quot;output&quot;: &quot;online oltHuawei:0/5/14-2 10.8.33.14&quot;,
+  &quot;registration&quot;: {
+    &quot;host&quot;: &quot;oltHuawei&quot;,
+    &quot;id&quot;: &quot;0/5/14-2&quot;,
+    &quot;last_down_time&quot;: null,
+    &quot;related_services&quot;: [
+      &quot;onug-olt0/05/14&quot;
+    ],
+    &quot;states&quot;: [
+      &quot;online&quot;
+    ],
+    &quot;tags&quot;: [
+      &quot;oltHuawei-0/5/14&quot;,
+      &quot;oltHuawei&quot;
+    ]
+  },
+  &quot;services&quot;: {
+    &quot;txrx&quot;: {
+      &quot;output&quot;: &quot;dnrx=-22.14 uptx=2.27 uprx=-12.71 dnatt=22.14 upatt=14.98 pondesv=0.00&quot;,
+      &quot;perfdatas&quot;: [
+        {
+          &quot;items&quot;: [],
+          &quot;max&quot;: 5,
+          &quot;metric&quot;: &quot;dnrx&quot;,
+          &quot;min&quot;: -49,
+          &quot;thresholds&quot;: [
+            -29,
+            -27,
+            -11,
+            -8
+          ],
+          &quot;uom&quot;: &quot;dBm&quot;,
+          &quot;value&quot;: -22.14
+        },
+        {
+          &quot;items&quot;: [],
+          &quot;max&quot;: 15,
+          &quot;metric&quot;: &quot;uptx&quot;,
+          &quot;min&quot;: -10,
+          &quot;thresholds&quot;: [],
+          &quot;uom&quot;: &quot;dBm&quot;,
+          &quot;value&quot;: 2.27
+        },
+        {
+          &quot;items&quot;: [],
+          &quot;max&quot;: 5,
+          &quot;metric&quot;: &quot;uprx&quot;,
+          &quot;min&quot;: -49,
+          &quot;thresholds&quot;: [
+            -32,
+            -30,
+            -12,
+            -9
+          ],
+          &quot;uom&quot;: &quot;dBm&quot;,
+          &quot;value&quot;: -12.709999999999994
+        },
+        {
+          &quot;items&quot;: [],
+          &quot;max&quot;: 60,
+          &quot;metric&quot;: &quot;upatt&quot;,
+          &quot;min&quot;: 1,
+          &quot;thresholds&quot;: [
+            26,
+            46
+          ],
+          &quot;uom&quot;: &quot;dB&quot;,
+          &quot;value&quot;: 14.979999999999993
+        }
+      ],
+      &quot;state_id&quot;: 0
+    }
+  },
+  &quot;state&quot;: &quot;up&quot;,
+  &quot;state_id&quot;: 0,
+  &quot;tech&quot;: {
+    &quot;line_profile&quot;: &quot;residential_krill&quot;,
+    &quot;service_ports&quot;: [
+      {
+        &quot;id&quot;: 6038,
+        &quot;user_vlan&quot;: 1023,
+        &quot;service_vlan&quot;: 833,
+        &quot;outbound_traffic_table_name&quot;: &quot;management&quot;,
+        &quot;inbound_traffic_table_name&quot;: &quot;management&quot;,
+        &quot;native_vlan&quot;: 0
+      },
+      {
+        &quot;id&quot;: 6039,
+        &quot;user_vlan&quot;: 1021,
+        &quot;service_vlan&quot;: 831,
+        &quot;outbound_traffic_table_name&quot;: &quot;100M&quot;,
+        &quot;inbound_traffic_table_name&quot;: &quot;100M&quot;,
+        &quot;native_vlan&quot;: 1
+      }
+    ],
+    &quot;service_profile&quot;: &quot;HG1000&quot;,
+    &quot;type_name&quot;: &quot;110H&quot;
+  },
+  &quot;upbw&quot;: 0,
+  &quot;uptime&quot;: 14042
+}
+</code></pre><p><img src="/img/krill2/api/get_monitoring_host_info.png" alt="image"></p><h2 id="obtener-informacion-de-monitorizacion-diferido" tabindex="-1"><a class="header-anchor" href="#obtener-informacion-de-monitorizacion-diferido"><span>Obtener información de monitorización diferido</span></a></h2><p>Método: <strong>GET</strong></p><p>URL: <code>/api/v2/monitoring/hosts/{internal_id}</code></p><p>Nota: El campo <code>internal_id</code>, se encuentra dentro de los atributos que devuelve la petición anterior.</p><p>Response (Ejemplo: <code>/api/v2/monitoring/hosts/pim0585</code>):</p><pre><code>{
+  &quot;type&quot;: &quot;Host&quot;,
+  &quot;name&quot;: &quot;pim0585&quot;,
+  &quot;meta&quot;: {},
+  &quot;attrs&quot;: {
+    &quot;address&quot;: &quot;&quot;,
+    &quot;host_name&quot;: &quot;pim0585&quot;,
+    &quot;last_check&quot;: &quot;2023-02-17T12:50:06.475000+01:00&quot;,
+    &quot;last_check_result&quot;: {
+      &quot;command&quot;: null,
+      &quot;output&quot;: &quot;online oltHuawei:0/5/14-0 0.0.0.0&quot;,
+      &quot;state&quot;: 0,
+      &quot;execution_start&quot;: &quot;2023-02-17T12:50:06.475000+01:00&quot;,
+      &quot;execution_time&quot;: 0,
+      &quot;execution_end&quot;: &quot;2023-02-17T12:50:06.475000+01:00&quot;,
+      &quot;schedule_start&quot;: &quot;2023-02-18T12:50:06.475000+01:00&quot;
+    },
+    &quot;next_check&quot;: &quot;2023-02-18T12:50:06.475000+01:00&quot;,
+    &quot;output&quot;: &quot;online oltHuawei:0/5/14-0 0.0.0.0&quot;,
+    &quot;service_name&quot;: &quot;&quot;,
+    &quot;state&quot;: 0,
+    &quot;state_type&quot;: 1,
+    &quot;state_long&quot;: &quot;up&quot;,
+    &quot;vars&quot;: {
+      &quot;vendor&quot;: &quot;Huawei&quot;,
+      &quot;model&quot;: &quot;HS8145V&quot;,
+      &quot;administrative_info&quot;: {
+        &quot;access&quot;: true,
+        &quot;actions&quot;: [
+          &quot;diagnostic&quot;,
+          &quot;factory&quot;,
+          &quot;reboot&quot;,
+          &quot;reconfig&quot;,
+          &quot;reprovision&quot;,
+          &quot;unprovision&quot;
+        ],
+        &quot;active&quot;: true,
+        &quot;address&quot;: &quot; - &quot;,
+        &quot;address_profile&quot;: &quot;public&quot;,
+        &quot;customer_address&quot;: &quot; - &quot;,
+        &quot;customer_external_id&quot;: null,
+        &quot;customer_name&quot;: &quot;Test INTERNET &quot;,
+        &quot;external_voip&quot;: false,
+        &quot;id&quot;: 585,
+        &quot;latitude&quot;: 38.0124867,
+        &quot;line_profile&quot;: &quot;residential&quot;,
+        &quot;longitude&quot;: -1.1699524,
+        &quot;model&quot;: &quot;HS8145V&quot;,
+        &quot;potses&quot;: [],
+        &quot;profile_downstream&quot;: &quot;1000M&quot;,
+        &quot;profile_name&quot;: &quot;1G Simetricos&quot;,
+        &quot;profile_upstream&quot;: &quot;1000M&quot;,
+        &quot;realm&quot;: &quot;pim&quot;,
+        &quot;services&quot;: [
+          &quot;dhcp&quot;,
+          &quot;provision&quot;,
+          &quot;tr069&quot;,
+          &quot;txrx&quot;
+        ],
+        &quot;sn&quot;: &quot;48575443614711a7&quot;,
+        &quot;tech&quot;: &quot;gpon&quot;,
+        &quot;tr069&quot;: true,
+        &quot;vendor&quot;: &quot;Huawei&quot;
+      },
+      &quot;type&quot;: &quot;cpe&quot;,
+      &quot;cpe_registration_id&quot;: &quot;0/5/14-0&quot;,
+      &quot;cpe_registration_host&quot;: &quot;oltHuawei&quot;,
+      &quot;business_impact&quot;: 1,
+      &quot;cpe_registration_state&quot;: [
+        &quot;online&quot;
+      ],
+      &quot;search&quot;: &quot; -   -  Test INTERNET  public 38.0124867 residential -1.1699524 HS8145V pim 48575443614711a7 gpon True Huawei &quot;,
+      &quot;cpe_registration_tags&quot;: [
+        &quot;oltHuawei-0/5/14-0&quot;,
+        &quot;oltHuawei&quot;
+      ]
+    }
+  },
+  &quot;joins&quot;: {}
+}
+</code></pre><p><img src="/img/krill2/api/get_monitoring_host.png" alt="image"></p><h2 id="obtener-los-tipos-de-graficas-de-un-host" tabindex="-1"><a class="header-anchor" href="#obtener-los-tipos-de-graficas-de-un-host"><span>Obtener los tipos de gráficas de un host</span></a></h2><p>Método: <strong>GET</strong></p><p>URL: <code>/api/v2/monitoring/graphs/?host_name={internal_id|host_name}</code></p><p>Nota: El campo <code>internal_id</code>, se encuentra dentro de los atributos que devuelve la petición anterior. También puede usarse el nombre del host en caso de ser un equipo de core.</p><p>Respuesta (Ejemplo: <code>/api/v2/monitoring/graphs/?host_name=pim0585</code>):</p><pre><code>{
+  &quot;graphs&quot;: [
+    {
+      &quot;group&quot;: &quot;bandwidth&quot;,
+      &quot;severity&quot;: 0,
+      &quot;title&quot;: &quot;Bandwidth&quot;,
+      &quot;type&quot;: &quot;LineChart&quot;,
+      &quot;weight&quot;: 3,
+      &quot;range&quot;: &quot;24h&quot;,
+      &quot;datasets&quot;: [
+        {
+          &quot;label&quot;: &quot;dnbw&quot;,
+          &quot;measurement&quot;: &quot;check_cpe&quot;,
+          &quot;metric&quot;: &quot;dnbw&quot;,
+          &quot;uom&quot;: &quot;B&quot;,
+          &quot;min&quot;: null,
+          &quot;max&quot;: null,
+          &quot;warning&quot;: null,
+          &quot;critical&quot;: null,
+          &quot;error&quot;: null,
+          &quot;percentile&quot;: null,
+          &quot;operator&quot;: null,
+          &quot;color_index&quot;: 1
+        },
+        {
+          &quot;label&quot;: &quot;upbw&quot;,
+          &quot;measurement&quot;: &quot;check_cpe&quot;,
+          &quot;metric&quot;: &quot;upbw&quot;,
+          &quot;uom&quot;: &quot;B&quot;,
+          &quot;min&quot;: null,
+          &quot;max&quot;: null,
+          &quot;warning&quot;: null,
+          &quot;critical&quot;: null,
+          &quot;error&quot;: null,
+          &quot;percentile&quot;: null,
+          &quot;operator&quot;: null,
+          &quot;color_index&quot;: 2
+        }
+      ]
+    }
+  ]
+}
+</code></pre><p><img src="/img/krill2/api/get_graphs_host.png" alt="image"></p><h2 id="obtener-los-tipos-de-graficas-de-un-servicio-de-un-host" tabindex="-1"><a class="header-anchor" href="#obtener-los-tipos-de-graficas-de-un-servicio-de-un-host"><span>Obtener los tipos de gráficas de un servicio de un host</span></a></h2><p>Método: <strong>GET</strong></p><p>URL: <code>/api/v2/monitoring/graphs/?host_name={internal_id|host_name}&amp;service_name={service_name}</code></p><p>Nota: El campo <code>internal_id</code>, se encuentra dentro de los atributos que devuelve la petición anterior. También puede usarse el nombre del host en caso de ser un equipo de core.</p><p>Respuesta (Ejemplo: <code>/api/v2/monitoring/graphs/?host_name=pim0585&amp;service_name=txrx</code>):</p><pre><code>{
+  &quot;graphs&quot;: [
+    {
+      &quot;group&quot;: &quot;dnatt Graph.&quot;,
+      &quot;severity&quot;: 50,
+      &quot;title&quot;: &quot;dnatt Graph.&quot;,
+      &quot;type&quot;: &quot;LineChart&quot;,
+      &quot;weight&quot;: 1,
+      &quot;range&quot;: &quot;24h&quot;,
+      &quot;datasets&quot;: [
+        {
+          &quot;label&quot;: &quot;dnatt&quot;,
+          &quot;measurement&quot;: &quot;check_txrx&quot;,
+          &quot;metric&quot;: &quot;dnatt&quot;,
+          &quot;uom&quot;: &quot;null&quot;,
+          &quot;min&quot;: 1,
+          &quot;max&quot;: 1,
+          &quot;warning&quot;: 26,
+          &quot;critical&quot;: 46,
+          &quot;error&quot;: null,
+          &quot;percentile&quot;: null,
+          &quot;operator&quot;: null,
+          &quot;color_index&quot;: null
+        }
+      ]
+    },
+    {
+      &quot;group&quot;: &quot;dnrx Graph.&quot;,
+      &quot;severity&quot;: 0,
+      &quot;title&quot;: &quot;dnrx Graph.&quot;,
+      &quot;type&quot;: &quot;LineChart&quot;,
+      &quot;weight&quot;: -2,
+      &quot;range&quot;: &quot;24h&quot;,
+      &quot;datasets&quot;: [
+        {
+          &quot;label&quot;: &quot;dnrx&quot;,
+          &quot;measurement&quot;: &quot;check_txrx&quot;,
+          &quot;metric&quot;: &quot;dnrx&quot;,
+          &quot;uom&quot;: &quot;null&quot;,
+          &quot;min&quot;: -49,
+          &quot;max&quot;: -49,
+          &quot;warning&quot;: -11,
+          &quot;critical&quot;: -8,
+          &quot;error&quot;: null,
+          &quot;percentile&quot;: null,
+          &quot;operator&quot;: null,
+          &quot;color_index&quot;: null
+        }
+      ]
+    },
+    {
+      &quot;group&quot;: &quot;uptx Graph.&quot;,
+      &quot;severity&quot;: 0,
+      &quot;title&quot;: &quot;uptx Graph.&quot;,
+      &quot;type&quot;: &quot;LineChart&quot;,
+      &quot;weight&quot;: 0,
+      &quot;range&quot;: &quot;24h&quot;,
+      &quot;datasets&quot;: [
+        {
+          &quot;label&quot;: &quot;uptx&quot;,
+          &quot;measurement&quot;: &quot;check_txrx&quot;,
+          &quot;metric&quot;: &quot;uptx&quot;,
+          &quot;uom&quot;: &quot;null&quot;,
+          &quot;min&quot;: -10,
+          &quot;max&quot;: -10,
+          &quot;warning&quot;: 15,
+          &quot;critical&quot;: 16,
+          &quot;error&quot;: null,
+          &quot;percentile&quot;: null,
+          &quot;operator&quot;: null,
+          &quot;color_index&quot;: null
+        }
+      ]
+    },
+    {
+      &quot;group&quot;: &quot;uprx Graph.&quot;,
+      &quot;severity&quot;: 0,
+      &quot;title&quot;: &quot;uprx Graph.&quot;,
+      &quot;type&quot;: &quot;LineChart&quot;,
+      &quot;weight&quot;: -1,
+      &quot;range&quot;: &quot;24h&quot;,
+      &quot;datasets&quot;: [
+        {
+          &quot;label&quot;: &quot;uprx&quot;,
+          &quot;measurement&quot;: &quot;check_txrx&quot;,
+          &quot;metric&quot;: &quot;uprx&quot;,
+          &quot;uom&quot;: &quot;null&quot;,
+          &quot;min&quot;: -49,
+          &quot;max&quot;: -49,
+          &quot;warning&quot;: -12,
+          &quot;critical&quot;: -9,
+          &quot;error&quot;: null,
+          &quot;percentile&quot;: null,
+          &quot;operator&quot;: null,
+          &quot;color_index&quot;: null
+        }
+      ]
+    },
+    {
+      &quot;group&quot;: &quot;upatt Graph.&quot;,
+      &quot;severity&quot;: 0,
+      &quot;title&quot;: &quot;upatt Graph.&quot;,
+      &quot;type&quot;: &quot;LineChart&quot;,
+      &quot;weight&quot;: 1,
+      &quot;range&quot;: &quot;24h&quot;,
+      &quot;datasets&quot;: [
+        {
+          &quot;label&quot;: &quot;upatt&quot;,
+          &quot;measurement&quot;: &quot;check_txrx&quot;,
+          &quot;metric&quot;: &quot;upatt&quot;,
+          &quot;uom&quot;: &quot;null&quot;,
+          &quot;min&quot;: 1,
+          &quot;max&quot;: 1,
+          &quot;warning&quot;: 26,
+          &quot;critical&quot;: 46,
+          &quot;error&quot;: null,
+          &quot;percentile&quot;: null,
+          &quot;operator&quot;: null,
+          &quot;color_index&quot;: null
+        }
+      ]
+    },
+    {
+      &quot;group&quot;: &quot;pondesv Graph.&quot;,
+      &quot;severity&quot;: 0,
+      &quot;title&quot;: &quot;pondesv Graph.&quot;,
+      &quot;type&quot;: &quot;LineChart&quot;,
+      &quot;weight&quot;: 0,
+      &quot;range&quot;: &quot;24h&quot;,
+      &quot;datasets&quot;: [
+        {
+          &quot;label&quot;: &quot;pondesv&quot;,
+          &quot;measurement&quot;: &quot;check_txrx&quot;,
+          &quot;metric&quot;: &quot;pondesv&quot;,
+          &quot;uom&quot;: &quot;null&quot;,
+          &quot;min&quot;: -10,
+          &quot;max&quot;: -10,
+          &quot;warning&quot;: 2,
+          &quot;critical&quot;: 4,
+          &quot;error&quot;: null,
+          &quot;percentile&quot;: null,
+          &quot;operator&quot;: null,
+          &quot;color_index&quot;: null
+        }
+      ]
+    }
+  ]
+}
+</code></pre><p><img src="/img/krill2/api/get_graphs_service.png" alt="image"></p><h2 id="obtencion-de-metricas-de-una-grafica-determinada-en-un-periodo-de-tiempo" tabindex="-1"><a class="header-anchor" href="#obtencion-de-metricas-de-una-grafica-determinada-en-un-periodo-de-tiempo"><span>Obtención de métricas de una gráfica determinada en un periodo de tiempo</span></a></h2><p>Para cada gráfica devuelta en el endpoint anterior, se puede peticionar las métricas dentro de un intervalo determinado de tiempo para los diferentes datasets.</p><p>Si para una gráfica existen varios datasets disponibles, éstos se podrán pedir de forma simultánea.</p><p>Método: <strong>POST</strong></p><p>URL: <code>/api/v2/monitoring/datasets/</code></p><p>Request:</p><pre><code>{
+  &quot;host_name&quot;:&quot;{internal_id|host_name}&quot;,
+  &quot;service_name&quot;:null|&quot;service_name&quot;
+  &quot;start&quot;:&quot;{time_magnitude}&quot;,
+  &quot;end&quot;:&quot;{time_magnitude}&quot;,
+  &quot;metrics&quot;:[
+    {
+      &quot;host_name&quot;:&quot;{internal_id|host_name}&quot;,
+      &quot;service_name&quot;:null|&quot;{service_name}&quot;,
+      &quot;measurement&quot;:&quot;{measurement}&quot;,
+      &quot;metric&quot;:&quot;dnatt&quot;
+    }
+  ],
+}
+</code></pre><p><code>time_magnitude</code>: Valor compuesto de unidades y magnitud de tiempo, por ejemplo: 24h para las últimas 24 horas. Las magnitudes permitidas son: [m]minutos, [h]hora, [d]ías <code>measurement</code>: Extraído del array de datasets de la petición de gráficas. <code>metric</code>: Extraído del array de datasets de la petición de gráficas.</p><p>Request de ejemplo:</p><pre><code>{
+  &quot;host_name&quot;:&quot;pim0585&quot;,
+  &quot;service_name&quot;:&quot;txrx&quot;
+  &quot;start&quot;:&quot;24h&quot;,
+  &quot;end&quot;:&quot;0m&quot;,
+  &quot;metrics&quot;:[
+    {
+      &quot;host_name&quot;:&quot;pim0585&quot;,
+      &quot;service_name&quot;:&quot;txrx&quot;,
+      &quot;measurement&quot;:&quot;check_txrx&quot;,
+      &quot;metric&quot;:&quot;dnatt&quot;
+    }
+  ],
+}
+</code></pre><p>Respuesta:</p><pre><code>{
+  &quot;check_txrx__pim0585__txrx__dnatt&quot;:[
+    {
+      &quot;time&quot;:&quot;2023-02-16T15:00:00Z&quot;,
+      &quot;value&quot;:29.03,
+      &quot;unit&quot;:null
+    },
+    {
+      &quot;time&quot;:&quot;2023-02-16T19:00:00Z&quot;,
+      &quot;value&quot;:30.35,
+      &quot;unit&quot;:null
+    },
+    {
+      &quot;time&quot;:&quot;2023-02-16T23:00:00Z&quot;,
+      &quot;value&quot;:30.21,
+      &quot;unit&quot;:null
+    },
+    {
+      &quot;time&quot;:&quot;2023-02-17T03:00:00Z&quot;,
+      &quot;value&quot;:31.54,
+      &quot;unit&quot;:null
+    },
+    {
+      &quot;time&quot;:&quot;2023-02-17T07:00:00Z&quot;,
+      &quot;value&quot;:31.52,
+      &quot;unit&quot;:null
+    },
+    {
+      &quot;time&quot;:&quot;2023-02-17T11:00:00Z&quot;,
+      &quot;value&quot;:27.03,
+      &quot;unit&quot;:null
+    }
+  ]
+}
+</code></pre><p><img src="/img/krill2/api/get_datasets.png" alt="image"></p></div><!--[--><!--]--></div><footer class="vp-page-meta"><!----><div class="vp-meta-item git-info"><div class="vp-meta-item last-updated"><span class="meta-item-label">Actualizado hace: </span><!----></div><!----></div></footer><nav class="vp-page-nav" aria-label="page navigation"><a class="route-link auto-link prev" href="/es/krill2/api/api-v2.html" aria-label="API v2"><div class="hint"><span class="arrow left"></span> Prev</div><div class="link"><span>API v2</span></div></a><a class="route-link auto-link next" href="/es/krill2/api/widgets.html" aria-label="/es/krill2/api/widgets.html"><div class="hint">Next <span class="arrow right"></span></div><div class="link"><span>/es/krill2/api/widgets.html</span></div></a></nav><!--[--><!--]--></main><!--]--></div><!--[--><!----><!--]--><!--]--></div>
+    <script type="module" src="/assets/app-dfe735a8.js" defer></script>
   </body>
 </html>
