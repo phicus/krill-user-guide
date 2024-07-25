@@ -28,7 +28,17 @@ tags:
 
  * Se ha modificado el funcionamiento del servicio Radius para evitar las alertas de IPs duplicadas en CGNAT y en el check de detección de duplicados por NAS.
  * Se ha optimizado el proceso de cálculo de reservas de prefijos IPv6 en radius.
- 
+
+### Krill-GPON
+
+**Nuevas características**:
+
+ * Generación interna de un filtro que permite usar el perfil de velocidad como criterio a la hora de provisionar
+
+ **Corrección de errores**:
+
+ * Corregido un bug que provocaba que fallara la reprovisión del modelo 854G en OLTs Calix.
+
 ### Krill-UI
 
 **Nuevas características**:
@@ -38,6 +48,8 @@ tags:
  **Corrección de errores**:
 
  * (KEYSER) Se ha homogeneizado los colores para las gráficas de ancho de banda en tiempo real.
+ * Se ha corregido un error con los filtros en las vistas de API y Admin logs que hacía que las búsquedas permanecieran incluso saliendo de dichas vistas.
+ * Se ha optimizado la carga de datos de la vista Smart-Tree haciéndola más rápida. 
 
 ## Junio 2024
 
