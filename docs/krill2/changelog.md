@@ -28,6 +28,16 @@ tags:
 
  * The operation of the Radius service has been modified to avoid alerts of duplicate IPs in CGNAT and in the duplicate detection check by NAS.
  * The process of calculating IPv6 prefix reservations in radius has been optimized.
+
+### Krill-GPON
+
+**New features**:
+
+ * Internal generation of a filter that allows the speed profile to be used as a criterion for provisioning.
+
+**Some minor bugfixes**:
+
+ * Fixed a bug that caused the reprovisioning of the 854G model to fail on Calix OLTs.
  
 ### Krill-UI
 
@@ -38,6 +48,8 @@ tags:
 **Some minor bugfixes**:
 
  * (KEYSER) The colours for the real-time bandwidth graphs have been homogenised.
+ * Fixed a bug with filters in API and Admin logs views that caused searches to remain even when exiting those views.
+ * The loading of data from the Smart-Tree view has been optimised and made faster. 
 
 ## June 2024
 
