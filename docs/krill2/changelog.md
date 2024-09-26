@@ -15,6 +15,44 @@ tags:
 
 # Changelog
 
+## September 2024
+
+### Krill
+
+**New features**:
+
+ * The possibility to store the port in the IPs granted by CGNAT has been added.
+ * Added the possibility to obtain the distance between the ONU and the OLT for the manufacturer VSOL.
+ * Added the possibility to search in krill for a CPE by SN in ASCII format.
+ * Added the ability to define the priority of the native vlan associated with an ethernet port on Huawei.
+ * Added the ability to display the list of WANs for Linksys models with datamodel TR181 (TR069).
+
+**Some minor bugfixes**:
+
+ * Fixed a bug that prevented provisioning on some CDATA OLTs.
+ * Fixed a bug that prevented the CDRs of a certain client from being seen.
+ * Fixed a bug that caused some CPEs not to be seen in their corresponding HostGroup.
+ * Fixed a bug where some parameters in the monitoring of Huawei devices were not being recovered.
+ * Fixed a problem that caused a device to be marked as UP in the tab when it was unprovisioned.
+ * Fixed a problem with the backup of Vsol OLTs.
+ * Fixed a problem that made it impossible to search in the CDRs view.
+
+### Krill-UI
+
+**New features**:
+
+ * Added the option to view all available IPs in a machine's tab.
+ * A link has been added from the CPE view to the client tab.
+ * A history of the different changes made to the PBX has been added to the PBX tab.
+
+**Some minor bugfixes**:
+
+ * Fixed an issue that caused the Keyser overview screen to be cut off.
+ * Fixed thresholds in the metrics listing of services in a host tab.
+ * Fixed the creation and update date of computers in the tabs, even if they are not in the monitoring system.
+ * The display of the equipment history in the tab has been corrected.
+ * The display of IP concession in CPEs located in time zones other than UTC has been corrected.
+
 ## July 2024
 
 ### Krill

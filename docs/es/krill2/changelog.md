@@ -15,6 +15,44 @@ tags:
 
 # Novedades
 
+## Septiembre 2024
+
+### Krill
+
+ **Nuevas funcionalidades**:
+
+ * Se ha añadido la posibilidad almacenar el puerto en las IPs concedidas por CGNAT.
+ * Se ha añadido la obtención de la distancia entre la ONU y la OLT para el fabricante VSOL.
+ * Se ha añadido la posibilidad de buscar en krill un CPE por SN en formato ASCII.
+ * Se ha añadido la posibilidad de definir la prioridad de la vlan nativa asociada a un puerto ethernet en Huawei.
+ * Se ha añadido la posibilidad de mostrar la lista de WANs de los modelos Linksys con datamodel TR181 (TR069).
+
+ **Corrección de errores**:
+
+  * Se ha corregido un bug que impedia la provisión en algunas OLTs CDATA.
+  * Se ha corregido un error que impedía ver los CDRs de un determinado cliente.
+  * Se ha corregido un bug que hacía que algunos CPEs no se vieran en su correspondiente HostGroup.
+  * Se ha corregido un bug por el que no se recuperaban ciertos parámetros en la monitorización de los equipos Huawei.
+  * Se ha corregido un problema que hacia que un equipo se marcará como UP en la ficha cuando estaba desprovisionado.
+  * Se ha corregido un problema con la realización de backups de las OLTs Vsol.
+  * Se ha corregido un problema que imposibilitaba la búsqueda en la vista CDRs.
+
+### Krill-UI
+
+**Nuevas características**:
+
+ * Se ha añadido la opción de ver todas las IPs disponibles en la ficha de un equipo.
+ * Se ha añadido un enlace desde la vista de CPE hacia la ficha de su cliente.
+ * Se ha añadido en la ficha de la PBX un histórico con los diferentes cambios realizados en ésta.
+
+**Corrección de errores**:
+
+ * Se ha corregido el problema que provocaba que la pantalla overview de Keyser se viera cortada.
+ * Se han corregido los umbrales en el listado de métricas de los servicios en la ficha de un host.
+ * Se ha corregido la fecha de creación y actualización de los equipos en las fichas, aunque éstos no se encuentren en el sistema de monitorización.
+ * Se ha corregido la visualización del histórico de los equipos en la ficha.
+ * Se ha corregido la visualización de concesión de IPs en CPEs que se encuentren en zonas horarias distintas a UTC.
+
 ## Julio 2024
 
 ### Krill
