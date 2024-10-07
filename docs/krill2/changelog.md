@@ -15,6 +15,31 @@ tags:
 
 # Changelog
 
+## October 2024
+
+### Krill
+
+**New features**:
+
+ * The F6600P model has been adapted to the TR181 data model.
+ * It has been added the possibility of marking a Host as UP when we have accounting of this equipment.
+
+**Some minor bugfixes**:
+
+ * Fixed an issue with Huawei equipment monitoring that caused power levels to be erroneous for 100G interfaces.
+ * Fixed a bug that caused some hosts and services to be duplicated based on user permissions.
+ * Fixed a bug when checking the Mikrotik version.
+ * Fixed a bug where telephony services were not being monitored correctly.
+
+### Krill-UI
+
+**Some minor bugfixes**:
+
+ * Fixed a bug that now made it impossible to see WiFi connected devices when they did not report which band they were on.
+ * Fixed an issue that caused the Keyser overview screen to be cut off.
+ * Fixed a bug where ONUG graph values were rounded instead of displaying the actual value.
+ * Fixed a bug where ISP view histories in a certain cpe were not sorted by date correctly.
+
 ## September 2024
 
 ### Krill
