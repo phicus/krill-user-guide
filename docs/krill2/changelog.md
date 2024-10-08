@@ -30,8 +30,13 @@ tags:
  * Fixed a bug that caused some hosts and services to be duplicated based on user permissions.
  * Fixed a bug when checking the Mikrotik version.
  * Fixed a bug where telephony services were not being monitored correctly.
+ * Fixed an issue where after an automatic update of Freeradius, changes made in ISP would not be applied to the configuration files. 
 
 ### Krill-UI
+
+**New features**:
+
+ * A date selector has been added to allow requesting data by date range in the timeline of a team's record.
 
 **Some minor bugfixes**:
 
@@ -39,6 +44,8 @@ tags:
  * Fixed an issue that caused the Keyser overview screen to be cut off.
  * Fixed a bug where ONUG graph values were rounded instead of displaying the actual value.
  * Fixed a bug where ISP view histories in a certain cpe were not sorted by date correctly.
+ * Fixed a bug in the login view that prevented to see the error when logging in.
+ * Fixed a bug where the hostevents view was displaying the wrong time, and also did not adjust to the user's schedule.
 
 ## September 2024
 
