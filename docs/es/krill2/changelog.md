@@ -23,6 +23,9 @@ tags:
 
  * Se ha adaptado el modelo F6600P al data model TR181.
  * Se ha añadido la posibilidad de marcar un Host como UP cuando tenemos accounting de dicho equipo.
+ * Se ha añadido el chequeo de forma pasiva para los CPEs de tipo bitstream, con el objetivo de optimizar el uso de cpu del servidor.
+ * Se ha añadido la posibilidad de montar KEA-DHCP en alta disponibilidad.
+ * Se ha añadido documentación de la API del módulo de ACS.
 
 **Corrección de errores**:
 
@@ -31,6 +34,10 @@ tags:
  * Se ha corregido un error al chequear la versión de Mikrotik.
  * Se ha corregido un error por el cual lo servicios de telefonía no se monitorzaban correctamente.
  * Se ha corregido un problema por el cual tras un update automático de Freeradius, hacía que los cambios realizados en ISP no se aplicarán a los archivos de configuración. 
+ * Se ha corregido un problema por el cual tras un update automático de Freeradius, hacía que los cambios realizados en ISP no se mandará el CoA.
+ * Se ha corregido un problema con el bindeo de puertos para el modelo F6600P con datamodel TR181.
+ * Se ha corregido un error en el info de los CPEs Docsis, que marcaba el CPE como DOWN.
+ * Se ha corregido un bug que hacía no que no se mostrara información del CPE cuando alguno de los equipos conectados por LAN se identifica con caracteres no ASCII.
 
 ### Krill-UI
 
@@ -46,6 +53,7 @@ tags:
  * Se ha corregido un error por el cual los históricos de la vista ISP en un determinado cpe no estaban ordenados por fecha correctamente.
  * Se han corregido un error en la vista login que impedia ver el error al loguear.
  * Se ha arreglado un error por el cual la vista de hostevents mostraba la hora incorrecta, y además no se ajustaba al horario del usuario.
+ * Se han corregido un error en la ficha de eventos de un CPE por el cual tras un error de provisión el mensaje se mostraba incompleto.
 
 ## Septiembre 2024
 
