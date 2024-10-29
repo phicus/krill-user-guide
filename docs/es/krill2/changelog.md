@@ -26,6 +26,7 @@ tags:
  * Se ha añadido el chequeo de forma pasiva para los CPEs de tipo bitstream, con el objetivo de optimizar el uso de cpu del servidor.
  * Se ha añadido la posibilidad de montar KEA-DHCP en alta disponibilidad.
  * Se ha añadido documentación de la API del módulo de ACS.
+ * Se ha añadido la actualización de Celery 4 a Celery 5.
 
 **Corrección de errores**:
 
@@ -38,6 +39,11 @@ tags:
  * Se ha corregido un problema con el bindeo de puertos para el modelo F6600P con datamodel TR181.
  * Se ha corregido un error en el info de los CPEs Docsis, que marcaba el CPE como DOWN.
  * Se ha corregido un bug que hacía no que no se mostrara información del CPE cuando alguno de los equipos conectados por LAN se identifica con caracteres no ASCII.
+ * Se ha corregido el check backup de olts ZTE para contemplar formatos .dat y zip.
+ * Se ha corregido la documentación Swagger de los endpoints /api/v2/auth/login/ y /api/v2/auth/token/ y se ha marcado como deprecado el endpoint /api/v2/auth/token/
+ * Se ha corregido un error que impedía que los diagnósticos de la ficha funcionasen.
+ * Se ha mejorado el check de bitstream pasivo para evitar algunos errores.
+ * Se ha corregido un error que impedía filtrar eventos de tipo CWMP por host_name.
  * Se ha corregido un error en KEA-DHCP que daba por error IPs a equipos desactivados.
  * Se ha mejorado el check de bitstream pasivo para evitar algunos errores.
  * Se han corregido algunos errores de monitorización para el datamodel TR-181.
@@ -47,6 +53,9 @@ tags:
 **Nuevas características**:
 
 * Se ha añadido un selector de fechas que permite peticionar, los datos por rango de fechas en el timeline de la ficha de un equipo.
+* Para equipos CPE Wimax se ha añadido la posibilidad de redirigir a la vista matrix.
+* Para equipos CPE DOCSIS se ha añadido una gráfica RF y se ha eliminado la vista de dispositivos conectados.
+* La ficha de CPE ahora detecta si una IP recibida via Radius, es de tipo PPPOE o IPOE.
 
 **Corrección de errores**:
 
