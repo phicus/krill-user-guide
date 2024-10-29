@@ -38,6 +38,9 @@ tags:
  * Fixed a problem with port bindings for the F6600P model with datamodel TR181.
  * Fixed a bug in the Docsis CPEs info, which marked the CPE as DOWN.
  * A bug has been fixed that caused CPE information not to be displayed when any of the devices connected by LAN is identified with non-ASCII characters.
+ * Fixed a bug in KEA-DHCP that mistakenly gave IPs to disabled computers.
+ * The passive bitstream check has been improved to avoid some errors.
+ * Some monitoring errors have been corrected for the TR-181 datamodel.
 
 ### Krill-UI
 
@@ -54,7 +57,10 @@ tags:
  * Fixed a bug in the login view that prevented to see the error when logging in.
  * Fixed a bug where the hostevents view was displaying the wrong time, and also did not adjust to the user's schedule.
  * Fixed a bug in the event tab of a CPE where after a provisioning error the message was incomplete.
-
+ * General security improvements have been implemented in different applications.
+ * An error has been corrected in the tab of a CPE, there was erroneous information about the active or inactive status of the equipment and its connection to the Internet.
+ * Error handling has been improved for some diagnoses in the CPE tab.
+ 
 ## September 2024
 
 ### Krill
