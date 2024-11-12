@@ -15,6 +15,28 @@ tags:
 
 # Changelog
 
+## November 2024
+
+### Krill
+
+**New features**:
+
+ * KEA log verbosity extended and log retention extended.
+
+**Some minor bugfixes**:
+ 
+ * Fixed a bug where IP grants were created that lasted 0 seconds.
+
+### Krill-UI
+
+**New features**:
+
+ * Modified the function of exporting data to CSV to avoid asking for user and password again. Due to technical limitations, while the data is being exported, the user will not be able to navigate in this tab.
+
+**Some minor bugfixes**:
+ 
+ * Fixed a bug where in the CPE tab the information given about the active or inactive status of the equipment and its internet connection could be incorrect.
+
 ## October 2024
 
 ### Krill
