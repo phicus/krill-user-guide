@@ -22,21 +22,27 @@ tags:
 **New features**:
 
  * KEA log verbosity extended and log retention extended.
+ * Optimization of task queuing in CPE monitoring using TR069.
+ * Sending email notifications with an SMTP account without user credentials is now allowed.
+ * Bandwidth monitoring of GPON interfaces in FiberHome equipment has been added.
 
 **Some minor bugfixes**:
  
  * Fixed a bug where IP grants were created that lasted 0 seconds.
+ * Fixed a bug that prevented monitoring two BGP Peers with the same name on two different computers.
 
 ### Krill-UI
 
 **New features**:
 
  * Modified the function of exporting data to CSV to avoid asking for user and password again. Due to technical limitations, while the data is being exported, the user will not be able to navigate in this tab.
+ * On a CPE card, the losi, lofi and dyinggasp alarms will be represented by an iconography.
 
 **Some minor bugfixes**:
  
  * Fixed a bug where in the CPE tab the information given about the active or inactive status of the equipment and its internet connection could be incorrect.
-
+ * Corrected the information given on the active or inactive status of the equipment and its connection to the Internet in the CPE file.
+ 
 ## October 2024
 
 ### Krill
