@@ -15,6 +15,16 @@ tags:
 
 # Novedades
 
+## Diciembre 2024
+
+### Krill-UI
+
+**Nuevas funcionalidades**:
+
+ * Si un grupo tiene su fail apuntando a una extensión, esto será reflejado en el esquema de la PBX.
+ * Se ha hecho mas accesible el botón links CPE en la ficha de un equipo, esta situado en la tarjeta de IPs.
+ * El módulo kermit incluirá un visor de leases IPv4 e IPv6.
+
 ## Noviembre 2024
 
 ### Krill
