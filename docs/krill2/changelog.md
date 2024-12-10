@@ -15,6 +15,16 @@ tags:
 
 # Changelog
 
+## December 2024
+
+### Krill-UI
+
+**Nuevas funcionalidades**:
+
+ * If a group has its fail pointing to an extension, this will be reflected in the PBX schematic.
+ * The links CPE button in the device tab has been made more accessible, it is located on the IP card.
+ * The kermit module will include an IPv4 and IPv6 lease viewer.
+
 ## November 2024
 
 ### Krill
