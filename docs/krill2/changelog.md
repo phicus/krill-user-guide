@@ -17,9 +17,22 @@ tags:
 
 ## December 2024
 
+### Krill
+
+**New features**:
+
+ * Implemented sanity checks in kea, clean up leases that are no longer needed.
+ * We optimised the way of obtaining the configuration of the hosts stored in Krill to be used by the ACS, so that it can be more agile in managing the TR069 sessions with the equipment.
+ * Validation of the API's cpe model.
+
+**Some minor bugfixes**:
+
+ * Fixed an issue in ispcli (ispadmin) where leases of ranges without pools (fixed ip`s) were not being displayed. Changed the order of the Remote ID and Circuit ID columns.
+ * Fixed a bug with Google Chrome browser that caused the login window to pop up.
+
 ### Krill-UI
 
-**Nuevas funcionalidades**:
+**New features**:
 
  * If a group has its fail pointing to an extension, this will be reflected in the PBX schematic.
  * The links CPE button in the device tab has been made more accessible, it is located on the IP card.
