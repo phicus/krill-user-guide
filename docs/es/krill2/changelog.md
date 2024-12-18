@@ -17,13 +17,26 @@ tags:
 
 ## Diciembre 2024
 
+### Krill
+
+**Nuevas funcionalidades**:
+
+ * Implementados sanity checks en KEA, se limpian leases que ya no son necesarias
+ * Optimizamos la forma de obtener la configuración de los hosts almacenada en Krill para ser usada por el ACS, de manera que conseguimos que este sea más ágil gestionando las sesiones TR069 con los equipos.
+ * Validación de modelo en API de CPE
+
+**Corrección de errores**:
+
+ * Solucionado un problema en ispcli (ispadmin) por el que no se mostraban las leases de rangos sin pools (ip`s fijas). Se ha cambiado el orden de las columnas Remote ID y Circuit ID
+ * Arreglado el bug con el navegador Google Chrome que hacía que saltara la ventana de login.
+
 ### Krill-UI
 
 **Nuevas funcionalidades**:
 
  * Si un grupo tiene su fail apuntando a una extensión, esto será reflejado en el esquema de la PBX.
- * Se ha hecho mas accesible el botón links CPE en la ficha de un equipo, esta situado en la tarjeta de IPs.
- * El módulo kermit incluirá un visor de leases IPv4 e IPv6.
+ * Se ha hecho más accesible el botón links CPE en la ficha de un equipo, está situado en la la zona de IPs del overview.
+ * El módulo Reporting incluirá un visor de leases IPv4 e IPv6.
 
 ## Noviembre 2024
 
@@ -46,11 +59,11 @@ tags:
 **Nuevas características**:
 
 * Modificada la función de exportar datos a CSV para evitar que vuelva a pedir usuario y contraseña. Por limitaciones técnicas, mientras se están exportando los datos el usuario no podrá navegar en esa pestaña.
-* En la ficha de un CPE, las alarmas losi, lofi y dyinggasp serán representadas mediante una iconografía.
+* En la ficha de un CPE, las alarmas LOSi, LOFi y dying gasp serán representadas mediante iconografía.
 
 **Corrección de errores**:
 
-* Corregido un error por el cual en la ficha del CPE la información dada sobre el estado activo o inactivo del equipo y de su conexión a internet podía ser incorrecta.
+* Corregido un error por el cual en la ficha del CPE la información dada sobre el estado activo o inactivo del equipo y de su conexión a internet podría ser incorrecta.
 * Corregido en la ficha de un CPE, la información dada sobre el estado activo o inactivo del equipo y de su conexión a internet.
 
 ## Octubre 2024
@@ -69,41 +82,41 @@ tags:
 **Corrección de errores**:
 
  * Se ha corregido un problema con la monitorización de equipos Huawei que hacía que los niveles de potencia fueran erróneos para las interfaces de 100G.
- * Se ha corregido un error que hacia que algunos hosts y servicios se vieran duplicados en función de los permisos del usuario.
+ * Se ha corregido un error que hacía que algunos hosts y servicios se vieran duplicados en función de los permisos del usuario.
  * Se ha corregido un error al chequear la versión de Mikrotik.
- * Se ha corregido un error por el cual lo servicios de telefonía no se monitorzaban correctamente.
+ * Se ha corregido un error por el cual los servicios de telefonía no se monitorizaban correctamente.
  * Se ha corregido un problema por el cual tras un update automático de Freeradius, hacía que los cambios realizados en ISP no se aplicarán a los archivos de configuración. 
  * Se ha corregido un problema por el cual tras un update automático de Freeradius, hacía que los cambios realizados en ISP no se mandará el CoA.
  * Se ha corregido un problema con el bindeo de puertos para el modelo F6600P con datamodel TR181.
  * Se ha corregido un error en el info de los CPEs Docsis, que marcaba el CPE como DOWN.
- * Se ha corregido un bug que hacía no que no se mostrara información del CPE cuando alguno de los equipos conectados por LAN se identifica con caracteres no ASCII.
- * Se ha corregido el check backup de olts ZTE para contemplar formatos .dat y zip.
+ * Se ha corregido un bug que hacía que no se mostrara información del CPE cuando alguno de los equipos conectados por LAN se identifica con caracteres no ASCII.
+ * Se ha corregido el check backup de OLTs ZTE para contemplar formatos .dat y zip.
  * Se ha corregido la documentación Swagger de los endpoints /api/v2/auth/login/ y /api/v2/auth/token/ y se ha marcado como deprecado el endpoint /api/v2/auth/token/
  * Se ha corregido un error que impedía que los diagnósticos de la ficha funcionasen.
  * Se ha mejorado el check de bitstream pasivo para evitar algunos errores.
  * Se ha corregido un error que impedía filtrar eventos de tipo CWMP por host_name.
  * Se ha corregido un error en KEA-DHCP que daba por error IPs a equipos desactivados.
  * Se ha mejorado el check de bitstream pasivo para evitar algunos errores.
- * Se han corregido algunos errores de monitorización para el datamodel TR-181.
+ * Se han corregido algunos errores de monitorización para el data model TR-181.
 
 ### Krill-UI
 
 **Nuevas características**:
 
 * Se ha añadido un selector de fechas que permite peticionar, los datos por rango de fechas en el timeline de la ficha de un equipo.
-* Para equipos CPE Wimax se ha añadido la posibilidad de redirigir a la vista matrix.
+* Para equipos CPE WiMAX se ha añadido la posibilidad de redirigir a la vista matrix.
 * Para equipos CPE DOCSIS se ha añadido una gráfica RF y se ha eliminado la vista de dispositivos conectados.
-* La ficha de CPE ahora detecta si una IP recibida via Radius, es de tipo PPPOE o IPOE.
+* La ficha de CPE ahora detecta si una IP recibida vía Radius, es de tipo PPPoE o IPoE.
 
 **Corrección de errores**:
 
- * Se han corregido un error ahora que imposibiltaba ver los equipos conectados por WiFi cuando no reportan en qué banda estaban.
+ * Se ha corregido un error que imposibilitaba ver los equipos conectados por WiFi cuando no reportan en qué banda estaban.
  * Se ha corregido el problema que provocaba que la pantalla overview de Keyser se viera cortada.
  * Se ha corregido un error por el cual los valores de las gráficas de ONUG se redondeaban en vez de enseñar el valor concreto.
  * Se ha corregido un error por el cual los históricos de la vista ISP en un determinado cpe no estaban ordenados por fecha correctamente.
- * Se han corregido un error en la vista login que impedia ver el error al loguear.
+ * Se ha corregido un error en la vista login que impedía ver el error al loguear.
  * Se ha arreglado un error por el cual la vista de hostevents mostraba la hora incorrecta, y además no se ajustaba al horario del usuario.
- * Se han corregido un error en la ficha de eventos de un CPE por el cual tras un error de provisión el mensaje se mostraba incompleto.
+ * Se ha corregido un error en la ficha de eventos de un CPE por el cual tras un error de provisión el mensaje se mostraba incompleto.
  * Se han aplicado mejoras de seguridad en general en distintas aplicaciones.
  * Se ha corregido un error en la ficha de un CPE, había información errónea sobre el estado activo o inactivo del equipo y de su conexión a internet.
  * Se ha mejorado la gestión de errores para algunos diagnósticos de la ficha CPE.
@@ -122,12 +135,12 @@ tags:
 
  **Corrección de errores**:
 
-  * Se ha corregido un bug que impedia la provisión en algunas OLTs CDATA.
+  * Se ha corregido un bug que impedía la provisión en algunas OLTs CDATA.
   * Se ha corregido un error que impedía ver los CDRs de un determinado cliente.
   * Se ha corregido un bug que hacía que algunos CPEs no se vieran en su correspondiente HostGroup.
   * Se ha corregido un bug por el que no se recuperaban ciertos parámetros en la monitorización de los equipos Huawei.
-  * Se ha corregido un problema que hacia que un equipo se marcará como UP en la ficha cuando estaba desprovisionado.
-  * Se ha corregido un problema con la realización de backups de las OLTs Vsol.
+  * Se ha corregido un problema que hacía que un equipo se marcará como UP en la ficha cuando estaba desprovisionado.
+  * Se ha corregido un problema con la realización de backups de las OLTs VSOL.
   * Se ha corregido un problema que imposibilitaba la búsqueda en la vista CDRs.
 
 ### Krill-UI
@@ -153,7 +166,7 @@ tags:
  **Nuevas funcionalidades**:
 
  * Ahora se permite en el servicio Radius controlar el COA en IPoE y PPPoE.
- * Hemos añadido soporte para IANA en el servicio Radius IPV6. 
+ * Hemos añadido soporte para IANA en el servicio Radius IPv6. 
 
  **Corrección de errores**:
 
@@ -174,11 +187,11 @@ tags:
 
 **Nuevas características**:
 
- * Se ha actualizado Installer Tools, añadiéndole el campo modelo, que se auto-seleccionará al seleccionar un equipo pendiente de provisionar, y se ha eliminado el campo Realms, realizándose las búsquedas en todos los realms que tenga permiso el usuario.
+ * Se ha actualizado Installer Tools, añadiendo el campo modelo, que se auto-seleccionará al seleccionar un equipo pendiente de provisionar, y se ha eliminado el campo Realms, realizándose las búsquedas en todos los realms que tenga permiso el usuario.
 
  **Corrección de errores**:
 
- * (KEYSER) Se ha homogeneizado los colores para las gráficas de ancho de banda en tiempo real.
+ * (KEYSER) Se han homogeneizado los colores para las gráficas de ancho de banda en tiempo real.
  * Se ha corregido un error con los filtros en las vistas de API y Admin logs que hacía que las búsquedas permanecieran incluso saliendo de dichas vistas.
  * Se ha optimizado la carga de datos de la vista Smart-Tree haciéndola más rápida. 
 
@@ -188,22 +201,22 @@ tags:
 
  **Nuevas funcionalidades**:
 
- * Se ha incorporado un nuevo comando a nuestro ISP-Cli, para comprobar el estado de los Peers de telefonía.
+ * Se ha incorporado un nuevo comando a nuestro ISP-CLI, para comprobar el estado de los Peers de telefonía.
  * Se ha optimizado el almacenamiento de métricas de los diferentes servicios para reducir el almacenamiento en disco y el consumo de RAM.
 
  **Corrección de errores**:
  
  * Se ha solucionado un problema que provocaba en redes grandes que el sistema de monitorización se quedara bloqueado y necesitara un reinicio.
- * Se ha modificado la generación del atributo de velocidad para los NAS CISCO, para que éste se genere sólo para clientes pppoe.
+ * Se ha modificado la generación del atributo de velocidad para los NAS Cisco, para que éste se genere sólo para clientes PPPoE.
  * Corregido un error que impedía que llegaran las alarmas a los CPEs que tenían marcado el check de `enable notifications`.
- * Se ha solucionado diversos errores que podían aparecer en varios de los endpoinst de la API de monitorización.
+ * Se han solucionado diversos errores que podían aparecer en varios de los endpoints de la API de monitorización.
 
 ### Krill-GPON
 
 **Nuevas características**:
 
-* Se ha añadido una nueva alarma para notificar cuando un PON excede de XXX numero de onts conectadas.
-* Mejora de la provision de equipos ZTE para incluir ipv4/ipv6 en la wan de internet e incluir wan pppoe.
+* Se ha añadido una nueva alarma para notificar cuando un PON excede de XXX número de ONTs conectadas.
+* Mejora de la provisión de equipos ZTE para incluir IPv4/IPv6 en la wan de internet e incluir wan PPPoE.
 * Se ha incluído un nuevo campo a los equipos FiberHome para poder realizar los filtros por modelo en las validaciones.
 
 **Corrección de errores**:
@@ -214,7 +227,7 @@ tags:
 
 **Nuevas características**:
 
-* Se ha mejorado el tiempo de las tareas de reinicio de los equipos Docsis.
+* Se ha mejorado el tiempo de las tareas de reinicio de los equipos DOCSIS.
 
 ### Krill-UI
 
