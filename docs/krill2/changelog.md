@@ -21,12 +21,14 @@ tags:
 
 **New features**:
 
+ * Integration of TP-Link EX220, Cdata ONT4GE1TVAS2WR and Skyworth GN630V models into the new monitoring system.
  * Implemented sanity checks in kea, clean up leases that are no longer needed.
  * We optimised the way of obtaining the configuration of the hosts stored in Krill to be used by the ACS, so that it can be more agile in managing the TR069 sessions with the equipment.
  * Validation of the API's cpe model.
 
 **Some minor bugfixes**:
 
+ * Fixed a bug in the IP Pools statistics in the Krill Radius module. Additional optimisations and improvements have been made.
  * Fixed an issue in ispcli (ispadmin) where leases of ranges without pools (fixed ip`s) were not being displayed. Changed the order of the Remote ID and Circuit ID columns.
  * Fixed a bug with Google Chrome browser that caused the login window to pop up.
 
