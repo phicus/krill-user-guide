@@ -25,12 +25,14 @@ tags:
  * Implementados sanity checks en KEA, se limpian leases que ya no son necesarias
  * Optimizamos la forma de obtener la configuración de los hosts almacenada en Krill para ser usada por el ACS, de manera que conseguimos que este sea más ágil gestionando las sesiones TR069 con los equipos.
  * Validación de modelo en API de CPE
+ * Agregado el filtro topology al API de cpes de krill /api/v2/cps?topology=abc
 
 **Corrección de errores**:
 
  * Solventado un bug en las estadísticas de los Pools de IP en el módulo Radius de Krill. Se han realizado optimizaciones y mejoras adicionales.
  * Solucionado un problema en ispcli (ispadmin) por el que no se mostraban las leases de rangos sin pools (ip`s fijas). Se ha cambiado el orden de las columnas Remote ID y Circuit ID
  * Arreglado el bug con el navegador Google Chrome que hacía que saltara la ventana de login.
+ * Solventado un bug con la exportación personalizada en el modulo ISP.
 
 ### Krill-UI
 
