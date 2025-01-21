@@ -15,6 +15,32 @@ tags:
 
 # Changelog
 
+## January 2025
+
+### Krill
+
+**New features**:
+
+ * Operating System - Cleanup of older versions of python.
+ * Added configuration and reservation of IPs per API when creating, updating or modifying a CPE in KEA-DHCP environments.
+
+**Some minor bugfixes**:
+
+ * Fixed a bug that prevented access to the KRILL Navigable API. The API can now be used from the browser again, but this access will be deprecated in favour of Swagger.
+ * Fixed an issue with Wimax CPE in router mode in KEA. Added the ability to assign an IP address to the Wimax CPE in bridge mode when the bridge option is enabled on the Krill CPE.
+ * Fixed a bug where it was not possible to make modifications to WiFi radios on devices with TR181 datamodel.
+ * For CPEs using the TR181 datamodel, we now show and categorise devices connected via LAN that do not report whether they are connected via WiFi or Ethernet.
+ * Fixed a bug that prevented the display of graphs when a certain date range was chosen.
+ * Fixed a problem that caused data exports to download an empty document.
+
+### Krill-UI
+
+**New features**:
+
+ * Added the ability to include the SSID, Wi-Fi password and DSN of the installation directly from Installer Tools.
+ * Updated the style of the Radius IP Pools table to prevent IPs that are no longer occupied from being confused with occupied IPs.
+ * Improved the handling of radios and SSIDs in the settings tab of the CPE tab.
+
 ## December 2024
 
 ### Krill
