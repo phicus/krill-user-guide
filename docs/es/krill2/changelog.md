@@ -43,6 +43,9 @@ tags:
  * Añadida la posibilidad de incluir el SSID, contraseña de Wi-Fi y el DSN de la instalación directamente desde Installer Tools.
  * Actualizado el estilo de la tabla de IP Pools de Radius para evitar que las IPs que ya no estén ocupadas se puedan confundir con las IPs ocupadas.
  * Mejorado el tratamiento de las radios y los SSID en la pestaña de settings de la ficha del CPE.
+
+**Corrección de errores**:
+
  * Arreglado un error por el cual la UI podía tener errores en la obtención de datos con el uso de realms en casos determinados.
  * Añadida la obtención de datos de telefonía en tiempo real a la ficha del CPE. Ahora, el color del botón de POTSes será amarillo si hay menos líneas activas de las registradas y azul si no se puede obtener información sobre las líneas actualmente.
 
