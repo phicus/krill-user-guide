@@ -21,18 +21,20 @@ tags:
 
 **Nuevas funcionalidades**:
 
- * Sistema Operativo - Limpieza de versiones antiguas de python
- * Se ha añadido la configuración y reserva de IPs por API cuando se crea, actualiza o modifica un CPE en entornos KEA-DHCP
+ * Sistema Operativo - Limpieza de versiones antiguas de python.
+ * Se ha añadido la configuración y reserva de IPs por API cuando se crea, actualiza o modifica un CPE en entornos KEA-DHCP.
+ * Añadida la provisión por trap en OLTs Huawei y ZTE.
 
 
 **Corrección de errores**:
 
  * Corregido un error que prevenía el acceso al API Navegable de KRILL. El API vuelve a poder utilizarse desde el navegador, pero este acceso será deprecado en favor de Swagger.
  * Solucionado un problema con el CPE Wimax en modo router en KEA. Agregada la capacidad de asignar una dirección IP al CPE Wimax en modo bridge cuando se activa la opción bridge en el CPE de Krill.
- * Solucionado un error por el cual no era posible realizar modificaciones sobre las radios WiFi en equipos con datamodel TR181
+ * Solucionado un error por el cual no era posible realizar modificaciones sobre las radios WiFi en equipos con datamodel TR181.
  * Para CPEs que usan el datamodel TR181, ahora mostramos y categorizamos los equipos conectados por LAN que no reportan si lo hacen por WiFi o por Ethernet.
- * Se ha corregido un error que impedía visualizar gráficas cuando se escogía un rango de fechas determinado
- * Se ha corregido un problema que hacía que las exportaciones de datos descargarán un documento vacío
+ * Se ha corregido un error que impedía visualizar gráficas cuando se escogía un rango de fechas determinado.
+ * Se ha corregido un problema que hacía que las exportaciones de datos descargarán un documento vacío.
+ * Solventado cálculo de ip libres IP disponibles en ISC DHCP.
 
 ### Krill-UI
 
@@ -41,6 +43,8 @@ tags:
  * Añadida la posibilidad de incluir el SSID, contraseña de Wi-Fi y el DSN de la instalación directamente desde Installer Tools.
  * Actualizado el estilo de la tabla de IP Pools de Radius para evitar que las IPs que ya no estén ocupadas se puedan confundir con las IPs ocupadas.
  * Mejorado el tratamiento de las radios y los SSID en la pestaña de settings de la ficha del CPE.
+ * Arreglado un error por el cual la UI podía tener errores en la obtención de datos con el uso de realms en casos determinados.
+ * Añadida la obtención de datos de telefonía en tiempo real a la ficha del CPE. Ahora, el color del botón de POTSes será amarillo si hay menos líneas activas de las registradas y azul si no se puede obtener información sobre las líneas actualmente.
 
 ## Diciembre 2024
 
