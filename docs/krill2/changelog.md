@@ -23,6 +23,7 @@ tags:
 
  * Operating System - Cleanup of older versions of python.
  * Added configuration and reservation of IPs per API when creating, updating or modifying a CPE in KEA-DHCP environments.
+ * Added provisioning by trap on Huawei and ZTE OLTs.
 
 **Some minor bugfixes**:
 
@@ -32,6 +33,7 @@ tags:
  * For CPEs using the TR181 datamodel, we now show and categorise devices connected via LAN that do not report whether they are connected via WiFi or Ethernet.
  * Fixed a bug that prevented the display of graphs when a certain date range was chosen.
  * Fixed a problem that caused data exports to download an empty document.
+ * Solved calculation of free ip IP available in ISC DHCP.
 
 ### Krill-UI
 
@@ -40,6 +42,8 @@ tags:
  * Added the ability to include the SSID, Wi-Fi password and DSN of the installation directly from Installer Tools.
  * Updated the style of the Radius IP Pools table to prevent IPs that are no longer occupied from being confused with occupied IPs.
  * Improved the handling of radios and SSIDs in the settings tab of the CPE tab.
+ * Fixed a bug where the UI could have errors in fetching data using realms in certain cases.
+ * Added real-time telephony data collection to the CPE tab. The colour of the POTSes button will now be yellow if there are fewer active lines than registered and blue if no line information is currently available.
 
 ## December 2024
 
