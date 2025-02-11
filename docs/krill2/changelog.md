@@ -15,6 +15,26 @@ tags:
 
 # Changelog
 
+## February 2025
+
+### Krill
+
+**New features**:
+ 
+ * Provisioning of ACS (TR069) on ZTE OLTs.
+ * Improved provisioning of ZTE WANs.
+ * Monitoring of CATV port optical levels in ZTE OLTs.
+
+**Some minor bugfixes**:
+
+ * Fixed a bug where CWMP sessions were not displayed in TR069.
+
+### Krill-UI
+
+**Some minor bugfixes**:
+
+ * Fixed a bug in several tables in the application that caused all their objects to be displayed at once when clicking on one of them.
+
 ## January 2025
 
 ### Krill

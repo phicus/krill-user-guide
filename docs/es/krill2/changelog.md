@@ -15,6 +15,26 @@ tags:
 
 # Novedades
 
+## Febrero 2025
+
+### Krill
+
+**Nuevas funcionalidades**:
+ 
+ * Provisión del ACS (TR069) en las OLTs ZTE.
+ * Mejoras en la provisión de WANs de ZTE.
+ * Monitorización de los niveles ópticos del puerto CATV en OLTs ZTE.
+
+**Corrección de errores**:
+
+ * Corregido un error por el cual no se mostraban las sesiones de CWMP en TR069.
+
+### Krill-UI
+
+**Corrección de errores**:
+
+ * Arreglado un error en varias tablas de la aplicación que causaba que se desplegasen todos sus objetos a la vez cuando se clickeaba en uno de ellos.
+
 ## Enero 2025
 
 ### Krill
