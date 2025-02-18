@@ -24,16 +24,28 @@ tags:
  * Provisión del ACS (TR069) en las OLTs ZTE.
  * Mejoras en la provisión de WANs de ZTE.
  * Monitorización de los niveles ópticos del puerto CATV en OLTs ZTE.
+ * En OLTs Huawei, añadida a la monitorización real-time de los CPEs el estado de sus puertos Ethernet, mostrando si hay equipos conectados cuando no soportan TR069 (típicamente cualquier ONT bridge)
+ * Mejorada la obtención de datos en routers neutros TP-Link
+ * Se ha añadido la posibilidad de admitir caracteres especiales en el DSN de un CPE
+ * Se ha integrado la monitorización de la estación base Albentia BS850
 
 **Corrección de errores**:
 
  * Corregido un error por el cual no se mostraban las sesiones de CWMP en TR069.
+ * Solucionado un error con los tests de velocidad en determinadas configuraciones.
 
 ### Krill-UI
+
+**Nuevas funcionalidades**:
+
+ * Mejorada la obtención de puertos Ethernet en la ficha del CPE.
+ * Añadida a la ficha del CPE monitorización en tiempo real del estado de la telefonía para las fichas de "voice1" y etc.
 
 **Corrección de errores**:
 
  * Arreglado un error en varias tablas de la aplicación que causaba que se desplegasen todos sus objetos a la vez cuando se clickeaba en uno de ellos.
+ * Arreglado un error que hacía que los cables Ethernet se pintasen en los puertos que no correspondían en la ficha del CPE.
+ * Arreglado un error por el cual se mostraban en la ficha del CPE SSIDs que realmente no estaban habilitados en ciertos modelos TP-Link.
 
 ## Enero 2025
 
