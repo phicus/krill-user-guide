@@ -24,16 +24,28 @@ tags:
  * Provisioning of ACS (TR069) on ZTE OLTs.
  * Improved provisioning of ZTE WANs.
  * Monitoring of CATV port optical levels in ZTE OLTs.
+ * In Huawei OLTs, real-time monitoring of CPEs now includes the status of their Ethernet ports, showing whether devices are connected even when they do not support TR-069 (typically any bridge ONT).
+ * Improved data retrieval for TP-Link neutral routers.
+ * Added support for special characters in a CPE's DSN.
+ * Integrated monitoring of the Albentia BS850 base station.
 
 **Some minor bugfixes**:
 
  * Fixed a bug where CWMP sessions were not displayed in TR069.
+ * Fixed an issue with speed tests in certain configurations.
 
 ### Krill-UI
+
+**New features**:
+
+ * Improved retrieval of Ethernet ports in the CPE profile.
+ * Added real-time monitoring of telephony status in the CPE profile for "voice1" and others.
 
 **Some minor bugfixes**:
 
  * Fixed a bug in several tables in the application that caused all their objects to be displayed at once when clicking on one of them.
+ * Fixed an issue where Ethernet cables were displayed on incorrect ports in the CPE profile.
+ * Fixed an issue where SSIDs that were not actually enabled appeared in the CPE profile for certain TP-Link models.
 
 ## January 2025
 
