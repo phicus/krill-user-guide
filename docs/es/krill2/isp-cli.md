@@ -1425,6 +1425,96 @@ Permite cambiar los valores de alarma de la temperatura del equipo (en ºC).
 ispadmin@lab3.phicus.es > tv edfa TEST-STEVE set unit-temp HI 40
 ```
 
+## Comandos para asterisk
+
+### `Resumen de asterisk`
+
+```bash
+asterisk database show
+```
+
+### `Resumen de peers e información de registro`
+
+```bash
+asterisk sip show peers
+```
+
+## Desvíos de llamada
+
+### `Añadir desvío`
+
+```bash
+asterisk calling-features ddi NumeroOrigen put call-forwarding value NumeroDestino
+```
+
+### `Añadir desvío cuando no hay respuesta`
+
+```bash
+asterisk calling-features ddi NumeroOrigen put call-forwarding-no-answer value NumeroDestino
+```
+
+### `Añadir desvío cuando el número está ocupado`
+
+```bash
+asterisk calling-features ddi NumeroOrigen put call-forwarding-on-busy value NumeroDestino
+```
+
+### `Añadir desvío cuando el número no está disponible`
+
+```bash
+asterisk calling-features ddi NumeroOrigen put call-forwarding-when-unavailable value NumeroDestino
+```
+
+### `Para eliminar desvíos`
+
+```bash
+asterisk calling-features ddi NumeroOrigen del call-forwarding
+
+asterisk calling-features ddi NumeroOrigen del call-forwarding-no-answer
+
+asterisk calling-features ddi NumeroOrigen del call-forwarding-on-busy
+
+asterisk calling-features ddi NumeroOrigen del call-forwarding-when-unavailable
+```
+
+## Comandos para extensiones PBX
+
+### `Añadir desvío`
+
+```bash
+asterisk calling-features pbx NumeroPBX extension Extension put call-forwarding value NumeroDestino
+```
+
+### `Añadir desvío cuando no hay respuesta`
+
+```bash
+asterisk calling-features NumeroPBX extension Extension put call-forwarding-no-answer value NumeroDestino
+```
+
+### `Añadir desvío cuando el número está ocupado`
+
+```bash
+asterisk calling-features NumeroPBX extension Extension put call-forwarding-on-busy value NumeroDestino
+```
+
+### `Añadir desvío cuando el número no está disponible`
+
+```bash
+asterisk calling-features NumeroPBX extension Extension put call-forwarding-when-unavailable value NumeroDestino
+```
+
+### `Para eliminar desvíos`
+
+```bash
+asterisk calling-features NumeroPBX extension Extension del call-forwarding
+
+asterisk calling-features NumeroPBX extension Extension del call-forwarding-no-answer
+
+asterisk calling-features NumeroPBX extension Extension del call-forwarding-on-busy
+
+asterisk calling-features NumeroPBX extension Extension del call-forwarding-when-unavailable
+```
+
 ## Otros comandos
 
 ### `ssh [HOST_NAME]`
