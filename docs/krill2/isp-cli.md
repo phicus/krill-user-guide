@@ -1426,6 +1426,96 @@ It allows us to change the alarm values for the device temperature (using ºC).
 ispadmin@lab3.phicus.es > tv edfa TEST-STEVE set unit-temp HI 40
 ```
 
+## Asterisk commands
+
+### `Asterisk summary`
+
+```bash
+asterisk database show
+```
+
+### `Peers summary and registration info`
+
+```bash
+asterisk sip show peers
+```
+
+## Forwarded calls
+
+### `Add forwarding`
+
+```bash
+asterisk calling-features ddi OriginNumber put call-forwarding value DestinationNumber
+```
+
+### `Add forwarding with no answer`
+
+```bash
+asterisk calling-features ddi OriginNumber put call-forwarding-no-answer value DestinationNumber
+```
+
+### `Add forwarding when busy`
+
+```bash
+asterisk calling-features ddi OriginNumber put call-forwarding-on-busy value DestinationNumber
+```
+
+### `Add forwarding when unavailable`
+
+```bash
+asterisk calling-features ddi OriginNumber put call-forwarding-when-unavailable value DestinationNumber
+```
+
+### `Delete forwarding`
+
+```bash
+asterisk calling-features ddi OriginNumber del call-forwarding
+
+asterisk calling-features ddi OriginNumber del call-forwarding-no-answer
+
+asterisk calling-features ddi OriginNumber del call-forwarding-on-busy
+
+asterisk calling-features ddi OriginNumber del call-forwarding-when-unavailable
+```
+
+## PBX extensions commands
+
+### `Add forwarding`
+
+```bash
+asterisk calling-features pbx PBXNumber extension Extension put call-forwarding value DestinationNumber
+```
+
+### `Add forwarding when no answer`
+
+```bash
+asterisk calling-features PBXNumber extension Extension put call-forwarding-no-answer value DestinationNumber
+```
+
+### `Add forwarding when busy`
+
+```bash
+asterisk calling-features PBXNumber extension Extension put call-forwarding-on-busy value DestinationNumber
+```
+
+### `Add forwarding when unavailable`
+
+```bash
+asterisk calling-features PBXNumber extension Extension put call-forwarding-when-unavailable value DestinationNumber
+```
+
+### `Delete forwarding`
+
+```bash
+asterisk calling-features PBXNumber extension Extension del call-forwarding
+
+asterisk calling-features PBXNumber extension Extension del call-forwarding-no-answer
+
+asterisk calling-features PBXNumber extension Extension del call-forwarding-on-busy
+
+asterisk calling-features PBXNumber extension Extension del call-forwarding-when-unavailable
+```
+
 ## Other commands
 
 ### `ssh [HOST_NAME]`
