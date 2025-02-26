@@ -88,6 +88,8 @@ In this menu we can change between modules. The modules available today are:
 - **Installer tools**: [Installer tools](/krill2/installer-tools/)
 - **Rubik**: [Tool for managing networks mutualized with other operators](/krill2/rubik/)
 - **Logger**: [Log reports from API and Admin panel](/krill2/logger/)
+- **GIS**: [Inventory tool passive network](/krill2/gis/)
+
 
 From this menu we can change Krill's language.
 
