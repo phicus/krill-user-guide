@@ -1,6 +1,6 @@
 ---
-title: GIS
-description: Inventario de red pasiva GIS.
+title: Admin
+description: Gestión.
 lang: es-ES
 prev: null
 next: null
@@ -8,27 +8,27 @@ sidebar: auto
 tags:
 - krill2
 - module
-- gis
+- NAP
 - admin
 - api
 ---
-# GIS
+# Gestión NAP / CTO
 
-Desde este módulo podemos añadir y visualizar los elementos pasivos de una red de fibra habitualmente llamados NAP o CTO. El módulo está accesible desde la opción Admin. 
+En este módulo podemos añadir y visualizar los elementos pasivos de una red de fibra habitualmente llamados NAP o CTO. El módulo está accesible desde la opción Admin. 
 
-<p align="center"><img src="/img/krill2/gis/01-admin-menu.png" width="433"></p>
+<p align="center"><img src="/img/krill2/admin/01-admin-menu.png" width="433"></p>
 
 Desde dashboard principal se puede puede acceder a:
 
-- [Nuevo NAP](/es/krill2/gis/#nuevo-nap): crear nuevo NAP.
-- [Lista de NAPs](/es/krill2/gis/#lista-de-naps): listado de todos los NAPs existentes.
+- [Nuevo NAP](/es/krill2/admin/#nuevo-nap): crear nuevo NAP.
+- [Lista de NAPs](/es/krill2/admin/#lista-de-naps): listado de todos los NAPs existentes.
 
-![GIS Dashboard](/img/krill2/gis/02-module-gis.png)
+![admin Dashboard](/img/krill2/admin/02-module-admin.png)
 
 
 ## Nuevo NAP
 
-![Nuevo NAP](/img/krill2/gis/03-create-nap.png)
+![Nuevo NAP](/img/krill2/admin/03-create-nap.png)
 
 En esta vista se añaden los datos del nuevo NAP, habrá unos campos que sean obligatorios y otros opcionales. A continuación mostramos el detalle de éstos.
 
@@ -45,20 +45,18 @@ En esta vista se añaden los datos del nuevo NAP, habrá unos campos que sean ob
 
 Una vez creado el NAP estará disponible para ser asignado a los cpes. Desde la ficha de edición del cpe en el campo Topology se asocia el nombre del NAP correspondiente, también es posible asociar la caja desde el mapa de la izquierda haciendo click directamente sobre ella.
 
-![isp cpe](/img/krill2/gis/05-cpe.png)
+![isp cpe](/img/krill2/admin/05-cpe.png)
 
-
-###
 
 ## Lista de NAPs
 
 
 Listado de NAPs existentes en AdminSchema:
 
-![list NAP](/img/krill2/gis/04-list-nap.png)
+![list NAP](/img/krill2/admin/04-list-nap.png)
 
 ### Vista World Map
 
 Además del listado desde la vista WorldMap, sólo si se quiere, haciendo click en el botón del mapa que se encuentra en la parte superior derecha, a la izquierda del icono de un router, mostrará los NAP en su ubicación correspondiente. 
 
-![Map](/img/krill2/gis/06-map.png)
+![Map](/img/krill2/admin/06-map.png)
