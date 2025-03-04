@@ -15,6 +15,25 @@ tags:
 
 # Changelog
 
+## March 2025
+
+### Krill
+
+**New features**:
+
+ * Actions to be performed on the provision of a CPE after its modification are optimised.
+
+**Some minor bugfixes**:
+
+ * Fixed problem in the monitoring of the OLT ZTE C600 that caused the PONs not to be displayed.
+
+### Krill-UI
+
+**New features**:
+
+ * Improved data retrieval from Ethernet ports.
+ * Optimised the CPE tab, decreasing the loading time and memory consumption.
+
 ## February 2025
 
 ### Krill
@@ -28,11 +47,15 @@ tags:
  * Improved data retrieval for TP-Link neutral routers.
  * Added support for special characters in a CPE's DSN.
  * Integrated monitoring of the Albentia BS850 base station.
+ * Added graphing and checking of CPU and temperature thresholds on the ZTE C600 OLT cards.
+ * Added the ability to manage call forwarding in Asterisk from the CLI.
+ * Restored cablemodem model checking for DOCSIS networks.
 
 **Some minor bugfixes**:
 
  * Fixed a bug where CWMP sessions were not displayed in TR069.
  * Fixed an issue with speed tests in certain configurations.
+ * Solved bug that made backups in olt VSOL and TELEVES not to be done every 24h.
 
 ### Krill-UI
 
