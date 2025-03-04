@@ -15,6 +15,25 @@ tags:
 
 # Novedades
 
+## Marzo 2025
+
+### Krill
+
+**Nuevas funcionalidades**:
+
+ * Se optimizan las acciones a realizar sobre la provisión de un CPE tras su modificación.
+
+**Corrección de errores**:
+
+ * Solucionado problema en la monitorización de la OLT ZTE C600 que hacía que no se mostraran los PONs.
+
+### Krill-UI
+
+**Nuevas funcionalidades**:
+
+ * Mejorada la obtención de los datos de los puertos Ethernet.
+ * Optimizada la ficha de CPE, disminuyendo el tiempo de carga y el consumo de memoria.
+
 ## Febrero 2025
 
 ### Krill
@@ -24,15 +43,19 @@ tags:
  * Provisión del ACS (TR069) en las OLTs ZTE.
  * Mejoras en la provisión de WANs de ZTE.
  * Monitorización de los niveles ópticos del puerto CATV en OLTs ZTE.
- * En OLTs Huawei, añadida a la monitorización real-time de los CPEs el estado de sus puertos Ethernet, mostrando si hay equipos conectados cuando no soportan TR069 (típicamente cualquier ONT bridge)
- * Mejorada la obtención de datos en routers neutros TP-Link
- * Se ha añadido la posibilidad de admitir caracteres especiales en el DSN de un CPE
- * Se ha integrado la monitorización de la estación base Albentia BS850
+ * En OLTs Huawei, añadida a la monitorización real-time de los CPEs el estado de sus puertos Ethernet, mostrando si hay equipos conectados cuando no soportan TR069 (típicamente cualquier ONT bridge).
+ * Mejorada la obtención de datos en routers neutros TP-Link.
+ * Se ha añadido la posibilidad de admitir caracteres especiales en el DSN de un CPE.
+ * Se ha integrado la monitorización de la estación base Albentia BS850.
+ * Se ha añadido graficación y chequeo de umbrales en CPU y temperatura de las tarjetas de la OLT ZTE C600.
+ * Añadida la capacidad de gestionar desvíos de llamada en Asterisk desde el CLI.
+ * Restaurado el chequeo de modelo de cablemodem para redes DOCSIS.
 
 **Corrección de errores**:
 
  * Corregido un error por el cual no se mostraban las sesiones de CWMP en TR069.
  * Solucionado un error con los tests de velocidad en determinadas configuraciones.
+ * Solventado bug que hacía que las copias de seguridad en olt VSOL y TELEVES no se realizaran cada 24h.
 
 ### Krill-UI
 

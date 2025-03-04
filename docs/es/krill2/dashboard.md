@@ -86,7 +86,7 @@ En este menú podremos cambiar entre un módulo u otro. Siendo los módulos disp
 - **Installer tools**: [Herramientas del instalador](/es/krill2/installer-tools/)
 - **Rubik**: [Herramienta de gestión de redes mutualizadas con terceros](/es/krill2/rubik/)
 - **Logger**: [Reporte de logs de la API y del panel de administración](/es/krill2/logger/)
-- **GIS**: [Herramienta de inventario red pasiva](/es/krill2/gis/)
+- **Gestion NAP/CTO**: [Herramienta de inventario red pasiva](/es/krill2/admin/)
 
 
 Desde este menú también podemos cambiar el idioma de Krill.

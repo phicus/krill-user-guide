@@ -50,6 +50,10 @@ const menu = [
                         text: 'Logger',
                         link: '/krill2/logger/'
                     },
+                    {
+                        text: 'Admin',
+                        link: '/krill2/admin/'
+                    },                    
                 ]
             }
         ]
@@ -119,7 +123,10 @@ const menuEs = [
                         text: 'Logger',
                         link: '/es/krill2/logger/'
                     },
-
+                    {
+                        text: 'Admin',
+                        link: '/es/krill2/admin/'
+                    },
                 ]
             }
         ]
