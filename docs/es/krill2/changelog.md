@@ -22,10 +22,13 @@ tags:
 **Nuevas funcionalidades**:
 
  * Se optimizan las acciones a realizar sobre la provisión de un CPE tras su modificación.
+ * En ZTE, añadimos el tag de VLAN y priority en la configuración de TR-069 para mejorar la compatibilidad con modelos de ONU de distintos fabricantes.
+ * Se han añadido varias mejoras menores en el visor de leases.
 
 **Corrección de errores**:
 
  * Solucionado problema en la monitorización de la OLT ZTE C600 que hacía que no se mostraran los PONs.
+ * Deshabilitado el mensaje de error que indicaba la falta de conexión con el servidor ACS para modelos que no cuentan con TR-069.
 
 ### Krill-UI
 
