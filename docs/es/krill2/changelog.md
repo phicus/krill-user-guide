@@ -22,6 +22,8 @@ tags:
 **Nuevas funcionalidades**:
 
  * Se optimizan las acciones a realizar sobre la provisión de un CPE tras su modificación.
+ * Integración del modelo Fiberhome HG6143D en el sistema.
+ * Preparación del API para soportar OpenAPI 3.0.
  * En ZTE, añadimos el tag de VLAN y priority en la configuración de TR-069 para mejorar la compatibilidad con modelos de ONU de distintos fabricantes.
  * Se han añadido varias mejoras menores en el visor de leases.
 
@@ -36,6 +38,10 @@ tags:
 
  * Mejorada la obtención de los datos de los puertos Ethernet.
  * Optimizada la ficha de CPE, disminuyendo el tiempo de carga y el consumo de memoria.
+
+**Corrección de errores**:
+
+ * Solventados problemas en el test de velocidad en CPE.
 
 ## Febrero 2025
 
