@@ -26,6 +26,10 @@ tags:
  * Preparación del API para soportar OpenAPI 3.0.
  * En ZTE, añadimos el tag de VLAN y priority en la configuración de TR-069 para mejorar la compatibilidad con modelos de ONU de distintos fabricantes.
  * Se han añadido varias mejoras menores en el visor de leases.
+ * Soporte añadido para la monitorización de los modelos Fiberhome HG6243C / HG6244C.
+ * Soporte añadido para la monitorización de los modelos Nokia G-0425G-C / G-1425G-B.
+ * Añadido para la provisión en ZTE el tag de vlan y priority en la configuración de TR069, para compatibilizarla con modelos de ONU de distinto fabricatente.
+ * Añadida la posibilidad de usar el modo "tag" en el mapeo de puertos ethernet para la provisión con VSol.
 
 **Corrección de errores**:
 
@@ -38,10 +42,15 @@ tags:
 
  * Mejorada la obtención de los datos de los puertos Ethernet.
  * Optimizada la ficha de CPE, disminuyendo el tiempo de carga y el consumo de memoria.
+ * Mejorado el visor de leases DHCP:
+    - En IPv4 el tiempo de concesión se mostrará en días u horas.
+    - En IPv6 se ha reducido el número de campos de la tabla. 
 
 **Corrección de errores**:
 
  * Solventados problemas en el test de velocidad en CPE.
+ * Deshabilitado el mensaje de error que indica que no hay conexión con el servidor ACS para modelos que no tienen TR069.
+ * Corregido un bug por el que se mostraba la validación del número de serie al crear un CPE sin número de serie.
 
 ## Febrero 2025
 
