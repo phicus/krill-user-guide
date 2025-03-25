@@ -26,6 +26,10 @@ tags:
  * Preparation of the API to support OpenAPI 3.0.
  * At ZTE, we added the VLAN tag and priority in the TR-069 configuration to improve compatibility with UNO models from different manufacturers.
  * Added several minor improvements to the lease viewer.
+ * Added support for monitoring of Fiberhome HG6243C / HG6244C models.
+ * Added support for monitoring Nokia G-0425G-C / G-1425G-B models.
+ * Added for provisioning in ZTE the vlan tag and priority in the TR069 configuration, to make it compatible with UNO models from different manufacturers.
+ * Added the possibility to use the ‘tag’ mode in the ethernet port mapping for provisioning with VSol.
 
 **Some minor bugfixes**:
 
@@ -38,10 +42,15 @@ tags:
 
  * Improved data retrieval from Ethernet ports.
  * Optimised the CPE tab, decreasing the loading time and memory consumption.
+ * Improved DHCP lease viewer:
+    - In IPv4 the lease time will be displayed in days or hours.
+    - In IPv6 the number of fields in the table has been reduced. 
 
 **Some minor bugfixes**:
  
  * Issues resolved in the CPE's Speed test.
+ * Disabled the error message indicating no connection to the ACS server for models without TR069.
+ * Fixed a bug where the serial number validation was displayed when creating a CPE without serial number.
 
 ## February 2025
 
