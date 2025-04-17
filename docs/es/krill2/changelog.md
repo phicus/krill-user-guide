@@ -15,6 +15,29 @@ tags:
 
 # Novedades
 
+## Abril 2025
+
+### Krill
+
+**Nuevas funcionalidades**:
+
+ * Se ha eliminado Swagger 2.0 y en su lugar se han integrado Swagger UI y Redoc, ambos compatibles con OpenAPI 3.0.
+ * Se ha mejorado el tiempo de respuesta ante una caída de sesión BGP en equipos de core
+
+### Krill-UI
+
+**Nuevas funcionalidades**:
+
+ * Añadida la función de búsqueda en la aplicación Admin (NAPs) cuando sea posible.
+ * Se ha habilitado la posibilidad de modificar las coordenadas directamente a la hora de crear un NAP
+ * Se visualizará el número exacto de sesiones en la gráfica de active-sessions
+
+**Corrección de errores**:
+
+ * Errores corregidos en la ficha de un CPE.
+ * Revisada la obtención de los cables ethernet de la ficha para arreglar un error con el modelo AX1GPV.
+ * Corregido el error que no se pudiera copiar una IP en ficha CPE.
+
 ## Marzo 2025
 
 ### Krill

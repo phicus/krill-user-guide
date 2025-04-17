@@ -15,6 +15,29 @@ tags:
 
 # Changelog
 
+### April 2025
+
+### Krill
+
+**New features**:
+
+ * Swagger 2.0 has been removed and replaced with Swagger UI and Redoc, both compatible with OpenAPI 3.0.
+ * Improved response time for a BGP session drop in core equipment.
+
+### Krill-UI
+
+**New features**:
+
+ * Added search function in the Admin application (NAPs) when possible.
+ * Enabled the ability to modify coordinates directly when creating a NAP.
+ * The exact number of sessions will be displayed in the active-sessions graph.
+
+**Some minor bugfixes**:
+
+ * Fixed errors in the CPE record.
+ * Reviewed the retrieval of ethernet cables in the record to fix an error with the AX1GPV model.
+ * Fixed the error that prevented copying an IP in the CPE record.
+
 ## March 2025
 
 ### Krill
