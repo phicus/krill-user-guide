@@ -15,6 +15,26 @@ tags:
 
 # Changelog
 
+### May 2025
+
+### Krill
+
+**New features**:
+
+ * Added the possibility to filter by OLT the UNOs pending provisioning.
+ * We optimised the monitoring of the Huawei HG8247T model.
+
+### Krill-UI
+
+**New features**:
+
+ * Modified Matrix view to show attributes with the same name stacked in the services view.
+
+**Some minor bugfixes**:
+
+ * Fixed a visual bug related to refreshing of CPEs graphs when changing filters.
+ * Fixed missing data in the tab timeline.
+
 ### April 2025
 
 ### Krill
