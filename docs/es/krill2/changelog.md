@@ -15,6 +15,26 @@ tags:
 
 # Novedades
 
+## Mayo 2025
+
+### Krill
+
+**Nuevas funcionalidades**:
+
+ * Se añade la posibilidad de filtrar por OLT las ONUs pendientes de provisión.
+ * Optimizamos la monitorización del modelo Huawei HG8247T.
+
+### Krill-UI
+
+**Nuevas funcionalidades**:
+
+ * Modificada la vista Matrix para que enseñe los atributos con el mismo nombre apilados en la vista de servicios.
+
+**Corrección de errores**:
+
+ * Arreglado un error visual relacionado al refresco de las gráficas de los CPEs cuando se cambiaban los filtros.
+ * Corregida la falta de datos en el timeline de la ficha.
+
 ## Abril 2025
 
 ### Krill
