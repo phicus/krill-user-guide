@@ -24,11 +24,17 @@ tags:
  * Added the possibility to filter by OLT the UNOs pending provisioning.
  * We optimised the monitoring of the Huawei HG8247T model.
 
+**Some minor bugfixes**:
+
+ * Several minor errors fixed.
+ * Fixed service issue in Krill API when restarting RabbitMQ.
+
 ### Krill-UI
 
 **New features**:
 
  * Modified Matrix view to show attributes with the same name stacked in the services view.
+ * Optimized data loading on the form, reducing load time
 
 **Some minor bugfixes**:
 

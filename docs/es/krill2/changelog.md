@@ -24,11 +24,17 @@ tags:
  * Se añade la posibilidad de filtrar por OLT las ONUs pendientes de provisión.
  * Optimizamos la monitorización del modelo Huawei HG8247T.
 
+**Corrección de errores**:
+
+ * Solventados varios errores menores.
+ * Solventado problema de servicio en API de Krill ante un reinicio de RabbitMQ.
+
 ### Krill-UI
 
 **Nuevas funcionalidades**:
 
  * Modificada la vista Matrix para que enseñe los atributos con el mismo nombre apilados en la vista de servicios.
+ * Optimizada la carga de datos en la ficha, reduciendo el tiempo de carga.
 
 **Corrección de errores**:
 
