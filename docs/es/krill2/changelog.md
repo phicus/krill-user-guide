@@ -23,6 +23,8 @@ tags:
 
  * Se añade la posibilidad de filtrar por OLT las ONUs pendientes de provisión.
  * Optimizamos la monitorización del modelo Huawei HG8247T.
+ * Se optimiza la tarea de provisión de los CPEs a los que se se habilita / deshabilita el acceso a internet (OLTs Huawei y ZTE).
+ * Se ha añadido a nivel de POTs en el API de ISP el campo billing_profile.
 
 **Corrección de errores**:
 
@@ -40,6 +42,7 @@ tags:
 
  * Arreglado un error visual relacionado al refresco de las gráficas de los CPEs cuando se cambiaban los filtros.
  * Corregida la falta de datos en el timeline de la ficha.
+ * Corregido el error por el cuál no se mostraba traceroute test.
 
 ## Abril 2025
 
