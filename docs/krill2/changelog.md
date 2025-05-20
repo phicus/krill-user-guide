@@ -23,6 +23,8 @@ tags:
 
  * Added the possibility to filter by OLT the UNOs pending provisioning.
  * We optimised the monitoring of the Huawei HG8247T model.
+ * The task of provisioning CPEs that are enabled/disabled for internet access (Huawei and ZTE OLTs) is optimized.
+ * The billing_profile field has been added at the POTs level in the ISP API.
 
 **Some minor bugfixes**:
 
@@ -40,6 +42,7 @@ tags:
 
  * Fixed a visual bug related to refreshing of CPEs graphs when changing filters.
  * Fixed missing data in the tab timeline.
+ * Fixed the error that prevented the traceroute test from displaying.
 
 ### April 2025
 
