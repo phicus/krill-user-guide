@@ -25,24 +25,33 @@ tags:
  * We optimised the monitoring of the Huawei HG8247T model.
  * The task of provisioning CPEs that are enabled/disabled for internet access (Huawei and ZTE OLTs) is optimized.
  * The billing_profile field has been added at the POTs level in the ISP API.
+ * GPON API available in Swagger.
+ * Influx monitoring added.
+ * New PON port bandwidth graphs for Calix OLTs.
 
 **Some minor bugfixes**:
 
  * Several minor errors fixed.
  * Fixed service issue in Krill API when restarting RabbitMQ.
+ * Correction in fixed IP delivery in bitstream scenarios.
+ * Correct telephony status for F680 model.
 
 ### Krill-UI
 
 **New features**:
 
  * Modified Matrix view to show attributes with the same name stacked in the services view.
- * Optimized data loading on the form, reducing load time
+ * Optimized data loading on the form, reducing load time.
+ * TR181 support for Ethernet Stack interfaces.
+ * Wifi-neighboring diagnostics added for ZTE F670L model.
 
 **Some minor bugfixes**:
 
  * Fixed a visual bug related to refreshing of CPEs graphs when changing filters.
  * Fixed missing data in the tab timeline.
  * Fixed the error that prevented the traceroute test from displaying.
+ * CPE file: correction in telephony monitoring in some models.
+ * Correct telephony monitoring in models with TR181.
 
 ### April 2025
 
