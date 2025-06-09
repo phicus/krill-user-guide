@@ -15,6 +15,27 @@ tags:
 
 # Novedades
 
+## Junio 2025
+
+### Krill
+
+**Nuevas funcionalidades**:
+
+ * Se añadió la posibilidad de establecer la URL del ACS en OLTs ZTE vía OMCI para equipos de diferentes fabricantes.
+
+**Corrección de errores**:
+
+ * Solucionado error que impedía mostrar la IP en web para equipos WIMAX bajo ciertas condiciones.
+ * Se resolvieron problemas de SSL relacionados con certificados
+
+
+### Krill-UI
+
+**Nuevas funcionalidades**:
+
+ * Mejorada la vista POTs, solo mostrará CPEs que tenga un CLI asociado.
+ * Arreglado un error en la vista de opciones de radio que impedía reactivar un SSID desactivado. 
+
 ## Mayo 2025
 
 ### Krill
@@ -35,6 +56,7 @@ tags:
  * Solventado problema de servicio en API de Krill ante un reinicio de RabbitMQ.
  * Corrección en entrega de IP fija en escenarios bitstream.
  * Estado correcto de telefonía para modelo F680.
+
 
 ### Krill-UI
 
