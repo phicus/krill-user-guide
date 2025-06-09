@@ -15,6 +15,27 @@ tags:
 
 # Novedades
 
+## Junio 2025
+
+### Krill
+
+**Nuevas funcionalidades**:
+
+ * Se añadió la posibilidad de establecer la URL del ACS en OLTs ZTE vía OMCI para equipos de diferentes fabricantes.
+
+**Corrección de errores**:
+
+ * Solucionado error que impedía mostrar la IP en web para equipos WIMAX bajo ciertas condiciones.
+ * Se resolvieron problemas de SSL relacionados con certificados
+
+
+### Krill-UI
+
+**Nuevas funcionalidades**:
+
+ * Mejorada la vista POTs, solo mostrará CPEs que tenga un CLI asociado.
+ * Arreglado un error en la vista de opciones de radio que impedía reactivar un SSID desactivado. 
+
 ## Mayo 2025
 
 ### Krill
@@ -25,11 +46,17 @@ tags:
  * Optimizamos la monitorización del modelo Huawei HG8247T.
  * Se optimiza la tarea de provisión de los CPEs a los que se se habilita / deshabilita el acceso a internet (OLTs Huawei y ZTE).
  * Se ha añadido a nivel de POTs en el API de ISP el campo billing_profile.
+ * API de GPON disponible en Swagger.
+ * Monitorización de Influx añadida.
+ * Nuevas gráficas de ancho de banda en puertos PON para OLTs Calix.
 
 **Corrección de errores**:
 
  * Solventados varios errores menores.
  * Solventado problema de servicio en API de Krill ante un reinicio de RabbitMQ.
+ * Corrección en entrega de IP fija en escenarios bitstream.
+ * Estado correcto de telefonía para modelo F680.
+
 
 ### Krill-UI
 
@@ -37,12 +64,16 @@ tags:
 
  * Modificada la vista Matrix para que enseñe los atributos con el mismo nombre apilados en la vista de servicios.
  * Optimizada la carga de datos en la ficha, reduciendo el tiempo de carga.
+ * Soporte TR181 para interfaces ethernet tipo Stack.
+ * Diagnóstico de wifi-neighboring añadido para el modelo ZTE F670L.
 
 **Corrección de errores**:
 
  * Arreglado un error visual relacionado al refresco de las gráficas de los CPEs cuando se cambiaban los filtros.
  * Corregida la falta de datos en el timeline de la ficha.
  * Corregido el error por el cuál no se mostraba traceroute test.
+ * Ficha del CPE: corrección en la monitorización de telefonía en algunos modelos.
+ * Monitorización correcta de telefonía en modelos con TR181.
 
 ## Abril 2025
 
