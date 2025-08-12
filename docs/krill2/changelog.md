@@ -19,6 +19,7 @@ tags:
 
 **New features**:
 
+* Traceroute, Download, Upload, and WiFi Neighboring diagnostics have been configured for the TP-Link Archer C80 model.
 * Added the option to modify bandwidth via API for models using TR181.
 * Improvements to the CTO monitoring interface, including displaying the name next to the ID when searching for NAPs.
 * Implemented a UI change to adapt proxy2, which prevents the IP from being passed directly.
@@ -30,6 +31,7 @@ tags:
 
 **Some minor bugfixes**:
 
+* Fixed a bug that caused excessive disk usage.
 * Added the ability to sort by administrative data columns in the Matrix view.
 * Addressed the failure to perform a reconfig by ispcli of ispadmin in some specific cases.
 
