@@ -15,6 +15,24 @@ tags:
 
 # Novedades
 
+## Agosto 2025
+
+**Nuevas funcionalidades**:
+
+* Se ha añadido la opción de modificar el ancho de banda vía API para modelos que usen TR181.
+* Mejoras en la interfaz de monitorización de CTOs, incluyendo la visualización del nombre junto al ID al buscar NAPs.
+* Se ha implementado un cambio de la UI para adaptar el proxy2 que evita pasar la IP directamente.
+* Se ha revisado swagger para mostrar JSON en /isp/cpes.
+* Se han refactorizado los links de CPE para ser compatibles con proxy2, manteniendo la compatibilidad con proxy1.
+* Se ha implementado la distancia entre ONT y OLT en OLTs ZTE.
+* Arreglado un error que evitaba buscar por regtag y regstate a la vez en la vista Matrix.
+* Añadido el campo external_id del customer a la vista Matrix.
+
+**Corrección de errores**:
+
+* Se ha añadido la posibilidad de ordenar por columnas de datos administrativos en la vista Matrix.
+* Se ha abordado el fallo al realizar un reconfig por ispcli de ispadmin en algunos casos concretos.
+
 ## Junio 2025
 
 ### Krill
