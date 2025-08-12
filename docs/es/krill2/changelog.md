@@ -17,8 +17,10 @@ tags:
 
 ## Agosto 2025
 
-**Nuevas funcionalidades**:
+### Krill
 
+**Nuevas funcionalidades**:
+* Se han parametrizado los diagnósticos de Traceroute, Download, Upload y WiFi Neighboring para el modelo TP-Link Archer C80.
 * Se ha añadido la opción de modificar el ancho de banda vía API para modelos que usen TR181.
 * Mejoras en la interfaz de monitorización de CTOs, incluyendo la visualización del nombre junto al ID al buscar NAPs.
 * Se ha implementado un cambio de la UI para adaptar el proxy2 que evita pasar la IP directamente.
@@ -29,9 +31,10 @@ tags:
 * Añadido el campo external_id del customer a la vista Matrix.
 
 **Corrección de errores**:
-
+* Se ha arreglado un error que causaba consumo excesivo del disco.
 * Se ha añadido la posibilidad de ordenar por columnas de datos administrativos en la vista Matrix.
 * Se ha abordado el fallo al realizar un reconfig por ispcli de ispadmin en algunos casos concretos.
+
 
 ## Junio 2025
 
