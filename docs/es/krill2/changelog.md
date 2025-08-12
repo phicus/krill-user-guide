@@ -40,12 +40,15 @@ tags:
 **Nuevas funcionalidades**:
 
  * Se añadió la posibilidad de establecer la URL del ACS en OLTs ZTE vía OMCI para equipos de diferentes fabricantes.
+ * Se añadió una caché para reducir las solicitudes repetidas a la API de KEA.
+ * Se actualizó la criticidad de las alarmas para hacer que los canales de Slack sean menos ruidosos.
 
 **Corrección de errores**:
 
  * Solucionado error que impedía mostrar la IP en web para equipos WIMAX bajo ciertas condiciones.
  * Se resolvieron problemas de SSL relacionados con certificados
-
+ * Se corrigió un problema por el que las IP privadas de los dispositivos Wimax asignadas vía DHCP no siempre se mostraban en la vista de monitoreo.
+ * Se corrigió un problema por el que la visibilidad de la IP se perdía en la interfaz web para los dispositivos Wimax conectados mediante PPPoE.
 
 ### Krill-UI
 
@@ -53,6 +56,7 @@ tags:
 
  * Mejorada la vista POTs, solo mostrará CPEs que tenga un CLI asociado.
  * Arreglado un error en la vista de opciones de radio que impedía reactivar un SSID desactivado. 
+ * Se corrigió un problema que impedía que algunas traps de Huawei OLT se procesaran correctamente.
 
 ## Mayo 2025
 
