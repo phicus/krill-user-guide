@@ -35,7 +35,7 @@ tags:
 * Fixed a bug that caused excessive disk usage.
 * Added the ability to sort by administrative data columns in the Matrix view.
 * Addressed the failure to perform a reconfig by ispcli of ispadmin in some specific cases.
-Fixed an issue when performing a reconfig via ispcli on the new Krills.
+* Fixed an issue when performing a reconfig via ispcli on the new Krills.
 * Fixed an issue with Radius and Netelastic where the correct Framed-Pool attribute was not returned when the status was unpaid.
 * Resolved a failure that prevented performing a reconfig via ISPCLI.
 
