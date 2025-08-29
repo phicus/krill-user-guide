@@ -428,3 +428,565 @@ Here you can query, create, modify and delete Rubik objects (Addresses, Services
 Endpoint: `/api/v2/plankton`
 
 En este endpoint puedes listar, crear, modificar y eliminar los servicios FTTH de Plankton para integrarlos con el CRM.
+
+
+#### Ejemplos de consultas a la API
+
+### Obtener los cpe con un pondesv mayor o igual a 2
+
+```bash
+http --stream -a usuario:contraseña krill.phicus.es:4780/api/v2/monitoring/search type==Service perfdata.pondesv__gt==2 -->
+ {
+            "attrs": {
+                "acknowledged": 0,
+                "acknowledgement": 0,
+                "address": "",
+                "alarm": 0,
+                "business_impact": 1,
+                "check_attempt": 1,
+                "check_command": "check_txrx",
+                "check_interval": 604800,
+                "check_period": "",
+                "downtime": 0,
+                "downtime_depth": 0,
+                "downtimed": 0,
+                "enable_active_checks": 0,
+                "enable_passive_checks": 1,
+                "flap_detection_enabled": 0,
+                "handled": 1,
+                "has_been_checked": 1,
+                "host_name": "cpe25365",
+                "is_flapping": 0,
+                "last_check": "2025-08-07T20:47:57.982000-05:00",
+                "last_hard_state": 0,
+                "last_hard_state_change": "2025-08-06T20:48:05-05:00",
+                "last_state_change": "2025-08-06T20:48:05-05:00",
+                "latency": 982,
+                "long_output": null,
+                "max_check_attempts": 1,
+                "next_check": "2025-08-14T20:47:57.982000-05:00",
+                "output": "pondesv=2.32 > 2.00!",
+                "perfdata": [
+                    {
+                        "critical": -8.0,
+                        "max": 5.0,
+                        "min": -49.0,
+                        "name": "dnrx",
+                        "uom": "",
+                        "value": -21.55,
+                        "warning": -11.0
+                    },
+                    {
+                        "critical": 16.0,
+                        "max": 15.0,
+                        "min": -10.0,
+                        "name": "uptx",
+                        "uom": "",
+                        "value": 2.67,
+                        "warning": 15.0
+                    },
+                    {
+                        "critical": -9.0,
+                        "max": 5.0,
+                        "min": -49.0,
+                        "name": "uprx",
+                        "uom": "",
+                        "value": -24.95,
+                        "warning": -12.0
+                    },
+                    {
+                        "critical": 50.0,
+                        "max": 60.0,
+                        "min": 1.0,
+                        "name": "dnatt",
+                        "uom": "",
+                        "value": 26.61,
+                        "warning": 30.0
+                    },
+                    {
+                        "critical": 50.0,
+                        "max": 60.0,
+                        "min": 1.0,
+                        "name": "upatt",
+                        "uom": "",
+                        "value": 27.62,
+                        "warning": 30.0
+                    },
+                    {
+                        "critical": 4.0,
+                        "max": 10.0,
+                        "min": -10.0,
+                        "name": "pondesv",
+                        "uom": "",
+                        "value": 2.32,
+                        "warning": 2.0
+                    }
+                ],
+                "problem": 1,
+                "retry_interval": 60,
+                "service_name": "txrx",
+                "severity": 1056,
+                "state": 1,
+                "state_long": "warning",
+                "state_type": 1,
+                "vars": {
+                    "administrative_info": {
+                        "access": false,
+                        "actions": [
+                            "diagnostic",
+                            "factory",
+                            "reboot",
+                            "reconfig",
+                            "reprovision",
+                            "unprovision"
+                        ],
+                        "active": true,
+                        "address":
+                        "address_profile":
+                        "customer_address":
+                        "customer_external_id":
+                        "customer_name":
+                        "external_voip": false,
+                        "id": 25365,
+                        "latitude": 10.414488,
+                        "line_profile": "residential",
+                        "longitude": -75.502681,
+                        "model": "G-0425G-C",
+                        "potses": [],
+                        "profile_downstream": "400M",
+                        "profile_name": "400 MB",
+                        "profile_upstream": "400M",
+                        "realm": "cpe",
+                        "services": [
+                            "dhcp",
+                            "provision",
+                            "tr069",
+                            "txrx"
+                        ],
+                        "sn": "414c434cfcc55390",
+                        "tech": "gpon",
+                        "tr069": true,
+                        "vendor": "ALCL"
+                    },
+                    "business_impact": 1,
+                    "cpe_registration_host": "OLT1",
+                    "cpe_registration_id": "0/7/7-35",
+                    "cpe_registration_state": "dyinggasp",
+                    "cpe_registration_tags": "OLT01-0/7/7",
+                    "model": "G-0425G-C",
+                    "search": " ",
+                    "type": "cpe",
+                    "vendor": "ALCL"
+                }
+            },
+            "joins": {},
+            "meta": {},
+            "name": "cpe25365!txrx",
+            "type": "Service"
+        },
+```
+
+### Para buscar cpe con problemas
+```bash
+http --stream -a usuario:contraseña krill.phicus.es:4780/api/v2/monitoring/search type==Service perfdata.pondesv__gt==2 | jq '.results[] | {cpe: .name, olt: .attrs.vars.cpe_registration_host}'
+{
+  "cpe": "cpe41385!txrx",
+  "olt": "OLT04"
+}
+{
+  "cpe": "cpe7819!txrx",
+  "olt": "OLT03"
+}
+{
+  "cpe": "cpe0482!txrx",
+  "olt": "OLT03"
+}
+```
+
+### Equipos con alguna alarma de Tx/Rx
+
+```bash
+krill.phicus.es:4780/api/v2/monitoring/search type==Host regstate==alarmhttp --stream -a usuario:contraseña
+ {
+            "attrs": {
+                "acknowledged": 0,
+                "acknowledgement": 0,
+                "address": "",
+                "alarm": 1,
+                "business_impact": 1,
+                "check_attempt": 1,
+                "check_command": "check_cpe",
+                "check_interval": 86400,
+                "check_period": "",
+                "downtime": 0,
+                "downtime_depth": 0,
+                "downtimed": 0,
+                "enable_active_checks": 1,
+                "enable_passive_checks": 1,
+                "flap_detection_enabled": 0,
+                "handled": 0,
+                "has_been_checked": 1,
+                "host_name": "cpe13812",
+                "is_flapping": 0,
+                "last_check": "2025-08-08T06:27:09.854000-05:00",
+                "last_hard_state": 0,
+                "last_hard_state_change": "2025-08-07T17:07:06-05:00",
+                "last_state_change": "2025-08-07T17:07:06-05:00",
+                "latency": 854,
+                "long_output": null,
+                "max_check_attempts": 1,
+                "next_check": "2025-08-09T06:27:09.854000-05:00",
+                "output": "alarm/losi/offline OLT01:0/13/6-6 0.0.0.0",
+                "perfdata": [
+                    {
+                        "critical": null,
+                        "max": null,
+                        "min": null,
+                        "name": "dnbw",
+                        "uom": "",
+                        "value": 0.0,
+                        "warning": null
+                    },
+                    {
+                        "critical": null,
+                        "max": null,
+                        "min": null,
+                        "name": "upbw",
+                        "uom": "",
+                        "value": 0.0,
+                        "warning": null
+                    }
+                ],
+                "problem": 1,
+                "retry_interval": 60,
+                "service_name": "",
+                "severity": 2112,
+                "state": 1,
+                "state_long": "down",
+                "state_type": 1,
+                "vars": {
+                    "administrative_info": {
+                        "access": true,
+                        "actions": [
+                            "diagnostic",
+                            "factory",
+                            "reboot",
+                            "reconfig",
+                            "reprovision",
+                            "unprovision"
+                        ],
+                        "active": true,
+                        "address": "",
+                        "address_profile": "nat",
+                        "customer_address": "",
+                        "customer_external_id": "30116",
+                        "customer_name": "",
+                        "external_voip": false,
+                        "id": 13812,
+                        "latitude": 10.415303,
+                        "line_profile": "residential",
+                        "longitude": -75.457082,
+                        "model": "EG8145V5",
+                        "potses": [],
+                        "profile_downstream": "400M",
+                        "profile_name": "400 MB",
+                        "profile_upstream": "400M",
+                        "realm": "cpe",
+                        "services": [
+                            "dhcp",
+                            "provision",
+                            "tr069",
+                            "txrx"
+                        ],
+                        "sn": "4857544316d237a1",
+                        "tech": "gpon",
+                        "tr069": true,
+                        "vendor": "Huawei"
+                    },
+                    "business_impact": 1,
+                    "cpe_registration_host": "OLT01",
+                    "cpe_registration_id": "0/13/6-6",
+                    "cpe_registration_state": "alarm",
+                    "cpe_registration_tags": "OLT01-0/13/6",
+                    "model": "EG8145V5",
+                    "search": "",
+                    "type": "cpe",
+                    "vendor": "Huawei"
+                }
+            },
+            "joins": {},
+            "meta": {},
+            "name": "cpe13812",
+            "type": "Host"
+        },
+```
+
+### Para revisar cpe alarmados por OLT concreta
+
+```bash
+http --stream -a usuario:contraseña krill.phicus.es:4780/api/v2/monitoring/search type==Host regstate==alarm regtag==CAR-OLT02-0/3/9
+{
+    "count": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "attrs": {
+                "acknowledged": 0,
+                "acknowledgement": 0,
+                "address": "",
+                "alarm": 1,
+                "business_impact": 1,
+                "check_attempt": 1,
+                "check_command": "check_cpe",
+                "check_interval": 86400,
+                "check_period": "",
+                "downtime": 0,
+                "downtime_depth": 0,
+                "downtimed": 0,
+                "enable_active_checks": 1,
+                "enable_passive_checks": 1,
+                "flap_detection_enabled": 0,
+                "handled": 0,
+                "has_been_checked": 1,
+                "host_name": "cpe40250",
+                "is_flapping": 0,
+                "last_check": "2025-08-08T06:01:38.842000-05:00",
+                "last_hard_state": 0,
+                "last_hard_state_change": "2025-08-08T06:01:38-05:00",
+                "last_state_change": "2025-08-08T06:01:38-05:00",
+                "latency": 842,
+                "long_output": null,
+                "max_check_attempts": 1,
+                "next_check": "2025-08-09T06:01:38.842000-05:00",
+                "output": "alarm/losi/offline OLT02:0/3/9-15 0.0.0.0",
+                "perfdata": [
+                    {
+                        "critical": null,
+                        "max": null,
+                        "min": null,
+                        "name": "dnbw",
+                        "uom": "",
+                        "value": 0.0,
+                        "warning": null
+                    },
+                    {
+                        "critical": null,
+                        "max": null,
+                        "min": null,
+                        "name": "upbw",
+                        "uom": "",
+                        "value": 0.0,
+                        "warning": null
+                    }
+                ],
+                "problem": 1,
+                "retry_interval": 60,
+                "service_name": "",
+                "severity": 2112,
+                "state": 1,
+                "state_long": "down",
+                "state_type": 1,
+                "vars": {
+                    "administrative_info": {
+                        "access": true,
+                        "actions": [
+                            "diagnostic",
+                            "factory",
+                            "reboot",
+                            "reconfig",
+                            "reprovision",
+                            "unprovision"
+                        ],
+                        "active": true,
+                        "address": "",
+                        "address_profile": "nat",
+                        "customer_address": "",
+                        "customer_external_id": "",
+                        "customer_name": "",
+                        "external_voip": false,
+                        "id": 40250,
+                        "latitude": 10.927271,
+                        "line_profile": "residential",
+                        "longitude": -74.814567,
+                        "model": "HG6144F",
+                        "potses": [],
+                        "profile_downstream": "400M",
+                        "profile_name": "400 MB",
+                        "profile_upstream": "400M",
+                        "realm": "cpe",
+                        "services": [
+                            "dhcp",
+                            "provision",
+                            "tr069",
+                            "txrx"
+                        ],
+                        "sn": "464854549ca50778",
+                        "tech": "gpon",
+                        "tr069": true,
+                        "vendor": "FiberHome"
+                    },
+                    "business_impact": 1,
+                    "cpe_registration_host": "OLT02",
+                    "cpe_registration_id": "0/3/9-15",
+                    "cpe_registration_state": "alarm",
+                    "cpe_registration_tags": "OLT02-0/3/9",
+                    "model": "HG6144F",
+                    "search": "",
+                    "type": "cpe",
+                    "vendor": "FiberHome"
+                }
+            },
+            "joins": {},
+            "meta": {},
+            "name": "cpe40250",
+            "type": "Host"
+        }
+    ]
+}
+```
+
+### Obtener registration ID directo (PON con numero de ONT)
+
+```bash
+http --stream -a usuario:contraseña krill.phicus.es:4780/api/v2/monitoring/search type==Host regstate==alarm regtag==CAR-OLT02-0/3/9 | jq '.results[] | {regid: .attrs.vars.cpe_registration_id}'
+{
+  "regid": "0/3/9-15"
+}
+``` 
+
+### Otros ejemplos de consulta al monitoring
+
+```bash
+http --stream -a usuario:contraseña krill.phicus.es:4780/api/v2/monitoring/search type==Host reghost==SMR-OLT03 limit==1
+http --stream -a usuario:contraseña krill.phicus.es:4780/api/v2/monitoring/search type==Host reghost==SMR-OLT03 limit==1
+
+{
+    "count": 1732,
+    "next": "http://krill.phicus.es:4780/api/v2/monitoring/search?limit=1&offset=1&reghost=SMR-OLT03&type=Host",
+    "previous": null,
+    "results": [
+        {
+            "attrs": {
+                "acknowledged": 0,
+                "acknowledgement": 0,
+                "address": "",
+                "alarm": 0,
+                "business_impact": 1,
+                "check_attempt": 1,
+                "check_command": "check_cpe",
+                "check_interval": 86400,
+                "check_period": "",
+                "downtime": 0,
+                "downtime_depth": 0,
+                "downtimed": 0,
+                "enable_active_checks": 1,
+                "enable_passive_checks": 1,
+                "flap_detection_enabled": 0,
+                "handled": 0,
+                "has_been_checked": 1,
+                "host_name": "cpe18838",
+                "is_flapping": 0,
+                "last_check": "2025-08-08T09:23:21.265000-05:00",
+                "last_hard_state": 1,
+                "last_hard_state_change": "2025-08-01T18:13:20-05:00",
+                "last_state_change": "2025-08-01T18:13:20-05:00",
+                "latency": 265,
+                "long_output": null,
+                "max_check_attempts": 1,
+                "next_check": "2025-08-09T09:23:21.265000-05:00",
+                "output": "online OLT03:0/14/3-7 0.0.0.0",
+                "perfdata": [
+                    {
+                        "critical": null,
+                        "max": null,
+                        "min": null,
+                        "name": "dnbw",
+                        "uom": "",
+                        "value": 923862.3,
+                        "warning": null
+                    },
+                    {
+                        "critical": null,
+                        "max": null,
+                        "min": null,
+                        "name": "upbw",
+                        "uom": "",
+                        "value": 32692.7,
+                        "warning": null
+                    }
+                ],
+                "problem": 0,
+                "retry_interval": 60,
+                "service_name": "",
+                "severity": 0,
+                "state": 0,
+                "state_long": "up",
+                "state_type": 1,
+                "vars": {
+                    "administrative_info": {
+                        "access": true,
+                        "actions": [
+                            "diagnostic",
+                            "factory",
+                            "reboot",
+                            "reconfig",
+                            "reprovision",
+                            "unprovision"
+                        ],
+                        "active": true,
+                        "address": "",
+                        "address_profile": "nat",
+                        "customer_address": "",
+                        "customer_external_id": "",
+                        "customer_name": "",
+                        "external_voip": false,
+                        "id": 18838,
+                        "latitude": 11.249669,
+                        "line_profile": "residential",
+                        "longitude": -74.172168,
+                        "model": "HG6143D",
+                        "potses": [],
+                        "profile_downstream": "400M",
+                        "profile_name": "400 MB",
+                        "profile_upstream": "400M",
+                        "realm": "cpe",
+                        "services": [
+                            "dhcp",
+                            "provision",
+                            "tr069",
+                            "txrx"
+                        ],
+                        "sn": "",
+                        "tech": "gpon",
+                        "tr069": true,
+                        "vendor": "FiberHome"
+                    },
+                    "business_impact": 1,
+                    "cpe_registration_host": "OLT03",
+                    "cpe_registration_id": "0/14/3-7",
+                    "cpe_registration_state": "online",
+                    "cpe_registration_tags": "OLT03-0/14/3",
+                    "model": "HG6143D",
+                    "search": "",
+                    "type": "cpe",
+                    "vendor": "FiberHome"
+                }
+            },
+            "joins": {},
+            "meta": {},
+            "name": "cpe",
+            "type": "Host"
+        }
+    ]
+}
+```
+### Filtro para sacar cpe y serial
+
+```bash
+http --stream -a usuario:contraseña krill.phicus.es:4780/api/v2/monitoring/search type==Host reghost==SMR-OLT03 limit==1 | jq '.results[] | {name: .name, sn: .attrs.vars.administrative_info.sn}'
+{
+  "name": "cpe18838",
+  "sn": "4648545497b054c0"
+}
+```
