@@ -28,12 +28,16 @@ tags:
 * The distance between ONT and OLT has been implemented in ZTE OLTs.
 * Fixed a bug that prevented searching by regtag and regstate at the same time in the Matrix view.
 * Added the customer's external_id field to the Matrix view.
+* Added the option to query and unban banned IPs in the API through ISPCLI.
 
 **Some minor bugfixes**:
 
 * Fixed a bug that caused excessive disk usage.
 * Added the ability to sort by administrative data columns in the Matrix view.
 * Addressed the failure to perform a reconfig by ispcli of ispadmin in some specific cases.
+Fixed an issue when performing a reconfig via ispcli on the new Krills.
+* Fixed an issue with Radius and Netelastic where the correct Framed-Pool attribute was not returned when the status was unpaid.
+* Resolved a failure that prevented performing a reconfig via ISPCLI.
 
 ### June 2025
 

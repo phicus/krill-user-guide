@@ -29,11 +29,15 @@ tags:
 * Se ha implementado la distancia entre ONT y OLT en OLTs ZTE.
 * Arreglado un error que evitaba buscar por regtag y regstate a la vez en la vista Matrix.
 * Añadido el campo external_id del customer a la vista Matrix.
+* Se ha añadido la opción de consultar y desbanear las IPs baneadas en el API mediante el ISPCLI.
 
 **Corrección de errores**:
 * Se ha arreglado un error que causaba consumo excesivo del disco.
 * Se ha añadido la posibilidad de ordenar por columnas de datos administrativos en la vista Matrix.
 * Se ha abordado el fallo al realizar un reconfig por ispcli de ispadmin en algunos casos concretos.
+* Se ha corregido un fallo al realizar un reconfig por ispcli en los Krills nuevos. 
+* Se ha corregido un problema con Radius y Netelastic por el cual no se devolvía el atributo Framed-Pool correcto cuando el estado era impagado.  
+* Se ha resuelto un fallo que impedía realizar un reconfig por ISPCLI.
 
 
 ## Junio 2025
