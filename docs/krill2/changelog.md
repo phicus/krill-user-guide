@@ -15,29 +15,52 @@ tags:
 
 # Changelog
 
-## August  2025
+## September 2025
+
+### Krill
 
 **New features**:
 
-* Traceroute, Download, Upload, and WiFi Neighboring diagnostics have been configured for the TP-Link Archer C80 model.
-* Added the option to modify bandwidth via API for models using TR181.
-* Improvements to the CTO monitoring interface, including displaying the name next to the ID when searching for NAPs.
-* Implemented a UI change to adapt proxy2, which prevents the IP from being passed directly.
-* Swagger has been revised to display JSON in /isp/cpes.
-* CPE links have been refactored to be compatible with proxy2, while maintaining compatibility with proxy1.
-* The distance between ONT and OLT has been implemented in ZTE OLTs.
-* Fixed a bug that prevented searching by regtag and regstate at the same time in the Matrix view.
-* Added the customer's external_id field to the Matrix view.
-* Added the option to query and unban banned IPs in the API through ISPCLI.
+ * Fixed IP reservation has been implemented for clients in arrears, preventing these addresses from being released when the block is applied.
 
 **Some minor bugfixes**:
 
-* Fixed a bug that caused excessive disk usage.
-* Added the ability to sort by administrative data columns in the Matrix view.
-* Addressed the failure to perform a reconfig by ispcli of ispadmin in some specific cases.
-* Fixed an issue when performing a reconfig via ispcli on the new Krills.
-* Fixed an issue with Radius and Netelastic where the correct Framed-Pool attribute was not returned when the status was unpaid.
-* Resolved a failure that prevented performing a reconfig via ISPCLI.
+ * Fixed several issues in the generation of the URL link for Proxy V2 and management IPs.
+ * Fixed the issue of losing IP visibility on the website for Wimax devices.
+ * Optimized KEA to improve DHCP response after a power outage in a specific area.
+ * Fixed a Calix ONT bug that allowed internet access when the internet option was disabled.
+
+### Krill-UI
+
+**New features**:
+
+ * Added the option to select a GIS NAP in the Installer-Tools APP.
+
+## August 2025
+
+### Krill
+
+**New features**:
+
+ * Traceroute, Download, Upload, and WiFi Neighboring diagnostics have been configured for the TP-Link Archer C80 model.
+ * Added the option to modify bandwidth via API for models using TR181.
+ * Improvements to the CTO monitoring interface, including displaying the name next to the ID when searching for NAPs.
+ * Implemented a UI change to adapt proxy2, which prevents the IP from being passed directly.
+ * Swagger has been revised to display JSON in /isp/cpes.
+ * CPE links have been refactored to be compatible with proxy2, while maintaining compatibility with proxy1.
+ * The distance between ONT and OLT has been implemented in ZTE OLTs.
+ * Fixed a bug that prevented searching by regtag and regstate at the same time in the Matrix view.
+ * Added the customer's external_id field to the Matrix view.
+ * Added the option to query and unban banned IPs in the API through ISPCLI.
+
+**Some minor bugfixes**:
+
+ * Fixed a bug that caused excessive disk usage.
+ * Added the ability to sort by administrative data columns in the Matrix view.
+ * Addressed the failure to perform a reconfig by ispcli of ispadmin in some specific cases.
+ * Fixed an issue when performing a reconfig via ispcli on the new Krills.
+ * Fixed an issue with Radius and Netelastic where the correct Framed-Pool attribute was not returned when the status was unpaid.
+ * Resolved a failure that prevented performing a reconfig via ISPCLI.
 
 ### June 2025
 
