@@ -15,29 +15,53 @@ tags:
 
 # Novedades
 
+## Septiembre 2025
+
+### Krill
+
+**Nuevas funcionalidades**:
+
+ * Se ha implementado la reserva de IPs fijas para clientes en estado de impago, evitando que estas direcciones se liberen al aplicar el bloqueo.
+
+**Corrección de errores**:
+
+ * Se han corregido diversos fallos en la generación del enlace de URL para Proxy V2 e IPs de gestión.
+ * Se ha corregido el problema de pérdida de visibilidad de la IP en la web para equipos Wimax.
+ * Se ha optimizado KEA para mejorar la respuesta del DHCP ante un corte eléctrico en una determinada zona.
+ * Se ha corregido un bug de ONT Calix que permitía acceso a internet desactivado cuando tenían el check de internet desactivado.
+
+### Krill-UI
+
+**Nuevas funcionalidades**:
+
+ * Se ha añadido la opción de seleccionar un NAP de GIS en la APP Installer-Tools.
+
+
 ## Agosto 2025
 
 ### Krill
 
 **Nuevas funcionalidades**:
-* Se han parametrizado los diagnósticos de Traceroute, Download, Upload y WiFi Neighboring para el modelo TP-Link Archer C80.
-* Se ha añadido la opción de modificar el ancho de banda vía API para modelos que usen TR181.
-* Mejoras en la interfaz de monitorización de CTOs, incluyendo la visualización del nombre junto al ID al buscar NAPs.
-* Se ha implementado un cambio de la UI para adaptar el proxy2 que evita pasar la IP directamente.
-* Se ha revisado swagger para mostrar JSON en /isp/cpes.
-* Se han refactorizado los links de CPE para ser compatibles con proxy2, manteniendo la compatibilidad con proxy1.
-* Se ha implementado la distancia entre ONT y OLT en OLTs ZTE.
-* Arreglado un error que evitaba buscar por regtag y regstate a la vez en la vista Matrix.
-* Añadido el campo external_id del customer a la vista Matrix.
-* Se ha añadido la opción de consultar y desbanear las IPs baneadas en el API mediante el ISPCLI.
+
+ * Se han parametrizado los diagnósticos de Traceroute, Download, Upload y WiFi Neighboring para el modelo TP-Link Archer C80.
+ * Se ha añadido la opción de modificar el ancho de banda vía API para modelos que usen TR181.
+ * Mejoras en la interfaz de monitorización de CTOs, incluyendo la visualización del nombre junto al ID al buscar NAPs.
+ * Se ha implementado un cambio de la UI para adaptar el proxy2 que evita pasar la IP directamente.
+ * Se ha revisado swagger para mostrar JSON en /isp/cpes.
+ * Se han refactorizado los links de CPE para ser compatibles con proxy2, manteniendo la compatibilidad con proxy1.
+ * Se ha implementado la distancia entre ONT y OLT en OLTs ZTE.
+ * Arreglado un error que evitaba buscar por regtag y regstate a la vez en la vista Matrix.
+ * Añadido el campo external_id del customer a la vista Matrix.
+ * Se ha añadido la opción de consultar y desbanear las IPs baneadas en el API mediante el ISPCLI.
 
 **Corrección de errores**:
-* Se ha arreglado un error que causaba consumo excesivo del disco.
-* Se ha añadido la posibilidad de ordenar por columnas de datos administrativos en la vista Matrix.
-* Se ha abordado el fallo al realizar un reconfig por ispcli de ispadmin en algunos casos concretos.
-* Se ha corregido un fallo al realizar un reconfig por ispcli en los Krills nuevos. 
-* Se ha corregido un problema con Radius y Netelastic por el cual no se devolvía el atributo Framed-Pool correcto cuando el estado era impagado.  
-* Se ha resuelto un fallo que impedía realizar un reconfig por ISPCLI.
+
+ * Se ha arreglado un error que causaba consumo excesivo del disco.
+ * Se ha añadido la posibilidad de ordenar por columnas de datos administrativos en la vista Matrix.
+ * Se ha abordado el fallo al realizar un reconfig por ispcli de ispadmin en algunos casos concretos.
+ * Se ha corregido un fallo al realizar un reconfig por ispcli en los Krills nuevos. 
+ * Se ha corregido un problema con Radius y Netelastic por el cual no se devolvía el atributo Framed-Pool correcto cuando el estado era impagado.  
+ * Se ha resuelto un fallo que impedía realizar un reconfig por ISPCLI.
 
 
 ## Junio 2025
