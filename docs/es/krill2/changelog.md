@@ -21,6 +21,7 @@ tags:
 
 **Nuevas funcionalidades**:
 
+ * Se ha añadido la opción de reprovisionar ONUs desde el ISP-CLI.
  * Se ha implementado la reserva de IPs fijas para clientes en estado de impago, evitando que estas direcciones se liberen al aplicar el bloqueo.
 
 **Corrección de errores**:

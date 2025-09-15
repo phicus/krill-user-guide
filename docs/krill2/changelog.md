@@ -20,7 +20,7 @@ tags:
 ### Krill
 
 **New features**:
-
+Added the option to reprovision ONUs from the ISP-CLI.
  * Fixed IP reservation has been implemented for clients in arrears, preventing these addresses from being released when the block is applied.
 
 **Some minor bugfixes**:
