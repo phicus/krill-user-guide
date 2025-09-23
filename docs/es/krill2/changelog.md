@@ -23,6 +23,9 @@ tags:
 
  * Se ha añadido la opción de reprovisionar ONUs desde el ISP-CLI.
  * Se ha implementado la reserva de IPs fijas para clientes en estado de impago, evitando que estas direcciones se liberen al aplicar el bloqueo.
+ * Se permite no asignar velocidad a CPEs de bitstream.
+ * Se permite cambiar la frecuencia de los Upstreams en redes DOCSIS desde la UI.
+
 
 **Corrección de errores**:
 
@@ -30,6 +33,7 @@ tags:
  * Se ha corregido el problema de pérdida de visibilidad de la IP en la web para equipos Wimax.
  * Se ha optimizado KEA para mejorar la respuesta del DHCP ante un corte eléctrico en una determinada zona.
  * Se ha corregido un bug de ONT Calix que permitía acceso a internet desactivado cuando tenían el check de internet desactivado.
+ * Se ha corregido un error 401 al iniciar sesión en Krill.
 
 ### Krill-UI
 
@@ -37,6 +41,10 @@ tags:
 
  * Se ha añadido la opción de seleccionar un NAP de GIS en la APP Installer-Tools.
 
+**Corrección de errores**:
+
+ * Se ha corregido un bug por el cual la pantalla de login podía arrojar errores mal formateados.
+ * Se han realizado varias optimizaciones a la ficha de datos administrativos del CPE para evitar ralentizaciones durante la edición.
 
 ## Agosto 2025
 
