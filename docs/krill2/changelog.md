@@ -24,6 +24,7 @@ tags:
  * Fixed IP reservation has been implemented for clients in arrears, preventing these addresses from being released when the block is applied.
  * It is allowed not to assign speed to bitstream CPEs.
  * It is allowed to change the frequency of Upstreams in DOCSIS networks from the UI.
+ * Added support for WAN monitoring on the TP-Link XX530v model.
 
 **Some minor bugfixes**:
 
@@ -32,17 +33,22 @@ tags:
  * Optimized KEA to improve DHCP response after a power outage in a specific area.
  * Fixed a Calix ONT bug that allowed internet access when the internet option was disabled.
  * The 401 error when logging into Krill has been fixed.
+ * Fixed a decoding issue with certain traps on Huawei OLTs.
+ * Fixed a monitoring issue with Asterisk on servers running Ubuntu 24.
+ * Fixed a display issue with CDRs in the Monitoring module.
 
 ### Krill-UI
 
 **New features**:
 
  * Added the option to select a GIS NAP in the Installer-Tools APP.
+ * Fixed an issue where SSIDs could be displayed under the wrong frequency on certain models and configurations (e.g., an SSID operating on 2.4GHz could also appear under the 5GHz band).
 
 **Some minor bugfixes**:
 
  * A bug has been fixed where the login screen could display improperly formatted errors.
  * Several optimizations have been made to the administrative data sheet of the CPE to prevent slowdowns during editing.
+ * Fixed an issue where iOS devices could not access the logout button.
 
 ## August 2025
 
