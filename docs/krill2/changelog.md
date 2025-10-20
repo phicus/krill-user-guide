@@ -15,6 +15,36 @@ tags:
 
 # Changelog
 
+## October 2025
+
+### Krill
+
+**New features**:
+
+ * Integration of TP-Link DS-P7000 family OLTs.
+ * Resource optimization in WiFi/WiMAX network monitoring.
+ * Core monitoring improvements: configurable edge detection, full monitoring support for older Ubiquiti models, and reduced server resource consumption.
+ * Enhanced monitoring for Ubiquiti AirMax Point-to-Point links.
+ * Improvements in krill-docsis: lower resource usage during monitoring, UI-based editing of return frequencies, and improved CLI tools.
+ * Added the billing_profile field to the POTS API.
+ * Restored alarms for critical services such as disk usage status.
+
+### Krill-UI
+
+**New features**:
+
+ * Improved reliability of voice service monitoring in the CPE details view.
+
+**Some minor bugfixes**:
+
+ * Fixed an issue where mobile devices with small screens couldn’t access the logout button.
+ * Fixed an issue where Matrix CSV export did not include device IPs.
+ * Fixed several bugs that could prevent access to the NAPs application.
+ * Fixed an issue where the CPE view’s graph container could be vertically cut off on large screens.
+ * Fixed an issue where the login button in the interface could become disabled under rare circumstances.
+ * Fixed an issue where the hostevents table could display incorrect dates for certain events.
+ * Fixed an issue in the management of bitstream CPEs without a speed profile.
+
 ## September 2025
 
 ### Krill
