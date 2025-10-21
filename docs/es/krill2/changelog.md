@@ -15,6 +15,38 @@ tags:
 
 # Novedades
 
+## Octubre 2025
+
+### Krill
+ * Ampliado el campo external_id para las entidades CPE y CUSTOMER a 256.
+ * Se ha integrado el API V2 de Adamo en Rubik.
+ * Nueva funcionalidad de búsqueda por DDI asociados a PBX virtuales en la vista CDR.
+ * Se realizan los cambios necesarios para monitorizar vía TR069 el modelo AG12 de Mercusys
+ * Integración de las OLTs de la familia DS-P7000 de TP-Link.
+ * Optimización de recursos en la monitorización de reds WiFi/WiMAX.
+ * Mejoras en la monitoización del core: detección de flancos parametrizable, modelos antiguos de Ubiquiti ahora se monitorizan de forma completa. Y gastando menos recursos del servidor.
+ * Monitorización mejorada de los Punto a Punto Ubiquiti AirMax.
+ * Mejoras en krill-docsis: monitorización con menos recursos. Edición por UI de las frecuencias de los retornos. Herramientas mejoradas del CLI.
+ * Se ha añadido el campo billing_profile en el API de POTS.
+ * Se han recuperado las alarmas de servicios críticos como el estado de ocupación del disco.
+
+### Krill-UI
+
+**Nuevas funcionalidades**:
+ * Se ha añadido en matrix la posibilidad de realizar una búsqueda inversa por ciudad.
+ * Se han hecho mejoras en la ficha del CPE para hacer más accesibles el address_profile y varios POTSES
+ * Mejorada la fiabilidad de la monitorización del servicio de voz en la ficha del CPE.
+
+**Corrección de errores**:
+ * Arreglado un error por el cual la vista de hostevents podía no cargar datos en ciertos casos
+ * Arreglado un error por el cual los móviles con pantallas pequeñas no podían acceder al botón de logout
+ * Arreglado un error por el cual la exportación a CSV de Matrix no exportaba las IPs de los equipos
+ * Arreglados diversos errores que podían evitar el acceso a la aplicación de NAPs
+ * Arreglado un error por el que el contenedor de gráficas de la vista de CPE podía cortarse verticalmente en pantallas grandes
+ * Arreglado un error por el cual el botón de login de la interfaz podía deshabilitarse bajo circunstancias poco comunes
+ * Arreglado un error por el cual la tabla de hostevents podía mostrar fechas incorrectas para determinados eventos
+ * Corregido un error en la gestión de CPEs bitstream sin perfil de velocidad.
+
 ## Septiembre 2025
 
 ### Krill
