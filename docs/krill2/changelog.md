@@ -20,7 +20,10 @@ tags:
 ### Krill
 
 **New features**:
-
+ * Expanded the external_id field for CPE and CUSTOMER entities to 256.
+ * Integrated the Adamo v2 API into Rubik.
+ * New search functionality for DDIs associated with virtual PBXs in the CDR view.
+ * Made the necessary changes to monitor the Mercusys AG12 model via TR069.
  * Integration of TP-Link DS-P7000 family OLTs.
  * Resource optimization in WiFi/WiMAX network monitoring.
  * Core monitoring improvements: configurable edge detection, full monitoring support for older Ubiquiti models, and reduced server resource consumption.
@@ -32,11 +35,12 @@ tags:
 ### Krill-UI
 
 **New features**:
-
+ * Improvements have been made to the CPE tab to make the address_profile and several POTSES more accessible.
+ * The ability to perform a reverse city lookup has been added to Matrix.
  * Improved reliability of voice service monitoring in the CPE details view.
 
 **Some minor bugfixes**:
-
+ * Fixed a bug where the hostevents view could fail to load data in certain cases.
  * Fixed an issue where mobile devices with small screens couldn’t access the logout button.
  * Fixed an issue where Matrix CSV export did not include device IPs.
  * Fixed several bugs that could prevent access to the NAPs application.
