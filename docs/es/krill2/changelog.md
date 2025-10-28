@@ -30,12 +30,17 @@ tags:
  * Se ha añadido el campo billing_profile en el API de POTS.
  * Se han recuperado las alarmas de servicios críticos como el estado de ocupación del disco.
 
+
+**Corrección de errores**:
+ * Krill no mostraba correctamente la dirección IPv6 asignada en equipos DOCSIS con KEA.
+
 ### Krill-UI
 
 **Nuevas funcionalidades**:
  * Se ha añadido en matrix la posibilidad de realizar una búsqueda inversa por ciudad.
  * Se han hecho mejoras en la ficha del CPE para hacer más accesibles el address_profile y varios POTSES
  * Mejorada la fiabilidad de la monitorización del servicio de voz en la ficha del CPE.
+
 
 **Corrección de errores**:
  * Arreglado un error por el cual la vista de hostevents podía no cargar datos en ciertos casos
@@ -46,6 +51,7 @@ tags:
  * Arreglado un error por el cual el botón de login de la interfaz podía deshabilitarse bajo circunstancias poco comunes
  * Arreglado un error por el cual la tabla de hostevents podía mostrar fechas incorrectas para determinados eventos
  * Corregido un error en la gestión de CPEs bitstream sin perfil de velocidad.
+ * Arreglado un error por el cual el redondeo de dos o más decimales no se hacía correctamente
 
 ## Septiembre 2025
 
