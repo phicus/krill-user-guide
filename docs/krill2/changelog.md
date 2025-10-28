@@ -32,6 +32,9 @@ tags:
  * Added the billing_profile field to the POTS API.
  * Restored alarms for critical services such as disk usage status.
 
+**Some minor bugfixes**:
+ * Krill did not correctly display the IPv6 address assigned on DOCSIS devices with KEA.
+
 ### Krill-UI
 
 **New features**:
@@ -48,6 +51,7 @@ tags:
  * Fixed an issue where the login button in the interface could become disabled under rare circumstances.
  * Fixed an issue where the hostevents table could display incorrect dates for certain events.
  * Fixed an issue in the management of bitstream CPEs without a speed profile.
+ * Fixed a bug where rounding to two or more decimal places was not done correctly.
 
 ## September 2025
 
