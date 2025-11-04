@@ -15,6 +15,19 @@ tags:
 
 # Changelog
 
+## November 2025
+
+### Krill
+
+**New features**:
+ * A field has been added to the WAN view table in the CPE tab options to display the Status.
+
+
+**Some minor bugfixes**:
+ * A permissions issue has been corrected that allowed Krill users with access to a single realm to view all CPEs on the network in the CWMP_Session and Events views.
+ * Fixed an issue where certain endpoints were disappearing from Swagger.
+ * Fixed an error that prevented the Admin application from loading.
+
 ## October 2025
 
 ### Krill

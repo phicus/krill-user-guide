@@ -15,6 +15,16 @@ tags:
 
 # Novedades
 
+## Noviembre 2025
+
+### Krill
+ * Se ha añadido un campo en la tabla de la vista de WAN en las opciones de la ficha CPE para ver el Status
+
+ **Corrección de errores**:
+ * Se ha corregido un problema de permisos que permitía a los usuarios de Krill con acceso a un único realm ver todos los CPEs de la red en las vistas CWMP_Session y Events.
+ * Arreglado problema por el que desaparecían ciertos endpoint del swagger
+ * Arreglado un error que evitaba que cargase la aplicación de Admin
+
 ## Octubre 2025
 
 ### Krill
