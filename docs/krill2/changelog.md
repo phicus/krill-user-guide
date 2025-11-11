@@ -21,7 +21,9 @@ tags:
 
 **New features**:
  * A field has been added to the WAN view table in the CPE tab options to display the Status.
-
+ * Fixed a problem with Edgemax UPS monitoring.
+ * Adamo V2 API diagnostics have been incorporated into Rubik.
+ * Krill can now warn (this is an optional feature) of massive ONU outages due to power cuts.
 
 **Some minor bugfixes**:
  * A permissions issue has been corrected that allowed Krill users with access to a single realm to view all CPEs on the network in the CWMP_Session and Events views.

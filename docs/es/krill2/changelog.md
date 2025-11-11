@@ -19,6 +19,9 @@ tags:
 
 ### Krill
  * Se ha añadido un campo en la tabla de la vista de WAN en las opciones de la ficha CPE para ver el Status
+ * Solventado un problema de monitorización de SAI/UPS Edgemax
+ * Se han incorporado los diagnósticos del API de Adamo V2 en Rubik
+ * Ahora Krill puede avisar (es una característica opcional) de caídas masivas de ONUs por corte eléctrico.
 
  **Corrección de errores**:
  * Se ha corregido un problema de permisos que permitía a los usuarios de Krill con acceso a un único realm ver todos los CPEs de la red en las vistas CWMP_Session y Events.
