@@ -28,7 +28,11 @@ tags:
  * Se ha corregido un problema de permisos que permitía a los usuarios de Krill con acceso a un único realm ver todos los CPEs de la red en las vistas CWMP_Session y Events.
  * Arreglado problema por el que desaparecían ciertos endpoint del swagger
  * Arreglado un error que evitaba que cargase la aplicación de Admin
+ * Solventandos varios bugs de modelos ZTE en Proxy 2
+ * Agregado soporte multiples servidores KEA Dhcp6
+ * Arreglado un error que hacía que la búsqueda y paginación en la aplicación Admin no funcionara.
  * Radius: Solventado un bug con la autenticacion mschap
+
 
 ## Octubre 2025
 
