@@ -24,11 +24,13 @@ tags:
  * Fixed a problem with Edgemax UPS monitoring.
  * Adamo V2 API diagnostics have been incorporated into Rubik.
  * Krill can now warn (this is an optional feature) of massive ONU outages due to power cuts.
+ * Implementation of TR069 of the WAN section of the TP-Link XX532v model
 
 **Some minor bugfixes**:
  * A permissions issue has been corrected that allowed Krill users with access to a single realm to view all CPEs on the network in the CWMP_Session and Events views.
  * Fixed an issue where certain endpoints were disappearing from Swagger.
  * Fixed an error that prevented the Admin application from loading.
+ * Radius: Fixed a bug with mschap authentication
 
 ## October 2025
 

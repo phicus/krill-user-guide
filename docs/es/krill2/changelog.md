@@ -22,11 +22,13 @@ tags:
  * Solventado un problema de monitorización de SAI/UPS Edgemax
  * Se han incorporado los diagnósticos del API de Adamo V2 en Rubik
  * Ahora Krill puede avisar (es una característica opcional) de caídas masivas de ONUs por corte eléctrico.
+ * Implementación TR069 del apartado de WANs del modelo XX532v de TP-Link
 
  **Corrección de errores**:
  * Se ha corregido un problema de permisos que permitía a los usuarios de Krill con acceso a un único realm ver todos los CPEs de la red en las vistas CWMP_Session y Events.
  * Arreglado problema por el que desaparecían ciertos endpoint del swagger
  * Arreglado un error que evitaba que cargase la aplicación de Admin
+ * Radius: Solventado un bug con la autenticacion mschap
 
 ## Octubre 2025
 
