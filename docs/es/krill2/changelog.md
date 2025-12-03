@@ -15,6 +15,16 @@ tags:
 
 # Novedades
 
+## Diciembre 2025
+
+### Krill
+ * Se ha corregido un error que bloqueaba los servicios en estado ACK en Rubik
+ * Ahora Krill puede avisar (es una característica opcional) de caídas masivas de ONUs por corte eléctrico.
+
+### Krill-UI
+
+ * Corregido un error por el cual la ficha del CPE podía pintar estados "losi", "lofi" o "dyinggasp" desactualizados.
+
 ## Noviembre 2025
 
 ### Krill

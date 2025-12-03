@@ -15,6 +15,16 @@ tags:
 
 # Changelog
 
+## December 2025
+
+### Krill
+ * The error that blocked services in ACK state in Rubik has been fixed.  
+ * Now Krill can notify (this is an optional feature) of massive ONU outages due to power cuts
+
+### Krill-UI
+
+ * Fixed an error where the CPE record could display outdated "losi", "lofi", or "dyinggasp" states
+
 ## November 2025
 
 ### Krill
