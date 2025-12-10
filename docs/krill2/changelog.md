@@ -18,12 +18,26 @@ tags:
 ## December 2025
 
 ### Krill
+
  * The error that blocked services in ACK state in Rubik has been fixed.  
  * Now Krill can notify (this is an optional feature) of massive ONU outages due to power cuts
+ * DNS diagnostics implemented for Nokia G-1425G-B and G-0425G-C models
+ * We have enabled the option to select the WAN from which to perform IP, DNS, and traceroute diagnostics (provided the equipment supports them).
+
+ **Some minor bugfixes**:
+
+ * Fixed a bug in Vsol OLTs where the internet service port was not created after reactivating the client service
+
 
 ### Krill-UI
 
+ * MAC address search has been added to Oratio views; however, it is necessary to enclose MAC addresses in quotation marks for them to work. For example, `aa:bb:cc:dd` will not work, but `aa:bb:cc:dd` will.
+ 
+ **Some minor bugfixes**:
+
  * Fixed an error where the CPE record could display outdated "losi", "lofi", or "dyinggasp" states
+ * Fixed an issue where SSIDs could permanently disappear from the CPE settings tab.
+ * Fixed the logic for WAN selection in ipping, dns, and traceroute diagnostics.  
 
 ## November 2025
 
