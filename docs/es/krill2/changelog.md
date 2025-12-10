@@ -20,10 +20,21 @@ tags:
 ### Krill
  * Se ha corregido un error que bloqueaba los servicios en estado ACK en Rubik
  * Ahora Krill puede avisar (es una característica opcional) de caídas masivas de ONUs por corte eléctrico.
+ * Implementado el diagnóstico de DNS para los modelos Nokia G-1425G-B y G-0425G-C
+ * Habilitamos la posibilidad de seleccionar la WAN desde la que realizar los diagnósticos de ipping, dns y traceroute (siempre que el equipo los soporte)
+
+ **Corrección de errores**:
+ * Corregido un bug en las OLTs Vsol por el que no se creaba el service port de internet tras una reactivación del servicio de cliente 
 
 ### Krill-UI
 
+ * Añadida la busqueda por MACs en las vistas Oratio, siendo obligado entrecomillarlas para que funcionen. P.ej: aa:bb:cc:dd no funcionará, pero "aa:bb:cc:dd" si.
+
+ **Corrección de errores**:
+ 
  * Corregido un error por el cual la ficha del CPE podía pintar estados "losi", "lofi" o "dyinggasp" desactualizados.
+ * Arreglado un problema por el cual los SSIDs podían desaparecer permanentemente de la ficha de settings del CPE.
+ * Se corrigió la lógica para la selección de WAN en los diagnósticos de ipping, dns y traceroute.
 
 ## Noviembre 2025
 
