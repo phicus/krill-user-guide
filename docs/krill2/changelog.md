@@ -23,6 +23,8 @@ tags:
  * Now Krill can notify (this is an optional feature) of massive ONU outages due to power cuts
  * DNS diagnostics implemented for Nokia G-1425G-B and G-0425G-C models
  * We have enabled the option to select the WAN from which to perform IP, DNS, and traceroute diagnostics (provided the equipment supports them).
+ * Proxy 2 compatibility with legacy certificates
+ * New AGIS API scheme implemented
 
  **Some minor bugfixes**:
 

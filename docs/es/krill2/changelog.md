@@ -22,6 +22,8 @@ tags:
  * Ahora Krill puede avisar (es una característica opcional) de caídas masivas de ONUs por corte eléctrico.
  * Implementado el diagnóstico de DNS para los modelos Nokia G-1425G-B y G-0425G-C
  * Habilitamos la posibilidad de seleccionar la WAN desde la que realizar los diagnósticos de ipping, dns y traceroute (siempre que el equipo los soporte)
+ * Proxy 2 compatibilidad con certificados legacy
+ * Implementado el nuevo esquema  de API de AGIS
 
  **Corrección de errores**:
  * Corregido un bug en las OLTs Vsol por el que no se creaba el service port de internet tras una reactivación del servicio de cliente 
