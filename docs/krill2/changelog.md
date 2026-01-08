@@ -15,6 +15,18 @@ tags:
 
 # Changelog
 
+## January 2026
+
+### Krill
+
+ * Improvements implemented in authentication management for the AGIS integration.
+ * Added the ability to make reservations using WANMAC in bi-stream environments with KEA.
+
+### Krill-UI
+
+ * Added a message warning about the volatility of SSID changes in the ACS options view.
+
+
 ## December 2025
 
 ### Krill

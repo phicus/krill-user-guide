@@ -15,6 +15,17 @@ tags:
 
 # Novedades
 
+## Enero 2026
+
+### Krill
+
+ * Implementadas mejoras en la gestión autenticacion de la integración AGIS.
+ * Agregada la capacidad de reservar usando wanmac en entornos bistream con KEA.
+
+### Krill-UI
+
+ * Añadido un mensaje avisando de la volatilidad de los cambios de SSID en la vista de opciones ACS.
+
 ## Diciembre 2025
 
 ### Krill
