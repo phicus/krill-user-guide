@@ -108,7 +108,7 @@ The following fields must be filled in:
 - **CLI**: here the number used to identify the group is entered (the extension the grouo will have).
 - **Name**: name of the group.
 - **Extensions**: here the extension (or extensions) that belongs to the group are included, they will ting when the group's cli is called.
-- **Fail**: En caso de que se produzca un fallo en la recepción de la llamada, dónde se quiere que se desvíe ésta.
+- **Fail**: In case of a failure in receiving the call, where do you want it to be redirected.
 - **Out of Schedule**: Where the call will go outside the selected schedule.
 - **Schedule**: Time frame in which the group of extensions will be available.
 - **Holiday**: Determinates if the group will pick up calls on holiday days.
@@ -119,7 +119,7 @@ They are similar to the groups, but allows to make a queue with the incoming cal
 
 ![PBX Groups](/img/krill2/pbx/0427.png)
 
-La creación de una cola se hace de la misma forma que los grupos, pero hay más opciones disponibles, agrupadas en `General`, `Options` y `Announce`.
+The creation of a queue is done in the same way as groups, but there are more options available, grouped into `General`, `Options` y `Announce`.
 
 #### General
 
