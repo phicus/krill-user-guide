@@ -21,10 +21,13 @@ tags:
 
  * Implementadas mejoras en la gestión autenticacion de la integración AGIS.
  * Agregada la capacidad de reservar usando wanmac en entornos bistream con KEA.
+ * Solventado bug DHCP que afectaba a reservas que usaban SN como remote_id en cpe bitstream
+ * Solventado bug con en el backup de equipos Mikrotik en Ubuntu 24
 
 ### Krill-UI
 
  * Añadido un mensaje avisando de la volatilidad de los cambios de SSID en la vista de opciones ACS.
+ * Mejora de rápidez en Rubik y otras partes de la U
 
 ## Diciembre 2025
 
