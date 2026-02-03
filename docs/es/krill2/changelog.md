@@ -15,6 +15,14 @@ tags:
 
 # Novedades
 
+## Febrero 2026
+
+### Krill
+
+ * Implementación de la provisión con vlan nativa en OLTs VSol
+ * Solventado bug que no almacenaba el customer.external_id en los ip lease log
+ * Agregado IPV6 al servicio dhcp del cpe
+
 ## Enero 2026
 
 ### Krill
@@ -23,6 +31,9 @@ tags:
  * Agregada la capacidad de reservar usando wanmac en entornos bistream con KEA.
  * Solventado bug DHCP que afectaba a reservas que usaban SN como remote_id en cpe bitstream
  * Solventado bug con en el backup de equipos Mikrotik en Ubuntu 24
+ * Implementación de la provisión con vlan nativa en OLTs VSol
+ * Solventado bug que no almacenaba el customer.external_id en los ip lease log
+ * Agregado IPV6 al servicio dhcp del cpe
 
 ### Krill-UI
 
