@@ -23,7 +23,6 @@ tags:
  * Solventado bug que no almacenaba el customer.external_id en los ip lease log
  * Agregado IPV6 al servicio dhcp del cpe
  * Integración de las OLTs de la familia DS-P7000 de TP-Link
- * Implementación de la provisión con vlan nativa en OLTs Vsol
 
 ### Krill-UI
  * Rubik: búsqueda de cobertura por latitud y longitud por mapa
@@ -36,14 +35,11 @@ tags:
  * Agregada la capacidad de reservar usando wanmac en entornos bistream con KEA.
  * Solventado bug DHCP que afectaba a reservas que usaban SN como remote_id en cpe bitstream
  * Solventado bug con en el backup de equipos Mikrotik en Ubuntu 24
- * Implementación de la provisión con vlan nativa en OLTs VSol
- * Solventado bug que no almacenaba el customer.external_id en los ip lease log
- * Agregado IPV6 al servicio dhcp del cpe
 
 ### Krill-UI
 
  * Añadido un mensaje avisando de la volatilidad de los cambios de SSID en la vista de opciones ACS.
- * Mejora de rápidez en Rubik y otras partes de la U
+ * Mejora de rapidez en Rubik y otras partes de la UI
 
 ## Diciembre 2025
 
