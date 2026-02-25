@@ -22,6 +22,11 @@ tags:
  * Implementación de la provisión con vlan nativa en OLTs VSol
  * Solventado bug que no almacenaba el customer.external_id en los ip lease log
  * Agregado IPV6 al servicio dhcp del cpe
+ * Integración de las OLTs de la familia DS-P7000 de TP-Link
+ * Implementación de la provisión con vlan nativa en OLTs Vsol
+
+### Krill-UI
+ * Rubik: búsqueda de cobertura por latitud y longitud por mapa
 
 ## Enero 2026
 
