@@ -28,6 +28,11 @@ tags:
  ### Krill-UI
 
  * Rubik: search for coverage by latitude and longitude on a map
+ * Integration of TP-Link's DS-P7000 family OLTs
+ * Implementation of provisioning with native VLAN on Vsol OLTs
+
+### Krill-UI
+ * Rubik: search for coverage by latitude and longitude on the map
 
 ## January 2026
 

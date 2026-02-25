@@ -25,8 +25,7 @@ tags:
  * Integración de las OLTs de la familia DS-P7000 de TP-Link
  * Implementación de la provisión con vlan nativa en OLTs Vsol
 
- ### Krill-UI
-
+### Krill-UI
  * Rubik: búsqueda de cobertura por latitud y longitud por mapa
 
 ## Enero 2026
