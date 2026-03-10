@@ -15,6 +15,16 @@ tags:
 
 # Novedades
 
+## Marzo 2026
+
+### Krill
+
+ * Bugfix: Fix problema con la renovacion del token de AGIS
+
+### Krill-UI
+ * Arreglado un error por el cual no se dibujaba correctamente la direccion del cpe en ciertos casos
+ * Realizadas ciertas mejoras sobre la vista de reportes de leases IPv4 e IPv6
+
 ## Febrero 2026
 
 ### Krill

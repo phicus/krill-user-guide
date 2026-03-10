@@ -15,6 +15,15 @@ tags:
 
 # Changelog
 
+## March 2026
+
+### Krill
+
+ * Bugfix: Fixes problem with AGIS token renewal
+
+### Krill-UI
+ * Fixed a bug where the CPE address was not drawn correctly in certain cases
+ * Certain improvements have been made to the IPv4 and IPv6 lease report view
 
 ## February 2026
 
