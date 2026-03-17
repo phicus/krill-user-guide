@@ -6,9 +6,7 @@
 
 1. Install Node / NPM ([Ubuntu installation guide](https://ubunlog.com/nodejs-npm-instalacion-ubuntu-20-04-18-04/))
 2. Install Yarn ([Ubuntu installation guide](https://linuxize.com/post/how-to-install-yarn-on-ubuntu-20-04/))
-3. Install generate-release package ([Installation](https://www.npmjs.com/package/generate-release))
-4. Install Git flow plugin ([Installation](https://howtoinstall.co/en/git-flow))
-5. Init flow inside folder: `git flow init`
+3. Install `rsync` and make sure you have SSH access to the guide server if you want to deploy from this machine
 
 ### Setup repository
 
@@ -25,10 +23,24 @@ yarn docs:dev
 
 ### Deploy changes and sync with guide server
 
-To deploy changes and sync you must commit and push work. Then from root repository folder:
+To deploy weekly changelog changes:
+
+1. Commit your updates on `develop`
+2. Make sure the working tree is clean
+3. Run the release script from the repository root on `develop`:
+
 ```bash
 bash scripts/build.sh
 ```
+
+The script will:
+
+1. Pull the latest `develop`
+2. Validate the VuePress build
+3. Bump the patch version in `package.json`
+4. Merge `develop` into `master`
+5. Create and push the git tag
+6. Build the site again and sync it to the guide server
 
 ## Folders structure
 

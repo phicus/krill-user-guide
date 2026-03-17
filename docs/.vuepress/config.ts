@@ -1,14 +1,9 @@
 import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from 'vuepress'
 import { defaultTheme } from '@vuepress/theme-default'
-import { backToTopPlugin } from '@vuepress/plugin-back-to-top'
 //import { externalLinkIconPlugin } from '@vuepress/plugin-external-link-icon'
-import { mediumZoomPlugin } from '@vuepress/plugin-medium-zoom'
 // import { searchPlugin } from '@vuepress/plugin-search'
 import { docsearchPlugin } from '@vuepress/plugin-docsearch'
-import { prismjsPlugin } from '@vuepress/plugin-prismjs'
-import { nprogressPlugin } from '@vuepress/plugin-nprogress'
-import { activeHeaderLinksPlugin } from '@vuepress/plugin-active-header-links'
 import {
     head,
     title,
@@ -35,10 +30,7 @@ export default defineUserConfig({
     lang: locales.defaultLanguage,
     locales: locales.config,
     plugins: [
-        backToTopPlugin(),
-        nprogressPlugin(),
         //externalLinkIconPlugin(),
-        mediumZoomPlugin(),
         // // searchPlugin({
         // //     locales: locales.searchPlugin,
         // // }),
@@ -48,7 +40,5 @@ export default defineUserConfig({
             locales: locales.searchPlugin,
             indexName: 'guide-phicus',
         }),
-        prismjsPlugin(),
-        activeHeaderLinksPlugin(),
     ]
 })

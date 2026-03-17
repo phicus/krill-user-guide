@@ -150,6 +150,49 @@ const rubikSidebar = {
     }],
 }
 
+const installerToolsSidebar = {
+    en: [{
+        text: 'Installer Tools',
+        // collapsible: true,
+        children: [
+            {link: '/krill2/installer-tools/', text: 'Installer Tools'},
+        ],
+    }],
+    es: [{
+        text: 'Herramientas del Instalador',
+        // collapsible: true,
+        children: [
+            {link: '/es/krill2/installer-tools/', text: 'Herramientas del Instalador'},
+        ]
+    }],
+}
+
+const changeLogSidebar = {
+    es: [{
+        text: 'Changelog',
+        // collapsible: true,
+        children: [
+            {link: '/es/change-log/krill.md', text: 'Krill'},
+            {link: '/es/change-log/krill-ui.md', text: 'Krill UI'},
+            {link: '/es/change-log/krill-acs.md', text: 'Krill ACS'},
+            {link: '/es/change-log/krill-core.md', text: 'Krill Core'},
+            {link: '/es/change-log/krill-gpon.md', text: 'Krill GPON'},
+            {link: '/es/change-log/krill-isp-ui.md', text: 'Krill ISP UI'},
+            {link: '/es/change-log/krill-monitoring-ui.md', text: 'Krill Monitoring UI'},
+            {link: '/es/change-log/krill-oratio-ui.md', text: 'Krill Oratio UI'},
+            {link: '/es/change-log/krill-pbx-ui.md', text: 'Krill PBX UI'},
+            {link: '/es/change-log/krill-rubik-ui.md', text: 'Krill Rubik UI'},
+            {link: '/es/change-log/krill-installer-ui.md', text: 'Krill Installer UI'},
+            {link: '/es/change-log/krill-chati-ui.md', text: 'Krill Chati UI'},
+            {link: '/es/change-log/krill-adamo-ivr-ui.md', text: 'Krill Adamo IVR UI'},
+            {link: '/es/change-log/krill-webservice-api.md', text: 'Krill Webservice API'},
+            {link: '/es/change-log/krill-wimax.md', text: 'Krill Wimax'},
+            {link: '/es/change-log/kraken-kitchen.md', text: 'Kraken Kitchen'},
+            {link: '/es/change-log/kiwi.md', text: 'Kiwi'},
+        ]
+    }],
+}
+
 const ispCliSidebar = {
     en: [{
         text: 'ISP-CLI',
@@ -232,6 +275,7 @@ const main = {
         '/krill2/pbx/': pbxSidebar.en,
         '/krill2/radius/': radiusSidebar.en,
         '/krill2/rubik/': rubikSidebar.en,
+        '/krill2/installer-tools/': installerToolsSidebar.en,
         '/krill2/isp-cli': ispCliSidebar.en,
         '/krill2/api/api-v2': apiSidebar.en,
         '/krill2/changelog': changelogSidebar.en,
@@ -247,9 +291,11 @@ const main = {
         '/es/krill2/pbx/': pbxSidebar.es,
         '/es/krill2/radius/': radiusSidebar.es,
         '/es/krill2/rubik/': rubikSidebar.es,
+        '/es/krill2/installer-tools/': installerToolsSidebar.es,
         '/es/krill2/isp-cli': ispCliSidebar.es,
         '/es/krill2/api/api-v2': apiSidebar.es,
         '/es/krill2/changelog': changelogSidebar.es,
+        '/es/change-log/': changeLogSidebar.es,
     }
 }
 
