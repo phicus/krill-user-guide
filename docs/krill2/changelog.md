@@ -42,16 +42,11 @@ tags:
  * Fixed bug that prevented the customer.external_id from being stored in the IP lease log
  * Added IPv6 to the CPE's DHCP service
  * Integration of TP-Link DS-P7000 family OLTs
- * Implementation of native VLAN provisioning on Vsol OLTs
 
- ### Krill-UI
+### Krill-UI
 
  * Rubik: search for coverage by latitude and longitude on a map
  * Integration of TP-Link's DS-P7000 family OLTs
- * Implementation of provisioning with native VLAN on Vsol OLTs
-
-### Krill-UI
- * Rubik: search for coverage by latitude and longitude on the map
 
 ## January 2026
 
