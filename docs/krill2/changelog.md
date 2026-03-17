@@ -20,10 +20,14 @@ tags:
 ### Krill
 
  * Bugfix: Fixes problem with AGIS token renewal
+ * Optimizing monitoring of the TP-Link EC220-G5 model
+ * Resolved incompatibility between Ubuntu 24.05 and CGNAT Logger
 
 ### Krill-UI
  * Fixed a bug where the CPE address was not drawn correctly in certain cases
  * Certain improvements have been made to the IPv4 and IPv6 lease report view
+ * Added a warning about the IPs when the internet is disabled.
+ * The WAN Settings tab can now be viewed even if the CPE does not have connectivity with the ACS.
 
 ## February 2026
 
