@@ -1,1 +1,0 @@
-const i="/img/krill2/admin/01-admin-menu.png",m="/img/krill2/admin/02-module-gis.png",n="/img/krill2/admin/03-create-nap.png",s="/img/krill2/admin/05-cpe.png",a="/img/krill2/admin/04-list-nap.png",p="/img/krill2/admin/06-map.png";export{i as _,m as a,n as b,s as c,a as d,p as e};

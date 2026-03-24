@@ -1,1 +1,0 @@
-const s="/img/admin-users/admin-login.png",n="/img/admin-users/admin-menu.png",m="/img/admin-users/admin-users-list.png",i="/img/admin-users/admin-add-user.png",a="/img/admin-users/admin-change-user.png",r="/img/admin-users/admin-change-realm.png",e="/img/admin-users/admin-users-realm.png";export{s as _,n as a,m as b,i as c,a as d,r as e,e as f};

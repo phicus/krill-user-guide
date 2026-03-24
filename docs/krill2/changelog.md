@@ -15,17 +15,32 @@ tags:
 
 # Changelog
 
-## February 2026
+## March 2026
 
 ### Krill
 
+ * Bugfix: Fixes problem with AGIS token renewal
+ * Optimizing monitoring of the TP-Link EC220-G5 model
+ * Resolved incompatibility between Ubuntu 24.05 and CGNAT Logger
+
+### Krill-UI
+ * Fixed a bug where the CPE address was not drawn correctly in certain cases
+ * Certain improvements have been made to the IPv4 and IPv6 lease report view
+ * Added a warning about the IPs when the internet is disabled.
+ * The WAN Settings tab can now be viewed even if the CPE does not have connectivity with the ACS.
+
+## February 2026
+
+### Krill
  * Implementation of native VLAN provisioning on VSol OLTs
  * Fixed bug that prevented the customer.external_id from being stored in the IP lease log
  * Added IPv6 to the CPE's DHCP service
- * Integration of TP-Link's DS-P7000 family OLTs
+ * Integration of TP-Link DS-P7000 family OLTs
 
 ### Krill-UI
- * Rubik: search for coverage by latitude and longitude on the map
+
+ * Rubik: search for coverage by latitude and longitude on a map
+ * Integration of TP-Link's DS-P7000 family OLTs
 
 ## January 2026
 

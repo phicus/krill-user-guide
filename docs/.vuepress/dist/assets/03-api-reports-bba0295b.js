@@ -1,1 +1,0 @@
-const g="/img/krill2/logger/00-logger-menu.png",r="/img/krill2/logger/01-logger-dashboard.png",o="/img/krill2/logger/02-admin-reports.png",s="/img/krill2/logger/03-api-reports.png";export{g as _,r as a,o as b,s as c};
