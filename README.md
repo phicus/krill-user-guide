@@ -42,6 +42,14 @@ The script will:
 5. Create and push the git tag
 6. Build the site again and sync it to the guide server
 
+If the script says local `master` is ahead of `origin/master`, finish or reconcile the previous release first. The usual recovery is:
+
+```bash
+git checkout master
+git push origin master --tags
+git checkout develop
+```
+
 ## Folders structure
 
 - ***Docs*** are archived inside `/docs/krill2` folder.
