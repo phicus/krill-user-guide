@@ -18,6 +18,11 @@ abort() {
     exit 1
 }
 
+read_branch_sync_counts() {
+    local branch_name="$1"
+    git rev-list --left-right --count "${REMOTE_NAME}/${branch_name}...${branch_name}"
+}
+
 restore_source_branch() {
     local current_branch
     current_branch="$(git branch --show-current 2>/dev/null || true)"
@@ -37,6 +42,19 @@ require_branch() {
     current_branch="$(git branch --show-current)"
     if [[ "$current_branch" != "$1" ]]; then
         abort "Run this script from '$1' (current branch: '$current_branch')"
+    fi
+}
+
+require_release_branch_ready() {
+    local behind_count ahead_count
+    read -r behind_count ahead_count < <(read_branch_sync_counts "$RELEASE_BRANCH")
+
+    if (( behind_count > 0 && ahead_count > 0 )); then
+        abort "Local '${RELEASE_BRANCH}' has diverged from '${REMOTE_NAME}/${RELEASE_BRANCH}'. Reconcile that branch before running a new release."
+    fi
+
+    if (( ahead_count > 0 )); then
+        abort "Local '${RELEASE_BRANCH}' is ahead of '${REMOTE_NAME}/${RELEASE_BRANCH}'. Push or reconcile the previous release before running a new one."
     fi
 }
 
@@ -74,6 +92,8 @@ trap restore_source_branch EXIT
 echo "Fetching from ${REMOTE_NAME}..."
 git fetch "$REMOTE_NAME" --tags >/dev/null
 
+require_release_branch_ready
+
 echo "Pulling ${SOURCE_BRANCH} from ${REMOTE_NAME}..."
 git pull --rebase "$REMOTE_NAME" "$SOURCE_BRANCH" >/dev/null
 
@@ -94,7 +114,7 @@ git tag "$next_version"
 
 echo "Preparing ${RELEASE_BRANCH}..."
 git checkout "$RELEASE_BRANCH" >/dev/null
-git pull --rebase "$REMOTE_NAME" "$RELEASE_BRANCH" >/dev/null
+git pull --ff-only "$REMOTE_NAME" "$RELEASE_BRANCH" >/dev/null
 cleanup_release_branch_build_output
 
 echo "Merging ${SOURCE_BRANCH} into ${RELEASE_BRANCH}..."

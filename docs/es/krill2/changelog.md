@@ -19,13 +19,19 @@ tags:
 
 ### Krill
 
- * Bugfix: Fix problema con la renovacion del token de AGIS
- * Optimización de la monitorización del modelo TP-Link EC220-G5
- * Solventada incompatibilidad Ubuntu 24.05 y CGNAT logger
+ * Bugfix: Fix problema con la renovacion del token de AGIS.
+ * Optimización de la monitorización del modelo TP-Link EC220-G5.
+ * Solventada incompatibilidad Ubuntu 24.05 y CGNAT logger.
+ * Implementación del diagnóstico WiFi Neighboring para el modelo Nokia G-0126G-A.
+ * API isp/cpes: al cambiar address_profile de fixed a otro valor, ahora se vacía el campo fixed_address.
+ * AGIS: añadido soporte para múltiples UUIDs de servicio.
+ * Bugfix: corregida la monitorización de RAM en RouterOS.
+ * Separada la monitorización de Mikrotik SwOS y RouterOS.
 
 ### Krill-UI
- * Arreglado un error por el cual no se dibujaba correctamente la direccion del cpe en ciertos casos
- * Realizadas ciertas mejoras sobre la vista de reportes de leases IPv4 e IPv6
+
+ * Arreglado un error por el cual no se dibujaba correctamente la direccion del cpe en ciertos casos.
+ * Realizadas ciertas mejoras sobre la vista de reportes de leases IPv4 e IPv6.
  * Añadido un aviso sobre las IPs cuando el internet este deshabilitado.
  * Ahora se puede consultar la pestaña Settings → WAN aunque el CPE no tenga conectividad con el ACS.
 
