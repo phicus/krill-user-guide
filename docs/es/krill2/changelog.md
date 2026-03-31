@@ -27,6 +27,7 @@ tags:
  * AGIS: añadido soporte para múltiples UUIDs de servicio.
  * Bugfix: corregida la monitorización de RAM en RouterOS.
  * Separada la monitorización de Mikrotik SwOS y RouterOS.
+ * Implementación del diagnóstico de WiFi Neighboring para el modelo FiberSystems FAX1820
 
 ### Krill-UI
 
@@ -34,6 +35,7 @@ tags:
  * Realizadas ciertas mejoras sobre la vista de reportes de leases IPv4 e IPv6.
  * Añadido un aviso sobre las IPs cuando el internet este deshabilitado.
  * Ahora se puede consultar la pestaña Settings → WAN aunque el CPE no tenga conectividad con el ACS.
+ * Arreglado un error que hacía que no se cargara el dato technology correctamente en la creación de CPE.
 
 ## Febrero 2026
 
