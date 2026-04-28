@@ -21,6 +21,11 @@ tags:
 
  * Configuración de los parámetros vendor specific de los modelos FiberHome para el direccionamiento IPv6.
  * Realizada la parametrización de la monitorización específica necesaria para el modelo MF80X de Mercusys.
+ * Paginacion en Oratio ippools
+
+ ### Krill-UI
+ * Arreglado un error por el cual no se permitía crear CPEs sin Serial Number desde la vista de crear customer.
+
 
 ## Marzo 2026
 

@@ -21,6 +21,11 @@ tags:
 
  * Configuration of vendor-specific parameters for FiberHome models for IPv6 routing.
  * Configuration of the specific monitoring settings required for the Mercusys MF80X model.
+ * Pagination in Oratio ippools
+
+### Krill-UI
+
+ * Fixed a bug that prevented the creation of CPEs without a Serial Number from the create customer view.
 
 ## March 2026
 
