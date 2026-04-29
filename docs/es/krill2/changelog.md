@@ -15,6 +15,18 @@ tags:
 
 # Novedades
 
+## Abril 2026
+
+### Krill
+
+ * Configuración de los parámetros vendor specific de los modelos FiberHome para el direccionamiento IPv6.
+ * Realizada la parametrización de la monitorización específica necesaria para el modelo MF80X de Mercusys.
+ * Paginacion en Oratio ippools
+
+ ### Krill-UI
+ * Arreglado un error por el cual no se permitía crear CPEs sin Serial Number desde la vista de crear customer.
+
+
 ## Marzo 2026
 
 ### Krill
@@ -27,7 +39,8 @@ tags:
  * AGIS: añadido soporte para múltiples UUIDs de servicio.
  * Bugfix: corregida la monitorización de RAM en RouterOS.
  * Separada la monitorización de Mikrotik SwOS y RouterOS.
- * Implementación del diagnóstico de WiFi Neighboring para el modelo FiberSystems FAX1820
+ * Implementación del diagnóstico de WiFi Neighboring para el modelo FiberSystems FAX1820.
+
 
 ### Krill-UI
 
