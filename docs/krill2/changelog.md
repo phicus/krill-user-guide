@@ -15,6 +15,25 @@ tags:
 
 # Changelog
 
+## June 2026
+
+### Krill
+
+ * Fix for Kea with duplicate remote_ids; prioritises the first over the second.
+ * Option to create a CPE with the same remote_id for the same customer.
+
+## Mayo 2026
+
+### Krill
+
+ * CIPv6 in Radius with IA/PD support
+ * Various proxy 2 fixes
+
+### Krill-UI
+
+ * FFixed a bug for GIS users that caused the topology to appear as an ID in the record.
+
+
 ## April 2026
 
 ### Krill
