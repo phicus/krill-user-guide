@@ -22,6 +22,16 @@ tags:
  * Fix de kea con remote_id duplicados, prioriza el primero sobre el segundo.
  * Posibilidad de crear cpe con mismo remote-id para el mismo customer.
 
+## Mayo 2026
+
+### Krill
+
+ * IPV6 en Radius con soporte IA/PD
+ * Varios fixes proxy 2
+
+ ### Krill-UI
+ * Arreglado un error para los usuarios de GIS que hacía que la topología apareciera cómo un ID en la ficha.
+
 ## Abril 2026
 
 ### Krill
