@@ -15,6 +15,13 @@ tags:
 
 # Changelog
 
+## June 2026
+
+### Krill
+
+ * Fix for Kea with duplicate remote_ids; prioritises the first over the second.
+ * Option to create a CPE with the same remote_id for the same customer.
+
 ## April 2026
 
 ### Krill
