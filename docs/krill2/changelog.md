@@ -21,6 +21,12 @@ tags:
 
  * Fix for Kea with duplicate remote_ids; prioritises the first over the second.
  * Option to create a CPE with the same remote_id for the same customer.
+ * The “address” field has been added to the customer search
+ * Internal fixes for Krill
+
+### Krill-UI
+
+* Fixed an issue in the error dialog that caused the error message to be copied to the clipboard when tapping anywhere in the text area
 
 ## Mayo 2026
 
