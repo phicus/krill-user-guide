@@ -23,7 +23,7 @@ tags:
  * Posibilidad de crear cpe con mismo remote-id para el mismo customer.
  * Se incluye el campo "dirección" en la búsqueda de clientes
  * Fix internos radius Krill
-
+ * Solventado bug en busqueda del campo topology con gis activado
 ### Krill-UI
 
 * Fix en el diálogo de error que hacía que se copiara el error en el portapapeles al tocar en cualquier parte del text-area

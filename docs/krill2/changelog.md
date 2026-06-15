@@ -23,6 +23,7 @@ tags:
  * Option to create a CPE with the same remote_id for the same customer.
  * The “address” field has been added to the customer search
  * Internal fixes for Krill
+ * Fixed bug in topology field search with GIS enabled
 
 ### Krill-UI
 
