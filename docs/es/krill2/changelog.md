@@ -27,6 +27,8 @@ tags:
 ### Krill-UI
 
 * Fix en el diálogo de error que hacía que se copiara el error en el portapapeles al tocar en cualquier parte del text-area
+ * Ahora la vista de problemas y alarmas prioriza las más recientes por coherencia.
+ * Se inicia la integración del modo oscuro en las partes migradas a la nueva versión de la UI (Radius, Logger y Reporting).
 
 ## Mayo 2026
 

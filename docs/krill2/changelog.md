@@ -28,6 +28,8 @@ tags:
 ### Krill-UI
 
 * Fixed an issue in the error dialog that caused the error message to be copied to the clipboard when tapping anywhere in the text area
+ * The issues and alarms view now prioritizes the most recent entries for consistency.
+ * Dark mode integration has begun for the sections migrated to the new UI version (Radius, Logger, and Reporting).
 
 ## Mayo 2026
 
