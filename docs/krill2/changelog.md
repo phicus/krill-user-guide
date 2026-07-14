@@ -15,6 +15,13 @@ tags:
 
 # Changelog
 
+
+## July 2026
+
+### Krill-UI
+
+ * Added Catalan audio for the Krill PBX
+
 ## June 2026
 
 ### Krill
