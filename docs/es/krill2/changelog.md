@@ -15,6 +15,13 @@ tags:
 
 # Novedades
 
+
+## Julio 2026
+
+### Krill-UI
+
+ * Añadido audio en catalán para la pbx de Krill
+
 ## Junio 2026
 
 ### Krill
