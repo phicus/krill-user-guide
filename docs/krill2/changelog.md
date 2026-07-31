@@ -22,6 +22,11 @@ tags:
 
  * Added Catalan audio for the Krill PBX
 
+### Krill
+
+ * The RADIUS view now correctly sorts by IP (framed IP) in ascending and descending order, making it easier to search and compare sessions by address.
+ * Krill WiMAX: An option to restart access points (AP) from the admin Schema was added to the Krill administration interface.
+
 ## June 2026
 
 ### Krill
