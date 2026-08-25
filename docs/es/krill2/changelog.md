@@ -16,6 +16,15 @@ tags:
 # Novedades
 
 
+
+## Agosto 2026
+
+### Krill
+
+ * Implementamos los cambios necesarios para monitorizar correctamente  los puertos Ethernet y las direcciones IP de las WANs del modelo TP‑Link EX520v.
+ * Nuevo endpoint en la API del ACS para consultar la información del nodo ManagementServer de un dispositivo.
+ * Ordenación por orden númerico de IP en la vista Radius de Krill
+
 ## Julio 2026
 
 ### Krill-UI
