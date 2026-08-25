@@ -228,7 +228,7 @@ Changes about urls and paginated response are the same for `customers` and `pots
 
 ## Hierarchy
 
-Krill's entire REST API is organized under `https://<hostname>/api/v2/`. The URL structure is divided at the root level by some of these applications: isp, pbx, monitoring, auth, me, installer, oratio, rubik and plankton. Within each application exists diferent resources to use.
+Krill's entire REST API is organized under `https://<hostname>/api/v2/`. The URL structure is divided at the root level by application, such as: isp, pbx, monitoring, auth, me, installer, oratio, gpon, docsis, rubik, acs, tagger, wimax, kermit and logger. Within each application exists diferent resources to use.
 
 ## Endpoints
 
@@ -237,6 +237,11 @@ Krill's entire REST API is organized under `https://<hostname>/api/v2/`. The URL
 Endpoint: `/api/v2/isp`
 
 Here you can query, create, modify and delete CRM objects (Customers, CPEs, POTSs).
+
+Example endpoints:
+ - `GET /api/v2/isp/cpes/` — list/search CPEs
+ - `GET /api/v2/isp/customers/{id}/` — get a single customer
+ - `GET /api/v2/isp/cpes/{id}/reboot/` — reboot a CPE
 
 #### Filtering attributes
 
@@ -269,7 +274,7 @@ X-Frame-Options: DENY
 #### Joins
 
 ```bash
-GET api/v2/isp/cpes/74/?attrs=id&joins==customer,potses
+GET api/v2/isp/cpes/74/?attrs=id&joins=customer,potses
 
 HTTP/1.1 200 OK
 Access-Control-Allow-Credentials: True
@@ -390,6 +395,11 @@ Endpoint: `/api/v2/pbx`
 
 Here you can query, create, modify and delete PBXv objects (pbxs, recepcionists, groups, queues, ddis, schedules, holidays).
 
+Example endpoints:
+ - `GET /api/v2/pbx/pbxs/` — list PBX instances
+ - `GET /api/v2/pbx/customers/{customerId}/pbxs/{pbxId}/ddis/` — manage a PBX's DDI numbers
+ - `GET /api/v2/pbx/customers/{customerId}/pbxs/{pbxId}/queues/` — manage a PBX's call queues
+
 ### Monitoring resources
 
 Endpoint: `/api/v2/monitoring`
@@ -399,17 +409,32 @@ Endpoint: `/api/v2/monitoring`
  - Datasets with monitored metrics
  - Perform actions (reschedule checks, etc.)
 
+Example endpoints:
+ - `GET /api/v2/monitoring/search/` — search hosts/services by status or attributes
+ - `GET /api/v2/monitoring/hosts/{hostname}/` — current status of a host
+ - `GET /api/v2/monitoring/graphs/` — monitored metric graphs
+
 ###  RADIUS management
 
 Endpoint: `/api/v2/oratio`
 
 PPPoE sessions and IP Pool stats information.
 
+Example endpoints:
+ - `GET /api/v2/oratio/accounting/` — active/historic PPPoE sessions
+ - `GET /api/v2/oratio/pools/{poolName}/stats/` — IP pool usage stats
+ - `GET /api/v2/oratio/accounting/{acctuniqueid}/disconnect/` — disconnect a PPPoE session
+
 ### GPON provision
 
 Endpoint: `/api/v2/gpon`
 
 Realtime information about OLTs, PONs and ONUs provisioned.
+
+Example endpoints:
+ - `GET /api/v2/gpon/unconfigured/` — list unconfigured ONUs pending provisioning
+ - `POST /api/v2/gpon/unconfigured/{id}/enable/` — provision (enable) an unconfigured ONU
+ - `GET /api/v2/gpon/olts/{oltId}/frames/{frame}/slots/{slot}/ports/{port}/onus/status/` — ONU status on a specific OLT port
 
 ### DOCSIS management
 
@@ -423,8 +448,85 @@ Endpoint: `/api/v2/rubik`
 
 Here you can query, create, modify and delete Rubik objects (Addresses, Services, Tickets), for integration with an external CRM.
 
-### Plankton management
+Example endpoints:
+ - `GET /api/v2/rubik/services/` — list/manage services
+ - `GET /api/v2/rubik/tickets/` — list/manage tickets
+ - `POST /api/v2/rubik/verify/` — verify address coverage
 
-Endpoint: `/api/v2/plankton`
+### Authentication
 
-Here you can query, create, modify and delete Plankton FTTH Services, for integration with an external CRM.
+Endpoint: `/api/v2/auth`
+
+Login (including Google and Microsoft OAuth providers) and token refresh/retrieval to authenticate against the API.
+
+Example endpoints:
+ - `POST /api/v2/auth/login/` — login with username/password
+ - `POST /api/v2/auth/refresh/` — refresh an access token
+ - `GET /api/v2/auth/user/` — get the current authenticated user
+
+### User session
+
+Endpoint: `/api/v2/me`
+
+Information about the apps available to the currently authenticated user.
+
+Example endpoint:
+ - `GET /api/v2/me/apps/` — apps available to the current user
+
+### Installer
+
+Endpoint: `/api/v2/installer`
+
+Restricted view of CPEs and unconfigured GPON ONUs intended for field installers.
+
+Example endpoints:
+ - `GET /api/v2/installer/cpes/{id}/` — CPE detail
+ - `GET /api/v2/installer/cpes/{id}/info/` — live CPE info
+ - `GET /api/v2/installer/gpon/unconfigured/` — ONUs pending installation
+
+### ACS (TR-069 device management)
+
+Endpoint: `/api/v2/acs`
+
+Query and manage CPEs over TR-069: WAN/LAN/WiFi configuration, reboot, factory reset, diagnostics (ping, traceroute, speedtests, etc.) and raw parameter access.
+
+Example endpoints:
+ - `GET /api/v2/acs/devices/{id}/` — device detail
+ - `GET /api/v2/acs/devices/{id}/tasks/` — TR-069 tasks queued/executed for the device
+ - `GET /api/v2/acs/devices/{id}/wifi/radios/` — device WiFi radio info
+
+### Tagger
+
+Endpoint: `/api/v2/tagger`
+
+Create and manage tags that can be linked to other Krill objects.
+
+Example endpoints:
+ - `GET /api/v2/tagger/tags/` — list/create tags
+ - `GET /api/v2/tagger/links/` — objects linked to a tag
+
+### WiMAX
+
+Endpoint: `/api/v2/wimax`
+
+Information about WiMAX access points and their connected stations.
+
+### IP leases
+
+Endpoint: `/api/v2/kermit`
+
+IPv4 and IPv6 lease information.
+
+Example endpoints:
+ - `GET /api/v2/kermit/ipv4-leases` — list IPv4 leases
+ - `GET /api/v2/kermit/ipv6-leases` — list IPv6 leases
+
+### Logger
+
+Endpoint: `/api/v2/logger`
+
+API request logs and admin action logs.
+
+Example endpoints:
+ - `GET /api/v2/logger/api-request-logs/` — API request logs
+ - `GET /api/v2/logger/admin-logs/` — admin action logs

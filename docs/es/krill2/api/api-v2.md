@@ -228,7 +228,7 @@ Los cambios sobre las URLs y la paginación en cuanto a las respuestas para `cus
 
 ## Jerarquía
 
-La API-REST de Krill está organizada bajo `https://<hostname>/api/v2/`. La estructura de las URLs está dividida por aplicación o módulo para estas aplicaciones, accediendo desde el módulo inicial/root: isp, pbx, monitoring, auth, me, installer, oratio, rubik and plankton. Dentro de cada aplicación existen diferentes recursos disponibles..
+La API-REST de Krill está organizada bajo `https://<hostname>/api/v2/`. La estructura de las URLs está dividida por aplicación o módulo, accediendo desde el módulo inicial/root, por ejemplo: isp, pbx, monitoring, auth, me, installer, oratio, gpon, docsis, rubik, acs, tagger, wimax, kermit y logger. Dentro de cada aplicación existen diferentes recursos disponibles.
 
 ## Endpoints
 
@@ -237,6 +237,11 @@ La API-REST de Krill está organizada bajo `https://<hostname>/api/v2/`. La estr
 Endpoint: `/api/v2/isp`
 
 En este endpoint puedes listar, crear, modificar y eliminar los objetos que el CRM maneja: Customers, CPEs, POTSes.
+
+Ejemplos de endpoints:
+ - `GET /api/v2/isp/cpes/` — listar/buscar CPEs
+ - `GET /api/v2/isp/customers/{id}/` — obtener un customer
+ - `GET /api/v2/isp/cpes/{id}/reboot/` — reiniciar un CPE
 
 #### Filtrando atributos
 
@@ -269,7 +274,7 @@ X-Frame-Options: DENY
 #### Joins
 
 ```bash
-GET api/v2/isp/cpes/74/?attrs=id&joins==customer,potses
+GET api/v2/isp/cpes/74/?attrs=id&joins=customer,potses
 
 HTTP/1.1 200 OK
 Access-Control-Allow-Credentials: True
@@ -390,6 +395,11 @@ Endpoint: `/api/v2/pbx`
 
 En este endpoint puedes listar, crear, modificar y eliminar los objetos relacionados con la PBXv: (pbxs, recepcionists, groups, queues, ddis, schedules, holidays).
 
+Ejemplos de endpoints:
+ - `GET /api/v2/pbx/pbxs/` — listar centralitas
+ - `GET /api/v2/pbx/customers/{customerId}/pbxs/{pbxId}/ddis/` — gestionar los DDIs de una centralita
+ - `GET /api/v2/pbx/customers/{customerId}/pbxs/{pbxId}/queues/` — gestionar las colas de llamadas de una centralita
+
 ### Monitorización de equipos y servicios
 
 Endpoint: `/api/v2/monitoring`
@@ -399,17 +409,32 @@ Endpoint: `/api/v2/monitoring`
 - Datasets con las gráficas generadas por la monitorización
 - Llevar a cabo acciones como reschedule, checks, etc
 
+Ejemplos de endpoints:
+ - `GET /api/v2/monitoring/search/` — buscar hosts/servicios por estado o atributos
+ - `GET /api/v2/monitoring/hosts/{hostname}/` — estado actual de un host
+ - `GET /api/v2/monitoring/graphs/` — gráficas de métricas monitorizadas
+
 ###  Gestión RADIUS
 
 Endpoint: `/api/v2/oratio`
 
 Sesiones PPPoE e información sobre el estado de los Pools de IP.
 
+Ejemplos de endpoints:
+ - `GET /api/v2/oratio/accounting/` — sesiones PPPoE activas/históricas
+ - `GET /api/v2/oratio/pools/{poolName}/stats/` — estadísticas de uso de un pool de IP
+ - `GET /api/v2/oratio/accounting/{acctuniqueid}/disconnect/` — desconectar una sesión PPPoE
+
 ### Provisión GPON
 
 Endpoint: `/api/v2/gpon`
 
 Información en tiempo real sobre las OLTs, PONs, ONUs provisionados.
+
+Ejemplos de endpoints:
+ - `GET /api/v2/gpon/unconfigured/` — listar ONUs sin configurar pendientes de aprovisionar
+ - `POST /api/v2/gpon/unconfigured/{id}/enable/` — provisionar (habilitar) una ONU sin configurar
+ - `GET /api/v2/gpon/olts/{oltId}/frames/{frame}/slots/{slot}/ports/{port}/onus/status/` — estado de la ONU en un puerto concreto de una OLT
 
 ### Gestión DOCSIS
 
@@ -421,13 +446,90 @@ Información técnica sobre CMTSs, Mac domains y fiber-nodes.
 
 Endpoint: `/api/v2/rubik`
 
-Here you can query, create, modify and delete Rubik objects (Addresses, Services, Tickets), for integration with an external CRM.
+En este endpoint puedes consultar, crear, modificar y eliminar objetos de Rubik (Addresses, Services, Tickets), para integración con un CRM externo.
 
-### Gestión de Plankton
+Ejemplos de endpoints:
+ - `GET /api/v2/rubik/services/` — listar/gestionar servicios
+ - `GET /api/v2/rubik/tickets/` — listar/gestionar tickets
+ - `POST /api/v2/rubik/verify/` — verificar cobertura de una dirección
 
-Endpoint: `/api/v2/plankton`
+### Autenticación
 
-En este endpoint puedes listar, crear, modificar y eliminar los servicios FTTH de Plankton para integrarlos con el CRM.
+Endpoint: `/api/v2/auth`
+
+Login (incluyendo los proveedores OAuth de Google y Microsoft) y obtención/renovación de tokens para autenticarse contra la API.
+
+Ejemplos de endpoints:
+ - `POST /api/v2/auth/login/` — login con usuario y contraseña
+ - `POST /api/v2/auth/refresh/` — renovar el token de acceso
+ - `GET /api/v2/auth/user/` — obtener el usuario autenticado actual
+
+### Sesión de usuario
+
+Endpoint: `/api/v2/me`
+
+Información sobre las apps disponibles para el usuario autenticado.
+
+Ejemplo de endpoint:
+ - `GET /api/v2/me/apps/` — apps disponibles para el usuario actual
+
+### Instalador
+
+Endpoint: `/api/v2/installer`
+
+Vista restringida de CPEs y ONUs GPON sin configurar, pensada para instaladores de campo.
+
+Ejemplos de endpoints:
+ - `GET /api/v2/installer/cpes/{id}/` — detalle de un CPE
+ - `GET /api/v2/installer/cpes/{id}/info/` — información en vivo de un CPE
+ - `GET /api/v2/installer/gpon/unconfigured/` — ONUs pendientes de instalar
+
+### ACS (gestión TR-069)
+
+Endpoint: `/api/v2/acs`
+
+Consulta y gestión de CPEs vía TR-069: configuración de WAN/LAN/WiFi, reboot, factory reset, diagnósticos (ping, traceroute, speedtests, etc.) y acceso a parámetros raw.
+
+Ejemplos de endpoints:
+ - `GET /api/v2/acs/devices/{id}/` — detalle de un dispositivo
+ - `GET /api/v2/acs/devices/{id}/tasks/` — tareas TR-069 encoladas/ejecutadas para el dispositivo
+ - `GET /api/v2/acs/devices/{id}/wifi/radios/` — información de las radios WiFi del dispositivo
+
+### Tagger
+
+Endpoint: `/api/v2/tagger`
+
+Crea y gestiona etiquetas (tags) que se pueden vincular a otros objetos de Krill.
+
+Ejemplos de endpoints:
+ - `GET /api/v2/tagger/tags/` — listar/crear tags
+ - `GET /api/v2/tagger/links/` — objetos vinculados a un tag
+
+### WiMAX
+
+Endpoint: `/api/v2/wimax`
+
+Información sobre los puntos de acceso WiMAX y las estaciones conectadas a ellos.
+
+### IP leases
+
+Endpoint: `/api/v2/kermit`
+
+Información de leases IPv4 e IPv6.
+
+Ejemplos de endpoints:
+ - `GET /api/v2/kermit/ipv4-leases` — listar leases IPv4
+ - `GET /api/v2/kermit/ipv6-leases` — listar leases IPv6
+
+### Logger
+
+Endpoint: `/api/v2/logger`
+
+Logs de peticiones a la API y logs de acciones de administración.
+
+Ejemplos de endpoints:
+ - `GET /api/v2/logger/api-request-logs/` — logs de peticiones a la API
+ - `GET /api/v2/logger/admin-logs/` — logs de acciones de administración
 
 
 #### Ejemplos de consultas a la API
@@ -541,11 +643,11 @@ http --stream -a usuario:contraseña krill.phicus.es:4780/api/v2/monitoring/sear
                             "unprovision"
                         ],
                         "active": true,
-                        "address":
-                        "address_profile":
-                        "customer_address":
-                        "customer_external_id":
-                        "customer_name":
+                        "address": "",
+                        "address_profile": null,
+                        "customer_address": "",
+                        "customer_external_id": "",
+                        "customer_name": "",
                         "external_voip": false,
                         "id": 25365,
                         "latitude": 10.414488,
