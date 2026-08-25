@@ -16,6 +16,15 @@ tags:
 # Changelog
 
 
+
+## August 2026
+
+### Krill
+
+ * We implemented the necessary changes to correctly monitor the Ethernet ports and WAN IP addresses of the TP-Link EX520v model.
+ * New endpoint in the ACS API to query information from a device's ManagementServer node.
+ * IP address sorting in the Krill Radius view.
+
 ## July 2026
 
 ### Krill-UI
