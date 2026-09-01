@@ -17,6 +17,29 @@ tags:
 
 
 
+
+## September 2026
+
+### Krill
+
+ * Added the ability to retry Onivia service creation in Rubik in case of previous failure
+ * Added the closure type to Rubik ticket exports
+ * Krill KEA DHCP server now supports new SNs
+ * Bug: Management links with bitstream equipment using TR-181
+ * Corrected cpe_polling graphs
+ * Fixed a bug that prevented some PONs from displaying in the ZTE OLT monitoring view
+ * Restored the display of TX/RX power under Vsol OLTs in the CPE tab and in the Matrix view
+ * Adapted SkyWorth model monitoring to display Wi-Fi device signal levels (RSSI)
+
+### Krill-UI
+
+ * Fixed incorrect host group filtering
+ * Fixed a bug that prevented changing the CPE graphs displayed in the mobile version.
+ * The new UI views (currently Logger, Radius, and Reporting) now follow the system theme (light or dark) by default.
+ * Fixed a bug that prevented the 6-hour graph time from being displayed by default when starting the view.
+ * Added a reboot button to the APs tab
+ * Rubik: Registration of Network tickets in MasOrange.
+
 ## August 2026
 
 ### Krill
