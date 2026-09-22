@@ -30,6 +30,10 @@ tags:
  * Corregido fallo por el que no se mostraban algunos PONs en la vista de monitorización de OLTs ZTE
  * Restaurada la visualización de potencias TX/RX bajo OLTs Vsol en la ficha del CPE y en la vista Matrix
  * Adaptación de la monitorización de los modelos SkyWorth para mostrar los niveles de señal (RSSI) de dispositivos Wi‑Fi
+ * Mejora en tiempo de las peticiones de los tickets de Rubik.
+ * Mejoras de rendimiento en las consultas de remote_id e external_id.
+ * Inclusión de un nuevo de formato de índice SNMP en las OLTs Cdata
+ * Corregimos un bug por el que en algunos casos mostrábamos el estado "_invalid_" de las ONUs Huawei.
 
 ### Krill-UI
 
