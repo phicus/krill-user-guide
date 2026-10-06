@@ -18,6 +18,16 @@ tags:
 
 
 
+
+## October 2026
+
+### Krill
+
+ * Improvements to speed and resource consumption for DOCSIS and WiMAX monitoring.
+ * Fixed an issue where certain PBX-related APIs could return a 500 error.
+ * Implemented the vendor-specific field for Vsol V2804AX15 and TP-Link models to display the RSSI of devices connected via Wi-Fi.
+ * Fixed a bug that prevented monitoring of PONs on Cdata OLTs running firmware version V3.
+
 ## September 2026
 
 ### Krill
