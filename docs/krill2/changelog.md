@@ -27,6 +27,15 @@ tags:
  * Fixed an issue where certain PBX-related APIs could return a 500 error.
  * Implemented the vendor-specific field for Vsol V2804AX15 and TP-Link models to display the RSSI of devices connected via Wi-Fi.
  * Fixed a bug that prevented monitoring of PONs on Cdata OLTs running firmware version V3.
+ * Fixed a bug where some uplink interfaces on CData OLTs were not being monitored.
+ * Implemented WAN configurations for the TP-Link XGB430v_Pro model.
+
+### Krill-UI
+
+ * Improved efficiency of the graph view for CPEs and hosts.
+ * Improved efficiency of views already migrated to Vue 3 (Logger, Reporting, Radius).
+ * Fixed an error when opening attached images in Rubik tickets.
+ * Fixed an error displaying SSIDs for each radio under CPE Settings > WiFi.
 
 ## September 2026
 
