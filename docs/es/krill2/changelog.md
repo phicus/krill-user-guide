@@ -29,6 +29,7 @@ tags:
  * Corregido un bug por el que no éramos capaces de monitorizar los PONs de las OLTs Cdata con versión de firmware V3
  * Solucionado un bug por el que no monitorizábamos algunas interfaces de uplink en OLTs CData
  * Implementación de las WANs del modelo TP-Link XGB430v_Pro
+ * Se pueden reiniciar cpes Ubiquiti
 
 ### Krill-UI
 
