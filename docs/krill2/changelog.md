@@ -19,6 +19,18 @@ tags:
 
 
 
+
+## November 2026
+
+### Krill
+
+ * Fixed a bug in the search filters
+
+### Krill-UI
+
+ * The Vue 3 versions of the ISP and Schemas applications are now enabled.
+ * Miscellaneous improvements across all Vue 3 applications to make their behavior more similar to that of the Vue 2 version.
+
 ## October 2026
 
 ### Krill
